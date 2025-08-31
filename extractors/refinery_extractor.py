@@ -94,41 +94,32 @@ class RefineryExtractor:
 
     def get_page_content(self, page_title: str) -> Optional[str]:
         """Get raw wiki content for a page"""
-        params = {
-            'action': 'query',
-            'format': 'json',
-            'formatversion': '2',
-            'prop': 'revisions',
-            'titles': page_title,
-            'rvprop': 'content',
-            'rvslots': 'main'
-        }
-
         try:
-            response = self.session.get(self.api_url, params=params)
+            from urllib.parse import quote
+            encoded_title = quote(page_title.replace(' ', '_'))
+            raw_url = f"{self.base_url}/wiki/{encoded_title}?action=raw"
+
+            response = self.session.get(raw_url)
             response.raise_for_status()
-            data = response.json()
 
-            if 'query' in data and 'pages' in data['query']:
-                pages = data['query']['pages']
-                if pages and len(pages) > 0:
-                    page = pages[0]
-                    if 'revisions' in page and len(page['revisions']) > 0:
-                        revision = page['revisions'][0]
-                        if 'slots' in revision and 'main' in revision['slots']:
-                            return revision['slots']['main']['content']
-
-            return None
+            return response.text
 
         except requests.exceptions.RequestException as e:
-            logger.error(f"Error fetching page {page_title}: {e}")
+            logger.error(f"Error fetching raw content for {page_title}: {e}")
             return None
 
     def parse_refinery_recipes(self, content: str) -> List[Dict]:
         """Parse refinery recipes from wiki content"""
         recipes = []
 
-        # Look for Refinery template patterns
+        # Look for PoC-Refine template patterns (the actual format used on wiki)
+        poc_refine_pattern = r'\{\{PoC-Refine\s*\|([^}]+)\}\}'
+
+        matches = re.findall(poc_refine_pattern, content, re.IGNORECASE | re.DOTALL)
+        for match in matches:
+            recipes.extend(self.parse_poc_refine_template(match))
+
+        # Also look for other refinery template patterns (backup)
         refinery_patterns = [
             r'\{\{Refinery\|([^}]+)\}\}',
             r'\{\{refinery\|([^}]+)\}\}',
@@ -143,10 +134,134 @@ class RefineryExtractor:
                 if recipe:
                     recipes.append(recipe)
 
-        # Also look for manual refinery tables or lists
-        recipes.extend(self.parse_manual_refinery_data(content))
+        return recipes
+
+    def parse_poc_refine_template(self, template_content: str) -> List[Dict]:
+        """Parse PoC-Refine template content into recipe dictionaries"""
+        recipes = []
+
+        # Split by lines and process each recipe line
+        lines = [line.strip() for line in template_content.split('|') if line.strip()]
+
+        for line in lines:
+            if not line or line.startswith('#'):  # Skip empty lines and comments
+                continue
+
+            recipe = self.parse_poc_refine_line(line)
+            if recipe:
+                recipes.append(recipe)
 
         return recipes
+
+    def parse_poc_refine_line(self, line: str) -> Optional[Dict]:
+        """Parse a single PoC-Refine recipe line
+        Format: Input1,qty;Input2,qty;Output,qty;Time;Operation%Description
+        Example: Carbon,2;1;0.18%Condense Carbon
+        """
+        try:
+            # Split by semicolon to get parts
+            parts = line.split(';')
+            if len(parts) < 3:
+                return None
+
+            # Parse inputs (everything before the last two parts)
+            inputs = []
+            input_parts = parts[:-2]  # All but last 2 parts are inputs
+
+            for input_part in input_parts:
+                if ',' in input_part:
+                    item_name, quantity = input_part.rsplit(',', 1)
+                    item_name = item_name.strip()
+                    try:
+                        quantity = int(quantity.strip())
+                        item_id = self.get_item_id(item_name)
+                        if item_id:
+                            inputs.append({
+                                'id': item_id,
+                                'name': item_name,
+                                'quantity': quantity
+                            })
+                        else:
+                            # Use placeholder for missing items
+                            placeholder_id = f"missing_{item_name.lower().replace(' ', '_').replace('-', '_')}"
+                            inputs.append({
+                                'id': placeholder_id,
+                                'name': item_name,
+                                'quantity': quantity
+                            })
+                            logger.warning(f"Using placeholder ID '{placeholder_id}' for missing item: {item_name}")
+                    except ValueError:
+                        continue
+
+            # Parse output (second to last part)
+            output_quantity = int(parts[-2].strip())
+
+            # Parse time and operation (last part)
+            time_operation = parts[-1].strip()
+            if '%' in time_operation:
+                time_str, operation = time_operation.split('%', 1)
+                time_value = time_str.strip()
+                operation = operation.strip()
+            else:
+                time_value = time_operation
+                operation = "Refining Operation"
+
+            # For PoC-Refine, we need to determine the output item
+            # This is tricky because the output isn't explicitly named in the template
+            # We'll need to infer it from the operation description or context
+            output_item_name = self.infer_output_from_operation(operation, inputs)
+            output_item_id = self.get_item_id(output_item_name) if output_item_name else None
+
+            if not output_item_id and output_item_name:
+                placeholder_id = f"missing_{output_item_name.lower().replace(' ', '_').replace('-', '_')}"
+                output_item_id = placeholder_id
+                logger.warning(f"Using placeholder ID '{placeholder_id}' for missing output: {output_item_name}")
+
+            if inputs and output_item_id:
+                return {
+                    'inputs': inputs,
+                    'output': {
+                        'id': output_item_id,
+                        'name': output_item_name or 'Unknown Output',
+                        'quantity': output_quantity
+                    },
+                    'time': time_value,
+                    'operation': f"Requested Operation: {operation}"
+                }
+
+        except (ValueError, IndexError) as e:
+            logger.warning(f"Failed to parse PoC-Refine line '{line}': {e}")
+
+        return None
+
+    def infer_output_from_operation(self, operation: str, inputs: List[Dict]) -> Optional[str]:
+        """Infer output item name from operation description and inputs"""
+        operation_lower = operation.lower()
+
+        # Common operation mappings
+        operation_mappings = {
+            'condense carbon': 'Condensed Carbon',
+            'oxygenate carbon': 'Oxygen',
+            'feed microbes': 'Condensed Carbon',
+            'algal processing': 'Condensed Carbon',
+            'harness energy': 'Condensed Carbon'
+        }
+
+        for key, output in operation_mappings.items():
+            if key in operation_lower:
+                return output
+
+        # If no mapping found, try to extract from operation text
+        # Look for patterns like "Create X" or "Process into X"
+        create_pattern = r'create\s+([^,\s]+)'
+        process_pattern = r'into\s+([^,\s]+)'
+
+        for pattern in [create_pattern, process_pattern]:
+            match = re.search(pattern, operation_lower)
+            if match:
+                return match.group(1).title()
+
+        return None
 
     def parse_refinery_template(self, template_content: str) -> Optional[Dict]:
         """Parse a single refinery template"""
@@ -264,42 +379,29 @@ class RefineryExtractor:
     def format_recipe_for_json(self, recipe: Dict, recipe_id: str) -> Dict:
         """Format a recipe for the final JSON output"""
         formatted = {
-            'Id': recipe_id,
-            'Inputs': [],
-            'Output': None,
-            'Time': recipe.get('time', '1.0'),
-            'Operation': recipe.get('operation', 'Refining Operation')
+            'id': recipe_id,
+            'inputs': [],
+            'output': None,
+            'time': recipe.get('time', '1.0'),
+            'operation': recipe.get('operation', 'Refining Operation')
         }
 
         # Format inputs
         for inp in recipe['inputs']:
-            item_id = self.get_item_id(inp['item'])
-            if item_id:
-                formatted['Inputs'].append({
-                    'Id': item_id,
-                    'Quantity': inp['quantity']
-                })
-            else:
-                # Use item name as fallback ID
-                formatted['Inputs'].append({
-                    'Id': inp['item'].replace(' ', '').lower(),
-                    'Quantity': inp['quantity']
-                })
+            # Use the ID that's already been resolved (including placeholders)
+            formatted['inputs'].append({
+                'id': inp['id'],
+                'name': inp['name'],
+                'quantity': inp['quantity']
+            })
 
         # Format output
         if recipe['output']:
-            output_id = self.get_item_id(recipe['output']['item'])
-            if output_id:
-                formatted['Output'] = {
-                    'Id': output_id,
-                    'Quantity': recipe['output']['quantity']
-                }
-            else:
-                # Use item name as fallback ID
-                formatted['Output'] = {
-                    'Id': recipe['output']['item'].replace(' ', '').lower(),
-                    'Quantity': recipe['output']['quantity']
-                }
+            formatted['output'] = {
+                'id': recipe['output']['id'],
+                'name': recipe['output']['name'],
+                'quantity': recipe['output']['quantity']
+            }
 
         return formatted
 
@@ -310,7 +412,10 @@ class RefineryExtractor:
         # Load item IDs for cross-referencing
         self.load_item_ids()
 
-        # Pages that likely contain refinery information
+        all_recipes = []
+        recipe_counter = 1
+
+        # Strategy 1: Check general refinery pages first
         refinery_pages = [
             "Refiner",
             "Portable Refiner",
@@ -321,24 +426,51 @@ class RefineryExtractor:
             "List of refinery recipes"
         ]
 
-        all_recipes = []
-        recipe_counter = 1
-
         for page_title in refinery_pages:
             logger.info(f"Processing page: {page_title}")
-
             content = self.get_page_content(page_title)
             if content:
                 page_recipes = self.parse_refinery_recipes(content)
                 logger.info(f"Found {len(page_recipes)} recipes in {page_title}")
-
                 for recipe in page_recipes:
                     recipe_id = f"ref{recipe_counter}"
                     formatted_recipe = self.format_recipe_for_json(recipe, recipe_id)
                     all_recipes.append(formatted_recipe)
                     recipe_counter += 1
-
             time.sleep(self.delay)
+
+        # Strategy 2: Check ALL item pages from our database for PoC-Refine templates
+        # Get all item titles from the database
+        import sqlite3
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        cursor.execute('SELECT DISTINCT title FROM items ORDER BY title')
+        all_item_titles = [row[0] for row in cursor.fetchall()]
+        conn.close()
+
+        logger.info(f"Checking {len(all_item_titles)} individual item pages for refinery recipes...")
+        
+        # Process in batches with progress updates
+        batch_size = 50
+        for i in range(0, len(all_item_titles), batch_size):
+            batch = all_item_titles[i:i + batch_size]
+            logger.info(f"Processing batch {i//batch_size + 1}/{(len(all_item_titles) + batch_size - 1)//batch_size} ({len(batch)} items)")
+            
+            for page_title in batch:
+                content = self.get_page_content(page_title)
+                if content:
+                    page_recipes = self.parse_refinery_recipes(content)
+                    if page_recipes:  # Only log if recipes found
+                        logger.info(f"Found {len(page_recipes)} recipes in {page_title}")
+                        for recipe in page_recipes:
+                            recipe_id = f"ref{recipe_counter}"
+                            formatted_recipe = self.format_recipe_for_json(recipe, recipe_id)
+                            all_recipes.append(formatted_recipe)
+                            recipe_counter += 1
+                time.sleep(self.delay)
+            
+            # Progress update
+            logger.info(f"Progress: {min(i + batch_size, len(all_item_titles))}/{len(all_item_titles)} items processed, {len(all_recipes)} recipes found so far")
 
         logger.info(f"Extracted {len(all_recipes)} total refinery recipes")
         return all_recipes

@@ -495,6 +495,13 @@ def main():
     # Define all categories to scrape from
     ALL_CATEGORIES = [
         "Artifact", "Blueprints", "Fuel elements", "Products", "Raw Materials", "Resources", "Special elements", "Technology",
+        # Agricultural and Flora categories (MISSING - contains Faecium, etc.)
+        "Harvested Agricultural Substance",
+        "Flora elements",
+        "Flora",
+        "Gases",
+        "Minerals",
+        "Earth elements",
         # Products subcategories
         "Products - Artifact",
         "Products - Base Building",
@@ -514,19 +521,19 @@ def main():
         "Exosuit",
         "Grenade technology",
         "Health technology",
-    "Hyperdrive technology",
-    "Laser technology",
-    "Multi-Tool",
-    "Procedural Upgrades",
-    "Projectile technology",
-    "Propulsion technology",
-    "Protection technology",
-    "Scan technology",
-    "Stamina technology",
-    "Utilities technology",
-    "Weapons technology",
-    "Upgrade Modules"
-]
+        "Hyperdrive technology",
+        "Laser technology",
+        "Multi-Tool",
+        "Procedural Upgrades",
+        "Projectile technology",
+        "Propulsion technology",
+        "Protection technology",
+        "Scan technology",
+        "Stamina technology",
+        "Utilities technology",
+        "Weapons technology",
+        "Upgrade Modules"
+    ]
 
     print(f"🚀 Starting NMS scraping")
     print(f"⚙️  Settings: delay={args.delay}s, limit={args.limit}")
