@@ -1,0 +1,69 @@
+---
+description: Wiki categories and content classification
+---
+
+# Wiki Categories and Content Classification
+
+## Primary Categories
+
+The scraper targets these main wiki categories:
+- **Products** - Manufactured items, components, consumables
+- **Technology** - Upgrades, modules, equipment
+- **Raw Materials** - Elements, resources, minerals
+- **Resources** - Basic materials and fuel
+- **Blueprints** - Crafting recipes and schematics
+
+## Subcategories (Auto-discovered)
+
+### Products Subcategories
+- Products - Artifact
+- Products - Base Building
+- Products - Building Part
+- Products - Component
+- Products - Constructed Technology
+- Products - Consumable
+- Products - Container
+- Products - Curiosity
+- Products - Customisation Part
+- Products - Fish
+- Products - Procedural
+- Products - Technology
+- Products - Trade Commodity
+- Products - Tradeable
+
+### Technology Subcategories
+- Exosuit, Health technology, Protection technology
+- Stamina technology, Utilities technology
+- Grenade technology, Hyperdrive technology
+- Laser technology, Multi-Tool
+- Procedural Upgrades, Projectile technology
+- Propulsion technology, Scan technology
+- Upgrade Modules, Weapons technology
+
+## Content-Based Classification Logic
+
+Items are classified by analyzing:
+
+1. **Title Keywords** - Direct matches in item names
+2. **Infobox Type** - Structured data type field
+3. **Description Content** - Usage and purpose descriptions
+4. **Category Membership** - Wiki category assignments
+
+### Classification Priority
+1. Buildings - Construction and base building items
+2. Fish - Aquatic creatures and specimens
+3. Curiosities - Rare artifacts and collectibles
+4. Cooking - Food items and ingredients
+5. Trade - Trade commodities and valuable items
+6. Technology - Equipment, upgrades, modules
+7. Raw Materials - Basic elements and resources
+8. Products - Manufactured items and components
+9. Others - Everything else not classified above
+
+## Category Discovery Process
+
+Use [generate_categories.py](mdc:generate_categories.py) to:
+1. Recursively explore wiki category trees
+2. Find all relevant subcategories
+3. Generate comprehensive category lists
+4. Verify category existence and membership

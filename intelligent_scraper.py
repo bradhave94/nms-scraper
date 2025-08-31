@@ -58,14 +58,14 @@ class IntelligentNMSScraper:
             Target group key
         """
         infobox = item_data.get('infobox', {})
-        description = item_data.get('description', '').lower()
-        title = item_data.get('title', '').lower()
+        description = (item_data.get('description') or '').lower()
+        title = (item_data.get('title') or '').lower()
         categories = [cat.lower() for cat in item_data.get('categories', [])]
 
         # Get key fields
-        item_type = infobox.get('type', '').lower()
-        category = infobox.get('category', '').lower()
-        used_for = infobox.get('used', '').lower()
+        item_type = (infobox.get('type') or '').lower()
+        category = (infobox.get('category') or '').lower()
+        used_for = (infobox.get('used') or '').lower()
 
         # 1. RAW MATERIALS - Basic elements and resources
         if (any(keyword in item_type for keyword in [
@@ -295,6 +295,15 @@ class IntelligentNMSScraper:
             if description:
                 return self._clean_description_markup(description)
 
+        # Try In-game description
+        ingame_desc_pattern = r'==In-game description==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+        match = re.search(ingame_desc_pattern, content, re.DOTALL | re.IGNORECASE)
+
+        if match:
+            description = match.group(1).strip()
+            if description:
+                return self._clean_description_markup(description)
+
         # Fallback to Summary
         summary_pattern = r'==Summary==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
         match = re.search(summary_pattern, content, re.DOTALL | re.IGNORECASE)
@@ -303,6 +312,11 @@ class IntelligentNMSScraper:
             description = match.group(1).strip()
             if description:
                 return self._clean_description_markup(description)
+
+        # Last resort: try to get description from infobox 'desc' field
+        infobox = self.parse_infobox(content)
+        if infobox and 'desc' in infobox:
+            return self._clean_description_markup(infobox['desc'])
 
         return None
 
@@ -492,6 +506,13 @@ def main():
         # Get raw content
         raw_content = scraper.get_page_raw_content(page_title)
         if not raw_content:
+            continue
+
+        # Skip obsolete and pre-release items
+        if ('{{Obsolete}}' in raw_content or '{{obsolete}}' in raw_content or
+            '{{Version|Pre-release}}' in raw_content or '{{version|pre-release}}' in raw_content or
+            'release = Pre-release' in raw_content):
+            logger.info(f"Skipping obsolete/pre-release item: {page_title}")
             continue
 
         # Parse content

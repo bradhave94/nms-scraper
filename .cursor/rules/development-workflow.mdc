@@ -1,0 +1,77 @@
+---
+description: Development workflow and debugging practices
+---
+
+# Development Workflow and Debugging
+
+## Scraping Workflow
+
+### 1. Category Discovery
+```bash
+python3 generate_categories.py
+```
+- Explores wiki category hierarchy
+- Generates comprehensive category lists
+- Outputs to `generated_categories.py`
+
+### 2. Main Scraping Process
+```bash
+python3 intelligent_scraper.py --delay 0.5
+```
+- Scrapes all items from discovered categories
+- Uses content-based classification
+- Stores in SQLite database
+- Exports to JSON files
+
+### 3. Recipe Extraction
+```bash
+python3 refinery_extractor.py --delay 0.5
+python3 nutrient_processor_extractor.py --delay 0.5
+```
+- Extracts structured recipe data
+- Cross-references item IDs from database
+- Generates recipe JSON files
+
+## Rate Limiting Best Practices
+
+- **Default delay**: 0.5 seconds between requests
+- **Heavy scraping**: 1.0+ seconds for large operations
+- **Testing**: 0.1 seconds for small test runs
+- Always use `--delay` parameter for control
+
+## Debugging Common Issues
+
+### API Pagination
+- Categories with >500 items need continuation tokens
+- Use `cmcontinue` parameter for subsequent requests
+- Log progress for large categories
+
+### Database Consistency
+- Always use single database: `nms_data.db`
+- Check table existence before queries
+- Verify item IDs exist before recipe extraction
+
+### Wiki Markup Parsing
+- Test regex patterns with actual wiki content
+- Handle special characters and templates
+- Skip malformed or incomplete entries
+
+### Classification Accuracy
+- Review misclassified items in output files
+- Adjust keyword matching in `classify_item_intelligently`
+- Add new classification rules as needed
+
+## Testing and Validation
+
+### Small Test Runs
+```bash
+python3 intelligent_scraper.py --limit 10 --delay 0.1
+```
+
+### Database Inspection
+```bash
+sqlite3 nms_data.db "SELECT COUNT(*) FROM items GROUP BY group_name;"
+```
+
+### JSON Validation
+Check output files for proper structure and expected content.

@@ -93,9 +93,12 @@ class NutrientProcessorExtractor:
         cook_matches = re.findall(cook_pattern, content, re.DOTALL)
 
         for match in cook_matches:
-            recipe = self.parse_cook_line(match, page_title)
-            if recipe:
-                recipes.append(recipe)
+            # Split multiple recipe variations separated by pipes
+            recipe_variations = self.split_recipe_variations(match)
+            for variation in recipe_variations:
+                recipe = self.parse_cook_line(variation, page_title)
+                if recipe:
+                    recipes.append(recipe)
 
         # Pattern for {{Craft}} templates that are actually cooking
         craft_pattern = r'\{\{Craft\|([^}]+)\}\}'
@@ -144,6 +147,26 @@ class NutrientProcessorExtractor:
         text_to_check = (page_title + ' ' + content).lower()
         return any(keyword in text_to_check for keyword in food_keywords)
 
+    def split_recipe_variations(self, cook_template_content: str) -> List[str]:
+        """Split multiple recipe variations from a single Cook template"""
+        # Recipe variations are separated by pipes
+        # Each variation has format: Ingredient1,qty;Ingredient2,qty;Ingredient3,qty;output_qty;operation
+
+        variations = []
+        parts = cook_template_content.split('|')
+
+        for part in parts:
+            part = part.strip()
+            if not part:
+                continue
+
+            # Check if this looks like a valid recipe variation
+            # Should have semicolons and commas (ingredients with quantities)
+            if ';' in part and ',' in part:
+                variations.append(part)
+
+        return variations if variations else [cook_template_content]
+
     def parse_cook_line(self, line: str, source_page: str) -> Optional[Dict[str, Any]]:
         """Parse a cooking recipe line"""
         # Skip template parameters
@@ -160,6 +183,11 @@ class NutrientProcessorExtractor:
                         item_id = self.find_item_id(item_name)
                         if item_id:
                             inputs.append({"id": item_id, "quantity": amount})
+                        else:
+                            # Create placeholder ID for missing ingredients
+                            placeholder_id = f"missing_{item_name.lower().replace(' ', '_').replace('-', '_')}"
+                            inputs.append({"id": placeholder_id, "quantity": amount})
+                            logger.warning(f"Using placeholder ID '{placeholder_id}' for missing item: {item_name}")
                     except ValueError:
                         continue
 
@@ -200,6 +228,11 @@ class NutrientProcessorExtractor:
                         item_id = self.find_item_id(item_name)
                         if item_id:
                             inputs.append({"id": item_id, "quantity": amount})
+                        else:
+                            # Create placeholder ID for missing ingredients
+                            placeholder_id = f"missing_{item_name.lower().replace(' ', '_').replace('-', '_')}"
+                            inputs.append({"id": placeholder_id, "quantity": amount})
+                            logger.warning(f"Using placeholder ID '{placeholder_id}' for missing item: {item_name}")
                     except ValueError:
                         continue
 
@@ -322,7 +355,7 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(description='Extract NMS Nutrient Processor Recipes')
-    parser.add_argument('--database', default='nms_intelligent.db',
+    parser.add_argument('--database', default='nms_data.db',
                        help='SQLite database path')
     parser.add_argument('--output', default='data/NutrientProcessor.json',
                        help='Output JSON file')

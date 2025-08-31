@@ -1,0 +1,39 @@
+---
+alwaysApply: true
+---
+
+# No Man's Sky Wiki Scraper Project
+
+This project scrapes data from the No Man's Sky wiki and organizes it into structured JSON files and SQLite database.
+
+## Core Architecture
+
+- **Main Scraper**: [intelligent_scraper.py](mdc:intelligent_scraper.py) - Content-based classification system
+- **Database**: `nms_data.db` - SQLite database storing all scraped items
+- **Recipe Extractors**:
+  - [refinery_extractor.py](mdc:refinery_extractor.py) - Extracts refinery recipes
+  - [nutrient_processor_extractor.py](mdc:nutrient_processor_extractor.py) - Extracts cooking recipes
+- **Category Discovery**: [generate_categories.py](mdc:generate_categories.py) - Auto-discovers wiki categories
+
+## Target Output Files
+
+The scraper generates these JSON files in the `data/` directory:
+- `Buildings.json` - Base building components
+- `Cooking.json` - Food and cooking items
+- `Curiosities.json` - Rare artifacts and curiosities
+- `Fish.json` - Aquatic creatures
+- `NutrientProcessor.json` - Cooking recipes (recipe format)
+- `Others.json` - Miscellaneous items
+- `Products.json` - Manufactured products
+- `RawMaterials.json` - Basic resources
+- `Refinery.json` - Refinery recipes (recipe format)
+- `Technology.json` - All technology items
+- `Trade.json` - Trade commodities
+
+## Key Design Principles
+
+1. **Content-based Classification**: Items are classified by analyzing their infobox, description, and usage patterns
+2. **Recipe Structure**: Refinery and NutrientProcessor use structured recipe format with inputs, outputs, time, and operation
+3. **SQLite Integration**: All data stored in database with JSON export capability
+4. **Rate Limiting**: Configurable delays between API requests
+5. **Pagination Support**: Handles categories with >500 items via API continuation

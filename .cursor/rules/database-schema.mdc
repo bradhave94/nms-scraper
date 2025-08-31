@@ -1,0 +1,71 @@
+---
+description: SQLite database schema and data management
+---
+
+# Database Schema and Data Management
+
+## SQLite Database: `nms_data.db`
+
+### Items Table Schema
+```sql
+CREATE TABLE IF NOT EXISTS items (
+    id TEXT PRIMARY KEY,
+    title TEXT NOT NULL,
+    group_name TEXT NOT NULL,
+    content TEXT,
+    infobox_data TEXT,
+    description TEXT,
+    crafting_requirements TEXT,
+    usage_info TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+```
+
+## Item ID Generation
+
+Items get unique IDs based on their group and position:
+- Format: `{group_prefix}{number}`
+- Examples: `raw1`, `prod15`, `tech42`, `cook7`
+
+### Group Prefixes
+- `raw` - Raw Materials
+- `prod` - Products
+- `tech` - Technology
+- `cook` - Cooking
+- `build` - Buildings
+- `cur` - Curiosities
+- `fish` - Fish
+- `trade` - Trade
+- `ref` - Refinery recipes
+- `nut` - Nutrient Processor recipes
+
+## Recipe Data Structure
+
+### Refinery Recipes
+```json
+{
+    "Id": "ref1",
+    "Inputs": [{"Id": "raw1", "Quantity": 2}],
+    "Output": {"Id": "prod5", "Quantity": 1},
+    "Time": "1.5",
+    "Operation": "Requested Operation: Metal Refining"
+}
+```
+
+### Nutrient Processor Recipes
+```json
+{
+    "Id": "nut1",
+    "Inputs": [{"Id": "cook2", "Quantity": 1}],
+    "Output": {"Id": "cook3", "Quantity": 1},
+    "Time": "2.5",
+    "Operation": "Processor Setting: Fermentation"
+}
+```
+
+## Data Export Process
+
+1. Scrape items into SQLite database
+2. Generate unique IDs for cross-referencing
+3. Export groups to individual JSON files
+4. Extract recipes with proper ID references

@@ -1,0 +1,76 @@
+---
+globs: *.py
+description: Wiki scraping and parsing patterns
+---
+
+# Wiki Scraping Patterns
+
+## MediaWiki API Usage
+
+**Base URL**: `https://nomanssky.fandom.com/api.php`
+
+### Category Members API
+```python
+params = {
+    'action': 'query',
+    'list': 'categorymembers',
+    'cmtitle': f'Category:{category}',
+    'cmlimit': 500,
+    'format': 'json',
+    'formatversion': '2'
+}
+```
+
+### Page Content API
+```python
+params = {
+    'action': 'query',
+    'prop': 'revisions',
+    'titles': title,
+    'rvprop': 'content',
+    'format': 'json',
+    'formatversion': '2'
+}
+```
+
+## Wiki Markup Parsing Patterns
+
+### Infobox Extraction
+```python
+# Match infobox templates
+infobox_pattern = r'\{\{([^}]+infobox[^}]*)\}\}'
+# Extract key-value pairs
+field_pattern = r'\|\s*([^=\|]+?)\s*=\s*([^|\n]+?)(?=\s*[\|\n])'
+```
+
+### Crafting Recipe Parsing
+```python
+# {{Craft}} template parsing
+craft_pattern = r'\{\{Craft\|([^}]+)\}\}'
+# Handle blueprint parameter: skip items with blueprint=yes
+if 'blueprint=yes' in material or '=' in material:
+    continue
+```
+
+### Recipe Template Patterns
+- `{{Refinery}}` - Refinery recipes with inputs/outputs/time
+- `{{NutrientProcessor}}` - Cooking recipes with processor settings
+- `{{Craft}}` - Basic crafting recipes
+
+## Classification Keywords
+
+### Buildings
+- "Base Building", "Construction", "Decorative", "Furniture"
+- Infobox types: "Building Part", "Decoration"
+
+### Technology
+- "Technology", "Upgrade", "Module", "Enhancement"
+- Infobox types: "Technology", "Upgrade Module"
+
+### Products
+- "Product", "Component", "Manufactured"
+- Infobox types: "Product", "Component"
+
+### Raw Materials
+- "Element", "Resource", "Raw", "Mineral"
+- Infobox types: "Element", "Resource"

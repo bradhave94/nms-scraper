@@ -1,0 +1,103 @@
+---
+description: MediaWiki API endpoints and usage patterns
+---
+
+# MediaWiki API Endpoints and Usage
+
+## Base API Configuration
+
+**Base URL**: `https://nomanssky.fandom.com/api.php`
+**Format**: JSON with formatversion=2 for cleaner response structure
+
+## Core API Endpoints
+
+### 1. Category Members (`categorymembers`)
+**Purpose**: Get all pages in a wiki category
+
+```python
+params = {
+    'action': 'query',
+    'list': 'categorymembers',
+    'cmtitle': f'Category:{category_name}',
+    'cmlimit': 500,  # Max items per request
+    'format': 'json',
+    'formatversion': '2'
+}
+```
+
+**Pagination**: Use `cmcontinue` from response for next batch
+**Namespace Filtering**: Only include `ns=0` (main namespace) pages
+
+### 2. Page Content (`revisions`)
+**Purpose**: Get raw wiki markup content for pages
+
+```python
+params = {
+    'action': 'query',
+    'prop': 'revisions',
+    'titles': page_title,
+    'rvprop': 'content',
+    'format': 'json',
+    'formatversion': '2'
+}
+```
+
+### 3. All Categories (`allcategories`)
+**Purpose**: Discover available wiki categories
+
+```python
+params = {
+    'action': 'query',
+    'list': 'allcategories',
+    'aclimit': 500,
+    'format': 'json',
+    'formatversion': '2'
+}
+```
+
+## Response Handling Patterns
+
+### Category Members Response
+```json
+{
+    "query": {
+        "categorymembers": [
+            {"title": "Item Name", "ns": 0},
+            {"title": "Category:Subcategory", "ns": 14}
+        ]
+    },
+    "continue": {
+        "cmcontinue": "page|414C4C4F59|123456"
+    }
+}
+```
+
+### Page Content Response
+```json
+{
+    "query": {
+        "pages": [
+            {
+                "title": "Item Name",
+                "revisions": [
+                    {"content": "{{Infobox...}}"}
+                ]
+            }
+        ]
+    }
+}
+```
+
+## Error Handling
+
+- **Rate Limiting**: Implement delays between requests
+- **Missing Pages**: Handle pages that don't exist
+- **API Errors**: Retry with exponential backoff
+- **Malformed Responses**: Validate JSON structure
+
+## Performance Optimization
+
+- **Batch Requests**: Process multiple items per session
+- **Session Reuse**: Maintain HTTP session for connection pooling
+- **Pagination**: Handle large categories efficiently
+- **Caching**: Store responses to avoid duplicate requests
