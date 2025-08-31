@@ -1,0 +1,36 @@
+---
+globs: *.py
+---
+
+# Python Coding Standards for NMS Scraper
+
+## Code Style
+- Follow PEP 8 conventions
+- Use type hints for function parameters and return values
+- Include comprehensive docstrings for classes and methods
+- Use descriptive variable names (e.g., `page_title`, `raw_content`, `item_data`)
+
+## Error Handling
+- Use try-except blocks for API requests and database operations
+- Log errors with appropriate severity levels using the `logging` module
+- Return `None` or empty collections for failed operations rather than raising exceptions
+- Handle `requests.exceptions.RequestException` for API calls
+- Handle `sqlite3.Error` for database operations
+
+## Rate Limiting & API Etiquette
+- Always include delays between API requests (default 1.0 seconds)
+- Use proper User-Agent headers for MediaWiki API requests
+- Respect the wiki's rate limits and terms of service
+- Log progress for long-running operations
+
+## Data Processing
+- Clean wiki markup using regex patterns consistently
+- Validate parsed data before database insertion
+- Use JSON serialization for complex data structures in SQLite
+- Generate consistent IDs using the `generate_item_id()` pattern
+
+## Database Operations
+- Use parameterized queries to prevent SQL injection
+- Handle duplicate items gracefully with upsert operations
+- Create appropriate indexes for performance
+- Close database connections in finally blocks or use context managers

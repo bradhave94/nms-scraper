@@ -1,0 +1,42 @@
+---
+alwaysApply: true
+---
+
+# Cursor Rules for NMS Wiki Scraper
+
+This directory contains Cursor rules to help with development of the No Man's Sky Wiki Scraper project.
+
+## Rule Files Overview
+
+### Always Applied Rules
+- **project-structure.mdc** - Core project organization and data flow
+- **README.mdc** - This overview file
+
+### Python-Specific Rules
+- **python-coding-standards.mdc** - Code style, error handling, and best practices
+- **wiki-parsing-patterns.mdc** - Wiki markup parsing techniques and regex patterns
+- **mediawiki-api-integration.mdc** - MediaWiki API usage and rate limiting
+
+### Domain-Specific Rules
+- **game-content-categories.mdc** - No Man's Sky content organization and mapping
+- **data-management.mdc** - Database schema, exports, and deduplication
+- **command-line-interface.mdc** - CLI patterns and usage examples
+- **development-debugging.mdc** - Testing, logging, and debugging practices
+
+## Quick Reference
+
+### Key Classes & Methods
+- `NMSWikiScraper` - Main scraper class in [nms_wiki_scraper.py](mdc:nms_wiki_scraper.py)
+- `parse_infobox()` - Extract structured data from wiki infoboxes
+- `parse_crafting_requirements()` - Parse crafting recipes from templates
+- `generate_item_id()` - Create consistent item identifiers
+
+### Common Operations
+- Scrape all categories: `python nms_wiki_scraper.py`
+- Export to JSON: `python nms_export.py`
+- List available data: `--list-categories` or `--list-groups`
+
+### Data Flow
+Wiki Pages → MediaWiki API → Parser → SQLite DB → JSON Export
+
+These rules provide context-aware assistance for maintaining and extending the scraper functionality.

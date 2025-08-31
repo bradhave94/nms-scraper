@@ -1,0 +1,43 @@
+---
+description: Data storage and export patterns
+---
+
+# Data Management Patterns
+
+## Category Grouping System
+The scraper uses `MANUAL_CATEGORY_MAPPING` to group related wiki categories:
+
+```python
+MANUAL_CATEGORY_MAPPING = {
+    "Raw Materials": "rawMaterials",
+    "Fuel elements": "rawMaterials",
+    "Special elements": "rawMaterials",
+    "Harvested Agricultural Substance": "rawMaterials",
+    # Add other mappings as needed
+}
+```
+
+## Database Schema Design
+Items table structure:
+- `id` (TEXT PRIMARY KEY) - Generated using type + CamelCase title
+- `title` (TEXT NOT NULL) - Original wiki page title
+- `description` (TEXT) - Cleaned description text
+- `type` (TEXT) - Item type (rawMaterials, technology, etc.)
+- `infobox` (TEXT) - JSON serialized infobox data
+- `crafting` (TEXT) - JSON serialized crafting recipes
+- `categories` (TEXT) - JSON serialized category list
+- `source_category` (TEXT) - Original wiki category
+- `group_name` (TEXT) - Mapped group name for exports
+- Timestamps for created_at and updated_at
+
+## Export Strategy
+- Export by group using `group_name` field
+- Generate separate JSON files per group (e.g., `rawMaterials.json`)
+- Sort items alphabetically by title within each group
+- Include all structured data in exports (infobox, crafting, categories)
+
+## Deduplication Logic
+- Track processed items using `seen_items` set with item IDs
+- Use UPSERT pattern for database operations
+- Skip duplicate processing but allow updates to existing items
+- Log duplicate detection for monitoring

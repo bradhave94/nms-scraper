@@ -1,0 +1,35 @@
+# Auto-generated categories list
+ALL_CATEGORIES = [
+    "Artifact", "Blueprints", "Fuel elements", "Products", "Raw Materials", "Resources", "Special elements", "Technology",
+    # Products subcategories
+    "Products - Artifact",
+    "Products - Base Building",
+    "Products - Building Part",
+    "Products - Component",
+    "Products - Constructed Technology",
+    "Products - Consumable",
+    "Products - Container",
+    "Products - Curiosity",
+    "Products - Customisation Part",
+    "Products - Fish",
+    "Products - Procedural",
+    "Products - Technology",
+    "Products - Trade Commodity",
+    "Products - Tradeable",
+    # Technology and other subcategories
+    "Exosuit",
+    "Grenade technology",
+    "Health technology",
+    "Hyperdrive technology",
+    "Laser technology",
+    "Multi-Tool",
+    "Procedural Upgrades",
+    "Projectile technology",
+    "Propulsion technology",
+    "Protection technology",
+    "Scan technology",
+    "Stamina technology",
+    "Utilities technology",
+    "Weapons technology",
+    "Upgrade Modules"
+]

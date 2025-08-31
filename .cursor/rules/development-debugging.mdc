@@ -1,0 +1,63 @@
+---
+description: Development and debugging practices for the scraper
+---
+
+# Development & Debugging Practices
+
+## Logging Configuration
+```python
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+```
+
+### Log Levels Usage
+- `INFO` - Progress updates, successful operations, summary statistics
+- `DEBUG` - Detailed parsing information, item processing details
+- `WARNING` - Missing data, failed parsing attempts, empty categories
+- `ERROR` - API failures, database errors, critical issues
+
+## Testing Strategies
+
+### Small-Scale Testing
+- Use `--limit 10` for quick testing with small datasets
+- Test specific categories with `--categories "Raw Materials"`
+- Use `--delay 0.1` for faster testing (be respectful of wiki)
+
+### Data Validation
+- Check generated IDs for uniqueness and format consistency
+- Verify infobox parsing with known good examples
+- Test crafting recipe parsing with complex templates
+- Validate JSON serialization/deserialization
+
+### Database Integrity
+- Use `--list-groups` to verify data organization
+- Check for duplicate items with same ID
+- Verify category mappings are working correctly
+- Test export functionality with known data
+
+## Common Issues & Solutions
+
+### Wiki Markup Parsing
+- Test regex patterns with actual wiki content
+- Handle edge cases in infobox parameter parsing
+- Account for malformed or incomplete templates
+- Clean description text thoroughly
+
+### API Rate Limiting
+- Monitor for 429 (Too Many Requests) responses
+- Implement exponential backoff for failures
+- Respect the wiki's terms of service
+- Log API response times for monitoring
+
+### Database Performance
+- Create indexes on frequently queried columns
+- Use batch operations for large datasets
+- Monitor database file size growth
+- Implement proper connection management
+
+## Development Workflow
+1. Test changes with small datasets first
+2. Validate data structure changes with existing exports
+3. Run full scrapes in development environment
+4. Compare results with previous runs for consistency
+5. Monitor logs for new error patterns

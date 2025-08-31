@@ -1,0 +1,144 @@
+---
+description: Complete mapping of scraping endpoints and data population
+---
+
+# Scraping Endpoints and Data Population Mapping
+
+## Base Configuration
+- **Base URL**: `https://nomanssky.fandom.com`
+- **API Endpoint**: `https://nomanssky.fandom.com/api.php`
+- **User Agent**: `NMSWikiScraper/1.0 (https://github.com/user/nms-scraper)`
+
+## API Endpoints Used
+
+### 1. All Categories Endpoint
+**URL**: `{base_url}/api.php`
+**Method**: GET
+**Parameters**:
+```python
+{
+    'action': 'query',
+    'list': 'allcategories',
+    'aclimit': 500,  # Max 500 per request
+    'format': 'json',
+    'formatversion': '2',
+    'accontinue': '<continuation_token>'  # For pagination
+}
+```
+**Populates**:
+- Discovery of available wiki categories
+- Used by `get_all_categories()` method
+- Supports pagination with continuation tokens
+- **Database Impact**: None (informational only)
+
+### 2. Category Members Endpoint
+**URL**: `{base_url}/api.php`
+**Method**: GET
+**Parameters**:
+```python
+{
+    'action': 'query',
+    'list': 'categorymembers',
+    'cmtitle': f'Category:{category_name}',
+    'cmlimit': 500,  # Max 500 per request
+    'format': 'json',
+    'formatversion': '2'
+}
+```
+**Populates**:
+- List of pages within each game category
+- Page titles and IDs for items to scrape
+- Used by `get_category_members()` method
+- **Database Impact**: Determines which items get processed
+
+### 3. Raw Page Content Endpoint
+**URL**: `{base_url}/wiki/{encoded_page_title}?action=raw`
+**Method**: GET
+**URL Encoding**: Spaces converted to underscores, URL-encoded
+**Example**: `https://nomanssky.fandom.com/wiki/Activated_Cadmium?action=raw`
+
+**Populates**:
+- Raw wiki markup for each item page
+- Source content for all parsing operations
+- Used by `get_page_raw_content()` method
+- **Database Impact**: Provides all content for item records
+
+## Data Population Flow
+
+### From Raw Content → Database Fields
+
+#### 1. Infobox Data (`infobox` JSON field)
+**Source**: Wiki markup infobox templates
+**Templates Parsed**:
+- `{{Technology infobox}}` → Technology items
+- `{{Resource infobox}}` → Raw materials and resources
+- `{{Product infobox}}` → Manufactured products
+- `{{Item infobox}}` → General items
+- `{{Starship infobox}}` → Starship data
+- `{{Exocraft infobox}}` → Exocraft vehicles
+
+**Extracted Fields**: image, color, type, rarity, symbol, value, release, etc.
+
+#### 2. Crafting Recipes (`crafting` JSON field)
+**Source**: Wiki markup crafting templates
+**Templates Parsed**:
+- `{{Craft|material1,amount1;material2,amount2}}` → Standard crafting
+- `{{PoC-Repair|...}}` → Repair recipes
+- `{{PoC-Dismantle|...}}` → Dismantle recipes
+- `{{PoC-Refine|...}}` → Refining recipes
+
+#### 3. Descriptions (`description` TEXT field)
+**Source**: Wiki markup sections
+**Priority Order**:
+1. `==Game description==` section (preferred)
+2. `==Summary==` section (fallback)
+**Processing**: Removes wiki markup, links, formatting
+
+#### 4. Categories (`categories` JSON field)
+**Source**: `[[Category:Name]]` markup in page content
+**Regex**: `r'\[\[Category:([^\]]+)\]\]'`
+**Usage**: Item classification and type determination
+
+#### 5. Generated Fields
+- **`id`**: Generated via `generate_item_id(title, type)`
+- **`type`**: Determined by `determine_item_type()` using infobox + categories
+- **`source_category`**: Original wiki category that contained the item
+- **`group_name`**: Mapped group from `MANUAL_CATEGORY_MAPPING`
+
+## Target Categories Scraped
+
+### Core Game Content (75+ categories)
+```python
+GAME_CATEGORIES = [
+    "Blueprints", "Technology", "Raw Materials", "Resources",
+    "Fuel elements", "Special elements",
+    # Products (14 subcategories)
+    "Products", "Products - Artifact", "Products - Base Building",
+    "Products - Building Part", "Products - Component",
+    "Products - Constructed Technology", "Products - Consumable",
+    "Products - Container", "Products - Curiosity",
+    "Products - Customisation Part", "Products - Fish",
+    "Products - Procedural", "Products - Technology",
+    "Products - Trade Commodity", "Products - Tradeable",
+    # Vehicles & Equipment
+    "Starships", "Exocraft", "Exosuit",
+    # Universe & Discovery
+    "Planets", "Species", "Fauna", "Flora", "Minerals", "Biomes",
+    # Game Systems
+    "Items", "Space Anomaly", "Lore", "Waypoints", "Atlas", "Community"
+]
+```
+
+## Rate Limiting & Request Pattern
+- **Default Delay**: 1.0 seconds between requests
+- **Configurable**: Via `--delay` CLI parameter
+- **Request Sequence**:
+  1. Get category members (1 request per category)
+  2. Get raw content (1 request per item page)
+  3. Total: ~1 + N requests per category (N = number of items)
+
+## Error Handling by Endpoint
+- **API Endpoints**: Handle `requests.exceptions.RequestException`
+- **Raw Content**: Handle 404s for missing pages gracefully
+- **Pagination**: Handle continuation tokens for large categories
+- **Rate Limits**: Respect delays, log progress every 10 items

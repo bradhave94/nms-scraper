@@ -1,0 +1,34 @@
+---
+alwaysApply: true
+---
+
+# No Man's Sky Wiki Scraper Project Structure
+
+This project scrapes data from the No Man's Sky wiki and stores it in structured formats.
+
+## Core Files
+
+- [nms_wiki_scraper.py](mdc:nms_wiki_scraper.py) - Main scraper class with MediaWiki API integration
+- [nms_export.py](mdc:nms_export.py) - Export utility to convert SQLite data to JSON files
+- [requirements.txt](mdc:requirements.txt) - Python dependencies
+- [nms_data.db](mdc:nms_data.db) - SQLite database storing scraped data
+- [data/](mdc:data/) - Directory containing exported JSON files
+
+## Key Components
+
+The `NMSWikiScraper` class handles:
+- MediaWiki API requests with rate limiting
+- Wiki markup parsing (infoboxes, crafting recipes, descriptions)
+- SQLite database storage with deduplication
+- Category-based scraping with manual grouping
+
+## Data Flow
+
+1. Scraper fetches wiki pages via MediaWiki API
+2. Parses wiki markup into structured data
+3. Stores in SQLite database with deduplication
+4. Export script converts to grouped JSON files
+
+## Database Schema
+
+Items table contains: id, title, description, type, infobox (JSON), crafting (JSON), categories (JSON), source_category, group_name, timestamps.

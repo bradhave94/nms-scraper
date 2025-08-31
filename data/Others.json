@@ -1,0 +1,37 @@
+[
+  {
+    "id": "othersAppallingBanner",
+    "title": "Appalling Banner",
+    "description": "Demonstrate your interest in the macabre and the horrific with this exclusive Personal Flair.\n\nApply this banner to your profile at an Appearance Modifier.",
+    "type": "Bespoke Personal Identification",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "NmsIcon_WarningDecal.jpg",
+      "category": "Customisation Part",
+      "type": "Bespoke Personal Identification",
+      "used": "",
+      "value": "",
+      "release": "Origins"
+    },
+    "categories": []
+  },
+  {
+    "id": "othersNeuralAssembly",
+    "title": "Neural Assembly",
+    "description": "An array of distributed neurons, fused to a board of metallic strands. Complex patterns of electrical impulses weave their way across the surface, knotting each ship system together.",
+    "type": "Vertical Take-off System",
+    "infobox": {
+      "_infobox_type": "technology",
+      "image": "BIOTECH.BRAIN.png",
+      "category": "Propulsion",
+      "subcategory": "Enhancement",
+      "type": "Vertical Take-off System",
+      "desc": "Used during initial takeoff and landings",
+      "recharge": "Oxygen, Mordite or Condensed Carbon",
+      "release": "Endurance"
+    },
+    "categories": [
+      "Propulsion technology"
+    ]
+  }
+]
