@@ -1,0 +1,1821 @@
+[
+  {
+    "id": "cur66",
+    "title": "Active Void Egg",
+    "summary": "Active Void Egg is a curiosity.",
+    "game_description": "An anomalous egg that has been activated as the first step in the Starbirth mission. Since the encounter with the bizarre deep-space 'creature', its strange music has grown more active, more agitated.",
+    "source_info": "The Active Void Egg can only be activated once a Void Egg is in the players inventory, and the player leaves a Space Station or Anomaly and uses the pulse drive within a Star system. The player will be notified to drop out of Pulse and then will encounter a deep-space creature which then activates the egg.",
+    "use_info": null,
+    "release_history": "*Synthesis 2.26 - Added as a curiosity.",
+    "additional_info": "The activated void egg remains in the player's inventory and should remain there through the Starbirth mission.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Agitated Curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "SPECIAL.MYSTERYEGG.png",
+      "category": "Curiosity",
+      "color": "purple",
+      "type": "Agitated Curiosity",
+      "value": "1616.0",
+      "release": "Living Ship"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur23",
+    "title": "Ancient Key",
+    "summary": "Ancient Key is a Ancient Ruins.",
+    "game_description": "A key of some weight, this aged piece of wrought iron must belong in a nearby lock...",
+    "source_info": "It can be found in Artifact Fragments located around the Ancient Ruin.",
+    "use_info": null,
+    "release_history": "* NEXT - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Timeless Artifact",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.ancientkey.png",
+      "category": "Curiosity",
+      "color": "Purple",
+      "type": "Timeless Artifact",
+      "value": "1,000.0",
+      "release": "Origins"
+    },
+    "categories": [
+      "Artifact"
+    ]
+  },
+  {
+    "id": "cur55",
+    "title": "Ancient Lock",
+    "summary": "Ancient Lock is a Ancient Ruins.",
+    "game_description": "A mysterious lock with several keyholes, this relic protects what must surely be a valuable treasure.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* NEXT - Added as a Damaged Component. It has the same icon as Vortex Cube.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Heavy Locking Mechanism",
+    "infobox": {
+      "_infobox_type": "technology",
+      "image": "Product.vortexcube.png",
+      "category": "Artifact",
+      "subcategory": "",
+      "color": "blue",
+      "type": "Heavy Locking Mechanism",
+      "release": "Abyss"
+    },
+    "categories": [
+      "Artifact",
+      "Damaged Component"
+    ]
+  },
+  {
+    "id": "cur18",
+    "title": "Ancient Skeleton",
+    "summary": "Ancient Skeleton is one of several types of artifacts.\n\nIt is a reward from flying through the Grave of the Ocean King space encounter (50%) or destroying the Ironbound Relic space encounter (16%).",
+    "game_description": "Approximately xxxxx years old, and made from pure gold.\n\nThese bones are unlike those of any terrestial creature. The remains of a true deep-space leviathan.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* Living Ship - Added as an artifact.",
+    "additional_info": "* The game descriptions and the name generation are extracted from the 4.40 version of NMS_UPDATE3_ENGLISH.MBIN game file, while the modifier and value ranges are extracted from the 4.40 version of PROCEDURALPRODUCTTABLE.MBIN game file.\n* Artifacts have a DropWeight property as per the game file and each rarity has a different value for it. In case of Excavated Bones: Common → 20, Uncommon → 5, Rare → 1. \n* The modifier values for Ancient Skeletons in the game files are the same as for the Excavated Bones. Even though there is no clear indicator for this, it seems the resulting number is just multiplied by 100 to get the age.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Ancient Skeleton",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Exceptional Skeleton",
+      "image": "PRODUCT.BONES.RARE.png",
+      "category": "Artifact",
+      "color": "Yellow",
+      "type": "Ancient Skeleton",
+      "value": "1,227,996.4",
+      "used": "Trading, Trading (High Value)",
+      "release": "Echoes"
+    },
+    "categories": [
+      "Ancient Skeleton"
+    ]
+  },
+  {
+    "id": "cur7",
+    "title": "Anomaly Detector",
+    "summary": "Anomaly Detector is a anomalous homing devices.",
+    "game_description": "A single-use geometric beacon that probes the surrounding area for near-space anomalies. Such objects are highly unpredictable.\n\nSelect the Detector and use Begin Scan (E) to begin the location process.",
+    "source_info": "*Occasionally received on shooting Envoy for standing rank \"Master\" and above.\n*Can be found from Abandoned Wreckages that occasionally spawn on planets with Salvageable Scrap.",
+    "use_info": null,
+    "release_history": "* Desolation - Added to the game.",
+    "additional_info": "It can be used to force detection of Space Encounters, including a Rogue Black Hole. As of the The Endurance Update (July 20, 2022), they can be used to find Living Frigates. Ignoring the detection notification and keep pulsing further for a few seconds will reroll another encounter to be detected until exiting pulse drive.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Anomalous Homing Device",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.LOCATOR.POI.png",
+      "category": "Curiosity",
+      "color": "darkblue",
+      "type": "Anomalous Homing Device",
+      "value": "3,280",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur44",
+    "title": "Aquatic Treasure",
+    "summary": "Aquatic Treasure is one of several types of Artifacts and it is a reward for opening Sealed Sea Chests found at Submerged Ruins or for opening Large Artifact Crates found in Ancient Ruins.",
+    "game_description": "A well-preserved marine treasure, found deep under the ocean. It was protected from the elements by a thick sea-chest, and is at least XX00 years old.\n\nHighly valuable to collectors of ancient artifacts.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* Abyss 1.71 - Icon changed.\n* Visions - Hidden changes: The specified base value ranges of all types are multiplied by 1.15, this total value is indicated on the information panel of each artifact. The information panels are colour coded by rarity and an additional icon indicates its purpose.<br><br>",
+    "additional_info": "* The game description and the name generation are extracted from the 1.77 version of NMS_LOC4_ENGLISH.MBIN game file, while the modifier and value ranges are extracted from the 1.77 version of PROCEDURALPRODUCTTABLE.MBIN game file.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Aquatic Treasure",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Drowned Shark's Teeth",
+      "image": "TREASUREPROD.WATERLOOT.png",
+      "category": "Artifact",
+      "color": "yellow",
+      "type": "Aquatic Treasure",
+      "value": "1,363,235",
+      "used": "Trading, Trading (High Value)",
+      "release": "Singularity"
+    },
+    "categories": [
+      "Aquatic Treasure"
+    ]
+  },
+  {
+    "id": "cur65",
+    "title": "Archived Soul",
+    "summary": "Archived Soul is a curiosity.\n\nIt can be obtained at an Abandoned Building as part of the Starbirth mission.",
+    "game_description": "A biomechanical construct, created to the design of an anonymous host.\n\nA fusion of complex circuitry and the ineffable glitch of the Traveller. Such a calculus might bind realities together, or tear them into mere simulated fragments.",
+    "source_info": null,
+    "use_info": "Required to perform bio-genesis during Starbirth mission.\n\nThe player has to collect 3 souls of fallen Travellers into Soul Chamber to create Archived Soul.",
+    "release_history": "* Living Ship - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Bionic Ark",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.BIOCOMP5.png",
+      "category": "Curiosity",
+      "color": "purple",
+      "type": "Bionic Ark",
+      "value": "1616",
+      "release": "Living Ship"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur64",
+    "title": "Artifact Chart",
+    "summary": "Artifact Chart is a curiosity.",
+    "game_description": "A map of a nearby planet. An ancient ruined site has been marked. Excavating this site is likely to yield valuable treasures.\n\nSelect the map and use Plot Route (18px/23px/23px (PC/PS/XB)) to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging Navigation Data with a Space Station Cartographer.",
+    "source_info": "Can be randomly obtained from all types of Planetary Chart from the Cartographer on a space station in exchange for Navigation Data.",
+    "use_info": null,
+    "release_history": "*Worlds Part II - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Cartographic Data",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.starchart.treasure.png",
+      "category": "Curiosity",
+      "type": "Cartographic Data",
+      "value": "3,200",
+      "release": "WorldsTwo"
+    },
+    "categories": [
+      "Cartographic Data"
+    ]
+  },
+  {
+    "id": "cur34",
+    "title": "Atlas Stone",
+    "summary": "Atlas Stone is a curiosity. It is currently unobtainable, but if the player held onto it since the Atlas Rises update, it can still be found in their inventory.",
+    "game_description": "A spherical gem that seems to pulsate with red light from its centre.\n\nAn extremely rare item often associated with ancient monolithic sites.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* Release - Added as a curiosity.\n* Atlas Rises\n**The Atlas Path primary mission was completely reworked and Atlas Stone was replaced by Atlas Seeds, also it cannot be obtained from Atlas Interfaces.\n**It has the same icon as Remembrance. \n**Hidden changes: It is no longer available for purchase at Galactic Trade Terminals.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Very high value curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.atlasstone.png",
+      "color": "",
+      "category": "Curiosity",
+      "type": "Very high value curiosity",
+      "value": "68,750.0",
+      "release": "Abyss"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur39",
+    "title": "Biological Sample",
+    "summary": "Biological Sample is one of several types of missions or completing exploration type expeditions with frigates.",
+    "game_description": "These are the possible game descriptions for Biological Sample. One of the following is randomly chosen when an artifact is procedurally generated.\n\nThe sequence is taken from the game file.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "*NEXT - Added as an Artifact.\n*Abyss - Hidden changes: Names were regenerated by either adding or taking away prefixes, but other data were unchanged.\n*Visions - Hidden changes: The specified base value ranges of all types are multiplied by 1.15, this total value is indicated on the information panel of each artifact. The information panels are colour coded by rarity and an additional icon indicates its purpose.<br><br>",
+    "additional_info": "*The game description and the name generation are extracted from the 1.77 version of NMS_UPDATE3_ENGLISH.MBIN game file, while the modifier and value ranges are extracted from the 1.77 version of PROCEDURALPRODUCTTABLE.MBIN game file.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Biological Sample",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Celestial Flowers",
+      "image": "TREASUREPROD.WEIRDSEEDS.png",
+      "category": "Artifact",
+      "color": "Yellow",
+      "type": "Biological Sample",
+      "value": "2,299,696",
+      "used": "Trading, Trading (High Value)",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Biological Sample"
+    ]
+  },
+  {
+    "id": "cur15",
+    "title": "Captain's Log",
+    "summary": "'''Captain's Log''' is a curiosity that is found on a Derelict Freighter.\n\nIt can be sold for Tainted Metal to the Scrap Dealer or donated to the Guild Envoy on the Space station to increase standing with their respective species. It can also be sold to the galactic market for a price between 500 to 1000 units.",
+    "game_description": "An encrypted download of %NAME% 's log from the %NAME% .\n\nSuch an item would be highly valuable for those looking for information about the last days of the doomed vessel.",
+    "source_info": "* Found in Derelict Freighters by interacting with the Secure Mainframe terminal.",
+    "use_info": null,
+    "release_history": "*Desolation - Added to the game.\n*Update 3.05 - Made rewards consistent for all races, now sold for Tainted Metal instead of nanites.\n\nCategory:Derelict Freighter",
+    "additional_info": "When donated, it increases standing by 3 with the dominant race, and the selling price is 200-600 Tainted Metal.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Official Record",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.PROCFREIGHTER.CAPT.png",
+      "category": "Curiosity",
+      "color": "darkblue",
+      "type": "Official Record",
+      "value": "500 - 1000",
+      "release": "Orbital"
+    },
+    "categories": [
+      "Derelict Freighter"
+    ]
+  },
+  {
+    "id": "cur3",
+    "title": "Crew Manifest",
+    "summary": "Crew Manifest is a curiosity that is found on a Derelict Freighter.\n\nIt can be sold for Tainted Metal to the Scrap Dealer; or donated to the Guild Envoy on the Space station to increase standing with this race. It can also be sold to a the galactic market for a price between 500 to 1000 units.",
+    "game_description": "A copy of the official Crew Manifest for the freighter %NAME%.\n\n%NAME%, %NAME%, %NAME%, %NAME%, %NAME%, %NAME%, %NAME%, %NAME%, %NAME%,\n\n%NUMBER% other hands.\n\nThis document would be highly valuable to those concerned with the fate of the missing ship.",
+    "source_info": "*Found in Derelict Freighters or in Ancient Ruins",
+    "use_info": null,
+    "release_history": "*Desolation - Added to the game.\n*Update 3.05 - Made rewards consistent for all races.",
+    "additional_info": "When donated, it increases standing by 2 with the dominant race, and the selling price is 200-500 Tainted Metal.\n\nIf you have an issue donating the manifest, log back in later and try again.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Official Record",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.PROCFREIGHTER.CREW.png",
+      "category": "Curiosity",
+      "color": "darkblue",
+      "type": "Official Record",
+      "value": "500 - 1000",
+      "release": "Orbital"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur71",
+    "title": "Delicate Flora (FARM)",
+    "summary": "Delicate Flora (FARM) is one of several types of Artifacts.",
+    "game_description": "A genetically engineered plant, ready for propagation. Sample appears to have X mutated genes.\n\nRoot Structure: Plant Roots<br>\nNutrient Source: Plant Food<br>\nNotes: Plant Notes\n\n''Wiki note: The game description for Delicate Flora (FARM) has procedurally generated terms: Plant Roots, Plant Food and Plant Notes.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* NEXT - Added as an Artifact. It has the same icon as Delicate Flora (PLNT) and Flora Containment 3.\n*Abyss - Hidden changes: Names were regenerated by either adding or taking away prefixes, but other data were unchanged for common and uncommon type. For the rare type the value range were changed, previously it was possible to reach a maximum value of 20,000,000",
+    "additional_info": "*The game description and the name generation are extracted from the 1.77 version of NMS_UPDATE3_ENGLISH.MBIN game file, while the modifier and value ranges are extracted from the 1.77 version of PROCEDURALPRODUCTTABLE.MBIN game file.\n*As of The Cursed, REWARDTABLE only has a single ProceduralProductCategory entry for FARM which corresponds as a reward for The Cursed Expedition: Phase 4, Milestone 3. It is not possible to obtain unless it is sent through the Expedition Terminus inside the Anomaly, trading or save editing.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Delicate Flora",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Cloned Tramfruit Cuttings",
+      "image": "DECORATION.PLANTPOT3.png",
+      "category": "Artifact",
+      "color": "yellow",
+      "type": "Delicate Flora",
+      "value": "1,374,512.1",
+      "used": "Trading, Trading (High Value)",
+      "release": "Echoes"
+    },
+    "categories": [
+      "Delicate Flora",
+      "Delicate Flora (FARM)"
+    ]
+  },
+  {
+    "id": "cur67",
+    "title": "Delicate Flora (PLNT)",
+    "summary": "Delicate Flora (PLNT) is one of several types of missions, completing exploration type expeditions with Farmer.",
+    "game_description": "These are the possible game descriptions for Delicate Flora (PLNT). One of the following is randomly chosen when an artifact is procedurally generated.\n\nThe sequence is taken from the game file.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "*NEXT - Added as an Artifact. It has the same icon as Delicate Flora (FARM) and Flora Containment 3.\n*Abyss - Hidden changes: Names were regenerated by either adding or taking away prefixes, but other data were unchanged.\n*Visions - Hidden changes: The specified base value ranges of all types are multiplied by 1.15, this total value is indicated on the information panel of each artifact. The information panels are colour coded by rarity and an additional icon indicates its purpose.",
+    "additional_info": "*The game description and the name generation are extracted from the 3.89 version of NMS_UPDATE3_ENGLISH.MBIN game file, while the modifier and value ranges are extracted from the 3.89 version of PROCEDURALPRODUCTTABLE.MBIN game file.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Delicate Flora",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Creakdew Nuts",
+      "image": "DECORATION.PLANTPOT3.png",
+      "category": "Artifact",
+      "color": "yellow",
+      "type": "Delicate Flora",
+      "value": "2,298,409",
+      "used": "Trading, Trading (High Value)",
+      "release": "Singularity"
+    },
+    "categories": [
+      "Delicate Flora",
+      "Delicate Flora (PLNT)"
+    ]
+  },
+  {
+    "id": "cur37",
+    "title": "Divergence Cube",
+    "summary": "Divergence Cube is a curiosity.",
+    "game_description": "A glitching, pulsing data unit. It does not seem to belong in this reality.\n\nThe cube gives the impression of a silent scream, the frozen cries of hundreds of lost minds trapped within.",
+    "source_info": "A quest item which can be received at plaques.",
+    "use_info": null,
+    "release_history": "* Beyond - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Anomalous Data Unit",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.CURIO.1.png",
+      "category": "Curiosity",
+      "color": "",
+      "type": "Anomalous Data Unit",
+      "value": "3015",
+      "release": "Living Ship"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur49",
+    "title": "Echo Locator",
+    "summary": "Echo Locator is a curiosity.",
+    "game_description": "A curious mesh of old and new technology, a hybrid between two entirely separate methods of creation. Nonetheless, this location tracing device appears fully functional.\n\nSelect this device and use Resonate (18px/23px/23px (PC/PS/XB)) to trace its harmonic origin.",
+    "source_info": "Echo Locators are obtained via destroying a Dissonance Resonator, as alternative loot to the common Inverted Mirror required to unlock crashed Sentinel Interceptors.  Echo Locators can also be found as a random drop from Corrupted Sentinel Quadrupeds.",
+    "use_info": "Can be used to locate a Harmonic Camp. Will be consumed on use.",
+    "release_history": "* Interceptor - Added as a curiosity.",
+    "additional_info": "Destroying a Dissonance Resonator will trigger nearby Corrupted Sentinels.\n\nActivating the Echo Locator will try to locate the nearest Harmonic Camp within approximately 20ks. If no Harmonic Camp is located within the range, it will point to a specific Harmonic Camp, if one can be found within the planet/system.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Harmonic Location Tracker",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Echo Locator",
+      "image": "PRODUCT.STARCHART.ROBOTCAMP.png",
+      "color": "purple",
+      "category": "Curiosity",
+      "type": "Harmonic Location Tracker",
+      "used": "",
+      "value": "3,200",
+      "release": "Singularity"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur48",
+    "title": "Echo Seed",
+    "summary": "Echo Seed is a curiosity and is collected for Priest Entity Nada and the Assembled Construct aboard the Space Anomaly.",
+    "game_description": "The Seed is an echo of life, the last reverberations of a living being.\n\nNada believes that planting this seed within Nada's Prime Terminal may allow their simulation to develop a convergence of its own sort, providing the spark that brings life to the Construct.",
+    "source_info": "Echo seeds are mined from sentience echo sites on Dissonant Planets, appearing as a bigger version of the large, purple Atlantideum and Radiant Shard crystals. They are revealed using the Polyphonic Core and Scan Harmoniser technologies and are marked by a purple crystal icon similar to that of radiant shards, but with an exclamation point.",
+    "use_info": "Echo seeds are used for a small step in the They Who Returned questline, and previously used during Expedition 10: Singularity.",
+    "release_history": "*Singularity - Added as a curiosity.\n*Worlds Part II - Added new uses.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Crystalline Sentience Cage",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Echo Seed",
+      "image": "PRODUCT.S10.SOULSEED.png",
+      "color": "darkblue",
+      "category": "Curiosity",
+      "type": "Crystalline Sentience Cage",
+      "used": "",
+      "value": "1,000",
+      "release": "WorldsTwo"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur62",
+    "title": "Excavated Bones",
+    "summary": "Excavated Bones is one of several types of Artifacts and it is a reward for interacting with Ancient Bones found at Natural Burial Site‎‎s.",
+    "game_description": "These are the possible game descriptions for Excavated Bones. One of the following is randomly chosen when an artifact is procedurally generated.\n\nThe sequence is taken from the game file.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* Visions - Added as an Artifact.\n* Beyond - Hidden changes: DropWeight property values increased for Common (from 12 to 20) and Uncommon (from 2 to 5) rarities.",
+    "additional_info": "* The game descriptions and the name generation are extracted from the 2.04 version of NMS_UPDATE3_ENGLISH.MBIN game file, while the modifier and value ranges are extracted from the 2.04 version of PROCEDURALPRODUCTTABLE.MBIN game file.\n* Artifacts have a DropWeight property as per the game file and each rarity has a different value for it. In case of Excavated Bones: Common → 20, Uncommon → 5, Rare → 1.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Excavated Bones",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Bizarre Skeleton",
+      "image": "PRODUCT.BONES.RARE.png",
+      "category": "Artifact",
+      "color": "yellow",
+      "type": "Excavated Bones",
+      "value": "1,952,544.8",
+      "used": "Trading, Trading (High Value)",
+      "release": "Singularity"
+    },
+    "categories": [
+      "Excavated Bones"
+    ]
+  },
+  {
+    "id": "cur11",
+    "title": "Flesh Rope",
+    "summary": "Flesh Rope is a curiosity that can be harvested from Titan Worms.",
+    "game_description": "The coiled remains of a Hungering Tendril's digestive tract. Though its meaty walls still convulse, there is surely no way for a fresh tendril to regrow from these meagre scraps... Such specialist offal is rarely traded on the Galactic Exchange and is thus highly valuable.",
+    "source_info": "Flesh rope can be obtained from worms in a Titan Worm Burrow, found on infested planets.",
+    "use_info": null,
+    "release_history": "*Frontiers - added to the game\n*Endurance - value adjusted, was 160,016 units.\n*Aquarius - Added fishing bait bonuses.",
+    "additional_info": "Flesh Rope is a rare material gathered by killing giant Titan Worms. Because these massive creatures are rarely spotted, and only for a few seconds when they do appear, this item is nearly impossible to gather outside of specific events, such as the Halloween Event in 2021, where the worms are far more common and can sometimes react to the player. It can be classified as an event material.",
+    "fishing_info": "rarity = 6|size = 2|condition =",
+    "progression_info": null,
+    "type": "Intestinal Fragment",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Flesh Rope",
+      "image": "WORMCORE.png",
+      "color": "Purple",
+      "category": "Curiosity",
+      "type": "Intestinal Fragment",
+      "value": "16,016",
+      "release": "WorldsTwo"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur2",
+    "title": "Forged Passport",
+    "summary": "Forged Passport is a curiosity.",
+    "game_description": "A counterfeit starship registration document. This digital signature is guaranteed free of previous crimes or misdemeanors.\n\nCan be used to reset any negative faction standing records at a Space Station Core.",
+    "source_info": "Reward for outlaw missions, rewarded during the Under a Rebel Star mission.",
+    "use_info": "Can be used at a Station Core in a regulated system to reset any negative faction standing with the dominant faction of the system.\n\nIf used without any negative faction standing, the user gains +1 standing with the dominant faction of the system.",
+    "release_history": null,
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Overwritten Digital Record",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Forged Passport",
+      "image": "REPTOKEN.png",
+      "color": "darkblue",
+      "category": "Curiosity",
+      "value": "256,000.0",
+      "type": "Overwritten Digital Record",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur36",
+    "title": "Fossil Sample",
+    "summary": "Fossil Sample is one of several types of missions or completing exploration type expeditions with frigates.\n\nIt can be exchanged at an Artifact Exchange Vault with the potential reward of an exchanged artifact of equal or more value.",
+    "game_description": "These are the possible game descriptions for Fossil Sample. One of the following is randomly chosen when an artifact is procedurally generated.\n\nThe sequence is taken from the game file.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* NEXT - Added as an Artifact.\n* Abyss - Hidden changes: Names were regenerated by either adding or taking away prefixes, but other data were unchanged.\n* Visions - Hidden changes: The specified base value ranges of all types are multiplied by 1.15, this total value is indicated on the information panel of each artifact. The information panels are colour coded by rarity and an additional icon indicates its purpose.<br><br>",
+    "additional_info": "* The game descriptions and the name generation are extracted from the 1.77 version of NMS_UPDATE3_ENGLISH.MBIN game file, while the modifier and value ranges are extracted from the 1.77 version of PROCEDURALPRODUCTTABLE.MBIN game file.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Fossil Sample",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Preserved Gek DNA",
+      "image": "TREASUREPROD.FOSSIL.png",
+      "category": "Artifact",
+      "color": "yellow",
+      "type": "Fossil Sample",
+      "value": "2,295,346.0",
+      "used": "Trading, Trading (High Value)",
+      "release": "Singularity"
+    },
+    "categories": [
+      "Fossil Sample"
+    ]
+  },
+  {
+    "id": "cur53",
+    "title": "Fragile Heart",
+    "summary": "Fragile Heart is a curiosity.\n\nIt can be obtained at a Korvax Plaque in exchange for Pulsating Core as part of the Starbirth mission.",
+    "game_description": "Though nothing more than a cluster of cells, it is already possible to detect the soft beating of this proto-heart.\n\nIt requires careful attendance while it matures.",
+    "source_info": null,
+    "use_info": "Required to perform bio-genesis during Starbirth mission.\n\nAfter 20-24 hours Fragile Heart matures into Mature Heart Node.",
+    "release_history": "* Living Ship - Added as a curiosity.\n* Update 2.32 - Maximum maturing time reduced from 27.6h to 25.3h.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Fragment of Life",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.STEM2.png",
+      "category": "Curiosity",
+      "color": "black",
+      "type": "Fragment of Life",
+      "value": "1616",
+      "release": "Living Ship"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur26",
+    "title": "Fragile Neural Stem",
+    "summary": "Fragile Neural Stem is a curiosity.\n\nIt can be obtained at a Korvax Plaque in exchange for Consciousness Bridge as part of the Starbirth mission.",
+    "game_description": "A delicate web of living tissue, this is the spark that will ignite a new lifeform into existence.\n\nIt requires careful attendance while it matures.",
+    "source_info": null,
+    "use_info": "Required to perform bio-genesis during Starbirth mission.\n\nAfter 20-24 hours Fragile Neural Stem matures into Mature Neural Stem.",
+    "release_history": "* Living Ship - Added as a curiosity.\n* Update 2.32 - Maximum maturing time reduced to 24h",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Fragment of Life",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.STEM1.png",
+      "category": "Curiosity",
+      "color": "black",
+      "type": "Fragment of Life",
+      "value": "1616",
+      "release": "Omega"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur17",
+    "title": "Fragile Shell",
+    "summary": "Fragile Shell is a curiosity.\n\nIt can be obtained at a Korvax Plaque in exchange for Impossible Membrane as part of the Starbirth mission.",
+    "game_description": "Translucent and impossibly thin, this shell is no more than the merest breath of glass. And yet the potential is clear, a relentless multiplicative hardening adding constantly to its strength.\n\nIt requires careful attendance while it matures.",
+    "source_info": null,
+    "use_info": "Required to perform bio-genesis during Starbirth mission.\n\nAfter 20-24 hours Fragile Shell matures into Hardened Shell.",
+    "release_history": "* Living Ship - Added as a curiosity.\n* Update 2.32 - Maximum maturing time reduced to 24h",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Fragment of Life",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.STEM3.png",
+      "category": "Curiosity",
+      "color": "black",
+      "type": "Fragment of Life",
+      "value": "1616",
+      "release": "Living Ship"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur4",
+    "title": "Fragmented Qualia",
+    "summary": "Fragmented Qualia is a curiosity.",
+    "game_description": "A pattern, no more than a mere waveform, etched into the surface of a tiny metallic shard. This fragment of data represents a recording of electrical impulses running across a neural network. Many fragments would be required to recreate any sensible experience.\n\nGenerated by the interaction of the Animus Beam with a living target.",
+    "source_info": "*Extracted from living beings with the Animus Beam.",
+    "use_info": null,
+    "release_history": "*Living Ship - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Soul Fragment",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "SUB.SOULFRAG.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Soul Fragment",
+      "value": "16.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur63",
+    "title": "Gek Relic",
+    "summary": "Gek Relic is a curiosity of Gek origin.",
+    "game_description": "A metal statuette of a creature with a coin placed in its beak.\n\nPopular with many traders who see it as an emblem of fair commerce and peace.",
+    "source_info": "*It can be found in Damaged Containers or as monolith rewards.\n*It can be rewarded from Gek NPC on Minor Settlements.\n*It can also be bought from NPCs in Trading Posts.\n*It is a possible reward from frigate expeditions.\n*It is also a possible trade from wandering traders you encounter while using the Pulse Engine .",
+    "use_info": null,
+    "release_history": "*Release - Introduced to the game.\n*NEXT - Value changed, previously it was worth 26,125",
+    "additional_info": "*It can be sold at the Galactic Trade Terminal.\n*It can be used when interacting with a monolith in Gek systems to reveal the location of the portal for the planet.\n*It can be given to Gek to increase standing.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Medium value curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.gekstatue.png",
+      "category": "Curiosity",
+      "color": "Purple",
+      "type": "Medium value curiosity",
+      "value": "23,375.0",
+      "release": "Origins"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur21",
+    "title": "Growing Singularity",
+    "summary": "Growing Singularity is a curiosity.\n\nIt can be obtained at a Korvax Plaque in exchange for Seeds of Glass as part of the Starbirth mission.",
+    "game_description": "A slow knitting together of flesh, neurons and antimatter. The way this mind experiences the universe is beyond any imagining.\n\nIt requires careful attendance while it matures.",
+    "source_info": null,
+    "use_info": "Required to perform bio-genesis during Starbirth mission.\n\nAfter 20-24 hours Growing Singularity matures into Singularity Core.",
+    "release_history": "* Living Ship - Added as a curiosity.\n* Update 2.32 - Maximum maturing time reduced to 24h",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Fragment of Life",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.STEM4.png",
+      "category": "Curiosity",
+      "color": "black",
+      "type": "Fragment of Life",
+      "value": "1616",
+      "release": "Living Ship"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur31",
+    "title": "Hardened Shell",
+    "summary": "Hardened Shell is a curiosity.\n\nIt matures from Fragile Shell after 20-27 hours.",
+    "game_description": "Translucent, reflective, iridescent, impossibly strong. This shell swiftly reconfigures itself upon damage, knitting itself back together stronger than ever before. The newly formed bonds create a memory in glass, reflecting back the light absorbed at the moment of damage.\n\nIt awaits its host.",
+    "source_info": null,
+    "use_info": "Required to perform bio-genesis during Starbirth mission once it matures from Fragile Shell.",
+    "release_history": "* Living Ship - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Living Starship Organ",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "BIOTECH.SCALES.MOD.png",
+      "category": "Curiosity",
+      "color": "black",
+      "type": "Living Starship Organ",
+      "value": "1616",
+      "release": "Living Ship"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur59",
+    "title": "Hex Core",
+    "summary": "Hex Core is a curiosity.",
+    "game_description": "This strange energy orb constantly vibrates, emitting a low-frequency drone. Slight variations in the pattern repeat over and over, almost as if it is attempting to relay a message.",
+    "source_info": "* 1-3 Hex Cores rewarded for killing Anomalous exotic biome. (14%)\n* Can be received from an Anomaly Iteration as a gift\n* Randomly from Black Market Vendor\n* Randomly from Suspicious Packet (Goods) (3%)",
+    "use_info": null,
+    "release_history": "* NEXT 1.58 - Added as a curiosity. It has the same icon as Hexite and Star Seed.",
+    "additional_info": "* During the Community Research (week 1) mission it could be obtained from Buried Technology Modules and could be turned in for Quicksilver by contacting Specialist Polo. \n* Other than for resale, there are no uses for Hex Core.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Contained Reality Glitch",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.HEXCORE.png",
+      "category": "Curiosity",
+      "color": "darkblue",
+      "type": "Contained Reality Glitch",
+      "value": "16.0",
+      "release": "Interceptor"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur56",
+    "title": "Historical Document",
+    "summary": "Historical Document is one of several types of missions, from containers found on Derelict Freighters, or completing exploration type expeditions with frigates.",
+    "game_description": "These are the possible game descriptions for Historical Document. One of the following is randomly chosen when an artifact is procedurally generated.\n\nThe sequence is taken from the game file.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* NEXT - Added as an Artifact.\n* Abyss - Hidden changes: Names were regenerated by either adding or taking away prefixes, but other data were unchanged.\n* Visions - Hidden changes: The specified base value ranges of all types are multiplied by 1.15, this total value is indicated on the information panel of each artifact. The information panels are colour coded by rarity and an additional icon indicates its purpose.<br><br>",
+    "additional_info": "* The game descriptions and the name generation are extracted from the 1.77 version of NMS_UPDATE3_ENGLISH.MBIN game file, while the modifier and value ranges are extracted from the 1.77 version of PROCEDURALPRODUCTTABLE.MBIN game file.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Historical Document",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Lewd Legal Documents",
+      "image": "TREASUREPROD.STRANGEBOOK.png",
+      "category": "Artifact",
+      "color": "yellow",
+      "type": "Historical Document",
+      "value": "2,296,996.0",
+      "used": "Trading, Trading (High Value)",
+      "release": "Relics"
+    },
+    "categories": [
+      "Historical Document"
+    ]
+  },
+  {
+    "id": "cur60",
+    "title": "Historiographical Dosimeter",
+    "summary": "Historiographical Dosimeter is a curiosity acquired and used during Expedition 2: Beachhead.",
+    "game_description": "key artifact sites. Recordings of unusual historical shifts will enable Nada to trace their signal.\n\nAssist Nada and Polo in their research by using this device to transmit historical data from alien artifact sites.",
+    "source_info": "Awarded upon reaching the Rendezvous 5 during the Beachhead expedition.",
+    "use_info": null,
+    "release_history": "* Beachhead Expedition - Added as a curiosity.",
+    "additional_info": "*Each flux reading yields 15",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Personal Reality Flux Monitor",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "SPECIAL.MYSTERYTRACKER.png",
+      "category": "Curiosity",
+      "color": "purple",
+      "type": "Personal Reality Flux Monitor",
+      "value": "3,200.0",
+      "release": "Expeditions"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur35",
+    "title": "Homeworld Repeater",
+    "summary": "The Homeworld Repeater is a homing devices.",
+    "game_description": "A makeshift device, cobbled from salvaged electronic components kept in deep storage for many years. This jumble of wires will attempt to make contact with the last-known remnants of the freighter's homeworld.\n\nSelect the device and select Broadcast 20px/25px/25px (PC/PS/XB) to begin the location process.",
+    "source_info": "Expedition 8: Polestar Log 5: Horizons milestone.",
+    "use_info": null,
+    "release_history": "*Endurance - Added as a curiosity.",
+    "additional_info": "*After activation, you need to travel via pulse drive in any direction to detect a transmission.\n*Homeworld Repeater has the same icon as Memory Resonator.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Homing Device",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.ROGUEFINDER.png",
+      "category": "Curiosity",
+      "color": "purple",
+      "type": "Homing Device",
+      "value": "16",
+      "release": "Endurance"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur20",
+    "title": "Korvax Casing",
+    "summary": "Korvax Casing is a curiosity of Korvax origin.",
+    "game_description": "The metallic shell of a disconnected electronic lifeform that was too distant from its kind to be refreshed with a new entity.\n\nHighly prized by all species, not least its own.",
+    "source_info": "* The simplest way to get Korvax Casings in large amounts is to buy it from pilot NPCs in any Damaged Containers or as monolith rewards. \n* A possible reward from frigate expeditions. \n* A possible trade from wandering traders you encounter while using the",
+    "use_info": "* Can be given to Korvax NPCs to increase the player's standing with Korvax faction.\n* Can be used when interacting with a monolith in Korvax systems to reveal the location of the portal for the planet.",
+    "release_history": "* Release - Introduced to the game.\n* Living Ship - Added Space Encounter with traders as a possible source.",
+    "additional_info": "Can be used on monolith:\n*",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "High value curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.korvaxcasing.png",
+      "category": "Curiosity",
+      "color": "Purple",
+      "type": "High value curiosity",
+      "value": "22,000.0",
+      "release": "Singularity"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur30",
+    "title": "Larval Core",
+    "summary": "Larval Core is a curiosity that drops when a Whispering Egg is destroyed. It will disappear if not picked up within a few seconds of spawning.",
+    "game_description": "A pulsating jellied orb, this gooey sphere is warm to the touch. Its stench triggers a primal fear in mortal beings, a deep-seated gnawing that begs you to drop it and flee.",
+    "source_info": "There are several ways to harvest Larval Cores:\n* The player can team up with another player and have one member of the party use starship weapons to destroy the Whispering Eggs. This way no Biological Horrors will spawn.\n* The player can claim a base near the nests, then construct walls around a nest. After breaking a different Whispering Egg's nest, and rush back to the walled nest. The walled nest is now safe for harvesting, as no Biological Horrors can enter, and none will spawn inside.\n* The player can use a decent shield upgrades before using the tactic.\n* The player can park the exocraft next to the Whispering Eggs, harvest them and quickly gather the Larval Cores, then get back into the exocraft. Biological Horrors will start attacking the exocraft but they won't cause any harm to it. Beware of sentinels because every time Biological Horrors touch the exocraft, they will die and the sentinels will take notice of that.\n* They can be obtained from Derelict Freighters as well.",
+    "use_info": null,
+    "release_history": "* NEXT - Added as a curiosity.",
+    "additional_info": "It is worth 69,875 units and can be a valuable resource to those starting early in the game.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Monstrosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FIENDCORE.png",
+      "category": "Curiosity",
+      "color": "Grey",
+      "type": "Monstrosity",
+      "value": "69,875.0",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur58",
+    "title": "Living Water",
+    "summary": "Living Water is a curiosity.",
+    "game_description": "Unusual surface interactions cause this liquid to quickly split into small, perfect, spheres. Light refracted through one such sphere splits into colours beyond description.",
+    "source_info": "* Can be obtained from Child of Helios as part of Starbirth mission. (Child of Helios will appear when using pulse engine between planets after retrieving Hypnotic Eye for the mission.\n* Each Child of Helios encountered will award Living Water x150, which is half the maximum stack size of 300 per standard inventory slot. \n* So long as the player does not craft Impossible Membrane, they can trigger multiple encounters in rapid succession using the pulse drive to obtain large quantities of Living Water, amounting to 242,400 units of sell value per encounter. It is not necessary to sell or remove the stacks of Living Water to trigger this exploit. The extra Living Water can be used to create more Impossible Membrane for more Living Ship.",
+    "use_info": null,
+    "release_history": "* Living Ship - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Glassy Indeterminance",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.BIOEXOTIC.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Glassy Indeterminance",
+      "value": "1616.0",
+      "release": "Living Ship"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur32",
+    "title": "Log Encryption Key",
+    "summary": "Log Encryption Key is a incomplete data sequences.",
+    "game_description": "A fragment of the encryption override sequence for a freighter's emergency log.\n\nSeveral parts of the sequence may be required to gain full access to recorded data.",
+    "source_info": "Found in cargo pods on crashed freighters only during specific quests.",
+    "use_info": null,
+    "release_history": "* Beyond - Added as a curiosity.\n* Waypoint - Icon changed.",
+    "additional_info": "Quest Item",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Incomplete Data Sequence",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.LOGKEY.png",
+      "category": "Curiosity",
+      "type": "Incomplete Data Sequence",
+      "used": "",
+      "value": "1,500",
+      "release": "Waypoint"
+    },
+    "categories": [
+      "Incomplete Data Sequence"
+    ]
+  },
+  {
+    "id": "cur24",
+    "title": "Lost Artifact",
+    "summary": "Lost Artifact is one of several types of missions (for example The Overseer's Tour repeatable mission), or completing exploration type expeditions with frigates.",
+    "game_description": "These are the possible game descriptions for Lost Artifact. One of the following is randomly chosen when an artifact is procedurally generated.\n\nThe sequence is taken from the game file.",
+    "source_info": null,
+    "use_info": "=",
+    "release_history": "*NEXT - Added as an Artifact. It has the same icon as:",
+    "additional_info": "*The game descriptions and the name generation are extracted from the 1.77 version of NMS_UPDATE3_ENGLISH.MBIN game file, while the modifier and value ranges are extracted from the 1.77 version of PROCEDURALPRODUCTTABLE.MBIN game file.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Lost Artifact",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Clumsy Fermenting Machine",
+      "image": "TRADEPROD.COMPONENT4.png",
+      "category": "Artifact",
+      "color": "Yellow",
+      "type": "Lost Artifact",
+      "value": "2,296,607.5",
+      "used": "Trading, Trading (High Value)",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Lost Artifact"
+    ]
+  },
+  {
+    "id": "cur54",
+    "title": "Mature Heart Node",
+    "summary": "Mature Heart Node is a curiosity.\n\nIt matures from Fragile Heart after 20-27 hours.",
+    "game_description": "Powerful and muscular, this bionic pump sits within a network of synthetic tubes. It twitches when touched, its rhythms sensitive to the presence of other thinking entities.\n\nIt awaits its host.",
+    "source_info": null,
+    "use_info": "Required to perform bio-genesis during Starbirth mission once it matures from Fragile Heart.",
+    "release_history": "* Living Ship - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Living Starship Organ",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "BIOTECH.HEART.MOD.png",
+      "category": "Curiosity",
+      "color": "black",
+      "type": "Living Starship Organ",
+      "value": "1616",
+      "release": "Living Ship"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur46",
+    "title": "Mature Neural Stem",
+    "summary": "Mature Neural Stem is a curiosity.\n\nIt matures from Fragile Neural Stem after 20-24 hours.",
+    "game_description": "This web of living tissue has grown its own metallic filaments, a mesh of silver and flesh. It crackles with its own electric charge, a network in need of its nodes.\n\nIt awaits its host.",
+    "source_info": null,
+    "use_info": "Required to perform bio-genesis during Starbirth mission once it matures from Fragile Neural Stem.",
+    "release_history": "* Living Ship - Added as a curiosity.\n* Expeditions - Maturity time reduced to less than 24 hours.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Living Starship Organ",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "BIOTECH.BRAIN.MOD.png",
+      "category": "Curiosity",
+      "color": "black",
+      "type": "Living Starship Organ",
+      "value": "1616",
+      "release": "Expeditions"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur25",
+    "title": "Memories Of Atlantid",
+    "summary": "Memories Of Atlantid is a curiosity that is used within the In Stellar Multitudes questline.",
+    "game_description": "The howling of an advanced intelligence banished to oblivion, a reverberation in sentience and crystal. \n\nEach memory in this data packet is an entire reality in itself, bearing the fingerprint of countless lives. The Atlas will recognise this seed.",
+    "source_info": null,
+    "use_info": "First used to initiate a scan for the Divergence Fragment's wavelength when using the Pulse Drive. Then inserted into the Atlas Interface during the In Stellar Multitudes questline.",
+    "release_history": "*Worlds Part II - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Forgotten Void Data",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.2024.purplepacket.png",
+      "category": "Curiosity",
+      "color": "purple",
+      "type": "Forgotten Void Data",
+      "value": "1,919",
+      "release": "WorldsTwo"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur41",
+    "title": "Navigation Data",
+    "summary": "Navigation Data is a curiosity.",
+    "game_description": "Encoded navigation data. This highly portable data unit contains all relevant cartographical information for a planetary region.\n\nMay be traded with a star charts.",
+    "source_info": "* Can be received from Red Canister Debris and Encrypted Navigation Data.\n* Also available from some",
+    "use_info": null,
+    "release_history": "* NEXT - Added as a curiosity. It has the same icon as Master Circuit, Quantum Processor and certain Upgrade Module types.\n* Beyond - Navigation Data can be traded for a Planetary Chart.\n* Frontiers - 5 navigation data can be exchanged for a settlement location, at a cartographer\n* Waypoint - Icon changed.",
+    "additional_info": "During Points of Interest.\n\nNavigation Data may also be used to call starships to landing sites.\n\nReward table (<code>REWARDTABLE.MBIN</code>) entries for above documented behaviour are:\n* Exchange 1 Navigation Data: <code>SEC_STARMAP</code>\n* Exchange 5 Navigation Data: <code>SEC_STARMAP5</code>\n* Exchange 10 Navigation Data: <code>SEC_STARMAP10</code>",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Encrypted Navigation Data",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Navigation Data",
+      "image": "PRODUCT.NAVDATA.png",
+      "color": "blue",
+      "category": "Curiosity",
+      "type": "Encrypted Navigation Data",
+      "value": "1,000.0",
+      "release": "Waypoint"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur51",
+    "title": "Pearl Offering",
+    "summary": "Pearl Offering is a Damaged Component that can be found on Sealed Sea Chests at Submerged Ruins.",
+    "game_description": "The chest requires a Living Pearl, harvested from the giant mother-molluscs that grow on the ocean floor.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* Abyss - Added as a Damaged Component. It has the same icon as Living Pearl.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Offering to the Sea",
+    "infobox": {
+      "_infobox_type": "technology",
+      "image": "PRODUCT.CLAMPEARL.png",
+      "category": "Artifact",
+      "subcategory": "",
+      "color": "blue",
+      "type": "Offering to the Sea",
+      "release": "Abyss"
+    },
+    "categories": [
+      "Artifact",
+      "Damaged Component"
+    ]
+  },
+  {
+    "id": "cur47",
+    "title": "Planetary Chart (Empty)",
+    "summary": "Planetary Chart (Empty) is a curiosity.",
+    "game_description": "A map of a nearby planet.\n\nThe chart is barren, devoid of any lifesigns or indications of settled territory.",
+    "source_info": "Can't be obtained by normal gameplay.",
+    "use_info": null,
+    "release_history": "* Beyond – Added as a curiosity.\n* Adrift - Description changed.",
+    "additional_info": "This item indicates all points of interest in the current star system have been found.\n\nInternal game identifier is <code>CHART_EMPTY</code>.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Cartographic Data",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.STARCHART.png",
+      "category": "Curiosity",
+      "type": "Cartographic Data",
+      "used": "",
+      "value": "",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Cartographic Data"
+    ]
+  },
+  {
+    "id": "cur9",
+    "title": "Planetary Chart (ancient artifact site)",
+    "summary": "Planetary Chart is a curiosity.",
+    "game_description": "A map of a nearby planet. An ancient artifact site has been marked.\n\nSelect the map and use Plot Route (18px/23px/23px (PC/PS/XB)) to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging Navigation Data with a Space Station Cartographer.",
+    "source_info": "Randomly obtained from all types of Planetary Chart from the Cartographer on a space station in exchange for Navigation Data.",
+    "use_info": null,
+    "release_history": "* Beyond - Added as a curiosity.\n* Synthesis - Icon changed, now has a small icon indicating its purpose.",
+    "additional_info": "Internal game identifier is <code>STARCHART_D</code>. A variant, <code>A1S6_STARMAP</code>, exists with the same description.\n\nThis item indicates the location of one of the following locations type in the current star system:\n* Plaque (33.3% chance)\n* Monolith (33.3% chance)\n* Ruin (33.3% chance)\n\nChances are driven by the reward table (<code>METADATA/REALITY/TABLES/REWARDTABLE.MBIN</code>) entry <code>R_STARCHART_D</code>.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Cartographic Data",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.STARCHART.RUNE.png",
+      "category": "Curiosity",
+      "type": "Cartographic Data",
+      "value": "3,200",
+      "release": "Waypoint"
+    },
+    "categories": [
+      "Cartographic Data"
+    ]
+  },
+  {
+    "id": "cur61",
+    "title": "Planetary Chart (distress signal)",
+    "summary": "Planetary Chart is a curiosity.",
+    "game_description": "A map of a nearby 18px/23px/23px (PC/PS/XB)) to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging Navigation Data with a Space Station Cartographer.",
+    "source_info": "Randomly obtained from all types of Planetary Chart from the Cartographer on a space station in exchange for Navigation Data.",
+    "use_info": null,
+    "release_history": "* Beyond - Added as a curiosity.\n* Synthesis - Icon changed, now has a small icon indicating its purpose.",
+    "additional_info": "Internal game identifier is <code>STARCHART_B</code>. A variant, <code>TUT_STARMAP</code>, exists with the same description.\n\nThis item indicates the location of one of the following locations type in the current star system:\n* Abandoned Building (40% chance)\n* Distress Beacon (15% chance)\n* Crashed Ship (with NPC) (8% chance)\n* Crashed Freighter (8% chance)\n* Observatory (6% chance)\n\nChances are driven by the reward table (<code>METADATA/REALITY/TABLES/REWARDTABLE.MBIN</code>) entry <code>R_STARCHART_B</code>.\n\nThe chart will try to locate a nearby location type within approximately 20ks. While within a planet and outside the nearby location type range (20ks+), it will try to point to a random location of the same type within the planet.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Cartographic Data",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.STARCHART.DISTRESSSIGNAL.png",
+      "category": "Curiosity",
+      "type": "Cartographic Data",
+      "used": "",
+      "value": "3,200",
+      "release": "Beacon"
+    },
+    "categories": [
+      "Cartographic Data"
+    ]
+  },
+  {
+    "id": "cur5",
+    "title": "Planetary Chart (inhabited outpost)",
+    "summary": "Planetary Chart is a curiosity.",
+    "game_description": "A map of a nearby 18px/23px/23px (PC/PS/XB)) to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging Navigation Data with a Space Station Cartographer.",
+    "source_info": "Randomly obtained from all types of Planetary Chart from the Cartographer on a space station in exchange for Navigation Data.",
+    "use_info": null,
+    "release_history": "* Beyond - Added as a curiosity.\n* Synthesis - Icon changed, now has a small icon indicating its purpose.",
+    "additional_info": "Internal game identifier is <code>STARCHART_C</code>.\n\nThis item indicates the location of one of the following locations type in the current star system:\n* Colossal Archive (10% chance)\n* Shelter (16% chance)\n* Trade Outpost (10% chance)\n* Minor Settlement (30% chance)\n* Transmission Tower (16% chance)\n* Observatory (16% chance)\n\nChances are extracted from the 3.46 version of the reward table (<code>METADATA/REALITY/TABLES/REWARDTABLE.MBIN</code>) entry <code>R_STARCHART_C</code>.\n\nThere can only be one location type active at the same time in the same system. Using a chart generating an event already triggered will cancel the use of it, and send an error message to the user, effectively not consuming the chart. \n\nThis can be exploited to trigger a certain location type repeatedly with a 100% chance, leaving all other events active.\n\nThe chart will try to locate a nearby location type within approximately 20ks. While within a planet and outside the nearby location type range (20ks+), it will try to point to a random location of the same type within the planet.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Cartographic Data",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.STARCHART.BUILDING.png",
+      "category": "Curiosity",
+      "type": "Cartographic Data",
+      "used": "",
+      "value": "3,200.0",
+      "release": "Echoes"
+    },
+    "categories": [
+      "Cartographic Data"
+    ]
+  },
+  {
+    "id": "cur1",
+    "title": "Planetary Chart (secure site)",
+    "summary": "Planetary Chart is a curiosity.",
+    "game_description": "A map of a nearby 18px/23px/23px (PC/PS/XB)) to pin the location in your Exosuit display.\n\nNew maps can be gained by exchanging Navigation Data with a Space Station Cartographer.",
+    "source_info": "Randomly obtained from all types of Planetary Chart from the Cartographer on a space station in exchange for Navigation Data.",
+    "use_info": null,
+    "release_history": "* Beyond - Added as a curiosity.\n* Synthesis - Icon changed, now has a small icon indicating its purpose.",
+    "additional_info": "Internal game identifier is <code>STARCHART_A</code>.\n\nThis item indicates the location of one of the following locations type in the current star system:\n* Depot (6% chance)\n* Manufacturing Facility (12% chance)\n* Operations Centre (6% chance)\n\nChances are driven by the reward table (<code>METADATA/REALITY/TABLES/REWARDTABLE.MBIN</code>) entry <code>R_STARCHART_A</code>.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Cartographic Data",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.STARCHART.FACTORY.png",
+      "category": "Curiosity",
+      "type": "Cartographic Data",
+      "used": "",
+      "value": "3,200.0",
+      "release": "SentinelUp"
+    },
+    "categories": [
+      "Cartographic Data"
+    ]
+  },
+  {
+    "id": "cur22",
+    "title": "Psychonic Egg",
+    "summary": "Psychonic Egg is an item which allows upgrading of Living starships with technologies and upgrade modules.",
+    "game_description": "A writhing sac of genetic fluid, designed to foster the creation of new bio-infused technology for a sentient starship.\n\nThe embryo will grow into bio-technology upgrade. Begin biogenesis with",
+    "source_info": "*Potential reward from Frigate Expeditions which include at least one Organic Frigate.",
+    "use_info": null,
+    "release_history": "* Endurance - Added as a Living starship upgrade.",
+    "additional_info": "Psychonic Egg has the same icon as Pulsating Core.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Living Curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.BIOCOMP2.png",
+      "category": "Curiosity",
+      "color": "",
+      "type": "Living Curiosity",
+      "value": "126,000",
+      "release": "Interceptor"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur19",
+    "title": "Rendezvous Beacon",
+    "summary": "Rendezvous Beacon is a Curiosity that is used in Under a Rebel Star mission.",
+    "game_description": "An unmarked navigation beacon, acquired from the wreck of a downed starship.\n\nUse Activate Beacon to deploy the beacon and retrace the final steps of the crashed ship.",
+    "source_info": "* Received in the process of Under a Rebel Star mission.",
+    "use_info": null,
+    "release_history": "* Outlaws - Added as a product.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.PIRATEBEACON.png",
+      "category": "Curiosity",
+      "color": "purple",
+      "type": "",
+      "used": "",
+      "value": "888",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur68",
+    "title": "Salvaged Scrap",
+    "summary": "Salvaged Scrap is one of several types of Artifacts and it is a reward for destroying the Salvage Container.\n\nThe number of Protective Casings interconnected with a Salvage Container defines the rarity of the Salvaged Scrap: 2 &rarr; Common, 3 &rarr; Uncommon, 5 &rarr; Rare.",
+    "game_description": "These are the possible game descriptions for Salvaged Scrap. One of the following is randomly chosen when an artifact is procedurally generated.\n\nThe sequence is taken from the game file.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* Visions - Added as an Artifact.\n* Beyond - Hidden changes: DropWeight property value increased for Common (from 3 to 4) rarity.\n* Synthesis - Hidden changes: DropWeight property value increased for Common (from 4 to 5) rarity.<br><br>",
+    "additional_info": "* The game descriptions and the name generation are extracted from the 2.04 version of NMS_UPDATE3_ENGLISH.MBIN game file, while the modifier and value ranges are extracted from the 2.04 version of PROCEDURALPRODUCTTABLE.MBIN game file.\n* Artifacts have a DropWeight property as per the game file and each rarity has a different value for it. In case of Salvaged Scrap: Common &rarr; 4, Uncommon &rarr; 2, Rare &rarr; 1.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Salvaged Scrap",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Extraordinary Torquer",
+      "image": "PRODUCT.SALVAGE.RARE.png",
+      "category": "Artifact",
+      "color": "yellow",
+      "type": "Salvaged Scrap",
+      "value": "2,759,013.0",
+      "used": "Trading, Trading (High Value)",
+      "release": "Omega"
+    },
+    "categories": [
+      "Salvaged Scrap"
+    ]
+  },
+  {
+    "id": "cur6",
+    "title": "Sea Glass",
+    "summary": "Sea Glass is a curiosity found in deep oceans.",
+    "game_description": "A etheral shard, this translucent plane is both mineral and alive, both of the water and of another realm.\n\nOf high value to collectors across the universe.",
+    "source_info": "Harvested from Deep-Sea Samples in deep oceans.",
+    "use_info": null,
+    "release_history": "*Worlds Part II - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Precious Material",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.seaglass.png",
+      "category": "Curiosity",
+      "color": "green",
+      "type": "Precious Material",
+      "value": "266,000",
+      "release": "WorldsTwo"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur29",
+    "title": "Security Credentials",
+    "summary": "Security Credentials is a curiosity that is found on a Derelict Freighter and consumed when retrieving the Captain's Log. \n\nThey can be found by reading the logs scattered around the rooms of the freighter. Three different crew members are available, but you will only be awarded this item for the first that you read. The remaining two choices will then be blacked out. The credentials may be used later once the terminal is located for acquiring the captain's log, and will be consumed in the process.",
+    "game_description": "Note: The game's description will be customised based on the name of the crew member and that of the freighter. An example of possible text:\n\n:<Crew name>'s security pass from the <ship name>. It is warped and pockmarked, its surface melted by some unknown substance.\n\n:Records indicate it was last used <number> days ago...\n\n:or\n\n:<Crew name>'s security pass from the <ship name>. A strange mould festers where their face should be, slowly bubbling as it consumes the holographic material.\n\n:Records indicate it was last used <number> days ago...",
+    "source_info": "*Found in Derelict Freighters",
+    "use_info": null,
+    "release_history": "*Desolation - Added to the game.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Mainframe Access Card",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.PROCFREIGHTER.PASS.png",
+      "category": "Curiosity",
+      "color": "",
+      "type": "Mainframe Access Card",
+      "value": "",
+      "release": "Desolation"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur69",
+    "title": "Sentinel Boundary Map",
+    "summary": "Sentinel Boundary Map is a curiosity and can be activated in one's inventory to locate a Sentinel Pillar.",
+    "game_description": "A strange, shifting map. Though hard to focus upon, this chart appears to show the location of a nearby Sentinel Pillar. Such Sentinel strongholds house many secrets...\n\nSelect the map and use Plot Route (E) to pin the location in your Exosuit display.",
+    "source_info": "* Salvage Container (10%)\n* Killing Sentinel Walkers (5%)\n* Killing Sentinel Quads (3%)\n* Killing Sentinel Mechs (3%)\n* Process certain procedural data into Nanites (from Buried Caches) (3%)\n* Opening Salvaged Glass (~3%)\n* Process certain procedural damaged technology into parts (from Buried Caches) (~1.8%)\n* Bounty Hunter missions (~1.8%)\n* Suspicious Packet (Goods) (~0.7%)",
+    "use_info": "Can be consumed to locate a Sentinel Pillar.",
+    "release_history": "* SentinelUp - Added as a curiosity.",
+    "additional_info": "There can only be one Sentinel Pillar location active at the same time in the same system. Using the map to locate another Pillar will cancel the use of it and send an error message to the user, effectively not consuming the map.\n\nThe map will try to locate a nearby Sentinel Pillar within approximately 20ks. While within a planet and outside the Sentinel Pillar range (20ks+), it will try to point to a random location type within the system.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Anomalous Planetary Location Data",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Sentinel Boundary Map",
+      "image": "PRODUCT.STARCHART.HIVE.png",
+      "color": "purple",
+      "category": "Curiosity",
+      "type": "Anomalous Planetary Location Data",
+      "value": "3,200.0",
+      "used": "",
+      "release": "Singularity"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur14",
+    "title": "Sentinel Flare",
+    "summary": "Sentinel Flare is a curiosity. It is used to summon your Sentinel companion named Laylaps.",
+    "game_description": null,
+    "source_info": null,
+    "use_info": "The drone can be summoned and dismissed by pressing the 20px/25px/25px (PC/PS/XB) key.",
+    "release_history": null,
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Sentinel Communicator",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.DRONEFRIEND.png",
+      "category": "Curiosity",
+      "color": "darkblue",
+      "type": "Sentinel Communicator",
+      "value": "",
+      "release": "Waypoint"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur12",
+    "title": "Settlement Chart",
+    "summary": "Settlement Chart is a curiosity.",
+    "game_description": "A map showing the location of a nearby planetary settlement, acquired from the Space Station Cartographer.\n\nSelect the map and use Plot Route to pin the location in your Exosuit display.",
+    "source_info": "Obtained from the Cartographer on a Space Station in exchange for Navigation Data.",
+    "use_info": null,
+    "release_history": "* Frontiers - Added as a curiosity.",
+    "additional_info": "Settlement Chart requires 5 Navigation Data for each chart.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Cartographic Data",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.STARCHART.png",
+      "category": "Curiosity",
+      "type": "Cartographic Data",
+      "used": "",
+      "value": "",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Cartographic Data"
+    ]
+  },
+  {
+    "id": "cur42",
+    "title": "Singularity Core",
+    "summary": "Singularity Core is a curiosity.\n\nIt matures from Growing Singularity after 20-27 hours.",
+    "game_description": "A sensitive arrangement of neurons in a stable orbit around a miniature black hole. The mind at the heart of this bionic miracle is free from the constraints of linear time, its experience an impossible web of myriad collected lifeforms.\n\nIt awaits its host.",
+    "source_info": null,
+    "use_info": "Required to perform bio-genesis during Starbirth mission once it matures from Growing Singularity.",
+    "release_history": "* Living Ship - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Living Starship Organ",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "BIOTECH.EYECLUSTER.MOD.png",
+      "category": "Curiosity",
+      "color": "black",
+      "type": "Living Starship Organ",
+      "value": "1616",
+      "release": "Living Ship"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur16",
+    "title": "Soul Chamber",
+    "summary": "Soul Chamber is a curiosity.\n\nIt can be obtained at an Abandoned Building as part of the Starbirth mission.",
+    "game_description": "A biomechanical construct, created to the design of an anonymous host.\n\nA fusion of complex circuitry and the ineffable glitch of the Traveller. Such a calculus might bind realities together, or tear them into mere simulated fragments.",
+    "source_info": null,
+    "use_info": "Required to perform bio-genesis during Starbirth mission.\n\nThe player has to collect 3 souls of fallen Travellers to create Archived Soul.",
+    "release_history": "* Living Ship - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Bionic Ark",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.BIOCOMP5.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Bionic Ark",
+      "value": "1616",
+      "release": "Living Ship"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur70",
+    "title": "Station Override",
+    "summary": "Station Override is a  curiosity acquired during Expedition 3: Cartographers.",
+    "game_description": "A portable data drive containing the AI override codes for a Space Station Core.\n\nThe importance of the station AI core ensures that such keys are both highly regulated and extremely profitable on the black market.",
+    "source_info": "It can be gained as a reward from the Autodiagnostics: 5 milestone of Expedition 3: Cartographers, which requires you to repair the Frameshift Catapult\n\nIt can also be obtained as a mission reward from the Bounty Master found in Outlaw Space Stations.",
+    "use_info": "Attempting to input the code at the Station Core will cause the code to be detected as counterfeit and removed from the inventory:\n\nCounterfeit code detected... ACCESS DENIED\n\nCurrently only usable in Trading.",
+    "release_history": "* Prisms - This item was added to the game as technology.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "AI Master Key",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Circuit_Board_icon.png",
+      "color": "Darkblue",
+      "category": "Curiosity",
+      "type": "AI Master Key",
+      "value": "256,000.0",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur50",
+    "title": "Stirring Void Egg",
+    "summary": "Stirring Void Egg is a curiosity.",
+    "game_description": "An anomalous egg that has been activated as the second step in the Starbirth mission. Since the encounter with the bizarre deep-space 'creature', its strange music has grown more active, more agitated.",
+    "source_info": "The Stirring Void Egg can only occur once a Void Egg has been activated to become an Active Void Egg and is in the players inventory. Once the player leaves a Space Station or Anomaly and uses the pulse drive within a Star system. The player will be notified to drop out of Pulse and then will encounter a deep-space creature which then stirs the egg.",
+    "use_info": null,
+    "release_history": "*Synthesis 2.26 - Added as a curiosity.",
+    "additional_info": "The stirring void egg remains in the players inventory and should remain there through the Starbirth mission.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Agitated Curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "SPECIAL.MYSTERYEGG.png",
+      "category": "Curiosity",
+      "color": "purple",
+      "type": "Agitated Curiosity",
+      "value": "1616.0",
+      "release": "Living Ship"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur45",
+    "title": "Terrifying Sample",
+    "summary": "Terrifying Sample is one of several types of Artifacts. The DARK variant is a reward for opening Large Artifact Crates found in Ancient Ruins and containers in Derelict Freighters. This artifact type is also available by offering a Hypnotic Eye to Submerged Ruins. However, this option will only become available after listening to enough story dialogues from the ruins.\n\nA second variety identified as FEAR can be obtained from several varieties of Space Encounters. Keeping this item when obtained in this way can cause the space encounter that awarded it to keep spawning without warning, dropping you out of pulse drive involuntarily.",
+    "game_description": "An appalling relic, the haunted remains of some abyssal horror. It has lived at least X0 lifetimes, and will live many more again.\n\nWill stalk the bearer across the galaxy and the next, unless it is sold before the curse can take effect.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* Abyss 1.71 - Icon changed.\n* Visions - Hidden changes: The specified base value ranges of all types are multiplied by 1.15, this total value is indicated on the information panel of each artifact. The information panels are colour coded by rarity and an additional icon indicates its purpose.<br><br>",
+    "additional_info": "* The game description and the name generation are extracted from the 1.77 version of NMS_LOC4_ENGLISH.MBIN game file, while the modifier and value ranges are extracted from the 1.77 version of PROCEDURALPRODUCTTABLE.MBIN game file.\n* The two different variants occupy different slots on the Most Valuable Treasures menu inside Wonders, with DARK being on the fourth place in the second row and FEAR on the third row, second place.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Terrifying Sample",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Deathly Remains",
+      "image": "PRODUCT.HORRIFICARTIFACT.png",
+      "category": "Artifact",
+      "color": "Purple",
+      "type": "Terrifying Sample",
+      "value": "1,379,958.6",
+      "used": "Trading, Trading (High Value)",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Terrifying Sample"
+    ]
+  },
+  {
+    "id": "cur28",
+    "title": "Ticket to Freedom",
+    "summary": "Ticket to Freedom is a Curiosity that is used in Under a Rebel Star mission.",
+    "game_description": "\"Glorious survivor! The promised star will be yours!\"\n\nA Secure system pass acquired from the 'Voice of Freedom'. Select the pass and use Accept Invitation to pin the location in your navigation systems.",
+    "source_info": "* Received in the process of Under a Rebel Star mission.",
+    "use_info": null,
+    "release_history": "* Outlaws - Added as a product.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.PIRATEINVITE.png",
+      "category": "Curiosity",
+      "color": "purple",
+      "type": "",
+      "used": "",
+      "value": "888",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur40",
+    "title": "Trident Key",
+    "summary": "Trident Key is a curiosity required to open a Trident Key (Damaged Component) on Sealed Sea Chests that can be found at Submerged Ruins.",
+    "game_description": "A strange forked key, glowing with an ultraviolet light.\n\nDespite its primitive appearance, Exosuit scanning systems reveal traces of nanite foam upon its teeth.",
+    "source_info": "One Trident Key can be received from the Refracted Light located at the Submerged Ruin, after listening to The Voice of the Shell dialogue.",
+    "use_info": null,
+    "release_history": "* Abyss 1.71 - Icon changed.  It has the same icon as Trident Key (Damaged Component).",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Aquatic Relic",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.TRIDENTKEY.png",
+      "category": "Curiosity",
+      "color": "",
+      "type": "Aquatic Relic",
+      "value": "1,000.0",
+      "release": "Abyss"
+    },
+    "categories": [
+      "Artifact"
+    ]
+  },
+  {
+    "id": "cur33",
+    "title": "Trident Key (Damaged Component)",
+    "summary": "Trident Key is a Damaged Component that can be found on Sealed Sea Chests at Submerged Ruins.",
+    "game_description": "The chest requires a Trident Key, given to those who study the mysterious sites in the deep ocean.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* Abyss - Added as a Damaged Component. It has the same icon as Trident Key.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Offering to the Sea",
+    "infobox": {
+      "_infobox_type": "technology",
+      "name": "Trident Key",
+      "image": "PRODUCT.TRIDENTKEY.png",
+      "category": "Artifact",
+      "subcategory": "",
+      "color": "blue",
+      "type": "Offering to the Sea",
+      "release": "Abyss"
+    },
+    "categories": [
+      "Artifact",
+      "Damaged Component"
+    ]
+  },
+  {
+    "id": "cur38",
+    "title": "Tritium Hypercluster",
+    "summary": "Tritium Hypercluster is a curiosity.",
+    "game_description": "A shard of pure crystalised Tritium.\n\nSelect in the Inventory (",
+    "source_info": "Asteroid mining occasionally provides Tritium Hyperclusters.\n\nOne of the possible results of opening a Glowing Mineral.",
+    "use_info": "Tritium Hypercluster can be broken up into one of multiple items:\n* 50-90 Tritium (69.5%)\n* 50-160 Tritium (28%)\n* Antimatter (3%)",
+    "release_history": "* Beyond - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Energetic Fragment",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.GEODE.SPACE.png",
+      "category": "Curiosity",
+      "color": "Darkblue",
+      "type": "Energetic Fragment",
+      "value": "3,280.0",
+      "release": "Interceptor"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur8",
+    "title": "Unearthed Treasure",
+    "summary": "Unearthed Treasure is one of several types of missions or completing exploration type expeditions with frigates.",
+    "game_description": "These are the possible game descriptions for Unearthed Treasure. One of the following is randomly chosen when an artifact is procedurally generated.\n\nThe sequence is taken from the game file.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* NEXT - Added as an Artifact.\n* Abyss - Hidden changes: Names were regenerated by either adding or taking away prefixes, but other data were unchanged.\n* Visions - Hidden changes: The specified base value ranges of all types are multiplied by 1.15, this total value is indicated on the information panel of each artifact. The information panels are colour coded by rarity and an additional icon indicates its purpose.<br><br>",
+    "additional_info": "* The game descriptions and the name generation are extracted from the 1.77 version of NMS_UPDATE3_ENGLISH.MBIN game file, while the modifier and value ranges are extracted from the 1.77 version of PROCEDURALPRODUCTTABLE.MBIN game file.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unearthed Treasure",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Trove of Legendary Potions",
+      "image": "TREASUREPROD.COINCRATE.png",
+      "category": "Artifact",
+      "color": "yellow",
+      "type": "Unearthed Treasure",
+      "value": "2,299,827.0",
+      "used": "Trading, Trading (High Value)",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Unearthed Treasure"
+    ]
+  },
+  {
+    "id": "cur27",
+    "title": "Vile Spawn",
+    "summary": "Vile Spawn is a curiosity that can be obtained by harvesting the drops from hungering tendrils after beating Titan Worms.",
+    "game_description": "The fragile embryo of a Hungering Tendril, still dripping with mucal butter. It wails and recoils when touched.\n\nMay be extracted from embryotic sacs with the aid of a Visceral Synthesiser.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* Frontiers - Added to the game.\n* Endurance - Removed requirement of Visceral Synthesiser.",
+    "additional_info": "Even though the description states that a visceral synthesiser is needed, this is not the case anymore.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Hungering Embryo",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Vile Spawn",
+      "image": "WORMSPAWN.png",
+      "color": "Grey",
+      "category": "Curiosity",
+      "type": "Hungering Embryo",
+      "used": "",
+      "value": "16.0",
+      "release": "Waypoint"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur52",
+    "title": "Void Egg",
+    "summary": "Void Egg is a curiosity.",
+    "game_description": "An anomalous egg. The shell is tough and leathery, and twitches when touched.\n\nA faint tapping can be heard coming from within. From time to time, it appears to sing.",
+    "source_info": "The Void Egg can be purchased from the Quicksilver Synthesis Companion for 3200",
+    "use_info": null,
+    "release_history": "*Synthesis 2.26 - Added as a curiosity.",
+    "additional_info": "Having the Egg in inventory may cause the player to receive a transmission after using the pulse drive, triggering the Starbirth mission.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Living Curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "SPECIAL.MYSTERYEGG.png",
+      "category": "Curiosity",
+      "color": "purple",
+      "type": "Living Curiosity",
+      "value": "3200.0",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur10",
+    "title": "Vy'keen Effigy",
+    "summary": "'''Vy'keen Effigy''' is a curiosity of Vy'keen origin.",
+    "game_description": "A small wooden icon carved into the shape of a Sentinel drone.\n\nUsed by warriors to enter a temporary trance-like state that eliminates their kind's need for sleep.",
+    "source_info": "* It can be found in Damaged Containers or as monolith rewards. \n* It can also be bought from NPCs in Trading Posts.\n* It is a possible reward from frigate expeditions.\n* It is also a possible trade from wandering traders you encounter while using the Pulse Engine.\n* It is also a possible reward from Salvaged Glass dropped by Sentinels.",
+    "use_info": null,
+    "release_history": "* Release - Introduced to the game.\n* NEXT - Value changed, previously it was worth 25,437.5",
+    "additional_info": "* It can be given to Vy'keen NPCs to increase the player's standing with them.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Medium value curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.effigy.png",
+      "category": "Curiosity",
+      "color": "purple",
+      "type": "Medium value curiosity",
+      "value": "24,750.0",
+      "release": "SentinelUp"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur57",
+    "title": "Vy'keen Tablet",
+    "summary": "'''Vy'keen Tablet''' is a curiosity.",
+    "game_description": "A stone tablet bearing line after line of intricate runes. The words are unintelligible, an ancient dialect forgotten by all but the oldest of the Vy'keen elders.\n\nThe hand that carved this stone must have been extraordinary. The stonework is precise, delicate - and yet perfectly conveys the unyielding aggression its writer clearly possessed.",
+    "source_info": "A quest item in the main storyline to show a Vy'keen cartographer that you are worthy to receive information about the Vy'keen's history.",
+    "use_info": null,
+    "release_history": "* Beyond - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Communion of Hirk",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TREASUREPROD.STRANGEBOOK.png",
+      "category": "Curiosity",
+      "color": "",
+      "type": "Communion of Hirk",
+      "value": "1,250",
+      "release": "Companions"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur43",
+    "title": "Whalesong Flute",
+    "summary": "Whalesong Flute is a tool for summoning Leviathan in Expedition 7: Leviathan.",
+    "game_description": "A powerful but mellow musical instrument, capable of relaying song through space via gently undulating electromagnetic waves.\n\nUse Relay Song 20px/25px/25px (PC/PS/XB) while in deep space to broadcast the flute's melody...",
+    "source_info": "The blueprint for the Whalesong Flute is obtained as a reward for completing A Shattered Past milestone in the Expedition 7: Leviathan.",
+    "use_info": null,
+    "release_history": "* Outlaws - Introduced as part of Expedition 7: Leviathan.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Cosmic Melody Instrument",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.ROGUEBEACON.png",
+      "category": "Curiosity",
+      "color": "purple",
+      "type": "Cosmic Melody Instrument",
+      "value": "16",
+      "used": "Expedition",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "cur13",
+    "title": "Wormskin Folio",
+    "summary": "Wormskin Folio is a unique collectible that is provided after destruction of worms at a worm burrow in the Expedition 4: Emergence.  There are five types of wormskin folios, numbered as 1 through 5.",
+    "game_description": "The game description is unique for each of the documents, 1 through 5:",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* Update 3.70 - Added as an item.\n\nja:ワーム皮のフォリオ本",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Fleshy Scroll",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Wormskin Folio",
+      "image": "WORMSCROLL.png",
+      "category": "Artifact",
+      "color": "purple",
+      "type": "Fleshy Scroll",
+      "value": "1,616",
+      "used": "",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Artifact"
+    ]
+  }
+]

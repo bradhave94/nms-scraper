@@ -47,6 +47,9 @@ class NMSScraper:
             'User-Agent': 'NMSScraper/1.0 (https://github.com/user/nms-scraper)'
         })
 
+        # Recipe collection for deferred processing
+        self.collected_recipes = {}
+
         # Group ID prefixes and counters
         self.group_prefixes = {
             'buildings': 'build',
@@ -207,7 +210,7 @@ class NMSScraper:
                     params['cmcontinue'] = continue_param
 
                 try:
-                    response = self.session.get(self.api_url, params=params)
+                    response = self.session.get(self.api_url, params=params, timeout=30)
                     response.raise_for_status()
                     data = response.json()
 
@@ -251,7 +254,7 @@ class NMSScraper:
             encoded_title = quote(page_title.replace(' ', '_'))
             raw_url = f"{self.base_url}/wiki/{encoded_title}?action=raw"
 
-            response = self.session.get(raw_url)
+            response = self.session.get(raw_url, timeout=30)
             response.raise_for_status()
 
             return response.text
@@ -300,41 +303,156 @@ class NMSScraper:
 
         return infobox_data
 
-    def parse_description(self, content: str) -> Optional[str]:
-        """Extract description from wiki markup"""
-        # Try Game description first
-        game_desc_pattern = r'==Game description==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
-        match = re.search(game_desc_pattern, content, re.DOTALL | re.IGNORECASE)
 
-        if match:
-            description = match.group(1).strip()
-            if description:
-                return self._clean_description_markup(description)
-
-        # Try In-game description
-        ingame_desc_pattern = r'==In-game description==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
-        match = re.search(ingame_desc_pattern, content, re.DOTALL | re.IGNORECASE)
-
-        if match:
-            description = match.group(1).strip()
-            if description:
-                return self._clean_description_markup(description)
-
-        # Fallback to Summary
-        summary_pattern = r'==Summary==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+    def parse_summary(self, content: str) -> Optional[str]:
+        """Extract summary section from wiki markup"""
+        summary_pattern = r'==\s*Summary\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
         match = re.search(summary_pattern, content, re.DOTALL | re.IGNORECASE)
 
         if match:
-            description = match.group(1).strip()
-            if description:
-                return self._clean_description_markup(description)
-
-        # Last resort: try to get description from infobox 'desc' field
-        infobox = self.parse_infobox(content)
-        if infobox and 'desc' in infobox:
-            return self._clean_description_markup(infobox['desc'])
-
+            summary = match.group(1).strip()
+            if summary:
+                return self._clean_description_markup(summary)
         return None
+
+    def parse_game_description(self, content: str) -> Optional[str]:
+        """Extract game description section from wiki markup"""
+        patterns = [
+            r'==\s*Game description\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'==\s*In-game description\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'==\s*Game Description\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+        ]
+
+        for pattern in patterns:
+            match = re.search(pattern, content, re.DOTALL | re.IGNORECASE)
+            if match:
+                desc = match.group(1).strip()
+                if desc:
+                    return self._clean_description_markup(desc)
+        return None
+
+    def parse_source_info(self, content: str) -> Optional[str]:
+        """Extract source/acquisition information"""
+        patterns = [
+            r'==\s*Source\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'==\s*How to acquire\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'==\s*Sources\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+        ]
+
+        for pattern in patterns:
+            match = re.search(pattern, content, re.DOTALL | re.IGNORECASE)
+            if match:
+                source = match.group(1).strip()
+                if source:
+                    return self._clean_description_markup(source)
+        return None
+
+    def parse_use_info(self, content: str) -> Optional[str]:
+        """Extract usage/use information"""
+        patterns = [
+            r'==\s*Use\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'==\s*Usage\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'==\s*Uses\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+        ]
+
+        for pattern in patterns:
+            match = re.search(pattern, content, re.DOTALL | re.IGNORECASE)
+            if match:
+                use_info = match.group(1).strip()
+                if use_info:
+                    return self._clean_description_markup(use_info)
+        return None
+
+    def parse_release_history(self, content: str) -> Optional[str]:
+        """Extract release history information"""
+        patterns = [
+            r'==\s*Release history\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'==\s*Release History\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+        ]
+
+        for pattern in patterns:
+            match = re.search(pattern, content, re.DOTALL | re.IGNORECASE)
+            if match:
+                history = match.group(1).strip()
+                if history:
+                    return self._clean_description_markup(history)
+        return None
+
+    def parse_additional_info(self, content: str) -> Optional[str]:
+        """Extract additional information"""
+        patterns = [
+            r'==\s*Additional information\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'==\s*Additional Information\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'==\s*Additional notes\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+        ]
+
+        for pattern in patterns:
+            match = re.search(pattern, content, re.DOTALL | re.IGNORECASE)
+            if match:
+                info = match.group(1).strip()
+                if info:
+                    return self._clean_description_markup(info)
+        return None
+
+    def parse_fishing_info(self, content: str) -> Optional[str]:
+        """Extract fishing bait information"""
+        patterns = [
+            r'==\s*Fishing Bait\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'==\s*Fishing bait\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'\{\{FishingBait\|([^}]+)\}\}'
+        ]
+
+        for pattern in patterns:
+            match = re.search(pattern, content, re.DOTALL | re.IGNORECASE)
+            if match:
+                fishing = match.group(1).strip()
+                if fishing:
+                    return self._clean_description_markup(fishing)
+        return None
+
+    def parse_progression_info(self, content: str) -> Optional[str]:
+        """Extract resource progression information"""
+        patterns = [
+            r'==\s*Resource progression\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'==\s*Resource Progression\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)',
+            r'==\s*Progression\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+        ]
+
+        for pattern in patterns:
+            match = re.search(pattern, content, re.DOTALL | re.IGNORECASE)
+            if match:
+                progression = match.group(1).strip()
+                if progression:
+                    return self._clean_description_markup(progression)
+        return None
+
+    def parse_refinery_recipes(self, content: str) -> List[str]:
+        """Extract refinery recipes from PoC-Refine templates"""
+        recipes = []
+        # Find all PoC-Refine templates
+        refine_pattern = r'\{\{PoC-Refine\s*\|([^}]+)\}\}'
+        matches = re.findall(refine_pattern, content, re.DOTALL | re.IGNORECASE)
+
+        for match in matches:
+            # Split by | to get individual recipe lines
+            recipe_lines = [line.strip() for line in match.split('|') if line.strip()]
+            recipes.extend(recipe_lines)
+
+        return recipes
+
+    def parse_cooking_recipes(self, content: str) -> List[str]:
+        """Extract cooking recipes from Cook templates"""
+        recipes = []
+        # Find all Cook templates
+        cook_pattern = r'\{\{Cook\s*\|([^}]+)\}\}'
+        matches = re.findall(cook_pattern, content, re.DOTALL | re.IGNORECASE)
+
+        for match in matches:
+            # Split by | to get individual recipe lines
+            recipe_lines = [line.strip() for line in match.split('|') if line.strip()]
+            recipes.extend(recipe_lines)
+
+        return recipes
 
     def _clean_description_markup(self, text: str) -> str:
         """Clean wiki markup from description text"""
@@ -346,9 +464,25 @@ class NMSScraper:
 
     def parse_categories(self, content: str) -> List[str]:
         """Extract categories from wiki markup"""
-        category_pattern = r'\[\[Category:([^\]]+)\]\]'
+        category_pattern = r'\[\[Category:([^\]|]+)'
         categories = re.findall(category_pattern, content)
-        return [cat.strip() for cat in categories]
+
+        # If no explicit categories found, try to extract from infobox
+        if not categories:
+            infobox = self.parse_infobox(content)
+            if infobox and 'category' in infobox:
+                categories.append(infobox['category'])
+
+        # Clean up categories by removing version suffixes in parentheses
+        cleaned_categories = []
+        for cat in categories:
+            cat = cat.strip()
+            # Remove version suffixes like (Abyss), (NEXT), etc.
+            cat = re.sub(r'\s*\([^)]+\)\s*$', '', cat)
+            if cat and cat not in cleaned_categories:  # Avoid duplicates
+                cleaned_categories.append(cat)
+
+        return cleaned_categories
 
     def generate_item_id(self, title: str, group: str) -> str:
         """Generate sequential ID for an item"""
@@ -371,7 +505,14 @@ class NMSScraper:
             CREATE TABLE IF NOT EXISTS items (
                 id TEXT PRIMARY KEY,
                 title TEXT NOT NULL,
-                description TEXT,
+                summary TEXT,
+                game_description TEXT,
+                source_info TEXT,
+                use_info TEXT,
+                release_history TEXT,
+                additional_info TEXT,
+                fishing_info TEXT,
+                progression_info TEXT,
                 type TEXT,
                 group_name TEXT,
                 infobox TEXT,
@@ -381,10 +522,70 @@ class NMSScraper:
             )
         ''')
 
+        # Create refinery recipes table
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS refinery_recipes (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                recipe_id TEXT UNIQUE,
+                source_item_id TEXT,
+                output_item_id TEXT,
+                time_seconds REAL,
+                operation TEXT,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (source_item_id) REFERENCES items (id),
+                FOREIGN KEY (output_item_id) REFERENCES items (id)
+            )
+        ''')
+
+        # Create refinery recipe ingredients table
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS refinery_ingredients (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                recipe_id TEXT,
+                ingredient_item_id TEXT,
+                quantity INTEGER,
+                FOREIGN KEY (recipe_id) REFERENCES refinery_recipes (recipe_id),
+                FOREIGN KEY (ingredient_item_id) REFERENCES items (id)
+            )
+        ''')
+
+        # Create cooking recipes table
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS cooking_recipes (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                recipe_id TEXT UNIQUE,
+                source_item_id TEXT,
+                output_item_id TEXT,
+                time_seconds REAL,
+                operation TEXT,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (source_item_id) REFERENCES items (id),
+                FOREIGN KEY (output_item_id) REFERENCES items (id)
+            )
+        ''')
+
+        # Create cooking recipe ingredients table
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS cooking_ingredients (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                recipe_id TEXT,
+                ingredient_item_id TEXT,
+                quantity INTEGER,
+                FOREIGN KEY (recipe_id) REFERENCES cooking_recipes (recipe_id),
+                FOREIGN KEY (ingredient_item_id) REFERENCES items (id)
+            )
+        ''')
+
         # Create indexes for faster lookups
         cursor.execute('CREATE INDEX IF NOT EXISTS idx_title ON items(title)')
         cursor.execute('CREATE INDEX IF NOT EXISTS idx_group ON items(group_name)')
         cursor.execute('CREATE INDEX IF NOT EXISTS idx_type ON items(type)')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_refinery_recipe ON refinery_recipes(recipe_id)')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_refinery_output ON refinery_recipes(output_item_id)')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_refinery_ingredient ON refinery_ingredients(ingredient_item_id)')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_cooking_recipe ON cooking_recipes(recipe_id)')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_cooking_output ON cooking_recipes(output_item_id)')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_cooking_ingredient ON cooking_ingredients(ingredient_item_id)')
 
         conn.commit()
         conn.close()
@@ -402,18 +603,27 @@ class NMSScraper:
 
             # Use REPLACE to handle duplicates
             cursor.execute('''
-                REPLACE INTO items (
-                    id, title, description, type, group_name, infobox, categories, updated_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
-            ''', (
-                item_data['id'],
-                item_data['title'],
-                item_data.get('description'),
-                item_data.get('infobox', {}).get('type', ''),
-                group,
-                infobox_json,
-                categories_json
-            ))
+            REPLACE INTO items (
+                id, title, summary, game_description, source_info, use_info,
+                release_history, additional_info, fishing_info, progression_info,
+                type, group_name, infobox, categories, updated_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+        ''', (
+            item_data['id'],
+            item_data['title'],
+            item_data.get('summary'),
+            item_data.get('game_description'),
+            item_data.get('source_info'),
+            item_data.get('use_info'),
+            item_data.get('release_history'),
+            item_data.get('additional_info'),
+            item_data.get('fishing_info'),
+            item_data.get('progression_info'),
+            item_data.get('infobox', {}).get('type', ''),
+            group,
+            infobox_json,
+            categories_json
+        ))
 
             conn.commit()
             return True
@@ -424,13 +634,186 @@ class NMSScraper:
         finally:
             conn.close()
 
+    def save_refinery_recipes(self, item_id: str, recipe_lines: List[str]):
+        """Save refinery recipes to separate table"""
+        if not recipe_lines:
+            return
+
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        try:
+            for i, recipe_line in enumerate(recipe_lines):
+                recipe_id = f"ref_{item_id}_{i+1}"
+
+                # Parse recipe line format: "Input1,qty;Input2,qty;Output,qty;Time;Operation%Description"
+                parts = recipe_line.split(';')
+                if len(parts) < 4:
+                    continue
+
+                # Parse ingredients (all parts except last 3)
+                ingredient_parts = parts[:-3]
+                output_part = parts[-3]
+                time_part = parts[-2] if len(parts) > 4 else "1.0"
+                operation_part = parts[-1] if len(parts) > 3 else "Refining"
+
+                # Parse output
+                if ',' in output_part:
+                    output_name, output_qty = output_part.split(',', 1)
+                    output_name = output_name.strip()
+                else:
+                    output_name = output_part.strip()
+                    output_qty = "1"
+
+                # Save recipe
+                cursor.execute('''
+                    INSERT OR REPLACE INTO refinery_recipes
+                    (recipe_id, source_item_id, output_item_id, time_seconds, operation)
+                    VALUES (?, ?, ?, ?, ?)
+                ''', (recipe_id, item_id, self._resolve_item_name_to_id(output_name),
+                      float(time_part) if time_part.replace('.', '').isdigit() else 1.0, operation_part))
+
+                # Save ingredients
+                for ingredient_part in ingredient_parts:
+                    if ',' in ingredient_part:
+                        ing_name, ing_qty = ingredient_part.split(',', 1)
+                        ing_name = ing_name.strip()
+                        ing_qty = int(ing_qty) if ing_qty.isdigit() else 1
+
+                        cursor.execute('''
+                            INSERT INTO refinery_ingredients
+                            (recipe_id, ingredient_item_id, quantity)
+                            VALUES (?, ?, ?)
+                        ''', (recipe_id, self._resolve_item_name_to_id(ing_name), ing_qty))
+
+            conn.commit()
+        except sqlite3.Error as e:
+            logger.error(f"Error saving refinery recipes for {item_id}: {e}")
+        finally:
+            conn.close()
+
+    def save_cooking_recipes(self, item_id: str, recipe_lines: List[str]):
+        """Save cooking recipes to separate table"""
+        if not recipe_lines:
+            return
+
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        try:
+            for i, recipe_line in enumerate(recipe_lines):
+                recipe_id = f"cook_{item_id}_{i+1}"
+
+                # Parse recipe line format: "Output,qty;Time;Operation%Description"
+                # Example: "Chewy Wires,1;1;2.5%NOT RECOMMENDED"
+                parts = recipe_line.split(';')
+                if len(parts) < 2:
+                    continue
+
+                # Parse output (first part)
+                output_part = parts[0].strip()
+                if ',' in output_part:
+                    output_name, output_qty = output_part.split(',', 1)
+                    output_name = output_name.strip()
+                    output_qty = int(output_qty) if output_qty.isdigit() else 1
+                else:
+                    output_name = output_part
+                    output_qty = 1
+
+                # Parse time (second part, if exists)
+                time_seconds = 2.5
+                if len(parts) > 1:
+                    time_part = parts[1].strip()
+                    if time_part.replace('.', '').isdigit():
+                        time_seconds = float(time_part)
+
+                # Parse operation (third part, if exists)
+                operation = "Cooking"
+                if len(parts) > 2:
+                    operation_part = parts[2].strip()
+                    # Remove percentage and description
+                    if '%' in operation_part:
+                        operation = operation_part.split('%')[1].strip()
+                    else:
+                        operation = operation_part
+
+                # Save recipe (source is the current item, output is what we parsed)
+                cursor.execute('''
+                    INSERT OR REPLACE INTO cooking_recipes
+                    (recipe_id, source_item_id, output_item_id, time_seconds, operation)
+                    VALUES (?, ?, ?, ?, ?)
+                ''', (recipe_id, item_id, self._resolve_item_name_to_id(output_name),
+                      time_seconds, operation))
+
+                # For cooking recipes, the source item is the ingredient
+                # This is a "reverse" recipe where the current item produces the output
+                cursor.execute('''
+                    INSERT INTO cooking_ingredients
+                    (recipe_id, ingredient_item_id, quantity)
+                    VALUES (?, ?, ?)
+                ''', (recipe_id, item_id, 1))
+
+            conn.commit()
+        except sqlite3.Error as e:
+            logger.error(f"Error saving cooking recipes for {item_id}: {e}")
+        finally:
+            conn.close()
+
+    def _get_item_id_by_name(self, item_name: str) -> Optional[str]:
+        """Get item ID by name from database"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        try:
+            cursor.execute("SELECT id FROM items WHERE title = ?", (item_name,))
+            result = cursor.fetchone()
+            return result[0] if result else None
+        except sqlite3.Error:
+            return None
+        finally:
+            conn.close()
+
+    def _resolve_item_name_to_id(self, name: str) -> str:
+        """Resolve item name to ID with better fallback handling"""
+        if not name:
+            return "missing_unknown"
+
+        # Try exact match first
+        item_id = self._get_item_id_by_name(name)
+        if item_id:
+            return item_id
+
+        # Try case-insensitive match
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        try:
+            cursor.execute("SELECT id FROM items WHERE LOWER(title) = LOWER(?)", (name,))
+            result = cursor.fetchone()
+            if result:
+                return result[0]
+
+            # Try partial match (contains)
+            cursor.execute("SELECT id FROM items WHERE LOWER(title) LIKE LOWER(?)", (f"%{name}%",))
+            result = cursor.fetchone()
+            if result:
+                return result[0]
+        except sqlite3.Error:
+            pass
+        finally:
+            conn.close()
+
+        # Create missing placeholder
+        return f"missing_{name.lower().replace(' ', '_').replace('-', '_')}"
+
     def export_group_from_db(self, group: str, output_file: str) -> int:
         """Export a specific group from database to JSON file"""
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
 
         cursor.execute('''
-            SELECT id, title, description, type, infobox, categories
+            SELECT id, title, summary, game_description, source_info, use_info,
+                   release_history, additional_info, fishing_info, progression_info,
+                   type, infobox, categories
             FROM items WHERE group_name = ?
             ORDER BY title
         ''', (group,))
@@ -440,10 +823,17 @@ class NMSScraper:
             item = {
                 'id': row[0],
                 'title': row[1],
-                'description': row[2],
-                'type': row[3],
-                'infobox': json.loads(row[4]) if row[4] else {},
-                'categories': json.loads(row[5]) if row[5] else []
+                'summary': row[2],
+                'game_description': row[3],
+                'source_info': row[4],
+                'use_info': row[5],
+                'release_history': row[6],
+                'additional_info': row[7],
+                'fishing_info': row[8],
+                'progression_info': row[9],
+                'type': row[10],
+                'infobox': json.loads(row[11]) if row[11] else {},
+                'categories': json.loads(row[12]) if row[12] else []
             }
             items.append(item)
 
@@ -453,6 +843,116 @@ class NMSScraper:
 
         conn.close()
         return len(items)
+
+    def export_refinery_recipes(self, output_file: str) -> int:
+        """Export all refinery recipes to JSON file"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        cursor.execute('''
+            SELECT r.recipe_id, r.source_item_id, si.title as source_title,
+                   r.output_item_id, oi.title as output_title,
+                   r.time_seconds, r.operation
+            FROM refinery_recipes r
+            LEFT JOIN items si ON r.source_item_id = si.id
+            LEFT JOIN items oi ON r.output_item_id = oi.id
+            ORDER BY r.recipe_id
+        ''')
+
+        recipes = []
+        for row in cursor.fetchall():
+            recipe_id = row[0]
+
+            # Get ingredients for this recipe
+            cursor.execute('''
+                SELECT ri.ingredient_item_id, i.title, ri.quantity
+                FROM refinery_ingredients ri
+                LEFT JOIN items i ON ri.ingredient_item_id = i.id
+                WHERE ri.recipe_id = ?
+            ''', (recipe_id,))
+
+            ingredients = []
+            for ing_row in cursor.fetchall():
+                ingredients.append({
+                    'id': ing_row[0],
+                    'name': ing_row[1] or ing_row[0],  # Use ID as fallback name
+                    'quantity': ing_row[2]
+                })
+
+            recipe = {
+                'id': recipe_id,
+                'inputs': ingredients,
+                'output': {
+                    'id': row[3],
+                    'name': row[4] or row[3],  # Use ID as fallback name
+                    'quantity': 1
+                },
+                'time': str(row[5]),
+                'operation': row[6]
+            }
+            recipes.append(recipe)
+
+        # Save to JSON file
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(recipes, f, indent=2, ensure_ascii=False)
+
+        conn.close()
+        return len(recipes)
+
+    def export_cooking_recipes(self, output_file: str) -> int:
+        """Export all cooking recipes to JSON file"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        cursor.execute('''
+            SELECT r.recipe_id, r.source_item_id, si.title as source_title,
+                   r.output_item_id, oi.title as output_title,
+                   r.time_seconds, r.operation
+            FROM cooking_recipes r
+            LEFT JOIN items si ON r.source_item_id = si.id
+            LEFT JOIN items oi ON r.output_item_id = oi.id
+            ORDER BY r.recipe_id
+        ''')
+
+        recipes = []
+        for row in cursor.fetchall():
+            recipe_id = row[0]
+
+            # Get ingredients for this recipe
+            cursor.execute('''
+                SELECT ci.ingredient_item_id, i.title, ci.quantity
+                FROM cooking_ingredients ci
+                LEFT JOIN items i ON ci.ingredient_item_id = i.id
+                WHERE ci.recipe_id = ?
+            ''', (recipe_id,))
+
+            ingredients = []
+            for ing_row in cursor.fetchall():
+                ingredients.append({
+                    'id': ing_row[0],
+                    'name': ing_row[1] or ing_row[0],  # Use ID as fallback name
+                    'quantity': ing_row[2]
+                })
+
+            recipe = {
+                'id': recipe_id,
+                'inputs': ingredients,
+                'output': {
+                    'id': row[3],
+                    'name': row[4] or row[3],  # Use ID as fallback name
+                    'quantity': 1
+                },
+                'time': str(row[5]),
+                'operation': row[6]
+            }
+            recipes.append(recipe)
+
+        # Save to JSON file
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(recipes, f, indent=2, ensure_ascii=False)
+
+        conn.close()
+        return len(recipes)
 
 def main():
     """Main function"""
@@ -567,15 +1067,113 @@ def main():
             logger.info(f"Skipping obsolete/pre-release item: {page_title}")
             continue
 
+        # Skip location-specific minerals
+        if '{{Mineral infobox' in raw_content:
+            logger.info(f"Skipping location-specific mineral: {page_title}")
+            continue
+
+        # Skip specific pages by title
+        skip_titles = [
+            'Travel',
+            'Artifact',
+            'Multi-Tool',
+            "Stamina technology",
+            "Protection technology",
+            "Scan technology",
+            "Stamina technology",
+            "Projectile technology",
+            "Laser technology",
+            "Artifact Research",
+            "Artifact Database",
+            "Ferrite"
+        ]
+
+        if page_title in skip_titles:
+            logger.info(f"Skipping specific page: {page_title}")
+            continue
+
+        # Skip pages based on categories (more flexible approach)
+        skip_categories = [
+            'Category:NPC',
+            'Category:Flora',
+            'Category:Fauna',
+            'Category:Minerals',
+            'Category:Album',
+            'Category:Mechanics',
+            'Category:Multi-Tool',
+            'Category:Cuboid Room',
+            'Category:Container',
+            'Category:Artifact' if ('==List of' in raw_content or '{{disambig}}' in raw_content) else None,  # Skip artifact listing/disambiguation pages
+        ]
+
+        # Check if page has any skip categories (handle variations like [[Category:Name]] and [[Category:Name| ]])
+        should_skip = False
+        skip_reason = ""
+        for category in skip_categories:
+            if category:
+                # Check for both [[Category:Name]] and [[Category:Name| ]] patterns
+                if f'[[{category}]]' in raw_content or f'[[{category}|' in raw_content:
+                    should_skip = True
+                    skip_reason = f'[[{category}]]'
+                    break
+
+        # Additional pattern-based skips for edge cases
+        if not should_skip:
+            skip_patterns = [
+                ('is a visual catalogue' in raw_content, 'visual catalogue'),
+                ('is a visual catalog' in raw_content, 'visual catalog'),
+                ('index page' in raw_content, 'index page'),
+                ('visual guide page' in raw_content, 'guide page'),
+                ('{{Flora infobox' in raw_content, 'flora infobox'),
+                ('{{Fauna infobox' in raw_content, 'fauna infobox'),
+                ('{{Creature infobox' in raw_content, 'creature infobox'),
+                ('{{disambig}}' in raw_content, 'disambiguation'),
+                ('one of the major methods' in raw_content, 'farming guide'),
+                ('is a container' in raw_content, 'container'),
+                ('are single use' in raw_content, 'single use'),
+                ('are a type of' in raw_content, 'type'),
+                ('are the primary materials for' in raw_content, 'resource division'),
+                ('are one of the major materials used to' in raw_content, 'resource division'),
+                ('are one of the' in raw_content and 'divisions of the' in raw_content, 'resource division'),
+            ]
+
+            for condition, reason in skip_patterns:
+                if condition:
+                    should_skip = True
+                    skip_reason = reason
+                    break
+
+        if should_skip:
+            logger.info(f"Skipping {skip_reason} page: {page_title}")
+            continue
+
         # Parse content
         infobox = scraper.parse_infobox(raw_content)
-        description = scraper.parse_description(raw_content)
+        summary = scraper.parse_summary(raw_content)
+        game_description = scraper.parse_game_description(raw_content)
+        source_info = scraper.parse_source_info(raw_content)
+        use_info = scraper.parse_use_info(raw_content)
+        release_history = scraper.parse_release_history(raw_content)
+        additional_info = scraper.parse_additional_info(raw_content)
+        fishing_info = scraper.parse_fishing_info(raw_content)
+        progression_info = scraper.parse_progression_info(raw_content)
+        refinery_recipes = scraper.parse_refinery_recipes(raw_content)
+        cooking_recipes = scraper.parse_cooking_recipes(raw_content)
         categories = scraper.parse_categories(raw_content)
 
         # Create item data
         item_data = {
             'title': page_title,
-            'description': description,
+            'summary': summary,
+            'game_description': game_description,
+            'source_info': source_info,
+            'use_info': use_info,
+            'release_history': release_history,
+            'additional_info': additional_info,
+            'fishing_info': fishing_info,
+            'progression_info': progression_info,
+            'refinery_recipes': refinery_recipes,
+            'cooking_recipes': cooking_recipes,
             'infobox': infobox,
             'categories': categories
         }
@@ -585,9 +1183,17 @@ def main():
         item_id = scraper.generate_item_id(page_title, group)
         item_data['id'] = item_id
 
-        # Save to database
+        # Save to database (items only, recipes will be processed later)
         if scraper.save_item_to_db(item_data, group):
             group_counts[group] += 1
+
+            # Collect recipes for later processing (when all items exist)
+            if refinery_recipes or cooking_recipes:
+                scraper.collected_recipes[item_data['id']] = {
+                    'refinery': refinery_recipes,
+                    'cooking': cooking_recipes
+                }
+                logger.info(f"📋 Collected recipes for {page_title}: {len(refinery_recipes)} refinery, {len(cooking_recipes)} cooking")
 
         if i % 10 == 0:
             print(f"Progress: {i}/{len(all_pages)} - Current: {page_title} → {group}")
@@ -595,6 +1201,29 @@ def main():
         time.sleep(args.delay)
 
     # Export from database to JSON files
+        # Process collected recipes now that all items exist
+    print(f"\n📋 Processing collected recipes...")
+    print("="*50)
+
+    print(f"Total items with collected recipes: {len(scraper.collected_recipes)}")
+
+    recipe_counts = {'refinery': 0, 'cooking': 0}
+
+    # Process all collected recipes
+    for item_id, recipes in scraper.collected_recipes.items():
+        print(f"Processing recipes for {item_id}: refinery={len(recipes.get('refinery', []))}, cooking={len(recipes.get('cooking', []))}")
+
+        if 'refinery' in recipes and recipes['refinery']:
+            scraper.save_refinery_recipes(item_id, recipes['refinery'])
+            recipe_counts['refinery'] += len(recipes['refinery'])
+
+        if 'cooking' in recipes and recipes['cooking']:
+            scraper.save_cooking_recipes(item_id, recipes['cooking'])
+            recipe_counts['cooking'] += len(recipes['cooking'])
+
+    print(f"{'refinery':15} → {recipe_counts['refinery']:4d} recipes processed")
+    print(f"{'cooking':15} → {recipe_counts['cooking']:4d} recipes processed")
+
     print(f"\n📤 Exporting from database to JSON files...")
     print("="*50)
 
@@ -610,6 +1239,13 @@ def main():
 
     total_items = sum(group_counts.values())
     print(f"{'TOTAL':15} → {total_items:4d} items")
+
+    # Export recipe files
+    print(f"\n📋 Exporting recipe files...")
+    refinery_count = scraper.export_refinery_recipes("data/Refinery.json")
+    cooking_count = scraper.export_cooking_recipes("data/NutrientProcessor.json")
+    print(f"{'refinery':15} → {refinery_count:4d} recipes → Refinery.json")
+    print(f"{'cooking':15} → {cooking_count:4d} recipes → NutrientProcessor.json")
 
     print(f"\n✅ NMS scraping complete!")
     print(f"💾 Database: {scraper.db_path}")

@@ -42,6 +42,30 @@ infobox_pattern = r'\{\{([^}]+infobox[^}]*)\}\}'
 field_pattern = r'\|\s*([^=\|]+?)\s*=\s*([^|\n]+?)(?=\s*[\|\n])'
 ```
 
+### Content Section Extraction
+```python
+# Flexible section parsing (handles spacing variations)
+summary_pattern = r'==\s*Summary\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+game_desc_pattern = r'==\s*Game description\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+source_pattern = r'==\s*Source\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+use_pattern = r'==\s*Use\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+release_pattern = r'==\s*Release history\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+additional_pattern = r'==\s*Additional information\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+fishing_pattern = r'==\s*Fishing Bait\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+progression_pattern = r'==\s*Resource progression\s*==\s*(.*?)(?=\s*==|\s*\{\{|\Z)'
+```
+
+### Category Extraction and Cleaning
+```python
+# Extract categories with pipe handling
+category_pattern = r'\[\[Category:([^\]|]+)'
+# Clean version suffixes
+cleaned_cat = re.sub(r'\s*\([^)]+\)\s*$', '', category)
+# Fallback to infobox category if no explicit categories
+if not categories and 'category' in infobox:
+    categories.append(infobox['category'])
+```
+
 ### Crafting Recipe Parsing
 ```python
 # {{Craft}} template parsing
@@ -67,6 +91,39 @@ if 'blueprint=yes' in material or '=' in material:
   }}
   ```
 - `{{Craft}}` - Basic crafting recipes
+
+## Advanced Filtering System
+
+### Category-Based Filtering
+Automatically skip pages with these categories:
+- `Category:NPC` - NPCs and merchants
+- `Category:Flora` - Plant species
+- `Category:Fauna` - Animal species
+- `Category:Minerals` - Location-specific minerals
+- `Category:Album` - Photo albums and catalogs
+- `Category:Mechanics` - Game mechanics/systems
+- `Category:Multi-Tool` - Multi-tool pages
+- `Category:Cuboid Room` - Room components
+- `Category:Container` - Container items
+- `Category:Artifact` (conditional) - Only listing/disambiguation pages
+
+### Title-Based Filtering
+Skip specific pages by exact title:
+```python
+skip_titles = [
+    'Travel',      # Travel guide page
+    'Artifact',    # Artifact listing page
+    'Multi-Tool',  # Multi-tool overview page
+]
+```
+
+### Pattern-Based Filtering
+Skip pages with specific content patterns:
+- Obsolete items: `{{Version|Obsolete}}`
+- Location minerals: `{{Mineral infobox`
+- Visual catalogs: "is a visual catalogue"
+- Disambiguation: `{{disambig}}`
+- Resource divisions: "are one of the divisions"
 
 ## Classification Keywords
 

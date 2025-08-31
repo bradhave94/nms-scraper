@@ -1,0 +1,230 @@
+[
+  {
+    "id": "prod9",
+    "title": "Heat Capacitor",
+    "summary": "Heat Capacitor is a component used in crafting.",
+    "game_description": "A thermal regulator produced from refined organic material. It is unique in its ability to produce, dissipate and distribute heat as required.\n\nCrafted from Frost Crystals.",
+    "source_info": "*Blueprint can be awarded by completing a certain stage of Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": "* Used as a construction component in Planetary Settlements.",
+    "release_history": "* Atlas Rises - Added as product.\n* NEXT - It has the same icon as Blown Transistor.\n* Visions - Value changed, previously it was worth 240,000.0",
+    "additional_info": "It resembles the lamps seen in space stations and Trading Posts.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Agricultural Product",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "nmsTech Heat Capacitor Icon 13.png",
+      "category": "Component",
+      "color": "Grey",
+      "type": "Advanced Agricultural Product",
+      "value": "180,000.0",
+      "used": "Crafting, Trading",
+      "release": "Echoes"
+    },
+    "categories": [
+      "Advanced Agricultural Product"
+    ]
+  },
+  {
+    "id": "prod5",
+    "title": "Juicy Grub",
+    "summary": "Juicy Grub is a consumable that can be harvested from Juicy Grubs.",
+    "game_description": "This pupa, pulsating and warm, has begun its transformation from throbbing sac of mucus into an unspeakably vile insectoid.\n\nTheoretically processable in a Nutrient Processor to generate edible products.\n\nWARNING: grub-sac will release powerful pheromones if violated.",
+    "source_info": "Can be harvested from Juicy Grubs.",
+    "use_info": null,
+    "release_history": "*Worlds Part I - Added as a consumable.\n*Aquarius - Added fishing bait bonuses.",
+    "additional_info": null,
+    "fishing_info": "rarity = 6|size = 2|condition =",
+    "progression_info": null,
+    "type": "Vile Larva",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.BUGGRUB.png",
+      "color": "Green",
+      "category": "Consumable",
+      "type": "Vile Larva",
+      "value": "11,000",
+      "release": "WorldsTwo"
+    },
+    "categories": [
+      "Consumable"
+    ]
+  },
+  {
+    "id": "prod2",
+    "title": "Life Support Gel",
+    "summary": null,
+    "game_description": "Emergency life support fuel.\n\nSynthesised from rocket fuel crystals and carbon, this gel offers a temporary boost to life support systems. Long-term impact on user's lungs is currently unknown.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "*Origins - Now gives 100% charge to Life Support, previously gave 50%. Replaced Oxygen Capsule in all recipes. Icon changed.\n*Waypoint - Only available for purchase on \"Goods Availability->Abundant\" setting.",
+    "additional_info": "*Provides 100% charge to Life Support when consumed. Despite the tooltip, it does not seem to damage the user's lungs in the long term.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Portable Life Support Power",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.gel2.png",
+      "category": "Consumable",
+      "color": "",
+      "type": "Portable Life Support Power",
+      "value": "200",
+      "release": "WorldsTwo"
+    },
+    "categories": [
+      "Consumable"
+    ]
+  },
+  {
+    "id": "prod3",
+    "title": "Liquid Explosive",
+    "summary": "Liquid Explosive is an advanced agricultural product.",
+    "game_description": "A general purpose high explosive, offered in liquid form for convenience of transport and deployment. Do not drink.\n\nCrafted from Acid and Unstable Gel.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": "thumb|A Liquid Explosives Farm",
+    "release_history": "* Atlas Rises - added as an agricultural product\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": "The Liquid Explosive blueprint is rewarded when you construct the Science Terminal and complete the Scientist quest line.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Agricultural Product",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "FARMPROD.7.png",
+      "category": "Component",
+      "color": "grey",
+      "type": "Advanced Agricultural Product",
+      "value": "800,500.0",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Advanced Agricultural Product"
+    ]
+  },
+  {
+    "id": "prod6",
+    "title": "Lost Bathysphere",
+    "summary": "Lost Bathysphere is a consumable that is immediately consumed when received. It is an unlockable helmet for the Anomaly race at the Appearance Modifier.",
+    "game_description": "A haunted Exosuit Appearance Override. Even once removed, the wearer will forever hear the whispering call of the deep ocean...\nTransform the appearance of your Exosuit at an Appearance Modifier.",
+    "source_info": "It can be acquired as a reward from the Dreams of the Deep secondary mission.\n\nIt was also provided as an award for completing the Marine Biology mission in Phase 4 of Expedition 5: Exobiology.",
+    "use_info": null,
+    "release_history": "* Beyond - Added as a consumable.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unlockable Helmet",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Nms-diving-helmet-1.jpg",
+      "category": "Consumable",
+      "type": "Unlockable Helmet",
+      "used": "",
+      "value": "",
+      "release": "Beyond"
+    },
+    "categories": [
+      "Consumable"
+    ]
+  },
+  {
+    "id": "prod4",
+    "title": "Repair Kit",
+    "summary": "thumb|Finding repair kits\nRepair Kit is a consumable product. It can be used to repair broken equipment components without having to use standard materials. This is especially useful if the repair materials are expensive or difficult to find. \n\nIt can be used to repair actual systems in a starship (Pulse Drive, Launch Thrusters, etc.). Can be used to repair slots. However, each repair kit will only repair one subcomponent of a broken module or inventory slot. Technology requiring three different materials will require three repair kits.\n\nThis product can be harvested from a Derelict Freighter. Soon after entering, a room is reached with a large computer screen on the left and a crate on the right. If the supplies from this box are claimed, repair kit(s) will be part of the resulting collection.",
+    "game_description": "A highly useful piece of survival technology, the Repair Kit allows damaged equipment to be quickly and efficiently restored to working order.\n\nWhile repairing a piece of techology",
+    "source_info": "*Purchased from Contraband Agent for around 100,000 Nexus Missions\n*Bought at the Scrap Dealer for 811-828 Tainted Metal\n*Opened from Suspicious Packet (Goods)\n*Purchased from Harmonic Camp terminals for around 200 Void Mote",
+    "use_info": null,
+    "release_history": "*Desolation - Added to the game.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Automatic Patching Unit",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.REPAIRKIT.png",
+      "category": "Consumable",
+      "color": "Darkblue",
+      "type": "Automatic Patching Unit",
+      "value": "450.0",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Consumable"
+    ]
+  },
+  {
+    "id": "prod1",
+    "title": "Salvaged Fleet Unit",
+    "summary": "Salvaged Fleet Unit is a consumable that can be installed in the tech slots of a freighter to boost the stats of your freighter or frigates.\n\nCan be deployed to improve...\n\n* its Hyper-drive\n* the speed of your fleet\n* the fuel efficiency of your fleet\n* combat performance of your fleet\n* exploration abilities of your fleet\n* mining capabilities of your fleet\n* trading abilities of your fleet",
+    "game_description": "A deployable freighter upgrade, salvaged from %NAME%.\n\nCan be re-deployed into your own capital ship to improve the speed of your fleet.\n\nA options:\n* the hyperdrive unit\n* fleet coordination hardware\n\nB options:\n* primary drive\n* long-range outfitting systems\n* long-range communication systems\n* long-range communication array\n* long-range defensive systems\n* long-range scanning systems\n\nC options:\n* hyperdrive range and efficiency\n* expedition fuel efficiency\n* expedition speed\n* combat and defense abilities of all expeditions\n* the exploration and scientific abilities of all expeditions\n* the trade abilities of all expeditions\n* the industrial abilities of all expeditions",
+    "source_info": "* Final reward from Derelict Freighters (100%)\n* Destroying NPC freighters, guaranteed S-Class (70%)\n* Explorers Guild Envoy (Requires guild standing level 9)",
+    "use_info": null,
+    "release_history": "*Desolation - Added to the game.",
+    "additional_info": "*There are no X-class Salvaged Fleet Units\n*Even though the highest hyperdrive range listed is 250 ly, there is a difference between upgrade modules due to rounding. As of 2022-08-14 the highest stat module is the one from SV Yellow Miura allowing to reach 6405.1 range with 181 ly base range freighter.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Deployable Salvage",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PROCTECH.S.HYPERDRIVE.png",
+      "category": "Consumable",
+      "color": "Yellow",
+      "type": "Deployable Salvage",
+      "value": "",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Upgrade Modules",
+      "Derelict Freighter"
+    ]
+  },
+  {
+    "id": "prod7",
+    "title": "Starshield Battery",
+    "summary": "Starshield Battery is a consumable and one of the portable energy storages.",
+    "game_description": "A power storage unit optimised for use in starship defensive systems.\n\nTritium-fuelled capacitors provide quick-release charge for the Deflector Shield, but would overload smaller-scale equipment.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Beyond - Added as a consumable.\n* NextGen - Price per unit decreased to 500",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Portable Energy Storage",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.powercell2.png",
+      "color": "Yellow",
+      "category": "Consumable",
+      "type": "Portable Energy Storage",
+      "used": "",
+      "value": "500",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Consumable"
+    ]
+  },
+  {
+    "id": "prod8",
+    "title": "Warp Hypercore",
+    "summary": "Warp Hypercore is a consumable used to fuel the starship's hyperdrive. It offers a higher fuel capacity compared to a standard Warp Cell.",
+    "game_description": "A high-capacity antimatter-based fuel, this cell harnesses an internal black hole generator to power starship hyperdrives across multiple warp jumps.\n\nCell walls are specially designed to reflect any reality paradoxes back towards the heart of the unit, where they generate additional power.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Beyond - Added as a consumable.\n* Prisms - Added Synthesis Laboratory as a blueprint source.\n* Endurance - Icon changed.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Hyperdrive Charging Unit",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.WARPCELL2.png",
+      "category": "Consumable",
+      "type": "Hyperdrive Charging Unit",
+      "value": "46.750",
+      "used": "",
+      "release": "Endurance"
+    },
+    "categories": [
+      "Consumable"
+    ]
+  }
+]

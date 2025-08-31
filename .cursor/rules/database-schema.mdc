@@ -11,15 +11,82 @@ description: SQLite database schema and data management
 CREATE TABLE IF NOT EXISTS items (
     id TEXT PRIMARY KEY,
     title TEXT NOT NULL,
-    group_name TEXT NOT NULL,
-    content TEXT,
-    infobox_data TEXT,
-    description TEXT,
-    crafting_requirements TEXT,
-    usage_info TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    summary TEXT,
+    game_description TEXT,
+    source_info TEXT,
+    use_info TEXT,
+    release_history TEXT,
+    additional_info TEXT,
+    fishing_info TEXT,
+    progression_info TEXT,
+    type TEXT,
+    group_name TEXT,
+    infobox TEXT,
+    categories TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )
 ```
+
+## Comprehensive Data Extraction
+
+### Text Content Fields (populate only if present)
+- **summary**: Wiki Summary section content (handles spacing variations like `== Summary ==`)
+- **game_description**: Official in-game description text (Game description, In-game description)
+- **source_info**: How to obtain/acquire the item (Source, How to acquire, Sources sections)
+- **use_info**: What the item is used for (Use, Usage, Uses sections)
+- **release_history**: When item was added/changed (Release history section)
+- **additional_info**: Extra notes, tips, real-world context (Additional information/notes sections)
+- **fishing_info**: Fishing bait bonuses if applicable (FishingBait template or Fishing Bait section)
+- **progression_info**: Resource upgrade paths (Resource progression section)
+
+### Structured Data Fields
+- **infobox**: JSON object with all infobox data (value, rarity, stats, symbol, etc.)
+- **categories**: JSON array of wiki categories (cleaned, no version suffixes)
+- **type**: Item type from infobox
+- **group_name**: Classification group (rawMaterials, products, technology, etc.)
+
+## Advanced Filtering System
+
+### Category-Based Filtering
+Pages are automatically filtered out based on categories:
+- `Category:NPC` - NPCs and merchants
+- `Category:Flora` - Plant species
+- `Category:Fauna` - Animal species
+- `Category:Minerals` - Location-specific minerals
+- `Category:Album` - Photo albums and catalogs
+- `Category:Mechanics` - Game mechanics/systems
+- `Category:Multi-Tool` - Multi-tool pages
+- `Category:Cuboid Room` - Room components
+- `Category:Container` - Container items
+- `Category:Artifact` (conditional) - Listing/disambiguation pages only
+
+### Title-Based Filtering
+Specific pages filtered by exact title match:
+- "Travel" - Travel guide page
+- "Artifact" - Artifact listing page
+- "Multi-Tool" - Multi-tool overview page
+
+### Pattern-Based Filtering
+Content patterns that indicate non-item pages:
+- Obsolete/pre-release items (`{{Version|Obsolete}}`)
+- Location-specific minerals (`{{Mineral infobox`)
+- Visual catalogs/guides ("is a visual catalogue")
+- Disambiguation pages (`{{disambig}}`)
+- Resource division pages ("are one of the divisions")
+
+## Category Processing
+
+### Category Extraction
+1. **Primary**: Extract from explicit `[[Category:Name]]` tags
+2. **Fallback**: Use infobox `category` field if no explicit categories
+3. **Cleaning**: Remove version suffixes like `(Abyss)`, `(NEXT)`
+4. **Deduplication**: Prevent duplicate categories
+
+### Examples
+- `[[Category:Historical Document (Abyss)|]]` → `"Historical Document"`
+- `[[Category:Technology (NEXT)|]]` → `"Technology"`
+- Infobox `category = Tradeable` → `"Tradeable"`
 
 ## Item ID Generation
 
@@ -68,7 +135,56 @@ Items use sequential IDs based on their classification groups:
 
 ## Data Export Process
 
-1. Scrape items into SQLite database
+1. Scrape items into SQLite database with comprehensive field extraction
 2. Generate unique IDs for cross-referencing
-3. Export groups to individual JSON files
+3. Export groups to individual JSON files with all fields
 4. Extract recipes with proper ID references
+
+## Example Item Data Structure
+
+```json
+{
+  "id": "raw1",
+  "title": "Carbon",
+  "summary": "Carbon (C) is a resource used in recharging and one of the fuel elements for refining.",
+  "game_description": "The building block of all organic life. Of critical importance to space travellers...",
+  "source_info": "Can be mined from flora. It can be found as a secondary element in some minerals...",
+  "use_info": "Used for recharging mining equipment and crafting...",
+  "release_history": "Release - Added as a resource. Pathfinder - It can no longer be used to recharge exosuit life support...",
+  "additional_info": "Real-world context and additional notes...",
+  "fishing_info": "rarity = 6|size = 2|condition =",
+  "progression_info": null,
+  "type": "Unrefined Organic Element",
+  "infobox": {
+    "symbol": "C",
+    "value": "12",
+    "rarity": "Common",
+    "used": "Building, Crafting, Charging, Upgrading"
+  },
+  "categories": ["Fuel elements"]
+}
+```
+
+### Stasis Device Example (Tradeable with Infobox Category)
+```json
+{
+  "id": "prod15",
+  "title": "Stasis Device",
+  "summary": "Stasis Device is a tradeable that can be crafted.",
+  "game_description": "A device specifically crafted to keep lifeforms alive for thousands of years...",
+  "source_info": "The blueprint can be acquired from Manufacturing Facilities...",
+  "use_info": null,
+  "release_history": "Atlas Rises - Added as a product. Visions - Value changed...",
+  "additional_info": "It is tied with the Fusion Ignitor for most valuable singular item in the game.",
+  "fishing_info": null,
+  "progression_info": null,
+  "type": "Highly Refined Technology",
+  "infobox": {
+    "value": "15,600,000.0",
+    "category": "Tradeable",
+    "color": "Grey",
+    "used": "Trading"
+  },
+  "categories": ["Tradeable"]
+}
+```

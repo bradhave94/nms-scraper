@@ -1,0 +1,1435 @@
+[
+  {
+    "id": "trade52",
+    "title": "Albumen Pearl",
+    "summary": "|thumb|Albumen Pearls are found in Humming Sacs\nAlbumen Pearl is a trade commodities.\n\nIt is a valuable gemstone most frequently found enclosed inside of Humming Sacs, which are shells that resemble plants. It currently has no use other than trading.",
+    "game_description": "Gemstone formed over the course of centuries within the egg of a super-incubatory species. Highly ornamental, these gems are themselves living seeds, lucent grains of potential life.\n\nCan be sold at a Galactic Trade Terminal.",
+    "source_info": "* Albumen Pearls are most reliably sourced in Farmer, Albumen Pearls can also be grown as a product of the Albumen Pearl Orb plant, with a harvest time of 2 hours.",
+    "use_info": null,
+    "release_history": "* Foundation - plants now register on the scanner \n* wanted level\n* Prisms - value changed, was 9,025.0",
+    "additional_info": "*If it stored in the inventory, scanning pirates will target the player during spaceflight. Many players have reported getting involved in large scale space battles when having large quantities of Albumen Pearls.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade commodity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.abumenpearl.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade commodity",
+      "value": "10,640",
+      "desc": "Valuable green gem stone found in shells",
+      "release": "Echoes"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade37",
+    "title": "Atlas Seed",
+    "summary": "There are different seeds, and each seed requires the previous one as a crafting component. After visiting the 11th Atlas Interface and activating it, it will ask for the last seed, Heart of the Sun, in order to complete the Atlas Path. Once you give it the Heart of the Sun, you get the choice to give birth to a new star.\n\nThis game path can only be done once.",
+    "game_description": null,
+    "source_info": "You receive the first crafting blueprint for an Atlas Seed after interacting with an Atlas Interface for the first time, and an additional blueprint for each one visited. Be sure to have the Atlas Path selected in your mission log prior to visiting an Atlas Interface. Attempting otherwise may cause it to glitch out.",
+    "use_info": null,
+    "release_history": null,
+    "additional_info": "*To complete the Atlas path, you will require the following resources (in total):\n** 125 Chromatic Metal\n** 100 Pure Ferrite\n** 100 Ionised Cobalt\n** 5 Magnetised Ferrite\n** 100 Copper\n** 100 Cadmium\n** 100 Emeril\n** 100 Indium\n** 100 Gold\n\n* Additionally, you will need to craft a Cadmium Drive, an Emeril Drive, and an Indium Drive in order to collect Cadmium, Emeril, and Indium, respectively.\n* Upon completion of the Atlas Path, you're given a new mission to proceed to a Black Hole. Black holes are now visible on the Galactic Map.\n* Completing the quest consumes the Heart of the Sun.\n* If you save your game after completing the Atlas Path before proceeding to complete the Black Hole quest and restart the game, you may need to jump to the next Atlas Interface and \"Birth a New Star\" again for the quest to be considered complete. Even though Black Holes will be visible on the map. (Possible bug in v1.35)",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Atlas_Seed.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "",
+      "release": "Waypoint"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade19",
+    "title": "Banned Weapons",
+    "summary": "Banned Weapons is a tradeable item.",
+    "game_description": "Hacked together from the salvaged remains of Sentinel forces, these potent weapons are a favourite of outlaws across the galaxy.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "source_info": "Purchaseable in outlaw systems.",
+    "use_info": "Component is useful only to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "*Outlaws - Added to the game.",
+    "additional_info": "Selling in non-outlaw systems provides a price mark-up of +150% - +180%.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Banned Weapons",
+      "image": "PRODUCT.SMUGGLING7.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "83,000.0",
+      "type": "Smuggled Goods",
+      "release": "Echoes"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade4",
+    "title": "Blood Salt",
+    "summary": "Blood Salt is a tradeable item.",
+    "game_description": "Jars of murky, foul-smelling crystals. Produced in viscous evaporation traps, these organic salts are used in the manufacture of illegal pheromones.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "source_info": "Purchaseable in outlaw systems.",
+    "use_info": "Component is useful only to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "*Outlaws - Added to the game.",
+    "additional_info": "Selling in non-outlaw systems provides a price mark-up of +150% - +180%.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Blood Salt",
+      "image": "PRODUCT.SMUGGLING1.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "2,000.0",
+      "type": "Smuggled Goods",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade39",
+    "title": "Captured Nanode",
+    "summary": "Captured Nanode is a curiosity, also known as the 1st of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
+    "game_description": "Atlas Seed containing zonally-shifted quasi-stellar substrate. Warning: do not allow matrix to commune with this dimensional space.",
+    "source_info": "The blueprint is given after talking to an Pathfinder or above is required.",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a curiosity.\n* NEXT - Blueprint changed, formerly used Iridium.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.1.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "Visions"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade38",
+    "title": "Circuit Board",
+    "summary": "Circuit Board is a tradeable and it is worth 916,250.0",
+    "game_description": "Stackable, semi-flexible circuit board made from a highly durable synthetic polymer.\n\nCrafted from Heat Capacitors and Poly Fibre.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Foundation - Added as a product.\n* NEXT 1.64 - Fixed an issue where players could fail to learn the Circuit Board blueprint at the correct time.\n* NEXT 1.58 - Value changed, previously it was worth 1,196,250.0",
+    "additional_info": "* The blueprint is rewarded when you construct the Overseer\n* Since you only need to grow four different plants (Frost Crystal, Solanium, Cactus Flesh, and Star Bulb), these can be an effective way of making money.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Agricultural Product",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "FARMPROD.9.png",
+      "category": "Tradeable",
+      "color": "Grey",
+      "type": "Advanced Agricultural Product",
+      "value": "916,250.0",
+      "used": "Crafting, Trading",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade49",
+    "title": "Comet Droplets",
+    "summary": "Comet Droplets are a 3rd tier tradeable.",
+    "game_description": "Several canisters of comet droplets.\n\nAn elaborate trading name for chunks of meteorite, these rocks are nonetheless extremely valuable to the advanced material economies that can process them.",
+    "source_info": "Comet Droplets can be purchased from Galactic Trade Terminals in all medium-wealth and high-wealth Trading Economy star systems. They are also offered as a reward for doing missions at the Mission Board.",
+    "use_info": "Comet Droplets can be sold for a profit in any Advanced Materials Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5. It has the same icon as Explosive Drones and Solenoid.\n* Waypoint - Type changed, formerly \"Trade Commodity\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Comet Droplets",
+      "image": "TRADEPROD.COMMODITY3.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods",
+      "value": "15,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade21",
+    "title": "Convergence Cube",
+    "summary": "Convergence Cube is a trade commodities.",
+    "game_description": "Device used by the Korvax for the storage of historical and cultural information.",
+    "source_info": "* It can be found in Damaged Containers or as monolith rewards. \n* It can be purchased from NPCs at Trading Posts in Korvax systems.\n* It is a possible reward from frigate expeditions.\n* It is a possible trade from wandering traders you encounter while using the Pulse Engine.\n* It can be given by a Korvax space station exploration guild envoy, if you have a sufficient exploration guild rank.\n* It can be sold by landed NPC pilots",
+    "use_info": null,
+    "release_history": "* Release - Introduced to the game.\n* NEXT - Value changed, previously it was worth 13,062.5",
+    "additional_info": "* It can be sold at the Galactic Trade Terminal.\n* One is required during the Scientific Research to progress further in the mission.\n* Three are required to purchase a Korvax Settlement.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade commodity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.KORVAXCUBE.png",
+      "category": "Curiosity",
+      "color": "Purple",
+      "type": "Trade commodity",
+      "value": "13,063.0",
+      "release": "Echoes"
+    },
+    "categories": [
+      "Trade commodity"
+    ]
+  },
+  {
+    "id": "trade17",
+    "title": "Counterfeit Circuits",
+    "summary": "Counterfeit Circuits is a tradeable item.",
+    "game_description": "Reversed-engineered from a captured space station core, these unlicensed circuits are used in a wide range of black- and grey-market technologies.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "source_info": "* Purchaseable in outlaw systems\n* From freighter fleets in outlaw systems\n* Can be found in Storage Containers aboard Crashed Freighters\n* Missions from the Bounty Master aboard outlaw space stations",
+    "use_info": null,
+    "release_history": "*Outlaws - Added to the game.",
+    "additional_info": "*Component can be sold at a Trade Terminal.\n*Selling in non-outlaw systems provides a price mark-up of +150% - +180%.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Counterfeit Circuits",
+      "image": "PRODUCT.SMUGGLING6.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "68,000.0",
+      "type": "Smuggled Goods",
+      "release": "Singularity"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade50",
+    "title": "Dark Matter",
+    "summary": "Dark Matter is a curiosity, also known as the 4th of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
+    "game_description": "An Atlas Seed shell encompassing a void element harvested from the collapse state of the last universe. Toxic if ingested.",
+    "source_info": "The blueprint is given after talking to an Cassini or above is required.",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a curiosity.\n* NEXT - Blueprint changed, formerly used Noospheric Orb and Aluminium.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.4.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade55",
+    "title": "Dawn's End",
+    "summary": "'''Dawn's End''' is a curiosity, also known as the 5th of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
+    "game_description": "Sculpted tau neutrino-boson matrix fixed within an irreplaceable Atlas Seed shell. May be semi-sentient.",
+    "source_info": "The blueprint is given after talking to an Kepler or above is required.",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a curiosity.\n* NEXT - Blueprint changed, formerly used Dark Matter and Gold.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.5.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade43",
+    "title": "De-Scented Bottles",
+    "summary": "De-Scented Bottles is a 1st tier tradeable.",
+    "game_description": "A loose collection of recycled pheromone bottles.\n\nVast quantities of pheromones are produced and distributed every day. This has spawned a lucrative trading opportunity for those willing to deal with the waste products. These glass jars have been thoroughly scrubbed and should pose no threat to the carrier.",
+    "source_info": "De-Scented Bottles can be purchased from Galactic Trade Terminals in all Scientific Economy star systems.",
+    "use_info": "De-Scented Bottles can be sold for a profit in any Trading Economy star system.\n\nIt is also used as an upgrade material for some Planetary Settlement buildings.\n\nIt is not usable by the player in Crafting or  Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Renamed, formerly \"De-Scented Pheromone Bottle\". Type changed, formerly \"Scientific Components\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Scientific)",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.EXOTICS1.png",
+      "color": "",
+      "category": "Tradeable",
+      "type": "Trade Goods (Scientific)",
+      "value": "1,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade10",
+    "title": "Decrypted User Data",
+    "summary": "Decrypted User Data is a 1st tier tradeable.",
+    "game_description": "A crate packed with hard drives, each of which contain vast amounts of decrypted user data.\n\nIndividually of low value, taken together these repositories can be processed and scanned for valuable data. This processing occurs in systems with advanced material economies.",
+    "source_info": "Decrypted User Data can be purchased from Galactic Trade Terminals in all Trading Economy star systems.",
+    "use_info": "Decrypted User Data can be sold for a profit in any Advanced Materials Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Trade Commodity\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Decrypted User Data",
+      "image": "TRADEPROD.COMMODITY1.png",
+      "color": "",
+      "category": "Tradeable",
+      "type": "Trade Goods",
+      "value": "1,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade56",
+    "title": "Dirty Bronze",
+    "summary": "Dirty Bronze is a tradeable that can be crafted or purchased.",
+    "game_description": "A popular metal alloy with a wide variety of uses. 'Dirty Bronze' has shed its scientific name in favor of the popular term for its colour.\n\nCrafted from Pure Ferrite and Pyrite.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a component.\n* NEXT - Blueprint changed, formerly used Iron and Copper. Now it can also be refined and crafted.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Alloy Metal",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.metallic.2.png",
+      "color": "Yellow",
+      "category": "Tradeable",
+      "type": "Alloy Metal",
+      "value": "25,000.0",
+      "release": "Endurance"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade28",
+    "title": "Englobed Shade",
+    "summary": "Englobed Shade is a curiosity, also known as the 2nd of 10 unique Atlas Seeds.\n\nIt has an important part in The Atlas Path mission and it is worth 1,000",
+    "game_description": "This Atlas Shell holds the remains of a parasitic space-borne lifeform, most likely of extra-dimensional origins.",
+    "source_info": "The blueprint is given after talking to an Juno or above is required.",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a curiosity.\n* NEXT - Blueprint changed, formerly used Captured Nanode and Copper.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.2.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path",
+      "AGT Galactic Archives"
+    ]
+  },
+  {
+    "id": "trade9",
+    "title": "Enormous Metal Cog",
+    "summary": "Enormous Metal Cog is a 1st tier tradeable.",
+    "game_description": "Several huge cogs.\n\nSturdy, well-made metal gears. While not advanced technology themselves, they're a vital component in countless pieces of high-tech machinery all over the galaxy.",
+    "source_info": "Enormous Metal Cog can be purchased from Galactic Trade Terminals in all Manufacturing Economy star systems.",
+    "use_info": "Enormous Metal Cog can be sold for a profit in any Technology Economy star system.\n\nIt is not usable by the player in Crafting or Base building.\n\nIt is an upgrade material for some Planetary Settlement buildings.",
+    "release_history": "* Atlas Rises - Introduced as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Industrial Components\".\n* Beacon - Used as upgrade material for new settlement building upgrade process.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Industrial)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Enormous Metal Cog",
+      "image": "TRADEPROD.COMPONENT1.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Industrial)",
+      "value": "1,000.0",
+      "desc": "",
+      "release": "Beacon"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade40",
+    "title": "Experimental Power Fluid",
+    "summary": "Experimental Power Fluid is a 4th tier tradeable.",
+    "game_description": "Corrosion-resistant barrels of an experimental power fluid.\n\nOne barrel of this highly volatile concoction is enough to power a space station for weeks on end. Particularly valued by mining economies.",
+    "source_info": "Experimental Power Fluid can be purchased from Galactic Trade Terminals in all high-wealth Power Generation Economy star systems. It is also obtainable in some, but not all, medium-wealth systems with this Economy.",
+    "use_info": "Experimental Power Fluid can be sold for a profit in any Mining Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Tradable Energy Source\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Energy Source)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Experimental Power Fluid",
+      "image": "TRADEPROD.ENERGY4.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Energy Source)",
+      "value": "30,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade51",
+    "title": "First Spawn Relics",
+    "summary": "First Spawn Relics is a tradeable item.",
+    "game_description": "Relics of the fallen Gek empire, condemned and banned by all the galaxy's major civilisations.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "source_info": "Purchaseable in outlaw systems.",
+    "use_info": "Component is useful only to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "*Outlaws - Added to the game.",
+    "additional_info": "Selling in non-outlaw systems provides a price mark-up of +150% - +180%.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "First Spawn Relics",
+      "image": "PRODUCT.SMUGGLING8.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "98,000.0",
+      "type": "Smuggled Goods",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade41",
+    "title": "Fusion Core",
+    "summary": "Fusion Core is a 5th tier tradeable.",
+    "game_description": "A slightly glowing bundle of fusion cores.\n\nPower source, engine, high-capacity heater. A fusion core is the ultimate in deep-space power generation. Highly valued by mining economies looking to make their asteroid colonies more self-sufficient.",
+    "source_info": "Fusion Core can be purchased from Galactic Trade Terminals in all high-wealth Power Generation Economy star systems.",
+    "use_info": "Fusion Core can be sold for a profit in any Mining Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5. It has the same icon as Fuel Oxidiser and Load Balancer.\n* Waypoint - Type changed, formerly \"Tradable Energy Source\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Energy Source)",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.ENERGY5.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Energy Source)",
+      "value": "50,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade5",
+    "title": "GekNip",
+    "summary": "GekNip is a trade commodities.",
+    "game_description": "Edible product much beloved by the Gek.\n\nAllows beaked traders to release delightfully scented packets of gas for a prolonged period of time.\n\nGekNip gas packets are considered an art form, and the truest representation of the Gek soul.",
+    "source_info": "*It can be found in Damaged Containers or as monolith rewards. \n*It can also be bought from NPCs in Trading Posts.\n*It is a possible reward from frigate expeditions.\n*It is also a possible trade from wandering traders you encounter while using the Pulse Engine .\n*It is a possible reward from Practice Language with Geks",
+    "use_info": null,
+    "release_history": "* Atlas Rises 1.37 - A blueprint was introduced for it a short time, making it craftable.\n* Living Ship - Added Space Encounter with traders as a possible source.",
+    "additional_info": "* They can be used to invest in Gek Planetary Settlements.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade commodity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.geknip.png",
+      "category": "Curiosity",
+      "color": "",
+      "type": "Trade commodity",
+      "value": "20,625.0",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Trade commodity"
+    ]
+  },
+  {
+    "id": "trade31",
+    "title": "Gold Nugget",
+    "summary": "Gold Nugget is a curiosity and a Valuable Ore.\n\n{| class=\"wikitable\"\n|+Yield Analysis (n=100)\n!Material\n!Prob\n!Avg\n!Range\n|-\n|Gold\n|100%\n|61.5\n|31-122\n|}",
+    "game_description": "A highly valuable ore chunk, ready to be processed into Gold.\n\nSelect in the inventory (",
+    "source_info": "Destroying asteroids",
+    "use_info": null,
+    "release_history": "* Beyond - Added as a curiosity.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Valuable Ore",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.GEODE.ASTEROID.png",
+      "color": "Darkblue",
+      "category": "Curiosity",
+      "type": "Valuable Ore",
+      "used": "",
+      "value": "3,280.0",
+      "release": "Origins"
+    },
+    "categories": [
+      "Valuable Ore"
+    ]
+  },
+  {
+    "id": "trade18",
+    "title": "GrahGrah",
+    "summary": "GrahGrah is a tradeable item.",
+    "game_description": "A canister of the now-banned Vy'keen battle gas, traditionally inhaled on the eve of battle.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "source_info": "Purchaseable in outlaw systems.",
+    "use_info": "Component is useful only to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": null,
+    "additional_info": "*Selling in non-outlaw systems provides a price mark-up of +150% - +180%.\n*An earlier (and now obsolete) version of this product can be viewed at Grahgrah.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "GrahGrah",
+      "image": "PRODUCT.SMUGGLING5.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "58,000.0",
+      "type": "Smuggled Goods",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade44",
+    "title": "Gravitino Ball",
+    "summary": "Gravitino Ball is a trade commodities\n\nAs the player walks closer to one, it will shine brighter. It can be found in small, medium, and large varieties. \n\nIt can be revealed with 35px icon.\n\nWhen a Gravitino Ball is picked up in the wild, the player receives a three-star wanted level. There is no risk gathering them from your base or freighter hydroponics, and are a great cash crop when grown en masse.",
+    "game_description": "A supersymmetric particle cluster created by divergent super-gravitational forces. A micro-rift is created as they form, and extraction of the orb prompts a localised reality weakening. Sentinel forces will respond to stablise any such anomaly.\n\nCan be sold at a Galactic Trade Terminal.",
+    "source_info": "thumb|The Gravitino Ball in a natural habitat. It only shines brightly when the player is near.\nthumb|Sentient Plants on a frozen world\n* Gravitino Balls will always spawn on planets with hostile or corrupted sentinels.\n* They can also be found from a rock-like creature with a stalk holding a Gravitino Ball. These are called Light Stalk found around Xen in the game Half-Life.\n* Several can also be found at certain Ancient Ruins.\n* With assistance from a Farmer, Gravitino Balls can also be grown as a product of the Gravitino Host plant, with a harvest time of 120 minutes.\n*Can be found on Frigate expeditions",
+    "use_info": null,
+    "release_history": "*Release - Released as part of the original game\n*NEXT - value changed to 12,445.0, was 27,500.0\n*Prisms - value changed to 40,024.0, was previously 12,445.0",
+    "additional_info": "The value can be calculated as being 40,023.5 units, due to the fact that a stack of 10 gravitino balls is worth 400,235 units. When stacked, the value is displayed as \"40,024\". When not stacked, the value is displayed as \"40,023\". Only the 10x stack has enough data to provide the real accurate value.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade commodity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.gravball.png",
+      "category": "Tradeable",
+      "color": "Grey",
+      "type": "Trade commodity",
+      "value": "40,023.5",
+      "desc": "Extremely rare and valuable.",
+      "release": "Echoes"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade42",
+    "title": "Hadal Core",
+    "summary": "Hadal Core is a tradeable.",
+    "game_description": "A highly-pressurised fleshy orb.\n\nOne can feel it push back when touched, a flash of bioluminescence stirring in the inky black core of this mysterious object.",
+    "source_info": "* Up to five pieces can be acquired from an Abyssal Horror to appear, destroying the remaining cores. \n* Can be found in Derelict Freighter containers.\n* Can be found in the form of Submerged Relics (one piece).\n* From Suspicious Packet (Goods).\n* From Nexus and Mission Board Missions.\n* As a gift from Planetary Settlement visitors.",
+    "use_info": null,
+    "release_history": "* Abyss 1.71 - Icon changed.\n* Visions - Hidden changes: The information panel has an additional icon indicating its purpose.\n* Origins - Can now also be obtained from submerged relics.",
+    "additional_info": "Sources extracted from the 3.82 version of the REWARDTABLE.MBIN game file.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Horrific Sample",
+    "infobox": {
+      "_infobox_type": "product",
+      "color": "green",
+      "image": "PRODUCT.FISHCORE.png",
+      "category": "Tradeable",
+      "type": "Horrific Sample",
+      "value": "92,625.0",
+      "used": "Trading",
+      "release": "SentinelUp"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade32",
+    "title": "Heart of the Sun",
+    "summary": "Heart of the Sun is a curiosity, also known as the last of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission.",
+    "game_description": "An Atlas Seed containing a time-locked quantum cilia suspended in a photonic shell. No others are known to exist.",
+    "source_info": "The blueprint is given after talking to an Magellan or above is required.",
+    "use_info": "Required to complete the Final Atlas Interface of the The Atlas Path story line of missions.",
+    "release_history": "* Atlas Rises - Added as a curiosity.\n* NEXT - Blueprint changed, formerly used Modified Quanta and Nanite Cluster.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.10.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "Visions"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade47",
+    "title": "Holographic Crankshaft",
+    "summary": "Holographic Crankshaft is a 4th tier tradeable.",
+    "game_description": "Packed and separated data containers for holographic crankshafts.\n\nReal crankshafts are frequently too large, noisy or hard-to-maintain for use in delicate machines. When faced with such a situation, high-tech manufacturers turn to these holographic substitutes.",
+    "source_info": "Holographic Crankshaft can be purchased from Galactic Trade Terminals in all high-wealth Manufacturing Economy star systems. It is also obtainable in some, but not all, medium-wealth systems with this Economy.",
+    "use_info": "Holographic Crankshaft can be sold for a profit in any Technology Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Introduced as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5. It has the same icon as:",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Industrial)",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.COMPONENT4.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Industrial)",
+      "used": "Trading",
+      "value": "30,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade24",
+    "title": "Hypnotic Eye",
+    "summary": "Hypnotic Eye is a tradeable.",
+    "game_description": "The eye is cold, almost frozen, to the touch. Nonetheless, it is impossible to escape the feeling it is somehow still alive.\n\nExtended exposure is not recommended. Do not stare back into the eye. Do not stare back. Do not stare back.",
+    "source_info": "* Hypnotic Eye drops when an Abyssal Horror is killed. It will disappear if not picked up within a few seconds of spawning.\n* These can be found in Derelict Freighter containers.\n* Scrapping a Grafted Eyes upgrade that is attached to your living ship will produce 2 eyes.",
+    "use_info": null,
+    "release_history": "*Abyss 1.71 - Icon changed.\n*Aquarius - Added fishing bait bonuses.",
+    "additional_info": null,
+    "fishing_info": "rarity = 6|size = 2|condition =",
+    "progression_info": null,
+    "type": "Horrific Sample",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.EYEBALL.png",
+      "category": "Tradeable",
+      "color": "Grey",
+      "type": "Horrific Sample",
+      "value": "57,000",
+      "release": "WorldsTwo"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade30",
+    "title": "Industrial-Grade Battery",
+    "summary": "Industrial-Grade Battery is a 2nd tier tradeable.",
+    "game_description": "A packet of well-isolated industrial batteries.\n\nHeavy-duty batteries are required to power deep level miningoperations",
+    "source_info": "An Industrial-Grade Battery can be purchased from Galactic Trade Terminals in all medium-wealth and high-wealth Power Generation Economy star systems. It is also obtainable in some, but not all, low-wealth systems with this Economy.",
+    "use_info": "Industrial-Grade Battery can be sold for a profit in any Mining Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5. It has the same icon as Hull Fracture.\n* Waypoint - Type changed, formerly \"Tradable Energy Source\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Energy Source)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Industrial-Grade Battery",
+      "image": "TRADEPROD.ENERGY2.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Energy Source)",
+      "value": "6,000.0",
+      "desc": "",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade3",
+    "title": "Instability Injector",
+    "summary": "Instability Injector is a 3rd tier tradeable.",
+    "game_description": "A jumbled box of instability injectors.\n\nGrand experiments often require a large number of variables to be changed in a very short period of time. An instability injector provides such a service. They can also be used to create chaos in market systems; such unethical behaviour represents an excellent trading opportunity.",
+    "source_info": "Instability Injector can be purchased from Galactic Trade Terminals in all medium-wealth and high-wealth Scientific Economy star systems.",
+    "use_info": "Instability Injector can be sold for a profit in any Trading Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Scientific Components\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Scientific)",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.EXOTICS3.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Scientific)",
+      "value": "15,000.0",
+      "desc": "",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade15",
+    "title": "Ion Sphere",
+    "summary": "Ion Sphere is a 4th tier tradeable.",
+    "game_description": "A packed crate of ion spheres.\n\nThese delicate glass spheres house a small-scale replica of the upper atmosphere. Sparkly and hypnotic to look at, these baubles are also of importance in the manufacture of advanced material alloys.",
+    "source_info": "Ion Sphere can be purchased from Galactic Trade Terminals in all high-wealth Trading Economy star systems. It is also obtainable in some, but not all, medium-wealth systems with this Economy.",
+    "use_info": "Ion Sphere can be sold for a profit in any Advanced Materials Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Trade Commodity\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Ion Sphere",
+      "image": "TRADEPROD.COMMODITY4.png",
+      "color": "",
+      "category": "Tradeable",
+      "type": "Trade Goods",
+      "value": "30,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade26",
+    "title": "Iridesite",
+    "summary": "Iridesite is a tradeable that is used for crafting.",
+    "game_description": "Advanced light metal alloy traded throughout the galactic Outer Edge. Often used in the interiors of trading shuttles to reduce weight as they ascend from planets with high gravitational fields.\n\nCrafted from Aronium, Magno-Gold and Grantine.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* NEXT 1.58 - Icon changed, now it has a mirrored and different colored icon as Rare Metal Element.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Enriched Alloy Metal",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.IRIDISITE.png",
+      "color": "yellow",
+      "category": "Tradeable",
+      "type": "Enriched Alloy Metal",
+      "value": "150,000.0",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade11",
+    "title": "Living Pearl",
+    "summary": "Living Pearl is a tradeable that is used for crafting.",
+    "game_description": "Born in the hearts of enormous glowing molluscs found deep underwater.\n\nUnlike most pearls, this sample is no unliving calcite. Some trace of the mother-clam's consciousness remains within the gem, giving it a lingering, haunting beauty.",
+    "source_info": "thumb|An Armoured Clam with open shells\nIt can be found in Armoured Clams. Damage will force them to open their shells for a short time, revealing the Living Pearl inside. If it is not taken in the allotted time, the shells will close and the player needs to damage them again. It can also be taken without doing damage by interacting and not getting too close.",
+    "use_info": null,
+    "release_history": "* Abyss 1.71 - Icon changed. It has the same icon as Pearl Offering.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Semi-Conscious Gemstone",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.CLAMPEARL.png",
+      "category": "Tradeable",
+      "color": "Grey",
+      "type": "Semi-Conscious Gemstone",
+      "value": "4,797.5",
+      "release": "Origins"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade12",
+    "title": "Mesh Decouplers",
+    "summary": "Mesh Decouplers is a 3rd tier tradeable.",
+    "game_description": "A crate of mesh decouplers.\n\nThe creation of high-tech components often involves accidental mesh-coupling. These decouplers are particularly powerful, being able to deploy six prongs simultaneously.",
+    "source_info": "Six-Pronged Mesh Decoupler can be purchased from Galactic Trade Terminals in all medium-wealth and high-wealth Manufacturing Economy star systems.",
+    "use_info": "Six-Pronged Mesh Decoupler can be sold for a profit in any Technology Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Introduced as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Renamed, formerly \"Six-Pronged Mesh Decoupler\". Type changed, formerly \"Industrial Components\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Industrial)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Mesh Decouplers",
+      "image": "TRADEPROD.COMPONENT3.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Industrial)",
+      "value": "15,000.0",
+      "desc": "",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade20",
+    "title": "Modified Quanta",
+    "summary": "Modified Quanta is a curiosity, also known as the 9th of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
+    "game_description": "This one-of-a-kind Atlas Seed holds an aesthetically pleasing mathematical construct salvaged from the simulation of an alternate reality.",
+    "source_info": "The blueprint is given after talking to an Viking or above is required.",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a curiosity.\n* NEXT - Blueprint changed, formerly used Novae Reclaiment and Viridium.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.9.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade14",
+    "title": "Moon Ether",
+    "summary": "Moon Ether is a tradeable item.",
+    "game_description": "A vat of highly volatile liquid. Its fumes are extremely flammable and a function",
+    "source_info": "Purchaseable in outlaw systems.",
+    "use_info": "Component is useful only to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "*Outlaws - Added to the game.",
+    "additional_info": "Selling in non-outlaw systems provides a price mark-up of +150% - +180%.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Moon Ether",
+      "image": "PRODUCT.SMUGGLING3.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "18,000.0",
+      "type": "Smuggled Goods",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade8",
+    "title": "Neural Duct",
+    "summary": "Neural Duct is a 5th tier tradeable.",
+    "game_description": "A box of fresh neural ducts.\n\nNeural ducts are temporary inserts designed for a brief boost of concentration and productivity. Useful everywhere, these are highly valued in trading economies where competition between workers is fierce.",
+    "source_info": "Neural Duct can be purchased from Galactic Trade Terminals in all high-wealth Scientific Economy star systems.",
+    "use_info": "Neural Duct can be sold for a profit in any Trading Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5. Its inventory appearance appears to be a recoloured and rotated Stasis Device, save for the extra object to the side. Value changes to 50,000.\n* Waypoint - Type changed, formerly \"Scientific Components\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Scientific)",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.EXOTICS5.png",
+      "color": "White",
+      "category": "Tradeable",
+      "type": "Trade Goods (Scientific)",
+      "value": "50,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade35",
+    "title": "Neutron Microscope",
+    "summary": "Neutron Microscope is a 2nd tier tradeable.",
+    "game_description": "A parcel of neutron microscopes.\n\nScientific economies produce and consume large numbers of microscopes. However, some have slight defects that render them unsuitable for precision work. These are still a trading opportunity, in that they can be sold to those unable to tell the difference.",
+    "source_info": "Neutron Microscope can be purchased from Galactic Trade Terminals in all medium-wealth and high-wealth Scientific Economy star systems. It is also obtainable in some, but not all, low-wealth systems with this Economy.",
+    "use_info": "Neutron Microscope can be sold for a profit in any Trading Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Scientific Components\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Scientific)",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.EXOTICS2.png",
+      "color": "",
+      "category": "Tradeable",
+      "type": "Trade Goods (Scientific)",
+      "value": "6,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade7",
+    "title": "Non-Stick Piston",
+    "summary": "Non-Stick Piston is a 2nd tier tradeable.",
+    "game_description": "Wrapped and greased pistons, ready for shipping.\n\nHigh-tech components frequently require rapidly moving parts, or high-endurance motors. Without specially coated pistons, the failure rate of such parts would be significantly higher.",
+    "source_info": "Non-Stick Piston can be purchased from Galactic Trade Terminals in all medium-wealth and high-wealth Manufacturing Economy star systems. It is also obtainable in some, but not all, low-wealth systems with this Economy.",
+    "use_info": "Non-Stick Piston can be sold for a profit in any Technology Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Introduced as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5. It has the same icon as Quad Servo.\n* Waypoint - Type changed, formerly \"Industrial Components\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Industrial)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Non-Stick Piston",
+      "image": "TRADEPROD.COMPONENT2.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Industrial)",
+      "value": "6,000.0",
+      "desc": "",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade34",
+    "title": "Noospheric Orb",
+    "summary": "Noospheric Orb is a curiosity, also known as the 3rd of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
+    "game_description": "An Atlas Seed capable of resonating on humanoid telepathic frequencies; may attempt to subsume any subordinate intellect in close proximity.",
+    "source_info": "The blueprint is given after talking to an Rosetta or above is required.",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a curiosity.\n* NEXT - Blueprint changed, formerly used Englobed Shade and Nickel.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.3.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade45",
+    "title": "Novae Reclaiment",
+    "summary": "Novae Reclaiment is a curiosity, also known as the 8th of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
+    "game_description": "Atlas Seed contains neutronium elements from a catastrophic supernova event that obliterated a sentient civilization in an earlier era.",
+    "source_info": "The blueprint is given after talking to an Hubble or above is required.",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a curiosity.\n* NEXT - Blueprint changed, formerly used State Phasure and Rubeum.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.8.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade53",
+    "title": "Ohmic Gel",
+    "summary": "Ohmic Gel is a 3rd tier tradeable.",
+    "game_description": "Several packets of ohmic gel.\n\nPower-hungry mining operations are fraught with danger. Ohmic gel helps keep rapidly moving parts both insulated and lubricated.",
+    "source_info": "Ohmic Gel can be purchased from Galactic Trade Terminals in all medium-wealth and high-wealth Power Generation Economy star systems.",
+    "use_info": "Ohmic Gel can be sold for a profit in any Mining Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Tradable Energy Source\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Energy Source)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Ohmic Gel",
+      "image": "TRADEPROD.ENERGY3.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Energy Source)",
+      "value": "15,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade36",
+    "title": "Organic Piping",
+    "summary": "Organic Piping is a 4th tier tradeable.",
+    "game_description": "A vat of preserved organic piping. Still warm.\n\nTo avoid difficult ethical problems, many labs grow their test subjects on a component level. The leftovers can be profitable in trading economies with relaxed medical regulations.",
+    "source_info": "Organic Piping can be purchased from Galactic Trade Terminals in all high-wealth Scientific Economy star systems. It is also obtainable in some, but not all, medium-wealth systems with this Economy.",
+    "use_info": "Organic Piping can be sold for a profit in any Trading Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5. It has the same icon as Boiler Unit and Mineral Compressor, while Oxygen Filter has a different colored icon.\n* Waypoint - Type changed, formerly \"Scientific Components\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Scientific)",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.EXOTICS4.png",
+      "color": "",
+      "category": "Tradeable",
+      "type": "Trade Goods (Scientific)",
+      "value": "30,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade46",
+    "title": "Photic Jade",
+    "summary": "Photic Jade is a curiosity, also known as the 6th of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
+    "game_description": "This irreplaceable Atlas Seed is a form of matter-adapted photons coalesced into physical solidity by unknown means.",
+    "source_info": "The blueprint is given after talking to an Dawn or above is required.",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a curiosity.\n* NEXT - Blueprint changed, formerly used Dawn's End and Emeril.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.6.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "Visions"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade6",
+    "title": "Prismatic Feathers",
+    "summary": "Prismatic Feathers is a tradeable item.",
+    "game_description": "A vacuum-sealed bundle of dazzlingly beautiful feathers. The animal that gave its life for this impossible, kaleidoscopic charm is long since extinct.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "source_info": "Purchaseable in outlaw systems.",
+    "use_info": "Component is useful only to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "*Outlaws - Added to the game.",
+    "additional_info": "Selling in non-outlaw systems provides a price mark-up of +150% - +180%.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Prismatic Feathers",
+      "image": "PRODUCT.SMUGGLING4.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "32,000.0",
+      "type": "Smuggled Goods",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade1",
+    "title": "Sac Venom",
+    "summary": "Sac Venom is a trade commodities.\n\nIt can be revealed with 35px icon.",
+    "game_description": "Stabilized poison sample initially produced by aquatic urchin creatures. A rare and expensive item on the Galactic Trade Network.",
+    "source_info": "Sac Venom can be found by destroying urchin-like creatures found on planetary surfaces and under the water. Like other high value non-stackable trading commodities, some planets have an abundance of these.\n\nWith assistance from a Farmer, Sac Venom also be grown as a product of the Venom Urchin plant, with a harvest time of 3 hours 20 minutes.",
+    "use_info": null,
+    "release_history": "* Release - Added as a trade commodity.\n* Atlas Rises - Value changed, previously it was worth 26,125.0",
+    "additional_info": "If found in the wild, picking one up will immediately give the player a three-star wanted level. Once a player begins mining Sac Venom, two drones and a Sentinel Quad are dispatched to interfere.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade commodity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.sacvenom.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade commodity",
+      "value": "60,800",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Point of Interest"
+    ]
+  },
+  {
+    "id": "trade16",
+    "title": "Spark Canister",
+    "summary": "Spark Canister is a 1st tier tradeable.",
+    "game_description": "A crate packed with spark canisters.\n\nMany industrial and mining processes have considerable power demands. A counterpart to the slow release of a battery, spark canisters are able to meet these demands instantaneously.",
+    "source_info": "Spark Canister can be purchased from Galactic Trade Terminals in all Power Generation Economy star systems. It can also be found in lockers on Derelict Freighter encounters.",
+    "use_info": "Spark Canister can be sold for a profit in any Mining Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5\n* Waypoint - Type changed, formerly \"Tradable Energy Source\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Energy Source)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Spark Canister",
+      "image": "TRADEPROD.ENERGY1.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Energy Source)",
+      "value": "1,000.0",
+      "desc": "",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade22",
+    "title": "Star Silk",
+    "summary": "Star Silk is a 2nd tier tradeable.",
+    "game_description": "Several spools of star silk.\n\nStar silk is woven on enormous solar looms in orbit around trading planets. Cosmic ray impact triggers the pattern of the weave, which can then be used in advanced material processing.",
+    "source_info": "Star Silk can be purchased from Galactic Trade Terminals in all medium-wealth and high-wealth Trading Economy star systems. It is also obtainable in some, but not all, low-wealth systems with this Economy.",
+    "use_info": "Star Silk can be sold for a profit in any Advanced Materials Economy star system.\n\nStar Silk is used to craft the Classic Armchair which is available from the Quicksilver Synthesis Companion aboard the Space Anomaly.\n\nIt is used as an upgrade material for some Planetary Settlement buildings.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Trade Commodity\".\n* Beacon - Used as upgrade material for new settlement building upgrade process.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Star Silk",
+      "image": "TRADEPROD.COMMODITY2.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Trade Goods",
+      "value": "6,000.0",
+      "release": "Beacon"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade29",
+    "title": "State Phasure",
+    "summary": "State Phasure is a curiosity, also known as the 7th of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
+    "game_description": "For unknown reasons, this unique Atlas Seed has been phased out of alignment with this quantum reality. Contents cannot be determined.",
+    "source_info": "The blueprint is given after talking to an Curiosity or above is required.",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a curiosity.\n* NEXT - Blueprint changed, formerly used Photic Jade and Cymatygen.\n* Beyond - It has the same, but a different colored icon as Soul Engine.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.7.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade23",
+    "title": "Stolen DNA Samples",
+    "summary": "Stolen DNA Samples is a tradeable item.",
+    "game_description": "Sealed vials of unregistered DNA samples, free of the standard biosecurity mechanisms that prevent unlawful genetic tampering.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "source_info": "Purchaseable in outlaw systems.",
+    "use_info": "Component is useful only to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "*Outlaws - Added to the game.",
+    "additional_info": "Selling in non-outlaw systems provides a price mark-up of +150% - +180%.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Stolen DNA Samples",
+      "image": "PRODUCT.SMUGGLING2.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "9,000.0",
+      "type": "Smuggled Goods",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade27",
+    "title": "Storm Crystal",
+    "summary": "Storm Crystal is a extreme weather planets.\n\nDuring Extreme storms it can be located with the 35px|link= icon. It can also easily be found visually due to its bright glow.",
+    "game_description": "A rare and highly valuable cluster of storm crystals. These crystalline structures thrive in stormy conditions, and naturally attract lighting strikes, becoming spectacularly luminescent when ionised. Exclusively found on  extreme weather planets.",
+    "source_info": "It can be harvested on extreme weather planets during storms. Look for planets with activated minerals and search during a storm. Not all extreme weather or activated mineral planets have storm crystals.\n\nOther sources:\n*From the Mercenaries Guild envoy aboard space stations (~14.5%)\n*Certain Nexus missions (8.5%)\n*Analysing a Crystal Fragment (5%)\n*Derelict Freighter Crates (5%)\n*Suspicious Packet (Goods) (3%)\n*From Bounty Hunter missions in outlaw systems (3%)\n*Mission Board Missions (~0.7%)",
+    "use_info": null,
+    "release_history": "*Visions - Added as a curiosity.\n*Living Ship - value changed to 85,368.1 units\n*Desolation - can be found on Derelict Freighters\n*Origins - value changed back to 129,150.0 units.\n*Waypoint - value changed to 211,150.0 units.\n*Worlds Part II - can now be found on",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.STORMCRYSTAL.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "211,150",
+      "release": "Worlds Part II"
+    },
+    "categories": [
+      "Curiosity"
+    ]
+  },
+  {
+    "id": "trade2",
+    "title": "Teleport Coordinators",
+    "summary": "Teleport Coordinators are a 5th tier tradeable.",
+    "game_description": "A bundle of precisely calibrated teleport coordinators.\n\nThese pin-prick sized circuits are vital to the delicate process of inserting reinforcing material into advanced alloys. They can also aid long-distance sales efforts.",
+    "source_info": "Teleport Coordinators can be purchased from Galactic Trade Terminals in all high-wealth Trading Economy star systems.",
+    "use_info": "Teleport Coordinators can be sold for a profit in any  class=\"Planetary Settlement upgrades\"\n|+ Settlement Upgrades\n! Cost !! Structure!! Class\n|-\n| 9 Teleport Coordinators|| Trading centre || S\n|}\n\nIt is not usable by the player in [[Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5. It has the same icon as Hermetic Seal.\n* Waypoint - Type changed, formerly \"Trade Commodity\".\n* Beacon - Required as a material for updating some settlement building.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Teleport Coordinators",
+      "image": "TRADEPROD.COMMODITY5.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods",
+      "value": "50,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade54",
+    "title": "Vector Compressors",
+    "summary": null,
+    "game_description": "Vector Compressors is a 5th tier tradeable.",
+    "source_info": "High Capacity Vector Compressor can be purchased from mission",
+    "use_info": "High Capacity Vector Compressor can be sold for a profit in any Technology Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5. It has the same icon as Mind Control Device.\n* Waypoint - Renamed, formerly \"High Capacity Vector Compressor\". Type changed, formerly \"Industrial Components\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Industrial)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Vector Compressors",
+      "image": "TRADEPROD.COMPONENT5.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Industrial)",
+      "value": "50,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade48",
+    "title": "Vigilant Stone",
+    "summary": "Vigilant Stone is a tradeable.",
+    "game_description": "An eye of living stone: waiting, watching. A relic left by a slumbering guardian, keeping sentry over ancient creature burial grounds.\n\nWarning: Disturbing the eye may disturb the slumber of living stone guardians. Ensure re-animated guardians are defeated before storing this relic in the home.\n\nwhen you find a vigilant stone, be prepared to fight, run, or have your ship near you. Stone guardians are a serious jump scare. They are only to be messed with by the most insanely brave individual. Shooting them with your ship’s weapons also works.",
+    "source_info": "* On planets with Ancient Bones, near fossils. Shows up on analysis visor.",
+    "use_info": null,
+    "release_history": null,
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unblinking Eye",
+    "infobox": {
+      "_infobox_type": "product",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Unblinking Eye",
+      "value": "102,000",
+      "release": "Relics"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade13",
+    "title": "Vile cortex",
+    "summary": "Vile Cortex is a Trophy.",
+    "game_description": "The brain stem of a Brood Mother, pulled from its malignant corpse.\n\nThis is a valuable trophy, signifying victory in the quest to purge the infestations of the vile brood. Turn it over to an envoy of the Mercenaries Guild to mark your triumph.",
+    "source_info": "* Loot from a Brood Mother.",
+    "use_info": null,
+    "release_history": null,
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Glorious Trophy",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Vile_cortex.png",
+      "color": "purple",
+      "type": "Glorious Trophy",
+      "category": "Tradeable",
+      "value": "122,000.0",
+      "release": "Beacon"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade25",
+    "title": "Vortex Cube",
+    "summary": "Vortex Cube is a trade commodities (small \"c\"). \n\nIt can be found in and around caves on certain planets.",
+    "game_description": "An ancient object, unearthed from the depths of a planetary cave system. Its surface is cold to the touch, and is curiously polished despite its age.\n\nA fusion of metal and rock, these cubes have proved resistant to industrial processing. As such, they are of value only to collectors.\n\nCan be sold at a Galactic Trade Terminal.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* Release - Added as a trade commodity.\n* NEXT - It is no longer used for crafting, as the related technologies were made obsolete. Value changed, previously was 24,750.0.\n* Visions - The information panel has an additional icon indicating its purpose.\n* Origins - Vortex Cubes no longer drop TetraCobalt.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade commodity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.vortexcube.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade commodity",
+      "value": "5,800.0",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade33",
+    "title": "Vy'keen Dagger",
+    "summary": "'''Vy'keen Dagger''' is a trade commodities.",
+    "game_description": "Largely ceremonial weapon. A vital part of Vy'keen tradition and culture.",
+    "source_info": "* It can be found in Damaged Containers or as monolith rewards. \n* It can also be bought from NPCs in Trading Posts\n* It is a possible reward from frigate expeditions.\n* It is also a possible trade from wandering traders you encounter while using the Pulse Engine.\n* It can also be salvaged from containers on a Derelict Freighter\n* It is a possible reward from NPCs at Space Stations for practicing language skills well.\n*It can be rewarded to a player by interacting with and pleasing Vy'keen Corporal NPCs.",
+    "use_info": null,
+    "release_history": "* Release - Introduced to the game.\n* NEXT - Value changed, previously it was worth 20,625",
+    "additional_info": "* It can be used when interacting with a monolith in Vy'keen systems to reveal the location of the portal for the planet.\n* It can be given to Vy'keen in some NPC interactions to increase standing.\n* Two are required during the Weapons Research secondary missions.\n* It can be used in Secured Facilities in Vy'keen systems to override security, allowing access. \n* Three daggers may be needed to take command of a settlement in Vy'keen systems.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade commodity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.vykeendagger.png",
+      "category": "Curiosity",
+      "color": "Purple",
+      "type": "Trade commodity",
+      "value": "11,688.0",
+      "release": "Waypoint"
+    },
+    "categories": [
+      "Trade commodity"
+    ]
+  }
+]

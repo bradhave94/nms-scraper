@@ -1,0 +1,5164 @@
+[
+  {
+    "id": "ref_prod2_1",
+    "inputs": [
+      {
+        "id": "raw56",
+        "name": "Oxygen",
+        "quantity": 10
+      },
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw87",
+      "name": "Di-hydrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Advanced Oxygen Capture"
+  },
+  {
+    "id": "ref_raw103_1",
+    "inputs": [
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw61",
+      "name": "Sodium Nitrate",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Advanced Carbon Processing"
+  },
+  {
+    "id": "ref_raw103_2",
+    "inputs": [
+      {
+        "id": "raw90",
+        "name": "Carbon",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw61",
+      "name": "Sodium Nitrate",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Advanced Carbon Processing"
+  },
+  {
+    "id": "ref_raw103_3",
+    "inputs": [
+      {
+        "id": "raw1",
+        "name": "Frost Crystal",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Floral Titration"
+  },
+  {
+    "id": "ref_raw103_4",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw103_5",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw108_1",
+    "inputs": [
+      {
+        "id": "raw84",
+        "name": "Activated Quartzite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw90",
+      "name": "Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.1%Chromatic Alchemy"
+  },
+  {
+    "id": "ref_raw108_2",
+    "inputs": [
+      {
+        "id": "raw108",
+        "name": "Quartzite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.18%Chromatic Expansion"
+  },
+  {
+    "id": "ref_raw109_1",
+    "inputs": [
+      {
+        "id": "raw85",
+        "name": "Radon",
+        "quantity": 100
+      },
+      {
+        "id": "raw90",
+        "name": "Carbon",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw2",
+      "name": "Chlorine",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%High-Speed Sublimation"
+  },
+  {
+    "id": "ref_raw109_2",
+    "inputs": [
+      {
+        "id": "raw85",
+        "name": "Radon",
+        "quantity": 100
+      },
+      {
+        "id": "raw90",
+        "name": "Carbon",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%High-Speed Sublimation"
+  },
+  {
+    "id": "ref_raw109_3",
+    "inputs": [
+      {
+        "id": "raw85",
+        "name": "Radon",
+        "quantity": 100
+      },
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw2",
+      "name": "Chlorine",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%High-Speed Sublimation"
+  },
+  {
+    "id": "ref_raw109_4",
+    "inputs": [
+      {
+        "id": "raw85",
+        "name": "Radon",
+        "quantity": 100
+      },
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%High-Speed Sublimation"
+  },
+  {
+    "id": "ref_raw11_1",
+    "inputs": [
+      {
+        "id": "raw11",
+        "name": "Indium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Expansion"
+  },
+  {
+    "id": "ref_raw16_1",
+    "inputs": [
+      {
+        "id": "raw29",
+        "name": "Fungal Mould",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Floral Titration"
+  },
+  {
+    "id": "ref_raw16_2",
+    "inputs": [
+      {
+        "id": "raw79",
+        "name": "Nitrogen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw87",
+      "name": "Di-hydrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.16%Organic Fusion"
+  },
+  {
+    "id": "ref_raw16_3",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw30",
+      "name": "Paraffinium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw16_4",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw30",
+      "name": "Paraffinium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw17_3",
+    "inputs": [
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 25
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 15
+      }
+    ],
+    "output": {
+      "id": "raw65",
+      "name": "Silver",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Transmutation"
+  },
+  {
+    "id": "ref_raw17_4",
+    "inputs": [
+      {
+        "id": "raw3",
+        "name": "Hexite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw51",
+      "name": "Faecium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Alchemical Construction"
+  },
+  {
+    "id": "ref_raw1_1",
+    "inputs": [
+      {
+        "id": "raw1",
+        "name": "Frost Crystal",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw103",
+      "name": "Dioxite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw1_2",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Encourage Growth"
+  },
+  {
+    "id": "ref_raw1_3",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw85",
+      "name": "Radon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Encourage Growth"
+  },
+  {
+    "id": "ref_raw1_4",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw21_2",
+    "inputs": [
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Mineral Alchemy"
+  },
+  {
+    "id": "ref_raw21_3",
+    "inputs": [
+      {
+        "id": "raw31",
+        "name": "Cactus Flesh",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Floral Titration"
+  },
+  {
+    "id": "ref_raw21_4",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw21_5",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw21_6",
+    "inputs": [
+      {
+        "id": "raw45",
+        "name": "Lithium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw21_7",
+    "inputs": [
+      {
+        "id": "raw45",
+        "name": "Lithium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.18%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw21_8",
+    "inputs": [
+      {
+        "id": "raw45",
+        "name": "Lithium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw24",
+      "name": "Magnetised Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.12%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw22_1",
+    "inputs": [
+      {
+        "id": "raw75",
+        "name": "Cobalt",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw79",
+      "name": "Nitrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Encourage Growth"
+  },
+  {
+    "id": "ref_raw22_2",
+    "inputs": [
+      {
+        "id": "raw54",
+        "name": "Crystallised Helium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw22_3",
+    "inputs": [
+      {
+        "id": "raw74",
+        "name": "Mordite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw61",
+      "name": "Sodium Nitrate",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Fertiliser Synthesis"
+  },
+  {
+    "id": "ref_raw22_4",
+    "inputs": [
+      {
+        "id": "raw74",
+        "name": "Mordite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw27",
+      "name": "Sodium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Fertiliser Synthesis"
+  },
+  {
+    "id": "ref_raw24_10",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw5",
+      "name": "Activated Indium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.045%Stellar / Metal Fusion"
+  },
+  {
+    "id": "ref_raw24_11",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw84",
+      "name": "Activated Quartzite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.045%Stellar / Metal Fusion"
+  },
+  {
+    "id": "ref_raw24_12",
+    "inputs": [
+      {
+        "id": "raw24",
+        "name": "Magnetised Ferrite",
+        "quantity": 3
+      }
+    ],
+    "output": {
+      "id": "raw68",
+      "name": "Pugneum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.09%Matter Expansion"
+  },
+  {
+    "id": "ref_raw24_13",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw68",
+      "name": "Pugneum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.12%Matter Expansion"
+  },
+  {
+    "id": "ref_raw24_14",
+    "inputs": [
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.036%Mineral Alchemy"
+  },
+  {
+    "id": "ref_raw24_15",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw90",
+      "name": "Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Carbonise Metal"
+  },
+  {
+    "id": "ref_raw24_16",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.12%Carbonise Metal"
+  },
+  {
+    "id": "ref_raw24_17",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw90",
+      "name": "Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.12%Carbonise Metal"
+  },
+  {
+    "id": "ref_raw24_18",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.08%Carbonise Metal"
+  },
+  {
+    "id": "ref_raw24_19",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      },
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw65",
+      "name": "Silver",
+      "quantity": 1
+    },
+    "time": "5.0",
+    "operation": "0.096%Deep Metal Compression"
+  },
+  {
+    "id": "ref_raw24_2",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw72",
+      "name": "Copper",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Stellar / Metal Fusion"
+  },
+  {
+    "id": "ref_raw24_20",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      },
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw93",
+      "name": "Gold",
+      "quantity": 1
+    },
+    "time": "8.0",
+    "operation": "0.06%Deep Metal Compression"
+  },
+  {
+    "id": "ref_raw24_21",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      },
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw28",
+      "name": "Platinum",
+      "quantity": 1
+    },
+    "time": "12.0",
+    "operation": "0.04%Deep Metal Compression"
+  },
+  {
+    "id": "ref_raw24_3",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw55",
+      "name": "Cadmium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.18%Stellar / Metal Fusion"
+  },
+  {
+    "id": "ref_raw24_4",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw46",
+      "name": "Emeril",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.12%Stellar / Metal Fusion"
+  },
+  {
+    "id": "ref_raw24_5",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw11",
+      "name": "Indium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.09%Stellar / Metal Fusion"
+  },
+  {
+    "id": "ref_raw24_6",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw108",
+      "name": "Quartzite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.09%Stellar / Metal Fusion"
+  },
+  {
+    "id": "ref_raw24_7",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw42",
+      "name": "Activated Copper",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.18%Stellar / Metal Fusion"
+  },
+  {
+    "id": "ref_raw24_8",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw34",
+      "name": "Activated Cadmium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.09%Stellar / Metal Fusion"
+  },
+  {
+    "id": "ref_raw24_9",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw106",
+      "name": "Activated Emeril",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.06%Stellar / Metal Fusion"
+  },
+  {
+    "id": "ref_raw25_1",
+    "inputs": [
+      {
+        "id": "raw62",
+        "name": "Salt",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw79",
+      "name": "Nitrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Encourage Growth"
+  },
+  {
+    "id": "ref_raw25_2",
+    "inputs": [
+      {
+        "id": "raw45",
+        "name": "Lithium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw26_1",
+    "inputs": [
+      {
+        "id": "raw88",
+        "name": "Sulphurine",
+        "quantity": 100
+      },
+      {
+        "id": "raw90",
+        "name": "Carbon",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw2",
+      "name": "Chlorine",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%High-Speed Sublimation"
+  },
+  {
+    "id": "ref_raw26_2",
+    "inputs": [
+      {
+        "id": "raw88",
+        "name": "Sulphurine",
+        "quantity": 100
+      },
+      {
+        "id": "raw90",
+        "name": "Carbon",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%High-Speed Sublimation"
+  },
+  {
+    "id": "ref_raw26_3",
+    "inputs": [
+      {
+        "id": "raw88",
+        "name": "Sulphurine",
+        "quantity": 100
+      },
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw2",
+      "name": "Chlorine",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%High-Speed Sublimation"
+  },
+  {
+    "id": "ref_raw26_4",
+    "inputs": [
+      {
+        "id": "raw88",
+        "name": "Sulphurine",
+        "quantity": 100
+      },
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%High-Speed Sublimation"
+  },
+  {
+    "id": "ref_raw27_3",
+    "inputs": [
+      {
+        "id": "raw22",
+        "name": "Marrow Bulb",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw90",
+      "name": "Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Extract Organic Sodium"
+  },
+  {
+    "id": "ref_raw27_4",
+    "inputs": [
+      {
+        "id": "raw22",
+        "name": "Marrow Bulb",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Extract Organic Sodium"
+  },
+  {
+    "id": "ref_raw28_3",
+    "inputs": [
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw93",
+      "name": "Gold",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Transmutation"
+  },
+  {
+    "id": "ref_raw28_4",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      },
+      {
+        "id": "raw56",
+        "name": "Oxygen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "10.0",
+    "operation": "4.8%Chromatic Alchemy"
+  },
+  {
+    "id": "ref_raw29_1",
+    "inputs": [
+      {
+        "id": "raw29",
+        "name": "Fungal Mould",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw16",
+      "name": "Ammonia",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw29_2",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Encourage Growth"
+  },
+  {
+    "id": "ref_raw29_3",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw79",
+      "name": "Nitrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Encourage Growth"
+  },
+  {
+    "id": "ref_raw29_4",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw2_2",
+    "inputs": [
+      {
+        "id": "raw62",
+        "name": "Salt",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Efficient Salt Evaporation"
+  },
+  {
+    "id": "ref_raw2_3",
+    "inputs": [
+      {
+        "id": "raw2",
+        "name": "Chlorine",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chlorine Expansion"
+  },
+  {
+    "id": "ref_raw2_4",
+    "inputs": [
+      {
+        "id": "raw25",
+        "name": "Kelp Sac",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Bonded Chlorine Extraction"
+  },
+  {
+    "id": "ref_raw2_5",
+    "inputs": [
+      {
+        "id": "raw25",
+        "name": "Kelp Sac",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw68",
+      "name": "Pugneum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Pugneum Washing"
+  },
+  {
+    "id": "ref_raw2_6",
+    "inputs": [
+      {
+        "id": "raw25",
+        "name": "Kelp Sac",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Dissolve Natural Salts"
+  },
+  {
+    "id": "ref_raw2_7",
+    "inputs": [
+      {
+        "id": "raw25",
+        "name": "Kelp Sac",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw2",
+      "name": "Chlorine",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Dissolve Natural Salts"
+  },
+  {
+    "id": "ref_raw30_1",
+    "inputs": [
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Mineral Alchemy"
+  },
+  {
+    "id": "ref_raw30_2",
+    "inputs": [
+      {
+        "id": "raw63",
+        "name": "Star Bulb",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Floral Titration"
+  },
+  {
+    "id": "ref_raw30_3",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw30_4",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw30_5",
+    "inputs": [
+      {
+        "id": "raw88",
+        "name": "Sulphurine",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw30_6",
+    "inputs": [
+      {
+        "id": "raw88",
+        "name": "Sulphurine",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw30_7",
+    "inputs": [
+      {
+        "id": "raw88",
+        "name": "Sulphurine",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw24",
+      "name": "Magnetised Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw31_1",
+    "inputs": [
+      {
+        "id": "raw31",
+        "name": "Cactus Flesh",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw21",
+      "name": "Pyrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw31_2",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Encourage Growth"
+  },
+  {
+    "id": "ref_raw31_3",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw88",
+      "name": "Sulphurine",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Encourage Growth"
+  },
+  {
+    "id": "ref_raw31_4",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw33_2",
+    "inputs": [
+      {
+        "id": "raw33",
+        "name": "Ionised Cobalt",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Efficient Cobalt Ionisation"
+  },
+  {
+    "id": "ref_raw33_3",
+    "inputs": [
+      {
+        "id": "raw75",
+        "name": "Cobalt",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Efficient Cobalt Ionisation"
+  },
+  {
+    "id": "ref_raw33_4",
+    "inputs": [
+      {
+        "id": "raw22",
+        "name": "Marrow Bulb",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw68",
+      "name": "Pugneum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Pugneum Washing"
+  },
+  {
+    "id": "ref_raw33_5",
+    "inputs": [
+      {
+        "id": "raw22",
+        "name": "Marrow Bulb",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Bonded Cobalt Extraction"
+  },
+  {
+    "id": "ref_raw33_6",
+    "inputs": [
+      {
+        "id": "raw75",
+        "name": "Cobalt",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw22",
+      "name": "Marrow Bulb",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Ionise Bulbs"
+  },
+  {
+    "id": "ref_raw33_7",
+    "inputs": [
+      {
+        "id": "raw33",
+        "name": "Ionised Cobalt",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw22",
+      "name": "Marrow Bulb",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Ionise Bulbs"
+  },
+  {
+    "id": "ref_raw36_1",
+    "inputs": [
+      {
+        "id": "raw36",
+        "name": "Gamma Root",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw41",
+      "name": "Uranium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw36_2",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Encourage Growth"
+  },
+  {
+    "id": "ref_raw36_3",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw85",
+      "name": "Radon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Encourage Growth"
+  },
+  {
+    "id": "ref_raw36_4",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw37_1",
+    "inputs": [
+      {
+        "id": "raw87",
+        "name": "Di-hydrogen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw52",
+      "name": "Tritium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Di-hydrogen Cycling"
+  },
+  {
+    "id": "ref_raw37_2",
+    "inputs": [
+      {
+        "id": "raw87",
+        "name": "Di-hydrogen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw100",
+      "name": "Silicate Powder",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Di-hydrogen Cycling"
+  },
+  {
+    "id": "ref_raw39_1",
+    "inputs": [
+      {
+        "id": "raw39",
+        "name": "Solanium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw67",
+      "name": "Phosphorus",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw39_2",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Encourage Growth"
+  },
+  {
+    "id": "ref_raw39_3",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw88",
+      "name": "Sulphurine",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Encourage Growth"
+  },
+  {
+    "id": "ref_raw39_4",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw39_5",
+    "inputs": [
+      {
+        "id": "raw87",
+        "name": "Di-hydrogen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw88",
+      "name": "Sulphurine",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.16%Sulphur Injection"
+  },
+  {
+    "id": "ref_raw41_1",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw41_10",
+    "inputs": [
+      {
+        "id": "raw85",
+        "name": "Radon",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw24",
+      "name": "Magnetised Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Metal Enrichment"
+  },
+  {
+    "id": "ref_raw41_2",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw41_3",
+    "inputs": [
+      {
+        "id": "raw54",
+        "name": "Crystallised Helium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw41_4",
+    "inputs": [
+      {
+        "id": "raw54",
+        "name": "Crystallised Helium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.18%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw41_5",
+    "inputs": [
+      {
+        "id": "raw54",
+        "name": "Crystallised Helium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw24",
+      "name": "Magnetised Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.12%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw41_6",
+    "inputs": [
+      {
+        "id": "raw36",
+        "name": "Gamma Root",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Floral Titration"
+  },
+  {
+    "id": "ref_raw41_7",
+    "inputs": [
+      {
+        "id": "raw85",
+        "name": "Radon",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw87",
+      "name": "Di-hydrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.16%Catalyse Radiation"
+  },
+  {
+    "id": "ref_raw41_8",
+    "inputs": [
+      {
+        "id": "raw85",
+        "name": "Radon",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Metal Enrichment"
+  },
+  {
+    "id": "ref_raw41_9",
+    "inputs": [
+      {
+        "id": "raw85",
+        "name": "Radon",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Metal Enrichment"
+  },
+  {
+    "id": "ref_raw43_1",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw24",
+      "name": "Magnetised Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Volcanic Transmutation"
+  },
+  {
+    "id": "ref_raw43_2",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw24",
+      "name": "Magnetised Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Volcanic Transmutation"
+  },
+  {
+    "id": "ref_raw45_1",
+    "inputs": [
+      {
+        "id": "raw54",
+        "name": "Crystallised Helium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw108",
+      "name": "Quartzite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw45_2",
+    "inputs": [
+      {
+        "id": "raw54",
+        "name": "Crystallised Helium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw84",
+      "name": "Activated Quartzite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.18%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw46_1",
+    "inputs": [
+      {
+        "id": "raw46",
+        "name": "Emeril",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Expansion"
+  },
+  {
+    "id": "ref_raw51_2",
+    "inputs": [
+      {
+        "id": "raw87",
+        "name": "Di-hydrogen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw90",
+      "name": "Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.08%Assisted Decomposition"
+  },
+  {
+    "id": "ref_raw51_3",
+    "inputs": [
+      {
+        "id": "raw51",
+        "name": "Faecium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Oxygenate Microbes"
+  },
+  {
+    "id": "ref_raw51_4",
+    "inputs": [
+      {
+        "id": "raw79",
+        "name": "Nitrogen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw88",
+      "name": "Sulphurine",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Encourage Growth"
+  },
+  {
+    "id": "ref_raw51_5",
+    "inputs": [
+      {
+        "id": "raw74",
+        "name": "Mordite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw90",
+      "name": "Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Runaway Decomposition"
+  },
+  {
+    "id": "ref_raw51_6",
+    "inputs": [
+      {
+        "id": "raw74",
+        "name": "Mordite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Runaway Decomposition"
+  },
+  {
+    "id": "ref_raw51_7",
+    "inputs": [
+      {
+        "id": "raw74",
+        "name": "Mordite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw54_1",
+    "inputs": [
+      {
+        "id": "raw45",
+        "name": "Lithium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw108",
+      "name": "Quartzite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw54_2",
+    "inputs": [
+      {
+        "id": "raw45",
+        "name": "Lithium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw84",
+      "name": "Activated Quartzite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.18%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw55_1",
+    "inputs": [
+      {
+        "id": "raw55",
+        "name": "Cadmium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Expansion"
+  },
+  {
+    "id": "ref_raw56_2",
+    "inputs": [
+      {
+        "id": "raw25",
+        "name": "Kelp Sac",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw90",
+      "name": "Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Release Captured Oxygen"
+  },
+  {
+    "id": "ref_raw56_3",
+    "inputs": [
+      {
+        "id": "raw25",
+        "name": "Kelp Sac",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Release Captured Oxygen"
+  },
+  {
+    "id": "ref_raw56_4",
+    "inputs": [
+      {
+        "id": "raw29",
+        "name": "Fungal Mould",
+        "quantity": 1
+      },
+      {
+        "id": "raw25",
+        "name": "Kelp Sac",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "10.0",
+    "operation": "3.6%Artificial Photosynthesis"
+  },
+  {
+    "id": "ref_raw56_5",
+    "inputs": [
+      {
+        "id": "raw1",
+        "name": "Frost Crystal",
+        "quantity": 1
+      },
+      {
+        "id": "raw25",
+        "name": "Kelp Sac",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "10.0",
+    "operation": "3.6%Artificial Photosynthesis"
+  },
+  {
+    "id": "ref_raw56_6",
+    "inputs": [
+      {
+        "id": "raw31",
+        "name": "Cactus Flesh",
+        "quantity": 1
+      },
+      {
+        "id": "raw25",
+        "name": "Kelp Sac",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "10.0",
+    "operation": "3.6%Artificial Photosynthesis"
+  },
+  {
+    "id": "ref_raw56_7",
+    "inputs": [
+      {
+        "id": "raw39",
+        "name": "Solanium",
+        "quantity": 1
+      },
+      {
+        "id": "raw25",
+        "name": "Kelp Sac",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "10.0",
+    "operation": "3.6%Artificial Photosynthesis"
+  },
+  {
+    "id": "ref_raw56_8",
+    "inputs": [
+      {
+        "id": "raw36",
+        "name": "Gamma Root",
+        "quantity": 1
+      },
+      {
+        "id": "raw25",
+        "name": "Kelp Sac",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "10.0",
+    "operation": "3.6%Artificial Photosynthesis"
+  },
+  {
+    "id": "ref_raw56_9",
+    "inputs": [
+      {
+        "id": "raw63",
+        "name": "Star Bulb",
+        "quantity": 1
+      },
+      {
+        "id": "raw25",
+        "name": "Kelp Sac",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "10.0",
+    "operation": "3.6%Artificial Photosynthesis"
+  },
+  {
+    "id": "ref_raw58_3",
+    "inputs": [
+      {
+        "id": "raw74",
+        "name": "Mordite",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw8",
+      "name": "Atlantideum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "14.4%Reanimation"
+  },
+  {
+    "id": "ref_raw60_1",
+    "inputs": [
+      {
+        "id": "raw87",
+        "name": "Di-hydrogen",
+        "quantity": 10
+      },
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw61",
+      "name": "Sodium Nitrate",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Di-hydrogen Capture"
+  },
+  {
+    "id": "ref_raw60_2",
+    "inputs": [
+      {
+        "id": "raw87",
+        "name": "Di-hydrogen",
+        "quantity": 10
+      },
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw27",
+      "name": "Sodium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Di-hydrogen Capture"
+  },
+  {
+    "id": "ref_raw60_3",
+    "inputs": [
+      {
+        "id": "raw87",
+        "name": "Di-hydrogen",
+        "quantity": 10
+      },
+      {
+        "id": "raw24",
+        "name": "Magnetised Ferrite",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw61",
+      "name": "Sodium Nitrate",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Di-hydrogen Capture"
+  },
+  {
+    "id": "ref_raw61_10",
+    "inputs": [
+      {
+        "id": "raw61",
+        "name": "Sodium Nitrate",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw51",
+      "name": "Faecium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Feed Microbes"
+  },
+  {
+    "id": "ref_raw61_11",
+    "inputs": [
+      {
+        "id": "raw27",
+        "name": "Sodium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw22",
+      "name": "Marrow Bulb",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Harness Organic Nitrogren"
+  },
+  {
+    "id": "ref_raw61_12",
+    "inputs": [
+      {
+        "id": "raw61",
+        "name": "Sodium Nitrate",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw22",
+      "name": "Marrow Bulb",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Harness Organic Nitrogren"
+  },
+  {
+    "id": "ref_raw61_13",
+    "inputs": [
+      {
+        "id": "raw27",
+        "name": "Sodium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw25",
+      "name": "Kelp Sac",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Harness Organic Nitrogren"
+  },
+  {
+    "id": "ref_raw61_14",
+    "inputs": [
+      {
+        "id": "raw61",
+        "name": "Sodium Nitrate",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw25",
+      "name": "Kelp Sac",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Harness Organic Nitrogren"
+  },
+  {
+    "id": "ref_raw61_15",
+    "inputs": [
+      {
+        "id": "raw27",
+        "name": "Sodium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw79",
+      "name": "Nitrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw61_16",
+    "inputs": [
+      {
+        "id": "raw61",
+        "name": "Sodium Nitrate",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw79",
+      "name": "Nitrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.18%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw61_17",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw79",
+      "name": "Nitrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.48%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw61_18",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw79",
+      "name": "Nitrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw61_19",
+    "inputs": [
+      {
+        "id": "raw24",
+        "name": "Magnetised Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw79",
+      "name": "Nitrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.16%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw61_2",
+    "inputs": [
+      {
+        "id": "raw27",
+        "name": "Sodium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw90",
+      "name": "Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Catalyse Carbon"
+  },
+  {
+    "id": "ref_raw61_20",
+    "inputs": [
+      {
+        "id": "raw27",
+        "name": "Sodium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw61_21",
+    "inputs": [
+      {
+        "id": "raw61",
+        "name": "Sodium Nitrate",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.18%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw61_22",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.48%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw61_23",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw61_24",
+    "inputs": [
+      {
+        "id": "raw24",
+        "name": "Magnetised Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.16%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw61_25",
+    "inputs": [
+      {
+        "id": "raw73",
+        "name": "Methane",
+        "quantity": 1
+      },
+      {
+        "id": "raw45",
+        "name": "Lithium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw84",
+      "name": "Activated Quartzite",
+      "quantity": 1
+    },
+    "time": "2.0",
+    "operation": "0.18%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw61_26",
+    "inputs": [
+      {
+        "id": "raw73",
+        "name": "Methane",
+        "quantity": 1
+      },
+      {
+        "id": "raw54",
+        "name": "Crystallised Helium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw84",
+      "name": "Activated Quartzite",
+      "quantity": 1
+    },
+    "time": "2.0",
+    "operation": "0.18%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw61_3",
+    "inputs": [
+      {
+        "id": "raw27",
+        "name": "Sodium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Catalyse Carbon"
+  },
+  {
+    "id": "ref_raw61_4",
+    "inputs": [
+      {
+        "id": "raw27",
+        "name": "Sodium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Oxygenate Sodium"
+  },
+  {
+    "id": "ref_raw61_5",
+    "inputs": [
+      {
+        "id": "raw61",
+        "name": "Sodium Nitrate",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Oxygenate Sodium"
+  },
+  {
+    "id": "ref_raw61_6",
+    "inputs": [
+      {
+        "id": "raw27",
+        "name": "Sodium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw68",
+      "name": "Pugneum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Sentinel Catalysation"
+  },
+  {
+    "id": "ref_raw61_7",
+    "inputs": [
+      {
+        "id": "raw61",
+        "name": "Sodium Nitrate",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw68",
+      "name": "Pugneum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Sentinel Catalysation"
+  },
+  {
+    "id": "ref_raw61_9",
+    "inputs": [
+      {
+        "id": "raw27",
+        "name": "Sodium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw51",
+      "name": "Faecium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Feed Microbes"
+  },
+  {
+    "id": "ref_raw62_2",
+    "inputs": [
+      {
+        "id": "raw87",
+        "name": "Di-hydrogen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.08%Rapid Formation / Evaporation"
+  },
+  {
+    "id": "ref_raw63_1",
+    "inputs": [
+      {
+        "id": "raw63",
+        "name": "Star Bulb",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw30",
+      "name": "Paraffinium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw63_2",
+    "inputs": [
+      {
+        "id": "raw30",
+        "name": "Paraffinium",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Encourage Growth"
+  },
+  {
+    "id": "ref_raw63_3",
+    "inputs": [
+      {
+        "id": "raw30",
+        "name": "Paraffinium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw79",
+      "name": "Nitrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Encourage Growth"
+  },
+  {
+    "id": "ref_raw63_4",
+    "inputs": [
+      {
+        "id": "raw30",
+        "name": "Paraffinium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw73",
+      "name": "Methane",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic Expansion"
+  },
+  {
+    "id": "ref_raw67_1",
+    "inputs": [
+      {
+        "id": "raw39",
+        "name": "Solanium",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Floral Titration"
+  },
+  {
+    "id": "ref_raw67_2",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw67_3",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Environmental Element Transfer"
+  },
+  {
+    "id": "ref_raw67_4",
+    "inputs": [
+      {
+        "id": "raw73",
+        "name": "Methane",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw87",
+      "name": "Di-hydrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.16%Organic Fusion"
+  },
+  {
+    "id": "ref_raw70_1",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw68",
+      "name": "Pugneum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Matter Expansion"
+  },
+  {
+    "id": "ref_raw71_2",
+    "inputs": [
+      {
+        "id": "raw90",
+        "name": "Carbon",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Oxygenate Carbon"
+  },
+  {
+    "id": "ref_raw71_3",
+    "inputs": [
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Oxygenate Carbon"
+  },
+  {
+    "id": "ref_raw71_4",
+    "inputs": [
+      {
+        "id": "raw51",
+        "name": "Faecium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw74",
+      "name": "Mordite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Feed Microbes"
+  },
+  {
+    "id": "ref_raw71_5",
+    "inputs": [
+      {
+        "id": "raw51",
+        "name": "Faecium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw90",
+      "name": "Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Feed Microbes"
+  },
+  {
+    "id": "ref_raw71_6",
+    "inputs": [
+      {
+        "id": "raw51",
+        "name": "Faecium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Feed Microbes"
+  },
+  {
+    "id": "ref_raw71_8",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw87",
+      "name": "Di-hydrogen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.04%Harness Energy"
+  },
+  {
+    "id": "ref_raw72_1",
+    "inputs": [
+      {
+        "id": "raw72",
+        "name": "Copper",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Expansion"
+  },
+  {
+    "id": "ref_raw73_1",
+    "inputs": [
+      {
+        "id": "raw79",
+        "name": "Nitrogen",
+        "quantity": 3
+      },
+      {
+        "id": "raw88",
+        "name": "Sulphurine",
+        "quantity": 3
+      }
+    ],
+    "output": {
+      "id": "raw85",
+      "name": "Radon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.16%Organic Fusion"
+  },
+  {
+    "id": "ref_raw74_2",
+    "inputs": [
+      {
+        "id": "raw90",
+        "name": "Carbon",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw68",
+      "name": "Pugneum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Anomaly / Organic Hybridisation"
+  },
+  {
+    "id": "ref_raw74_3",
+    "inputs": [
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw68",
+      "name": "Pugneum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Anomaly / Organic Hybridisation"
+  },
+  {
+    "id": "ref_raw74_4",
+    "inputs": [
+      {
+        "id": "raw87",
+        "name": "Di-hydrogen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw71",
+      "name": "Condensed Carbon",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.08%Organic Reassembly"
+  },
+  {
+    "id": "ref_raw77_1",
+    "inputs": [
+      {
+        "id": "raw79",
+        "name": "Nitrogen",
+        "quantity": 100
+      },
+      {
+        "id": "raw90",
+        "name": "Carbon",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw2",
+      "name": "Chlorine",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%High-Speed Sublimation"
+  },
+  {
+    "id": "ref_raw77_2",
+    "inputs": [
+      {
+        "id": "raw79",
+        "name": "Nitrogen",
+        "quantity": 100
+      },
+      {
+        "id": "raw90",
+        "name": "Carbon",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%High-Speed Sublimation"
+  },
+  {
+    "id": "ref_raw77_3",
+    "inputs": [
+      {
+        "id": "raw79",
+        "name": "Nitrogen",
+        "quantity": 100
+      },
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw2",
+      "name": "Chlorine",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "10%High-Speed Sublimation"
+  },
+  {
+    "id": "ref_raw77_4",
+    "inputs": [
+      {
+        "id": "raw79",
+        "name": "Nitrogen",
+        "quantity": 100
+      },
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%High-Speed Sublimation"
+  },
+  {
+    "id": "ref_raw79_2",
+    "inputs": [
+      {
+        "id": "raw85",
+        "name": "Radon",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Gas Transfer"
+  },
+  {
+    "id": "ref_raw79_3",
+    "inputs": [
+      {
+        "id": "raw85",
+        "name": "Radon",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw79_5",
+    "inputs": [
+      {
+        "id": "raw73",
+        "name": "Methane",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Gas Transfer"
+  },
+  {
+    "id": "ref_raw79_6",
+    "inputs": [
+      {
+        "id": "raw73",
+        "name": "Methane",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw7_11",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw72",
+      "name": "Copper",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Metal Fusion"
+  },
+  {
+    "id": "ref_raw7_12",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw55",
+      "name": "Cadmium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Metal Fusion"
+  },
+  {
+    "id": "ref_raw7_13",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw46",
+      "name": "Emeril",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Metal Fusion"
+  },
+  {
+    "id": "ref_raw7_14",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw11",
+      "name": "Indium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Metal Fusion"
+  },
+  {
+    "id": "ref_raw7_15",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw108",
+      "name": "Quartzite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Metal Fusion"
+  },
+  {
+    "id": "ref_raw7_16",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw42",
+      "name": "Activated Copper",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Metal Fusion"
+  },
+  {
+    "id": "ref_raw7_17",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw34",
+      "name": "Activated Cadmium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Metal Fusion"
+  },
+  {
+    "id": "ref_raw7_18",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw106",
+      "name": "Activated Emeril",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Metal Fusion"
+  },
+  {
+    "id": "ref_raw7_19",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw5",
+      "name": "Activated Indium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Metal Fusion"
+  },
+  {
+    "id": "ref_raw7_20",
+    "inputs": [
+      {
+        "id": "raw70",
+        "name": "Pure Ferrite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw84",
+      "name": "Activated Quartzite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Chromatic Metal Fusion"
+  },
+  {
+    "id": "ref_raw7_21",
+    "inputs": [
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 1
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw72",
+      "name": "Copper",
+      "quantity": 1
+    },
+    "time": "5.0",
+    "operation": "4.8%Chromatic Stellar Fusion"
+  },
+  {
+    "id": "ref_raw7_22",
+    "inputs": [
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 1
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw55",
+      "name": "Cadmium",
+      "quantity": 1
+    },
+    "time": "10.0",
+    "operation": "4.8%Chromatic Stellar Fusion"
+  },
+  {
+    "id": "ref_raw7_23",
+    "inputs": [
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 1
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw46",
+      "name": "Emeril",
+      "quantity": 1
+    },
+    "time": "20.0",
+    "operation": "4.8%Chromatic Stellar Fusion"
+  },
+  {
+    "id": "ref_raw7_24",
+    "inputs": [
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 1
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw11",
+      "name": "Indium",
+      "quantity": 1
+    },
+    "time": "30.0",
+    "operation": "4.8%Chromatic Stellar Fusion"
+  },
+  {
+    "id": "ref_raw7_25",
+    "inputs": [
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 1
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw108",
+      "name": "Quartzite",
+      "quantity": 1
+    },
+    "time": "30.0",
+    "operation": "4.8%Chromatic Stellar Fusion"
+  },
+  {
+    "id": "ref_raw84_1",
+    "inputs": [
+      {
+        "id": "raw73",
+        "name": "Methane",
+        "quantity": 1
+      },
+      {
+        "id": "raw45",
+        "name": "Lithium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw108",
+      "name": "Quartzite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw84_2",
+    "inputs": [
+      {
+        "id": "raw73",
+        "name": "Methane",
+        "quantity": 1
+      },
+      {
+        "id": "raw54",
+        "name": "Crystallised Helium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw108",
+      "name": "Quartzite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Loosen Bonds"
+  },
+  {
+    "id": "ref_raw85_2",
+    "inputs": [
+      {
+        "id": "raw88",
+        "name": "Sulphurine",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Gas Transfer"
+  },
+  {
+    "id": "ref_raw85_3",
+    "inputs": [
+      {
+        "id": "raw88",
+        "name": "Sulphurine",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw88_2",
+    "inputs": [
+      {
+        "id": "raw79",
+        "name": "Nitrogen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw56",
+      "name": "Oxygen",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Gas Transfer"
+  },
+  {
+    "id": "ref_raw88_3",
+    "inputs": [
+      {
+        "id": "raw79",
+        "name": "Nitrogen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Gas Catalysation"
+  },
+  {
+    "id": "ref_raw93_2",
+    "inputs": [
+      {
+        "id": "raw74",
+        "name": "Mordite",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw68",
+      "name": "Pugneum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Organic / Anomaly Synthesis"
+  },
+  {
+    "id": "ref_raw93_3",
+    "inputs": [
+      {
+        "id": "raw51",
+        "name": "Faecium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw99",
+      "name": "Residual Goop",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Alchemical Construction"
+  },
+  {
+    "id": "ref_raw93_4",
+    "inputs": [
+      {
+        "id": "raw51",
+        "name": "Faecium",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw68",
+      "name": "Pugneum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.36%Pugneum Alchemy"
+  },
+  {
+    "id": "ref_raw93_5",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 1
+      },
+      {
+        "id": "raw56",
+        "name": "Oxygen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw46",
+      "name": "Emeril",
+      "quantity": 1
+    },
+    "time": "10.0",
+    "operation": "4.8%Chromatic Alchemy"
+  },
+  {
+    "id": "ref_raw97_2",
+    "inputs": [
+      {
+        "id": "raw8",
+        "name": "Atlantideum",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw68",
+      "name": "Pugneum",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.24%Reality Pollution"
+  },
+  {
+    "id": "ref_raw98_1",
+    "inputs": [
+      {
+        "id": "raw56",
+        "name": "Oxygen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.4%Oxidise Metal"
+  },
+  {
+    "id": "ref_raw98_2",
+    "inputs": [
+      {
+        "id": "raw56",
+        "name": "Oxygen",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "0.4%Oxidise Metal"
+  },
+  {
+    "id": "ref_tech212_1",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 30
+      },
+      {
+        "id": "raw52",
+        "name": "Tritium",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech212_2",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 30
+      },
+      {
+        "id": "raw52",
+        "name": "Tritium",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech212_3",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 30
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech212_4",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 30
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech212_5",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 30
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech212_6",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 30
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech212_7",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 30
+      },
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech212_8",
+    "inputs": [
+      {
+        "id": "raw103",
+        "name": "Dioxite",
+        "quantity": 30
+      },
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech259_1",
+    "inputs": [
+      {
+        "id": "raw56",
+        "name": "Oxygen",
+        "quantity": 10
+      },
+      {
+        "id": "raw90",
+        "name": "Carbon",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Plasma Pressurisation"
+  },
+  {
+    "id": "ref_tech259_2",
+    "inputs": [
+      {
+        "id": "raw56",
+        "name": "Oxygen",
+        "quantity": 10
+      },
+      {
+        "id": "raw90",
+        "name": "Carbon",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Plasma Pressurisation"
+  },
+  {
+    "id": "ref_tech259_3",
+    "inputs": [
+      {
+        "id": "raw56",
+        "name": "Oxygen",
+        "quantity": 10
+      },
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Plasma Pressurisation"
+  },
+  {
+    "id": "ref_tech259_4",
+    "inputs": [
+      {
+        "id": "raw56",
+        "name": "Oxygen",
+        "quantity": 10
+      },
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Plasma Pressurisation"
+  },
+  {
+    "id": "ref_tech367_1",
+    "inputs": [
+      {
+        "id": "raw90",
+        "name": "Carbon",
+        "quantity": 50
+      },
+      {
+        "id": "raw61",
+        "name": "Sodium Nitrate",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "300%Antimatter Bypass"
+  },
+  {
+    "id": "ref_tech367_2",
+    "inputs": [
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 25
+      },
+      {
+        "id": "raw27",
+        "name": "Sodium",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "300%Antimatter Bypass"
+  },
+  {
+    "id": "ref_tech367_3",
+    "inputs": [
+      {
+        "id": "raw71",
+        "name": "Condensed Carbon",
+        "quantity": 25
+      },
+      {
+        "id": "raw61",
+        "name": "Sodium Nitrate",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw7",
+      "name": "Chromatic Metal",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "300%Antimatter Bypass"
+  },
+  {
+    "id": "ref_tech489_1",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 30
+      },
+      {
+        "id": "raw52",
+        "name": "Tritium",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech489_2",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 30
+      },
+      {
+        "id": "raw52",
+        "name": "Tritium",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech489_3",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 30
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech489_4",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 30
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech489_5",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 30
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech489_6",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 30
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech489_7",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 30
+      },
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech489_8",
+    "inputs": [
+      {
+        "id": "raw41",
+        "name": "Uranium",
+        "quantity": 30
+      },
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech56_1",
+    "inputs": [
+      {
+        "id": "raw49",
+        "name": "Cyto-Phosphate",
+        "quantity": 50
+      }
+    ],
+    "output": {
+      "id": "raw62",
+      "name": "Salt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "10%Salt Crystal Polishing"
+  },
+  {
+    "id": "ref_tech577_1",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 30
+      },
+      {
+        "id": "raw52",
+        "name": "Tritium",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech577_2",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 30
+      },
+      {
+        "id": "raw52",
+        "name": "Tritium",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech577_3",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 30
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech577_4",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 30
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech577_5",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 30
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech577_6",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 30
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech577_7",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 30
+      },
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech577_8",
+    "inputs": [
+      {
+        "id": "raw16",
+        "name": "Ammonia",
+        "quantity": 30
+      },
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech58_1",
+    "inputs": [
+      {
+        "id": "raw30",
+        "name": "Paraffinium",
+        "quantity": 30
+      },
+      {
+        "id": "raw52",
+        "name": "Tritium",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech58_2",
+    "inputs": [
+      {
+        "id": "raw30",
+        "name": "Paraffinium",
+        "quantity": 30
+      },
+      {
+        "id": "raw52",
+        "name": "Tritium",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech58_3",
+    "inputs": [
+      {
+        "id": "raw30",
+        "name": "Paraffinium",
+        "quantity": 30
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech58_4",
+    "inputs": [
+      {
+        "id": "raw30",
+        "name": "Paraffinium",
+        "quantity": 30
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech58_5",
+    "inputs": [
+      {
+        "id": "raw30",
+        "name": "Paraffinium",
+        "quantity": 30
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech58_6",
+    "inputs": [
+      {
+        "id": "raw30",
+        "name": "Paraffinium",
+        "quantity": 30
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech58_7",
+    "inputs": [
+      {
+        "id": "raw30",
+        "name": "Paraffinium",
+        "quantity": 30
+      },
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech58_8",
+    "inputs": [
+      {
+        "id": "raw30",
+        "name": "Paraffinium",
+        "quantity": 30
+      },
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech729_1",
+    "inputs": [
+      {
+        "id": "raw78",
+        "name": "Ferrite Dust",
+        "quantity": 10
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw27",
+      "name": "Sodium",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Ion Capture"
+  },
+  {
+    "id": "ref_tech91_1",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 30
+      },
+      {
+        "id": "raw52",
+        "name": "Tritium",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech91_2",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 30
+      },
+      {
+        "id": "raw52",
+        "name": "Tritium",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech91_3",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 30
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech91_4",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 30
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech91_5",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 30
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech91_6",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 30
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech91_7",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 30
+      },
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw75",
+      "name": "Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_tech91_8",
+    "inputs": [
+      {
+        "id": "raw67",
+        "name": "Phosphorus",
+        "quantity": 30
+      },
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw33",
+      "name": "Ionised Cobalt",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_trade56_1",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 30
+      },
+      {
+        "id": "raw52",
+        "name": "Tritium",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_trade56_2",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 30
+      },
+      {
+        "id": "raw52",
+        "name": "Tritium",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_trade56_3",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 30
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_trade56_4",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 30
+      },
+      {
+        "id": "raw65",
+        "name": "Silver",
+        "quantity": 20
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_trade56_5",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 30
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_trade56_6",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 30
+      },
+      {
+        "id": "raw93",
+        "name": "Gold",
+        "quantity": 10
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_trade56_7",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 30
+      },
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw78",
+      "name": "Ferrite Dust",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  },
+  {
+    "id": "ref_trade56_8",
+    "inputs": [
+      {
+        "id": "raw21",
+        "name": "Pyrite",
+        "quantity": 30
+      },
+      {
+        "id": "raw28",
+        "name": "Platinum",
+        "quantity": 5
+      }
+    ],
+    "output": {
+      "id": "raw70",
+      "name": "Pure Ferrite",
+      "quantity": 1
+    },
+    "time": "1.0",
+    "operation": "45%Alloy Latticing"
+  }
+]

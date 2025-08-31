@@ -90,10 +90,21 @@ params = {
 
 ## Error Handling
 
-- **Rate Limiting**: Implement delays between requests
+- **Rate Limiting**: Implement delays between requests (default 0.3s)
+- **Request Timeouts**: Use 30-second timeouts to prevent hanging
 - **Missing Pages**: Handle pages that don't exist
 - **API Errors**: Retry with exponential backoff
 - **Malformed Responses**: Validate JSON structure
+- **Connection Issues**: Handle network interruptions gracefully
+
+### Timeout Implementation
+```python
+# Category members with timeout
+response = self.session.get(self.api_url, params=params, timeout=30)
+
+# Raw content with timeout
+response = self.session.get(raw_url, timeout=30)
+```
 
 ## Performance Optimization
 
