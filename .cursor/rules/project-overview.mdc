@@ -6,14 +6,30 @@ alwaysApply: true
 
 This project scrapes data from the No Man's Sky wiki and organizes it into structured JSON files and SQLite database.
 
+## Project Structure
+
+```
+nms-scraper/
+├── nms_scraper.py          # Main scraper (class: NMSScraper)
+├── nms.db                  # SQLite database
+├── requirements.txt        # Dependencies
+├── data/                   # Generated JSON files
+├── extractors/             # Recipe extractors
+│   ├── nutrient_processor_extractor.py
+│   └── refinery_extractor.py
+└── categories/             # Category generation tools
+    ├── generate_categories.py
+    └── generated_categories.py
+```
+
 ## Core Architecture
 
-- **Main Scraper**: [intelligent_scraper.py](mdc:intelligent_scraper.py) - Content-based classification system
-- **Database**: `nms_data.db` - SQLite database storing all scraped items
-- **Recipe Extractors**:
-  - [refinery_extractor.py](mdc:refinery_extractor.py) - Extracts refinery recipes
-  - [nutrient_processor_extractor.py](mdc:nutrient_processor_extractor.py) - Extracts cooking recipes
-- **Category Discovery**: [generate_categories.py](mdc:generate_categories.py) - Auto-discovers wiki categories
+- **Main Scraper**: [nms_scraper.py](mdc:nms_scraper.py) - Content-based classification with sequential IDs
+- **Database**: `nms.db` - SQLite database storing all scraped items
+- **Recipe Extractors**: Located in `extractors/` folder
+  - [extractors/refinery_extractor.py](mdc:extractors/refinery_extractor.py) - Extracts refinery recipes
+  - [extractors/nutrient_processor_extractor.py](mdc:extractors/nutrient_processor_extractor.py) - Extracts cooking recipes
+- **Category Discovery**: Located in `categories/` folder
 
 ## Target Output Files
 
@@ -32,8 +48,20 @@ The scraper generates these JSON files in the `data/` directory:
 
 ## Key Design Principles
 
-1. **Content-based Classification**: Items are classified by analyzing their infobox, description, and usage patterns
-2. **Recipe Structure**: Refinery and NutrientProcessor use structured recipe format with inputs, outputs, time, and operation
-3. **SQLite Integration**: All data stored in database with JSON export capability
-4. **Rate Limiting**: Configurable delays between API requests
-5. **Pagination Support**: Handles categories with >500 items via API continuation
+1. **Sequential IDs**: Items use sequential IDs (cook1, cook2, prod1, tech1, etc.) instead of name-based IDs
+2. **Content-based Classification**: Items are classified by analyzing their infobox, description, and usage patterns
+3. **Recipe Structure**: Refinery and NutrientProcessor use structured recipe format with lowercase fields:
+   ```json
+   {
+     "id": "nut1",
+     "inputs": [{"id": "cook1", "name": "Item Name", "quantity": 1}],
+     "output": {"id": "cook2", "name": "Output Name", "quantity": 1},
+     "time": "2.5",
+     "operation": "Processor Setting: Combining"
+   }
+   ```
+4. **Missing Ingredient Handling**: Uses placeholder IDs (missing_item_name) for ingredients not in database
+5. **SQLite Integration**: All data stored in database with JSON export capability
+6. **Rate Limiting**: Configurable delays between API requests
+7. **Pagination Support**: Handles categories with >500 items via API continuation
+8. **Hard Reset**: `--hard-reset` flag to delete database and data folder for clean runs

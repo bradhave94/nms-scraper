@@ -1,0 +1,58 @@
+# Recipe Data Format
+
+## Recipe Structure
+
+Both `NutrientProcessor.json` and `Refinery.json` use a structured recipe format with lowercase field names:
+
+```json
+{
+  "id": "nut1",
+  "inputs": [
+    {
+      "id": "cook1",
+      "name": "Wailing Batter",
+      "quantity": 1
+    },
+    {
+      "id": "missing_grahj_am",
+      "name": "Grahj'am",
+      "quantity": 1
+    }
+  ],
+  "output": {
+    "id": "cook47",
+    "name": "Appalling Jam Sponge",
+    "quantity": 1
+  },
+  "time": "2.5",
+  "operation": "Processor Setting: Combining"
+}
+```
+
+## Field Descriptions
+
+- **id**: Sequential recipe ID (nut1, nut2, ref1, ref2, etc.)
+- **inputs**: Array of ingredient objects with id, name, and quantity
+- **output**: Single output object with id, name, and quantity
+- **time**: Processing time in seconds as string
+- **operation**: Description of the processing operation
+
+## Missing Ingredient Handling
+
+When ingredients are not found in the main database:
+- Use placeholder IDs: `missing_{ingredient_name_lowercase_with_underscores}`
+- Include readable name in the "name" field
+- Examples: `missing_wailing_batter`, `missing_grahj_am`, `missing_bone_cream`
+
+## Recipe ID Prefixes
+
+- `nut` - Nutrient Processor recipes
+- `ref` - Refinery recipes
+
+## Extraction Process
+
+1. Parse wiki templates (`{{Cook}}`, `{{Refinery}}`, etc.)
+2. Split multiple recipe variations within single templates
+3. Cross-reference ingredient names with database for sequential IDs
+4. Generate placeholder IDs for missing ingredients
+5. Format with lowercase field names and include readable names

@@ -16,21 +16,38 @@ python3 generate_categories.py
 
 ### 2. Main Scraping Process
 ```bash
-python3 intelligent_scraper.py --delay 0.5
+# Normal run with limit
+python3 nms_scraper.py --limit 100
+
+# Clean slate run (deletes database and data folder)
+python3 nms_scraper.py --hard-reset --limit 50
+
+# Full production run
+python3 nms_scraper.py --hard-reset --limit 0
 ```
 - Scrapes all items from discovered categories
-- Uses content-based classification
-- Stores in SQLite database
-- Exports to JSON files
+- Uses content-based classification with sequential IDs
+- Stores in SQLite database (`nms.db`)
+- Exports to JSON files in `data/` directory
 
 ### 3. Recipe Extraction
 ```bash
+cd extractors
+
+# Extract nutrient processor recipes (default paths)
+python3 nutrient_processor_extractor.py
+
+# Extract refinery recipes (default paths)
+python3 refinery_extractor.py
+
+# With custom settings
+python3 nutrient_processor_extractor.py --limit 50
 python3 refinery_extractor.py --delay 0.5
-python3 nutrient_processor_extractor.py --delay 0.5
 ```
-- Extracts structured recipe data
-- Cross-references item IDs from database
-- Generates recipe JSON files
+- Extracts structured recipe data with lowercase fields
+- Cross-references sequential IDs from main database
+- Preserves missing ingredients with placeholder IDs
+- Generates recipe JSON files in `../data/` directory
 
 ## Rate Limiting Best Practices
 
@@ -47,7 +64,7 @@ python3 nutrient_processor_extractor.py --delay 0.5
 - Log progress for large categories
 
 ### Database Consistency
-- Always use single database: `nms_data.db`
+- Always use single database: `nms.db`
 - Check table existence before queries
 - Verify item IDs exist before recipe extraction
 
@@ -58,19 +75,23 @@ python3 nutrient_processor_extractor.py --delay 0.5
 
 ### Classification Accuracy
 - Review misclassified items in output files
-- Adjust keyword matching in `classify_item_intelligently`
+- Adjust keyword matching in `classify_item`
 - Add new classification rules as needed
 
 ## Testing and Validation
 
 ### Small Test Runs
 ```bash
-python3 intelligent_scraper.py --limit 10 --delay 0.1
+# Test with clean slate
+python3 nms_scraper.py --hard-reset --limit 10
+
+# Quick test without reset
+python3 nms_scraper.py --limit 10 --delay 0.1
 ```
 
 ### Database Inspection
 ```bash
-sqlite3 nms_data.db "SELECT COUNT(*) FROM items GROUP BY group_name;"
+sqlite3 nms.db "SELECT COUNT(*) FROM items GROUP BY group_name;"
 ```
 
 ### JSON Validation

@@ -31,7 +31,7 @@ class RefineryExtractor:
         })
 
         # Database connection
-        self.db_path = "nms_data.db"
+        self.db_path = "../nms.db"
         self.item_id_cache = {}
         self.recipes = []
 
@@ -365,8 +365,8 @@ def main():
     parser = argparse.ArgumentParser(description='Extract No Man\'s Sky Refinery Recipes')
     parser.add_argument('--delay', type=float, default=1.0,
                        help='Delay between requests in seconds (default: 1.0)')
-    parser.add_argument('--output', default='data/Refinery.json',
-                       help='Output file path (default: data/Refinery.json)')
+    parser.add_argument('--output', default='../data/Refinery.json',
+                       help='Output file path (default: ../data/Refinery.json)')
 
     args = parser.parse_args()
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Intelligent No Man's Sky Wiki Scraper
+No Man's Sky Wiki Scraper
 
 Scrapes individual pages and classifies them based on content analysis
 rather than wiki categories.
@@ -19,8 +19,8 @@ from urllib.parse import quote
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-class IntelligentNMSScraper:
-    """Intelligent content-based scraper for NMS wiki"""
+class NMSScraper:
+    """Content-based scraper for NMS wiki"""
 
     # Target classification groups
     TARGET_GROUPS = {
@@ -37,17 +37,33 @@ class IntelligentNMSScraper:
         'trade': 'Trade.json'
     }
 
-    def __init__(self, base_url: str = "https://nomanssky.fandom.com", db_path: str = "nms_data.db", delay: float = 0.3):
+    def __init__(self, base_url: str = "https://nomanssky.fandom.com", db_path: str = "nms.db", delay: float = 0.3):
         self.base_url = base_url
         self.api_url = f"{base_url}/api.php"
         self.db_path = db_path
         self.delay = delay
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'NMSIntelligentScraper/1.0 (https://github.com/user/nms-scraper)'
+            'User-Agent': 'NMSScraper/1.0 (https://github.com/user/nms-scraper)'
         })
 
-    def classify_item_intelligently(self, item_data: Dict[str, Any]) -> str:
+        # Group ID prefixes and counters
+        self.group_prefixes = {
+            'buildings': 'build',
+            'cooking': 'cook',
+            'curiosities': 'cur',
+            'fish': 'fish',
+            'nutrientProcessor': 'nut',
+            'others': 'other',
+            'products': 'prod',
+            'rawMaterials': 'raw',
+            'refinery': 'ref',
+            'technology': 'tech',
+            'trade': 'trade'
+        }
+        self.group_counters = {group: 0 for group in self.group_prefixes.keys()}
+
+    def classify_item(self, item_data: Dict[str, Any]) -> str:
         """
         Classify item based on content analysis rather than wiki categories
 
@@ -335,10 +351,15 @@ class IntelligentNMSScraper:
         return [cat.strip() for cat in categories]
 
     def generate_item_id(self, title: str, group: str) -> str:
-        """Generate unique ID for an item"""
-        words = re.findall(r'[a-zA-Z0-9]+', title)
-        camel_case_title = ''.join(word.capitalize() for word in words)
-        return f"{group}{camel_case_title}"
+        """Generate sequential ID for an item"""
+        # Increment counter for this group
+        self.group_counters[group] += 1
+
+        # Get prefix for this group
+        prefix = self.group_prefixes.get(group, 'item')
+
+        # Return sequential ID
+        return f"{prefix}{self.group_counters[group]}"
 
     def init_database(self):
         """Initialize SQLite database with required tables"""
@@ -437,15 +458,37 @@ def main():
     """Main function"""
     import argparse
 
-    parser = argparse.ArgumentParser(description='Intelligent NMS Wiki Scraper')
+    parser = argparse.ArgumentParser(description='NMS Wiki Scraper')
     parser.add_argument('--delay', type=float, default=0.3,
                        help='Delay between requests (default: 0.3)')
     parser.add_argument('--limit', type=int, default=100,
                        help='Limit pages for testing (default: 100, 0 for no limit)')
+    parser.add_argument('--hard-reset', action='store_true',
+                       help='Delete database and data folder before starting (clean slate)')
 
     args = parser.parse_args()
 
-    scraper = IntelligentNMSScraper(delay=args.delay)
+    scraper = NMSScraper(delay=args.delay)
+
+    # Handle hard reset if requested
+    if args.hard_reset:
+        import os
+        import shutil
+
+        print("🧹 Hard reset requested - cleaning up...")
+
+        # Remove database file
+        if os.path.exists(scraper.db_path):
+            os.remove(scraper.db_path)
+            print(f"   ✅ Deleted database: {scraper.db_path}")
+
+        # Remove data directory
+        if os.path.exists('data'):
+            shutil.rmtree('data')
+            print("   ✅ Deleted data directory")
+
+        print("   🎯 Clean slate ready!")
+        print()
 
     # Define all categories to scrape from
     ALL_CATEGORIES = [
@@ -483,7 +526,7 @@ def main():
     "Upgrade Modules"
 ]
 
-    print(f"🚀 Starting intelligent scraping")
+    print(f"🚀 Starting NMS scraping")
     print(f"⚙️  Settings: delay={args.delay}s, limit={args.limit}")
     print("="*60)
 
@@ -529,7 +572,7 @@ def main():
         }
 
         # Classify intelligently
-        group = scraper.classify_item_intelligently(item_data)
+        group = scraper.classify_item(item_data)
         item_id = scraper.generate_item_id(page_title, group)
         item_data['id'] = item_id
 
@@ -546,6 +589,10 @@ def main():
     print(f"\n📤 Exporting from database to JSON files...")
     print("="*50)
 
+    # Ensure data directory exists
+    import os
+    os.makedirs('data', exist_ok=True)
+
     for group, target_file in scraper.TARGET_GROUPS.items():
         if group_counts[group] > 0:
             filename = f"data/{target_file}"
@@ -555,7 +602,7 @@ def main():
     total_items = sum(group_counts.values())
     print(f"{'TOTAL':15} → {total_items:4d} items")
 
-    print(f"\n✅ Intelligent scraping complete!")
+    print(f"\n✅ NMS scraping complete!")
     print(f"💾 Database: {scraper.db_path}")
     print(f"📁 JSON files: data/ directory")
 

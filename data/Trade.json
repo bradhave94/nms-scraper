@@ -1,69 +1,17 @@
 [
   {
-    "id": "tradeCometDroplets",
-    "title": "Comet Droplets",
-    "description": "Several canisters of comet droplets.\n\nAn elaborate trading name for chunks of meteorite, these rocks are nonetheless extremely valuable to the advanced material economies that can process them.",
-    "type": "Trade Goods",
-    "infobox": {
-      "_infobox_type": "product",
-      "name": "Comet Droplets",
-      "image": "TRADEPROD.COMMODITY3.png",
-      "color": "Grey",
-      "category": "Tradeable",
-      "type": "Trade Goods",
-      "value": "15,000.0",
-      "release": "Adrift"
-    },
-    "categories": []
-  },
-  {
-    "id": "tradeGekCharm",
-    "title": "Gek Charm",
-    "description": "Good luck charm carried by many galactic traders.",
-    "type": "",
-    "infobox": {
-      "_infobox_type": "product",
-      "image": "Product.gekcharm.png",
-      "category": "Trade Commodity",
-      "desc": "Gek good luck charm",
-      "release": "Atlas Rises"
-    },
-    "categories": [
-      "Gek",
-      "Trade commodities"
-    ]
-  },
-  {
-    "id": "tradeIonSphere",
-    "title": "Ion Sphere",
-    "description": "A packed crate of ion spheres.\n\nThese delicate glass spheres house a small-scale replica of the upper atmosphere. Sparkly and hypnotic to look at, these baubles are also of importance in the manufacture of advanced material alloys.",
-    "type": "Trade Goods",
-    "infobox": {
-      "_infobox_type": "product",
-      "name": "Ion Sphere",
-      "image": "TRADEPROD.COMMODITY4.png",
-      "color": "",
-      "category": "Tradeable",
-      "type": "Trade Goods",
-      "value": "30,000.0",
-      "release": "Adrift"
-    },
-    "categories": []
-  },
-  {
-    "id": "tradeSparkCanister",
-    "title": "Spark Canister",
-    "description": "A crate packed with spark canisters.\n\nMany industrial and mining processes have considerable power demands. A counterpart to the slow release of a battery, spark canisters are able to meet these demands instantaneously.",
+    "id": "trade1",
+    "title": "Ohmic Gel",
+    "description": "Several packets of ohmic gel.\n\nPower-hungry mining operations are fraught with danger. Ohmic gel helps keep rapidly moving parts both insulated and lubricated.",
     "type": "Trade Goods (Energy Source)",
     "infobox": {
       "_infobox_type": "product",
-      "name": "Spark Canister",
-      "image": "TRADEPROD.ENERGY1.png",
-      "color": "Grey",
+      "name": "Ohmic Gel",
+      "image": "TRADEPROD.ENERGY3.png",
+      "color": "grey",
       "category": "Tradeable",
       "type": "Trade Goods (Energy Source)",
-      "value": "1,000.0",
-      "desc": "",
+      "value": "15,000.0",
       "release": "Adrift"
     },
     "categories": []

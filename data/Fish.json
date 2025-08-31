@@ -1,68 +1,17 @@
 [
   {
-    "id": "fishExpiredBraincoral",
-    "title": "Expired Braincoral",
-    "description": "A piece of flotsam, wrenched from its years of drifting in the water when it became entangled in a fishing lure.\n\nOf little use to anyone.",
-    "type": "Collected Flotsam",
+    "id": "fish1",
+    "title": "Rimescale Snapper",
+    "description": "Rimescale Snapper is a fish that can be caught as an item by the player.",
+    "type": "Rare Fish",
     "infobox": {
       "_infobox_type": "product",
-      "image": "PRODUCT.FISH.CORAL.2.png",
-      "color": "grey",
+      "image": "PRODUCT2.FISH.XL.2.png",
+      "color": "purple",
       "category": "Fish",
-      "type": "Collected Flotsam",
-      "used": "",
-      "value": "500",
-      "release": "Aquarius"
-    },
-    "categories": []
-  },
-  {
-    "id": "fishGoldenJellyfish",
-    "title": "Golden Jellyfish",
-    "description": "Golden Jellyfish is a fish that can be caught as an item by the player.",
-    "type": "Legendary Fish",
-    "infobox": {
-      "_infobox_type": "product",
-      "image": "PRODUCT3.FISH.JELLY.png",
-      "color": "yellow",
-      "category": "Fish",
-      "type": "Legendary Fish",
-      "value": "100,000",
-      "used": "",
-      "release": "Aquarius"
-    },
-    "categories": []
-  },
-  {
-    "id": "fishSeaCucumber",
-    "title": "Sea Cucumber",
-    "description": "Sea Cucumber is a fish that can be caught as an item by the player.",
-    "type": "Common Fish",
-    "infobox": {
-      "_infobox_type": "product",
-      "image": "PRODUCT.FISH.WORM.png",
-      "color": "green",
-      "category": "Fish",
-      "type": "Common Fish",
-      "value": "1,000",
+      "type": "Rare Fish",
+      "value": "10,000",
       "used": "Cooking",
-      "release": "Aquarius"
-    },
-    "categories": []
-  },
-  {
-    "id": "fishTranslucentGulper",
-    "title": "Translucent Gulper",
-    "description": "Transluicent Gulper is a fish that can be caught as an item by the player.",
-    "type": "Legendary Fish",
-    "infobox": {
-      "_infobox_type": "product",
-      "image": "PRODUCT.FISH.XL.1.png",
-      "color": "yellow",
-      "category": "Fish",
-      "type": "Legendary Fish",
-      "value": "200,000.0",
-      "used": "",
       "release": "Aquarius"
     },
     "categories": []

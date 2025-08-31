@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 class NutrientProcessorExtractor:
     """Extracts and processes nutrient processor recipes from wiki data"""
 
-    def __init__(self, db_path: str = "nms_intelligent.db", base_url: str = "https://nomanssky.fandom.com"):
+    def __init__(self, db_path: str = "../nms.db", base_url: str = "https://nomanssky.fandom.com"):
         self.db_path = db_path
         self.base_url = base_url
         self.session = requests.Session()
@@ -324,26 +324,45 @@ class NutrientProcessorExtractor:
 
         return all_recipes
 
+    def get_item_name_by_id(self, item_id: str) -> str:
+        """Get item name by ID from database"""
+        if item_id.startswith("missing_"):
+            # Convert placeholder ID back to readable name
+            return item_id.replace("missing_", "").replace("_", " ").title()
+        
+        # Look up in database
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            cursor.execute('SELECT title FROM items WHERE id = ?', (item_id,))
+            result = cursor.fetchone()
+            conn.close()
+            return result[0] if result else item_id
+        except:
+            return item_id
+
     def clean_and_format_recipes(self, recipes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Clean and format recipes to match your desired structure"""
         formatted_recipes = []
 
         for recipe in recipes:
-            # Convert to your desired format
+            # Convert to your desired format with lowercase fields and names
             formatted_recipe = {
-                "Id": recipe["id"],
-                "Inputs": [
+                "id": recipe["id"],
+                "inputs": [
                     {
-                        "Id": inp["id"],
-                        "Quantity": inp["quantity"]
+                        "id": inp["id"],
+                        "name": self.get_item_name_by_id(inp["id"]),
+                        "quantity": inp["quantity"]
                     } for inp in recipe["inputs"]
                 ],
-                "Output": {
-                    "Id": recipe["output"]["id"],
-                    "Quantity": recipe["output"]["quantity"]
+                "output": {
+                    "id": recipe["output"]["id"],
+                    "name": self.get_item_name_by_id(recipe["output"]["id"]),
+                    "quantity": recipe["output"]["quantity"]
                 },
-                "Time": "2.5",  # Default nutrient processor time
-                "Operation": recipe["operation"]
+                "time": "2.5",  # Default nutrient processor time
+                "operation": recipe["operation"]
             }
 
             formatted_recipes.append(formatted_recipe)
@@ -355,9 +374,9 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(description='Extract NMS Nutrient Processor Recipes')
-    parser.add_argument('--database', default='nms_data.db',
+    parser.add_argument('--database', default='../nms.db',
                        help='SQLite database path')
-    parser.add_argument('--output', default='data/NutrientProcessor.json',
+    parser.add_argument('--output', default='../data/NutrientProcessor.json',
                        help='Output JSON file')
     parser.add_argument('--limit', type=int, default=0,
                        help='Limit items for testing (0 for no limit)')
