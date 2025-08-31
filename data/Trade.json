@@ -1,6 +1,596 @@
 [
   {
-    "id": "trade1",
+    "id": "trade35",
+    "title": "Albumen Pearl",
+    "description": "Gemstone formed over the course of centuries within the egg of a super-incubatory species. Highly ornamental, these gems are themselves living seeds, lucent grains of potential life.\n\nCan be sold at a Galactic Trade Terminal.",
+    "type": "Trade commodity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.abumenpearl.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade commodity",
+      "value": "10,640",
+      "desc": "Valuable green gem stone found in shells",
+      "release": "Echoes"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade45",
+    "title": "Atlas Seed",
+    "description": "There are different seeds, and each seed requires the previous one as a crafting component. After visiting the 11th Atlas Interface and activating it, it will ask for the last seed, Heart of the Sun, in order to complete the Atlas Path. Once you give it the Heart of the Sun, you get the choice to give birth to a new star.\n\nThis game path can only be done once.",
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Atlas_Seed.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "",
+      "release": "Waypoint"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade4",
+    "title": "Banned Weapons",
+    "description": "Hacked together from the salvaged remains of Sentinel forces, these potent weapons are a favourite of outlaws across the galaxy.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Banned Weapons",
+      "image": "PRODUCT.SMUGGLING7.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "83,000.0",
+      "type": "Smuggled Goods",
+      "release": "Echoes"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade12",
+    "title": "Blood Salt",
+    "description": "Jars of murky, foul-smelling crystals. Produced in viscous evaporation traps, these organic salts are used in the manufacture of illegal pheromones.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Blood Salt",
+      "image": "PRODUCT.SMUGGLING1.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "2,000.0",
+      "type": "Smuggled Goods",
+      "release": "Outlaws"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade11",
+    "title": "Captured Nanode",
+    "description": "Atlas Seed containing zonally-shifted quasi-stellar substrate. Warning: do not allow matrix to commune with this dimensional space.",
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.1.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "Visions"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade8",
+    "title": "Comet Droplets",
+    "description": "Several canisters of comet droplets.\n\nAn elaborate trading name for chunks of meteorite, these rocks are nonetheless extremely valuable to the advanced material economies that can process them.",
+    "type": "Trade Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Comet Droplets",
+      "image": "TRADEPROD.COMMODITY3.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods",
+      "value": "15,000.0",
+      "release": "Adrift"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade32",
+    "title": "Convergence Cube",
+    "description": "Device used by the Korvax for the storage of historical and cultural information.",
+    "type": "Trade commodity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.KORVAXCUBE.png",
+      "category": "Curiosity",
+      "color": "Purple",
+      "type": "Trade commodity",
+      "value": "13,063.0",
+      "release": "Echoes"
+    },
+    "categories": [
+      "Trade commodity"
+    ]
+  },
+  {
+    "id": "trade39",
+    "title": "Counterfeit Circuits",
+    "description": "Reversed-engineered from a captured space station core, these unlicensed circuits are used in a wide range of black- and grey-market technologies.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Counterfeit Circuits",
+      "image": "PRODUCT.SMUGGLING6.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "68,000.0",
+      "type": "Smuggled Goods",
+      "release": "Singularity"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade27",
+    "title": "Dark Matter",
+    "description": "An Atlas Seed shell encompassing a void element harvested from the collapse state of the last universe. Toxic if ingested.",
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.4.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade17",
+    "title": "Dawn's End",
+    "description": "Sculpted tau neutrino-boson matrix fixed within an irreplaceable Atlas Seed shell. May be semi-sentient.",
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.5.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade46",
+    "title": "Decrypted User Data",
+    "description": "A crate packed with hard drives, each of which contain vast amounts of decrypted user data.\n\nIndividually of low value, taken together these repositories can be processed and scanned for valuable data. This processing occurs in systems with advanced material economies.",
+    "type": "Trade Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Decrypted User Data",
+      "image": "TRADEPROD.COMMODITY1.png",
+      "color": "",
+      "category": "Tradeable",
+      "type": "Trade Goods",
+      "value": "1,000.0",
+      "release": "Adrift"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade36",
+    "title": "Dirty Bronze",
+    "description": "A popular metal alloy with a wide variety of uses. 'Dirty Bronze' has shed its scientific name in favor of the popular term for its colour.\n\nCrafted from Pure Ferrite and Pyrite.",
+    "type": "Alloy Metal",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.metallic.2.png",
+      "color": "Yellow",
+      "category": "Tradeable",
+      "type": "Alloy Metal",
+      "value": "25,000.0",
+      "release": "Endurance"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade33",
+    "title": "Englobed Shade",
+    "description": "This Atlas Shell holds the remains of a parasitic space-borne lifeform, most likely of extra-dimensional origins.",
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.2.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path",
+      "AGT Galactic Archives"
+    ]
+  },
+  {
+    "id": "trade38",
+    "title": "Enormous Metal Cog",
+    "description": "Several huge cogs.\n\nSturdy, well-made metal gears. While not advanced technology themselves, they're a vital component in countless pieces of high-tech machinery all over the galaxy.",
+    "type": "Trade Goods (Industrial)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Enormous Metal Cog",
+      "image": "TRADEPROD.COMPONENT1.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Industrial)",
+      "value": "1,000.0",
+      "desc": "",
+      "release": "Beacon"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade30",
+    "title": "Experimental Power Fluid",
+    "description": "Corrosion-resistant barrels of an experimental power fluid.\n\nOne barrel of this highly volatile concoction is enough to power a space station for weeks on end. Particularly valued by mining economies.",
+    "type": "Trade Goods (Energy Source)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Experimental Power Fluid",
+      "image": "TRADEPROD.ENERGY4.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Energy Source)",
+      "value": "30,000.0",
+      "release": "Adrift"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade28",
+    "title": "First Spawn Relics",
+    "description": "Relics of the fallen Gek empire, condemned and banned by all the galaxy's major civilisations.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "First Spawn Relics",
+      "image": "PRODUCT.SMUGGLING8.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "98,000.0",
+      "type": "Smuggled Goods",
+      "release": "Outlaws"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade5",
+    "title": "Gold Nugget",
+    "description": "A highly valuable ore chunk, ready to be processed into Gold.\n\nSelect in the inventory (",
+    "type": "Valuable Ore",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.GEODE.ASTEROID.png",
+      "color": "Darkblue",
+      "category": "Curiosity",
+      "type": "Valuable Ore",
+      "used": "",
+      "value": "3,280.0",
+      "release": "Origins"
+    },
+    "categories": [
+      "Valuable Ore"
+    ]
+  },
+  {
+    "id": "trade13",
+    "title": "GrahGrah",
+    "description": "A canister of the now-banned Vy'keen battle gas, traditionally inhaled on the eve of battle.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "GrahGrah",
+      "image": "PRODUCT.SMUGGLING5.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "58,000.0",
+      "type": "Smuggled Goods",
+      "release": "Outlaws"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade20",
+    "title": "Hadal Core",
+    "description": "A highly-pressurised fleshy orb.\n\nOne can feel it push back when touched, a flash of bioluminescence stirring in the inky black core of this mysterious object.",
+    "type": "Horrific Sample",
+    "infobox": {
+      "_infobox_type": "product",
+      "color": "green",
+      "image": "PRODUCT.FISHCORE.png",
+      "category": "Tradeable",
+      "type": "Horrific Sample",
+      "value": "92,625.0",
+      "used": "Trading",
+      "release": "SentinelUp"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade40",
+    "title": "Heart of the Sun",
+    "description": "An Atlas Seed containing a time-locked quantum cilia suspended in a photonic shell. No others are known to exist.",
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.10.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "Visions"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade31",
+    "title": "Holographic Crankshaft",
+    "description": "Packed and separated data containers for holographic crankshafts.\n\nReal crankshafts are frequently too large, noisy or hard-to-maintain for use in delicate machines. When faced with such a situation, high-tech manufacturers turn to these holographic substitutes.",
+    "type": "Trade Goods (Industrial)",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.COMPONENT4.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Industrial)",
+      "used": "Trading",
+      "value": "30,000.0",
+      "release": "Adrift"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade26",
+    "title": "Humming Sac",
+    "description": "Humming Sac can be found in caves, it has the appearance of an 35px icon.",
+    "type": "Trade commodity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Humming egg.png",
+      "color": "",
+      "category": "Container",
+      "type": "Trade commodity",
+      "value": "",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Egg"
+    ]
+  },
+  {
+    "id": "trade37",
+    "title": "Hypnotic Eye",
+    "description": "The eye is cold, almost frozen, to the touch. Nonetheless, it is impossible to escape the feeling it is somehow still alive.\n\nExtended exposure is not recommended. Do not stare back into the eye. Do not stare back. Do not stare back.",
+    "type": "Horrific Sample",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.EYEBALL.png",
+      "category": "Tradeable",
+      "color": "Grey",
+      "type": "Horrific Sample",
+      "value": "57,000",
+      "release": "WorldsTwo"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade19",
+    "title": "Industrial-Grade Battery",
+    "description": "A packet of well-isolated industrial batteries.\n\nHeavy-duty batteries are required to power deep level miningoperations",
+    "type": "Trade Goods (Energy Source)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Industrial-Grade Battery",
+      "image": "TRADEPROD.ENERGY2.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Energy Source)",
+      "value": "6,000.0",
+      "desc": "",
+      "release": "Adrift"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade29",
+    "title": "Ion Sphere",
+    "description": "A packed crate of ion spheres.\n\nThese delicate glass spheres house a small-scale replica of the upper atmosphere. Sparkly and hypnotic to look at, these baubles are also of importance in the manufacture of advanced material alloys.",
+    "type": "Trade Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Ion Sphere",
+      "image": "TRADEPROD.COMMODITY4.png",
+      "color": "",
+      "category": "Tradeable",
+      "type": "Trade Goods",
+      "value": "30,000.0",
+      "release": "Adrift"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade21",
+    "title": "Iridesite",
+    "description": "Advanced light metal alloy traded throughout the galactic Outer Edge. Often used in the interiors of trading shuttles to reduce weight as they ascend from planets with high gravitational fields.\n\nCrafted from Aronium, Magno-Gold and Grantine.",
+    "type": "Enriched Alloy Metal",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.IRIDISITE.png",
+      "color": "yellow",
+      "category": "Tradeable",
+      "type": "Enriched Alloy Metal",
+      "value": "150,000.0",
+      "release": "Prisms"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade49",
+    "title": "Living Pearl",
+    "description": "Born in the hearts of enormous glowing molluscs found deep underwater.\n\nUnlike most pearls, this sample is no unliving calcite. Some trace of the mother-clam's consciousness remains within the gem, giving it a lingering, haunting beauty.",
+    "type": "Semi-Conscious Gemstone",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.CLAMPEARL.png",
+      "category": "Tradeable",
+      "color": "Grey",
+      "type": "Semi-Conscious Gemstone",
+      "value": "4,797.5",
+      "release": "Origins"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade16",
+    "title": "Modified Quanta",
+    "description": "This one-of-a-kind Atlas Seed holds an aesthetically pleasing mathematical construct salvaged from the simulation of an alternate reality.",
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.9.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade43",
+    "title": "Moon Ether",
+    "description": "A vat of highly volatile liquid. Its fumes are extremely flammable and a function",
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Moon Ether",
+      "image": "PRODUCT.SMUGGLING3.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "18,000.0",
+      "type": "Smuggled Goods",
+      "release": "Outlaws"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade6",
+    "title": "Navigation Data",
+    "description": "Encoded navigation data. This highly portable data unit contains all relevant cartographical information for a planetary region.\n\nMay be traded with a star charts.",
+    "type": "Encrypted Navigation Data",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Navigation Data",
+      "image": "PRODUCT.NAVDATA.png",
+      "color": "blue",
+      "category": "Curiosity",
+      "type": "Encrypted Navigation Data",
+      "value": "1,000.0",
+      "release": "Waypoint"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade10",
+    "title": "Neural Duct",
+    "description": "A box of fresh neural ducts.\n\nNeural ducts are temporary inserts designed for a brief boost of concentration and productivity. Useful everywhere, these are highly valued in trading economies where competition between workers is fierce.",
+    "type": "Trade Goods (Scientific)",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.EXOTICS5.png",
+      "color": "White",
+      "category": "Tradeable",
+      "type": "Trade Goods (Scientific)",
+      "value": "50,000.0",
+      "release": "Adrift"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade14",
+    "title": "Non-Stick Piston",
+    "description": "Wrapped and greased pistons, ready for shipping.\n\nHigh-tech components frequently require rapidly moving parts, or high-endurance motors. Without specially coated pistons, the failure rate of such parts would be significantly higher.",
+    "type": "Trade Goods (Industrial)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Non-Stick Piston",
+      "image": "TRADEPROD.COMPONENT2.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Industrial)",
+      "value": "6,000.0",
+      "desc": "",
+      "release": "Adrift"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade47",
+    "title": "Noospheric Orb",
+    "description": "An Atlas Seed capable of resonating on humanoid telepathic frequencies; may attempt to subsume any subordinate intellect in close proximity.",
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.3.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade34",
+    "title": "Novae Reclaiment",
+    "description": "Atlas Seed contains neutronium elements from a catastrophic supernova event that obliterated a sentient civilization in an earlier era.",
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.8.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade22",
     "title": "Ohmic Gel",
     "description": "Several packets of ohmic gel.\n\nPower-hungry mining operations are fraught with danger. Ohmic gel helps keep rapidly moving parts both insulated and lubricated.",
     "type": "Trade Goods (Energy Source)",
@@ -15,5 +605,252 @@
       "release": "Adrift"
     },
     "categories": []
+  },
+  {
+    "id": "trade50",
+    "title": "Organic Piping",
+    "description": "A vat of preserved organic piping. Still warm.\n\nTo avoid difficult ethical problems, many labs grow their test subjects on a component level. The leftovers can be profitable in trading economies with relaxed medical regulations.",
+    "type": "Trade Goods (Scientific)",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.EXOTICS4.png",
+      "color": "",
+      "category": "Tradeable",
+      "type": "Trade Goods (Scientific)",
+      "value": "30,000.0",
+      "release": "Adrift"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade23",
+    "title": "Photic Jade",
+    "description": "This irreplaceable Atlas Seed is a form of matter-adapted photons coalesced into physical solidity by unknown means.",
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.6.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "Visions"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade41",
+    "title": "Photon Cannon",
+    "description": "A destructive starship projectile launcher, the weapons system for choice for the interstellar trader and pirate alike.\n\nUse () to change weapon mode. Press () to fire.",
+    "type": "Starship Projectile Weapon",
+    "infobox": {
+      "_infobox_type": "technology",
+      "image": "RENDER.SHIPPROJECTILE1.png",
+      "color": "blue",
+      "category": "Starship",
+      "subcategory": "Weapons",
+      "type": "Starship Projectile Weapon",
+      "desc": "",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Weapons technology"
+    ]
+  },
+  {
+    "id": "trade25",
+    "title": "Product",
+    "description": "Products are useful or valuable materials. Some of the products can be crafted in the player's inventory using blueprints and the proper ingredients. Most of the blueprints can be found in Operations Centres or Manufacturing Facilities unless noted otherwise.\n\nSee tradeable for products that cannot be crafted.",
+    "type": "",
+    "infobox": {},
+    "categories": [
+      "Products|"
+    ]
+  },
+  {
+    "id": "trade24",
+    "title": "Product (Atlas)",
+    "description": "A product is a useful or valuable material. Products can be crafted in a player's inventory using blueprints and the proper resources. Most of the recipes can be found in Operations Centres or Manufacturing Facilities unless noted otherwise.\n\nSee trade commodity for items that cannot be crafted.",
+    "type": "",
+    "infobox": {},
+    "categories": [
+      "Products|",
+      "Items"
+    ]
+  },
+  {
+    "id": "trade2",
+    "title": "Salvaged Fleet Unit",
+    "description": "A deployable freighter upgrade, salvaged from %NAME%.\n\nCan be re-deployed into your own capital ship to improve the speed of your fleet.\n\nA options:\n* the hyperdrive unit\n* fleet coordination hardware\n\nB options:\n* primary drive\n* long-range outfitting systems\n* long-range communication systems\n* long-range communication array\n* long-range defensive systems\n* long-range scanning systems\n\nC options:\n* hyperdrive range and efficiency\n* expedition fuel efficiency\n* expedition speed\n* combat and defense abilities of all expeditions\n* the exploration and scientific abilities of all expeditions\n* the trade abilities of all expeditions\n* the industrial abilities of all expeditions",
+    "type": "Deployable Salvage",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PROCTECH.S.HYPERDRIVE.png",
+      "category": "Consumable",
+      "color": "Yellow",
+      "type": "Deployable Salvage",
+      "value": "",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Upgrade Modules",
+      "Derelict Freighter"
+    ]
+  },
+  {
+    "id": "trade7",
+    "title": "Spark Canister",
+    "description": "A crate packed with spark canisters.\n\nMany industrial and mining processes have considerable power demands. A counterpart to the slow release of a battery, spark canisters are able to meet these demands instantaneously.",
+    "type": "Trade Goods (Energy Source)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Spark Canister",
+      "image": "TRADEPROD.ENERGY1.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Energy Source)",
+      "value": "1,000.0",
+      "desc": "",
+      "release": "Adrift"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade15",
+    "title": "Star Silk",
+    "description": "Several spools of star silk.\n\nStar silk is woven on enormous solar looms in orbit around trading planets. Cosmic ray impact triggers the pattern of the weave, which can then be used in advanced material processing.",
+    "type": "Trade Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Star Silk",
+      "image": "TRADEPROD.COMMODITY2.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Trade Goods",
+      "value": "6,000.0",
+      "release": "Beacon"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade1",
+    "title": "State Phasure",
+    "description": "For unknown reasons, this unique Atlas Seed has been phased out of alignment with this quantum reality. Contents cannot be determined.",
+    "type": "Unique valuable curiosity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ATLASSEED.7.png",
+      "category": "Curiosity",
+      "color": "grey",
+      "type": "Unique valuable curiosity",
+      "value": "1,000.0",
+      "release": "NEXT"
+    },
+    "categories": [
+      "Atlas Path"
+    ]
+  },
+  {
+    "id": "trade44",
+    "title": "Stolen DNA Samples",
+    "description": "Sealed vials of unregistered DNA samples, free of the standard biosecurity mechanisms that prevent unlawful genetic tampering.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
+    "type": "Smuggled Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Stolen DNA Samples",
+      "image": "PRODUCT.SMUGGLING2.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "9,000.0",
+      "type": "Smuggled Goods",
+      "release": "Outlaws"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade48",
+    "title": "Teleport Coordinators",
+    "description": "A bundle of precisely calibrated teleport coordinators.\n\nThese pin-prick sized circuits are vital to the delicate process of inserting reinforcing material into advanced alloys. They can also aid long-distance sales efforts.",
+    "type": "Trade Goods",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Teleport Coordinators",
+      "image": "TRADEPROD.COMMODITY5.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods",
+      "value": "50,000.0",
+      "release": "Adrift"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade9",
+    "title": "Vector Compressors",
+    "description": "Vector Compressors is a 5th tier tradeable.",
+    "type": "Trade Goods (Industrial)",
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Vector Compressors",
+      "image": "TRADEPROD.COMPONENT5.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Industrial)",
+      "value": "50,000.0",
+      "release": "Adrift"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade42",
+    "title": "Vile cortex",
+    "description": "The brain stem of a Brood Mother, pulled from its malignant corpse.\n\nThis is a valuable trophy, signifying victory in the quest to purge the infestations of the vile brood. Turn it over to an envoy of the Mercenaries Guild to mark your triumph.",
+    "type": "Glorious Trophy",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Vile_cortex.png",
+      "color": "purple",
+      "type": "Glorious Trophy",
+      "category": "Tradeable",
+      "value": "122,000.0",
+      "release": "Beacon"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade18",
+    "title": "Vortex Cube",
+    "description": "An ancient object, unearthed from the depths of a planetary cave system. Its surface is cold to the touch, and is curiously polished despite its age.\n\nA fusion of metal and rock, these cubes have proved resistant to industrial processing. As such, they are of value only to collectors.\n\nCan be sold at a Galactic Trade Terminal.",
+    "type": "Trade commodity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.vortexcube.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade commodity",
+      "value": "5,800.0",
+      "release": "Frontiers"
+    },
+    "categories": []
+  },
+  {
+    "id": "trade3",
+    "title": "Vy'keen Dagger",
+    "description": "Largely ceremonial weapon. A vital part of Vy'keen tradition and culture.",
+    "type": "Trade commodity",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.vykeendagger.png",
+      "category": "Curiosity",
+      "color": "Purple",
+      "type": "Trade commodity",
+      "value": "11,688.0",
+      "release": "Waypoint"
+    },
+    "categories": [
+      "Trade commodity"
+    ]
   }
 ]

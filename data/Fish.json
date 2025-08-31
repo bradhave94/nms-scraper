@@ -1,6 +1,1109 @@
 [
   {
+    "id": "fish69",
+    "title": "Aberrant Duskfin",
+    "description": "Aberrant Duskfin is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT5.FISH.RAY.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "100,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish74",
+    "title": "Ancient Irontail",
+    "description": "Ancient Irontail is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.XL.3.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "200,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish40",
+    "title": "Ash Snail",
+    "description": "Ash Snail is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT5.FISH.SNAIL.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish16",
+    "title": "Automated Trap",
+    "description": "An autonomous fishing device, designed for long-term deployment in a wide-range of water conditions.\n\nOnce activated, the system will lure and trap any nearby aquatic creatures and store them for later retrieval.",
+    "type": "Self-Sustaining Auto Creel",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "NmsMisc_NotAvailable.png",
+      "category": "Building Part",
+      "color": "Blue",
+      "type": "Self-Sustaining Auto Creel",
+      "value": "",
+      "release": "Aquarius"
+    },
+    "categories": [
+      "Blueprints",
+      "Fishing"
+    ]
+  },
+  {
+    "id": "fish10",
+    "title": "Bileworm",
+    "description": "Bileworm is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT4.FISH.WORM.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish71",
+    "title": "Bionic Lure",
+    "description": "A piece of specialist bait, designed to improve the size and rarity of your catch.\n\nLocate your Fishing Rig and begin bait application with",
+    "type": "Fishing Bait",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISHBAIT.3.png",
+      "color": "Darkblue",
+      "category": "Consumable",
+      "type": "Fishing Bait",
+      "value": "450.0",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish27",
+    "title": "Bleached Bonefish",
+    "description": "Bleached Bonefish is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.XL.2.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "150,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish41",
+    "title": "Blind Titancore",
+    "description": "Blind Titancore is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.XL.1.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "200,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish29",
+    "title": "Blistering Eel",
+    "description": "Blistering Eel is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT4.FISH.EEL.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "2,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish61",
+    "title": "Brineskipper",
+    "description": "Brineskipper is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.FISH.MEDIUM.3.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "5,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish67",
+    "title": "Caustic Urchin",
+    "description": "Caustic Urchin is a fish that can be caught as an item by the player.",
+    "type": "uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT4.FISH.STARFISH.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "uncommon Fish",
+      "value": "3,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish24",
+    "title": "Clearwater Skipper",
+    "description": "Clearwater Skipper is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.BIG.3.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
     "id": "fish1",
+    "title": "Colossal Shrimp",
+    "description": "Colossal Shrimp is a fish that can be caught as an item by the player.",
+    "type": "Rare Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.PRAWN.png",
+      "color": "purple",
+      "category": "Fish",
+      "type": "Rare Fish",
+      "value": "30,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish89",
+    "title": "Common Shimmertail",
+    "description": "Common Shimmertail is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.SMALL.1.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish2",
+    "title": "Common Sunfish",
+    "description": "Common Sunfish is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.MEDIUM.3.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish5",
+    "title": "Dangling Orb",
+    "description": "A piece of specialist bait, designed to improve the size and rarity of your catch.\n\nLocate your Fishing Rig and begin bait application with",
+    "type": "Fishing Bait",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISHBAIT.DAY.png",
+      "color": "Darkblue",
+      "category": "Consumable",
+      "type": "Fishing Bait",
+      "value": "550.0",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish17",
+    "title": "Dragonfish",
+    "description": "Dragonfish is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.XL.3.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "150,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish87",
+    "title": "Exo-Skiff",
+    "description": "A deployable static platform, allowing the user to comfortably survey the seas in any weather. As well as providing a steady and easily accessible fishing spot, the Exo-Skiff also features abundant Cold Storage, granting additional space to store your catch.\n\nSummon the Exo-Skiff to any suitable body of water using the Quick Menu (",
+    "type": "Deployable Fishing Platform",
+    "infobox": {
+      "_infobox_type": "technology",
+      "image": "TECH.FISHSKIFF.png",
+      "color": "blue",
+      "category": "Exosuit",
+      "subcategory": "",
+      "level": "",
+      "upgradeicon": "",
+      "type": "Deployable Fishing Platform",
+      "desc": "",
+      "recharge": "",
+      "release": "Aquarius"
+    },
+    "categories": [
+      "Blueprints",
+      "Technology",
+      "Fishing"
+    ]
+  },
+  {
+    "id": "fish12",
+    "title": "Expired Braincoral",
+    "description": "A piece of flotsam, wrenched from its years of drifting in the water when it became entangled in a fishing lure.\n\nOf little use to anyone.",
+    "type": "Collected Flotsam",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.CORAL.2.png",
+      "color": "grey",
+      "category": "Fish",
+      "type": "Collected Flotsam",
+      "used": "",
+      "value": "500",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish44",
+    "title": "Fish",
+    "description": "Fish is a category of item that was introduced with the Aquarius Update. 211 different fishes can be caught, not including flotsam.",
+    "type": "",
+    "infobox": {},
+    "categories": [
+      "Products - Fish|",
+      "Worlds Part II"
+    ]
+  },
+  {
+    "id": "fish72",
+    "title": "Fish Biscuit",
+    "description": "A well-baked biscuit, created in the Nutrient Processor.\n\nWhat was once a thin sheet of vaguely-sweetend nutrient paste has been elevated with the addition of carefully chosen ingredients.\n\nFlavour profile: fermented, bracing, tangy.\n<br>Recipe Complexity: 65%",
+    "type": "Edible Product",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.REFINED.BISCUIT.png",
+      "color": "Brown",
+      "category": "Consumable",
+      "type": "Edible Product",
+      "value": "60,000",
+      "release": "WorldsTwo"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish23",
+    "title": "Fish Fry",
+    "description": "A small morsel of seafood, created in the Nutrient Processor. Food such as this can be highly valuable.\n\nCan be consumed as it stands or subjected to further processing.",
+    "type": "Edible Product",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.PRAWN.COOKED.png",
+      "color": "Blue",
+      "category": "Consumable",
+      "type": "Edible Product",
+      "used": "",
+      "value": "28,000",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish82",
+    "title": "Fish Pie",
+    "description": "A highly refined food product, created in the Nutrient Processor. It has both the identifying shapes and aromas of an actual food item, in stark contrast with conventional nutrition paste or pellets.\n\nFood such as this can be highly valuable.\n\nFlavour profile: polyphonic, intense, manifold.\n<br>Recipe Complexity: 94%",
+    "type": "Edible Product",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.REFINED.MEATPIE.png",
+      "color": "Red",
+      "category": "Consumable",
+      "type": "Edible Product",
+      "value": "40,000",
+      "release": "WorldsTwo"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish65",
+    "title": "Fishing Rig",
+    "description": "A versatile piece of angling equipment, enabling the user to fish in a variety of conditions.\n\nAccess the fishing rig by pressing 20px/20px/20px (PS4/PC/Xbox) and cast your line into a body of water with 40px/20px/40px. With a fish hooked, press and hold 40px/20px/40px to haul in your catch.",
+    "type": "Deployable Angling Device",
+    "infobox": {
+      "_infobox_type": "technology",
+      "image": "RENDER.FISHLASER.png",
+      "color": "blue",
+      "category": "Multi-Tool",
+      "subcategory": "Angling Equipment",
+      "type": "Deployable Angling Device",
+      "desc": "A versatile piece of angling equipment, enabling the user to fish in a variety of water conditions.",
+      "release": "Aquarius"
+    },
+    "categories": [
+      "Blueprints",
+      "Multi-Tool",
+      "Angling Equipment"
+    ]
+  },
+  {
+    "id": "fish84",
+    "title": "Flashfire Eel",
+    "description": "Flashfire Eel is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT3.FISH.EEL.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "5,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish86",
+    "title": "Frostbite Ray",
+    "description": "Frostbite Ray is a fish that can be caught as an item by the player.",
+    "type": "Rare Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.FISH.RAY.png",
+      "color": "purple",
+      "category": "Fish",
+      "type": "Rare Fish",
+      "value": "30,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish42",
+    "title": "Frostscale Trout",
+    "description": "Frostscale Trout is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.FISH.MEDIUM.2.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish63",
+    "title": "Frostshell Clam",
+    "description": "Frostshell Clam is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.FISH.CLAM.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "3,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish55",
+    "title": "Frozen Isopod",
+    "description": "Frozen Isopod is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.FISH.PRAWN.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "3,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish39",
+    "title": "Frozen Knifejaw",
+    "description": "Frozen Knifejaw is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.FISH.BIG.1.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "10,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish59",
+    "title": "Frozen Whelk",
+    "description": "Frozen Whelk is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.FISH.CLAM.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish83",
+    "title": "Gamma Squid",
+    "description": "Gamma Squid is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT4.FISH.SQUID.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "150,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish37",
+    "title": "Giant Ray",
+    "description": "Giant Ray is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.RAY.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "20,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish78",
+    "title": "Giant Whiskerfish",
+    "description": "Giant Whiskerfish is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.MEDIUM.2.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "5,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish90",
+    "title": "Glacier Carp",
+    "description": "Glacier Carp is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.FISH.MEDIUM.1.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "3,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish68",
+    "title": "Golden Jellyfish",
+    "description": "Golden Jellyfish is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT3.FISH.JELLY.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "100,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish56",
+    "title": "Green-Ring Octopus",
+    "description": "Green-Ring Octopus is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT4.FISH.OCTOPUS.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "3,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish85",
+    "title": "Greenscale Bloater",
+    "description": "Greenscale Bloater is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT4.FISH.XL.1.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "3,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish77",
+    "title": "Helix Sawfish",
+    "description": "Helix Sawfish is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.BIG.2.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "200,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish22",
+    "title": "Hypnotic Octopus",
+    "description": "Hypnotic Octopus is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.OCTOPUS.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "5,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish3",
+    "title": "Ice Darter",
+    "description": "Ice Darter is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.SMALL.3.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish14",
+    "title": "Jelly of the Veil",
+    "description": "Jelly of the Veil is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT5.FISH.JELLY.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "150,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish31",
+    "title": "Jungle Redfin",
+    "description": "Jungle Redfin is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.BIG.1.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "5,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish51",
+    "title": "Lavascale Trout",
+    "description": "Lavascale Trout is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.SMALL.1.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "2,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish62",
+    "title": "Longjaw Snapper",
+    "description": "Longjaw Snapper is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.MEDIUM.2.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "5,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish21",
+    "title": "Magpulse Lure",
+    "description": "A specialist lure, designed to attract fish that are only active during storms.\n\nLocate your Fishing Rig and begin bait application with",
+    "type": "Fishing Bait",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISHBAIT.STORM.png",
+      "color": "Darkblue",
+      "category": "Consumable",
+      "type": "Fishing Bait",
+      "value": "550.0",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish58",
+    "title": "Many-Eyed Jellyfish",
+    "description": "Many-Eyed Jellyfish is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.JELLY.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "50,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish11",
+    "title": "Many-Mouthed Lunker",
+    "description": "Many-Mouthed Lunker is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT5.FISH.XL.1.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "200,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish46",
+    "title": "Mealworms",
+    "description": "A piece of specialist bait, designed to improve the size and rarity of your catch.\n\nLocate your Fishing Rig and begin bait application with",
+    "type": "Fishing Bait",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISHBAIT.1.png",
+      "color": "Darkblue",
+      "category": "Consumable",
+      "type": "Fishing Bait",
+      "value": "16.0",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish38",
+    "title": "Megalodon",
+    "description": "Megalodon is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.SHARK.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "200,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish75",
+    "title": "Mellifluous Jellyfish",
+    "description": "Mellifluous Jellyfish is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.JELLY.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "3,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish35",
+    "title": "Message in a Bottle",
+    "description": "A sealed bottle, found floating in the water. There appears to be a message inside.\n\nUse",
+    "type": "Collected Flotsam",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.BOTTLE.png",
+      "color": "grey",
+      "category": "Fish",
+      "type": "Collected Flotsam",
+      "used": "",
+      "value": "1,000.0",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish7",
+    "title": "Midnight Eel",
+    "description": "Midnight Eel is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.FISH.EEL.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "6,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish57",
+    "title": "Mirrorscale Skipper",
+    "description": "Mirrorscale Skipper is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT5.FISH.SMALL.1.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "100,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish81",
+    "title": "Moon Turtle",
+    "description": "Moon Turtle is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.TURTLE.png",
+      "color": "purple",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "10,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish6",
+    "title": "Mud Crab",
+    "description": "Mud Crab is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.CRAB.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish8",
+    "title": "Nautilia",
+    "description": "Nautilia is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.FISH.SNAIL.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "200,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish19",
+    "title": "Needlefish",
+    "description": "Needlefish is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.BIG.2.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "3,000",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish25",
+    "title": "Oilfin",
+    "description": "Oilfin is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.BIG.3.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish30",
+    "title": "Old Boot",
+    "description": "A piece of flotsam, wrenched from its years of drifting in the water when it became entangled in a fishing lure.\n\nOf little use to anyone.",
+    "type": "Collected Flotsam",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.BOOT.png",
+      "color": "grey",
+      "category": "Fish",
+      "type": "Collected Flotsam",
+      "used": "",
+      "value": "500",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish26",
+    "title": "Ossified Coral",
+    "description": "A piece of flotsam, wrenched from its years of drifting in the water when it became entangled in a fishing lure.\n\nOf little use to anyone.",
+    "type": "Collected Flotsam",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.CORAL.3.png",
+      "color": "grey",
+      "category": "Fish",
+      "type": "Collected Flotsam",
+      "used": "",
+      "value": "500",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish45",
+    "title": "Pale Snowtail",
+    "description": "Pale Snowtail is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.SMALL.2.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "5,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish28",
+    "title": "Pickled Fish",
+    "description": "A small morsel of seafood, created in the Nutrient Processor. Food such as this can be highly valuable.\n\nCan be consumed as it stands or subjected to further processing.",
+    "type": "Edible Product",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.TROUT.png",
+      "color": "Blue",
+      "category": "Consumable",
+      "type": "Edible Product",
+      "used": "",
+      "value": "28,000",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish76",
+    "title": "Pondskipper",
+    "description": "Pondskipper is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.SMALL.1.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish34",
+    "title": "Reef Eel",
+    "description": "Reef Eel is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.EEL.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "2,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish60",
     "title": "Rimescale Snapper",
     "description": "Rimescale Snapper is a fish that can be caught as an item by the player.",
     "type": "Rare Fish",
@@ -12,6 +1115,411 @@
       "type": "Rare Fish",
       "value": "10,000",
       "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish47",
+    "title": "Rockfin",
+    "description": "Rockfin is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.MEDIUM.3.png",
+      "color": "Green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "used": "",
+      "value": "2,000",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish64",
+    "title": "Rusted Technology",
+    "description": "A technology upgrade that has been permanently damaged by prolonged exposure to water.\n\nUse",
+    "type": "Collected Flotsam",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.METALJUNK.png",
+      "color": "grey",
+      "category": "Fish",
+      "type": "Collected Flotsam",
+      "used": "",
+      "value": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish53",
+    "title": "Sea Cucumber",
+    "description": "Sea Cucumber is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.WORM.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish18",
+    "title": "Sea Sponge",
+    "description": "A piece of flotsam, wrenched from its years of drifting in the water when it became entangled in a fishing lure.\n\nOf little use to anyone.",
+    "type": "Collected Flotsam",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.WEED.3.png",
+      "color": "grey",
+      "category": "Fish",
+      "type": "Collected Flotsam",
+      "used": "",
+      "value": "500",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish49",
+    "title": "Shadow Lure",
+    "description": "A piece of specialist bait, designed to improve the size and rarity of your catch.\n\nLocate your Fishing Rig and begin bait application with",
+    "type": "Fishing Bait",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISHBAIT.NIGHT.png",
+      "color": "Darkblue",
+      "category": "Consumable",
+      "type": "Fishing Bait",
+      "value": "550.0",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish73",
+    "title": "Shadowfin",
+    "description": "Shadowfin is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.SMALL.2.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish66",
+    "title": "Shrieking Oyster",
+    "description": "Shrieking Oyster is a fish that can be caught as an item by the player.",
+    "type": "Rare Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.CLAM.png",
+      "color": "purple",
+      "category": "Fish",
+      "type": "Rare Fish",
+      "value": "10,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish20",
+    "title": "Singing Sea-Snail",
+    "description": "Singing Sea-Snail is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.SNAIL.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "50,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish43",
+    "title": "Spicy Chum",
+    "description": "A piece of specialist bait, designed to improve the size and rarity of your catch.\n\nLocate your Fishing Rig and begin bait application with",
+    "type": "Fishing Bait",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISHBAIT.2.png",
+      "color": "Darkblue",
+      "category": "Consumable",
+      "type": "Fishing Bait",
+      "value": "160",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish88",
+    "title": "Spiny Starfish",
+    "description": "Spiny Starfish is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.STARFISH.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "3,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish48",
+    "title": "Starshell Crab",
+    "description": "Starshell Crab is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT3.FISH.CRAB.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "50,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish80",
+    "title": "Stonescale Shark",
+    "description": "Stonescale Shark is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.SHARK.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "5,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish79",
+    "title": "Thawed Diamondfin",
+    "description": "Thawed Diamondfin is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT2.FISH.BIG.3.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "2,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish70",
+    "title": "The Angler",
+    "description": "Fire dances across the scales of this impossible marine being. Its starlit eyes stare back at you with a meaning far deeper than any fish should know. As they stare, the world around you fades away.\n\nThe sound of water fills your ears. It wants to be free. You want to be free...",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.OCTOPUS.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "1,600",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish9",
+    "title": "The Lunker",
+    "description": "The Lunker is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.XL.2.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "200,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish50",
+    "title": "Thunderfin",
+    "description": "Thunderfin is a fish that can be caught as an item by the player.",
+    "type": "Rare Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.BIG.3.png",
+      "color": "purple",
+      "category": "Fish",
+      "type": "Rare Fish",
+      "value": "50,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish54",
+    "title": "Tiny Scuttlefish",
+    "description": "Tiny Scuttlefish is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.DEFAULT.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish33",
+    "title": "Toxic Jelly",
+    "description": "Toxic Jelly is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT4.FISH.JELLY.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "2,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish52",
+    "title": "Translucent Gulper",
+    "description": "Transluicent Gulper is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.XL.1.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "200,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish15",
+    "title": "Vampire Squid",
+    "description": "Vampire Squid is a fish that can be caught as an item by the player.",
+    "type": "Legendary Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT5.FISH.SQUID.png",
+      "color": "yellow",
+      "category": "Fish",
+      "type": "Legendary Fish",
+      "value": "100,000.0",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish4",
+    "title": "Venomous Triggerfin",
+    "description": "Venomous Triggerfin is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.BIG.2.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish36",
+    "title": "Warty Frogfish",
+    "description": "Warty Frogfish is a fish that can be caught as an item by the player.",
+    "type": "Common Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.MEDIUM.1.png",
+      "color": "green",
+      "category": "Fish",
+      "type": "Common Fish",
+      "value": "1,000",
+      "used": "Cooking",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish32",
+    "title": "Whispering Bonefish",
+    "description": "Whispering Bonefish is a fish that can be caught as an item by the player.",
+    "type": "Uncommon Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.SMALL.3.png",
+      "color": "blue",
+      "category": "Fish",
+      "type": "Uncommon Fish",
+      "value": "10,000",
+      "used": "",
+      "release": "Aquarius"
+    },
+    "categories": []
+  },
+  {
+    "id": "fish13",
+    "title": "Wispscale Darter",
+    "description": "Wispscale Darter is a fish that can be caught as an item, by the player.",
+    "type": "Rare Fish",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.FISH.DEFAULT.png",
+      "color": "purple",
+      "category": "Fish",
+      "type": "Rare Fish",
+      "value": "10,000",
       "release": "Aquarius"
     },
     "categories": []

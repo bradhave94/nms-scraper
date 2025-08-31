@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "id": "nut1",
+    "title": "Nutrition Room",
+    "description": "An integrated Nutrient Processor module, able to refine gathered ingredients into edible food products. This module is placed as an entire room and comes with its functional units pre-installed.\n\nUser is advised that consumption of generated products is entirely at their own risk.",
+    "type": "Freighter Construction Module",
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "FREIGHTERBASE_ROOM.COOK.png",
+      "category": "Base Building",
+      "color": "",
+      "type": "Freighter Construction Module",
+      "release": "Endurance"
+    },
+    "categories": [
+      "Terminal"
+    ]
+  }
+]
