@@ -1,5 +1,4 @@
 ---
-globs: *.py
 description: Wiki scraping and parsing patterns
 ---
 
@@ -53,8 +52,20 @@ if 'blueprint=yes' in material or '=' in material:
 ```
 
 ### Recipe Template Patterns
-- `{{Refinery}}` - Refinery recipes with inputs/outputs/time
-- `{{NutrientProcessor}}` - Cooking recipes with processor settings
+- `{{PoC-Refine}}` - Primary refinery recipe template format
+  ```
+  {{PoC-Refine
+  | Input1,qty;Output,qty;Time;Operation%Description
+  | Input1,qty;Input2,qty;Output,qty;Time;Operation%Description
+  }}
+  ```
+- `{{Cook}}` - Nutrient processor recipes with multiple variations
+  ```
+  {{Cook
+  | Input1,qty + Input2,qty + Input3,qty → Output,qty ("Operation", Time)
+  | Input1,qty + Alt2,qty + Input3,qty → Output,qty ("Operation", Time)
+  }}
+  ```
 - `{{Craft}}` - Basic crafting recipes
 
 ## Classification Keywords
@@ -74,3 +85,20 @@ if 'blueprint=yes' in material or '=' in material:
 ### Raw Materials
 - "Element", "Resource", "Raw", "Mineral"
 - Infobox types: "Element", "Resource"
+
+### Agricultural Substances
+- "Harvested Agricultural Substance", "Flora elements", "Flora"
+- Examples: Faecium, Frost Crystal, Fungal Mould, Gamma Root, Solanium, Star Bulb
+
+## Recipe Extraction Process
+
+1. **Refinery Recipes**:
+   - Check ALL items in database for `{{PoC-Refine}}` templates
+   - Parse format: `Input1,qty;Input2,qty;Output,qty;Time;Operation%Description`
+   - Handle multiple recipe variations within a single template
+
+2. **Nutrient Processor Recipes**:
+   - Check cooking items for `{{Cook}}` templates
+   - Parse format: `Input1,qty + Input2,qty + Input3,qty → Output,qty ("Operation", Time)`
+   - Split multiple recipe variations separated by `|`
+   - Handle missing ingredients with placeholder IDs (e.g., `missing_wailing_batter`)

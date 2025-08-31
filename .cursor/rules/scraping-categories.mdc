@@ -12,6 +12,12 @@ The scraper targets these main wiki categories:
 - **Raw Materials** - Elements, resources, minerals
 - **Resources** - Basic materials and fuel
 - **Blueprints** - Crafting recipes and schematics
+- **Harvested Agricultural Substance** - Farmable resources (Faecium, Frost Crystal, etc.)
+- **Flora elements** - Plant-based resources
+- **Flora** - Plants and botanical items
+- **Gases** - Atmospheric resources
+- **Minerals** - Mineral deposits and crystals
+- **Earth elements** - Terrestrial resources
 
 ## Subcategories (Auto-discovered)
 
@@ -67,3 +73,15 @@ Use [generate_categories.py](mdc:generate_categories.py) to:
 2. Find all relevant subcategories
 3. Generate comprehensive category lists
 4. Verify category existence and membership
+
+## Important Agricultural Categories
+
+The "Harvested Agricultural Substance" category contains critical resources with many refinery recipes:
+- **Faecium** - Organic fertilizer with 7+ refinery recipes
+- **Frost Crystal** - Cold-based plant resource
+- **Fungal Mould** - Fungal-based resource
+- **Gamma Root** - Radiation-based plant resource
+- **Solanium** - Heat-based plant resource
+- **Star Bulb** - Lush-based plant resource
+
+These items are essential for the refinery recipes database and must be included in the scrape.

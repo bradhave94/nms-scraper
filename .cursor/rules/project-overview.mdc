@@ -1,5 +1,5 @@
 ---
-alwaysApply: true
+description: Project overview and architecture
 ---
 
 # No Man's Sky Wiki Scraper Project
@@ -66,3 +66,31 @@ The scraper generates these JSON files in the `data/` directory:
 7. **Pagination Support**: Handles categories with >500 items via API continuation
 8. **Hard Reset**: `--hard-reset` flag to delete database and data folder for clean runs
 9. **Auto Recipe Extraction**: `--extract-recipes` flag to automatically run recipe extractors after scraping
+10. **Comprehensive Recipe Coverage**: Extracts 350+ refinery recipes from all items in database
+
+## Critical Categories
+
+The scraper must include these important categories to ensure complete recipe coverage:
+- **Harvested Agricultural Substance**: Contains Faecium, Frost Crystal, etc. with many refinery recipes
+- **Flora elements**: Plant-based resources used in refining
+- **Minerals**: Various mineral resources used in refining
+- **Earth elements**: Basic elements used in many recipes
+
+## Recipe Template Formats
+
+1. **Refinery Recipes**: Uses `{{PoC-Refine}}` template
+   ```
+   {{PoC-Refine
+   | Mordite,3;1;0.24%Assisted Decomposition
+   | Di-hydrogen,1;Carbon,1;1;0.08%Assisted Decomposition
+   | Faecium,1;Oxygen,1;3;0.36%Oxygenate Microbes
+   }}
+   ```
+
+2. **Nutrient Processor Recipes**: Uses `{{Cook}}` template
+   ```
+   {{Cook
+   | Wailing Batter,1 + Grahj'am,1 + Cream,1 → Appalling Jam Sponge,1 ("Assemble Baked Product", 2.5)
+   | Wailing Batter,1 + Furball Jelly,1 + Cream,1 → Appalling Jam Sponge,1 ("Assemble Baked Product", 2.5)
+   }}
+   ```
