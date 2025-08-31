@@ -465,6 +465,8 @@ def main():
                        help='Limit pages for testing (default: 100, 0 for no limit)')
     parser.add_argument('--hard-reset', action='store_true',
                        help='Delete database and data folder before starting (clean slate)')
+    parser.add_argument('--extract-recipes', action='store_true',
+                       help='Automatically run recipe extractors after scraping')
 
     args = parser.parse_args()
 
@@ -605,6 +607,42 @@ def main():
     print(f"\n✅ NMS scraping complete!")
     print(f"💾 Database: {scraper.db_path}")
     print(f"📁 JSON files: data/ directory")
+
+    # Run recipe extractors if requested
+    if args.extract_recipes:
+        print(f"\n🍳 Running recipe extractors...")
+        print("="*50)
+
+        import subprocess
+        import sys
+
+        try:
+            # Run nutrient processor extractor
+            print("Running nutrient processor extractor...")
+            result = subprocess.run([
+                sys.executable, 'extractors/nutrient_processor_extractor.py'
+            ], capture_output=True, text=True)
+
+            if result.returncode == 0:
+                print("✅ Nutrient processor extractor completed")
+            else:
+                print(f"❌ Nutrient processor extractor failed: {result.stderr}")
+
+            # Run refinery extractor
+            print("Running refinery extractor...")
+            result = subprocess.run([
+                sys.executable, 'extractors/refinery_extractor.py'
+            ], capture_output=True, text=True)
+
+            if result.returncode == 0:
+                print("✅ Refinery extractor completed")
+            else:
+                print(f"❌ Refinery extractor failed: {result.stderr}")
+
+            print(f"\n🎯 All extraction complete!")
+
+        except Exception as e:
+            print(f"❌ Error running extractors: {e}")
 
 if __name__ == "__main__":
     main()

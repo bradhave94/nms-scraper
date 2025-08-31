@@ -65,3 +65,4 @@ The scraper generates these JSON files in the `data/` directory:
 6. **Rate Limiting**: Configurable delays between API requests
 7. **Pagination Support**: Handles categories with >500 items via API continuation
 8. **Hard Reset**: `--hard-reset` flag to delete database and data folder for clean runs
+9. **Auto Recipe Extraction**: `--extract-recipes` flag to automatically run recipe extractors after scraping

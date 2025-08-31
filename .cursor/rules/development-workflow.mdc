@@ -22,13 +22,17 @@ python3 nms_scraper.py --limit 100
 # Clean slate run (deletes database and data folder)
 python3 nms_scraper.py --hard-reset --limit 50
 
-# Full production run
+# Full production run with automatic recipe extraction
+python3 nms_scraper.py --hard-reset --limit 0 --extract-recipes
+
+# Full production run (manual recipe extraction)
 python3 nms_scraper.py --hard-reset --limit 0
 ```
 - Scrapes all items from discovered categories
 - Uses content-based classification with sequential IDs
 - Stores in SQLite database (`nms.db`)
 - Exports to JSON files in `data/` directory
+- `--extract-recipes` automatically runs both recipe extractors after scraping
 
 ### 3. Recipe Extraction
 ```bash
