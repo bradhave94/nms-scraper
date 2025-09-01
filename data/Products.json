@@ -1,6 +1,436 @@
 [
   {
-    "id": "prod9",
+    "id": "prod10",
+    "title": "Acid",
+    "summary": "Acid is a advanced agricultural products.",
+    "game_description": "Dilute acid for high current generation in diverse power cells. \n\nCrafted from Mordite and Fungal Mould.",
+    "source_info": "*Blueprint can be awarded by completing a certain stage of Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Pathfinder - Added as a trade commodity.\n* Atlas Rises - Blueprint changed, formerly used Temerium.\n* NEXT - Value changed, formerly it was worth 288,000.0",
+    "additional_info": "*Acid is tied with Dirt and Iron for the shortest item name in the current version of No Man’s Sky, with 4 characters.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Agricultural Product",
+    "value": 188000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "nmsTech Acid Icon 13.png",
+      "category": "Tradeable",
+      "type": "Advanced Agricultural Product",
+      "value": "188,000.0",
+      "release": "Omega"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod51",
+    "title": "Amino Chamber",
+    "summary": "Amino Chamber is a component that is used for crafting.",
+    "game_description": "A specialist biological catalyzation device.\n\nThis unit takes advantage of naturally occurring enzymes in order to facilitate increased energy yields and faster processing in a wide range of advanced technologies.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Origins - Added as a product.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Crafted Technology Component",
+    "value": 12300.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.BIO.png",
+      "category": "Component",
+      "color": "yellow",
+      "type": "Crafted Technology Component",
+      "value": "12,300.0",
+      "release": "Endurance"
+    },
+    "categories": [
+      "Crafted Technology Component",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod11",
+    "title": "Antimatter",
+    "summary": "Antimatter is a component and the last ingredient needed to craft a Warp Cell.  \n\nOnce you have built your first Hyperdrive, the mission will take you to an abandoned building. The terminal there will give you the antimatter blueprint.",
+    "game_description": "Contained negative matter and baryogenesis antiparticles.\n\nThe vast energy potential of antimatter makes it highly valuable. 95% of existing antimatter consumption is in the powering of starship hyperdrives.\n\nWARNING: uncontained usage is not recommended.",
+    "source_info": "* Can be automatically harvested by Cargo Drops or Barrel Fabricators.\n* Can sometimes be bought at Galactic Trade Terminals or from NPCs.\n*",
+    "use_info": null,
+    "release_history": "* Release - Added as a product.\n* NEXT - Blueprint changed, formerly used Electron Vapour, Heridium and Zinc.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Crafted Technology Component",
+    "value": 5233.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.antimatter.png",
+      "category": "Component",
+      "color": "red",
+      "type": "Crafted Technology Component",
+      "used": "Building, Crafting, Upgrading",
+      "value": "5,233.0",
+      "release": "SentinelUp"
+    },
+    "categories": [
+      "Crafted Technology Component",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod49",
+    "title": "Antimatter Housing",
+    "summary": "Antimatter Housing is a component needed to craft a Warp Cell.",
+    "game_description": "Secure antimatter containment device, required before Antimatter can be safely secured as Warp Cells.\n\nRebound Oxygen forms a protective gas pocket, preventing the antimatter from reacting with the surrounding casing.",
+    "source_info": "Antimatter Housing can be purchased at Technology Merchants.\n\nThis item has a 10% chance to drop out of barrel-type cargo.   The AtlasPass v1 access card is required to open these.",
+    "use_info": "Crafting",
+    "release_history": "* NEXT - Added as a product.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Crafted Technology Component",
+    "value": 6500.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.amhousing.png",
+      "category": "Component",
+      "color": "yellow",
+      "type": "Crafted Technology Component",
+      "value": "6,500.0",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Crafted Technology Component",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod46",
+    "title": "Archive Bypass Implant",
+    "summary": "Archive Bypass Implant is a Planetary Archive.",
+    "game_description": "A biotechnical firewall, developed as a safeguard against textual cognitohazards.  It is coated in something slippery, and has started to bubble along the surface.",
+    "source_info": "* Blueprint is received as a reward from Hunt 3, Milestone 4 They Pushed too Far as part of Expedition 4: Emergence.\n* Must be constructed using the blueprint.",
+    "use_info": null,
+    "release_history": "* Frontiers - This item was added to the game as part of the Expedition 4.\n* Waypoint - Renamed, formerly \"Archive Override Implant\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Subcutaneous Access Circuit",
+    "value": null,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Archive Bypass Implant",
+      "color": "blue",
+      "image": "TECH.WORMREADER.png",
+      "category": "Consumable",
+      "type": "Subcutaneous Access Circuit",
+      "value": "",
+      "used": "Colossal Archive",
+      "release": "Waypoint"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod1",
+    "title": "Carrier AI Fragment",
+    "summary": "Carrier AI Fragment is a component. It is specifically used to detect crashed Sentinel Interceptors. It is very useful if you want to gain a Sentinel Interceptor.",
+    "game_description": "A single splinter of the colossal mainframe at the heart of a Sentinel capital ship. It blinks, its solitary living eye trained upon the one piece of data it retains - the last known location of one of its fleet of Interceptors.\n\nSelect the AI Fragment and use Search Archive (E) to translate information about Interceptor's crash site to your starship's navigation systems.",
+    "source_info": "*Dropped from Nexus missions (1-2%)\n*Gained occasionally from successful combat frigate expeditions (2.7%)",
+    "use_info": null,
+    "release_history": "* Interceptor - Added as a component\n* Echoes - Renamed, was \"Dreadnought AI Fragment\"",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Battleship Core Remnant",
+    "value": 35000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Carrier AI Fragment",
+      "image": "PRODUCT.FREIGHTERCORE.png",
+      "color": "purple",
+      "category": "Component",
+      "type": "Battleship Core Remnant",
+      "value": "35,000.0",
+      "used": "",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod43",
+    "title": "Circuit Board",
+    "summary": "Circuit Board is a tradeable and it is worth 916,250.0",
+    "game_description": "Stackable, semi-flexible circuit board made from a highly durable synthetic polymer.\n\nCrafted from Heat Capacitors and Poly Fibre.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Foundation - Added as a product.\n* NEXT 1.64 - Fixed an issue where players could fail to learn the Circuit Board blueprint at the correct time.\n* NEXT 1.58 - Value changed, previously it was worth 1,196,250.0",
+    "additional_info": "* The blueprint is rewarded when you construct the Overseer\n* Since you only need to grow four different plants (Frost Crystal, Solanium, Cactus Flesh, and Star Bulb), these can be an effective way of making money.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Agricultural Product",
+    "value": 916250.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "FARMPROD.9.png",
+      "category": "Tradeable",
+      "color": "Grey",
+      "type": "Advanced Agricultural Product",
+      "value": "916,250.0",
+      "used": "Crafting, Trading",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "prod44",
+    "title": "Cryogenic Chamber",
+    "summary": "Cryogenic Chamber is a tradeable that can be crafted or purchased.",
+    "game_description": "A low temperature chamber, designed to prevent the natural decay of organic matter.\n\nCrafted from Living Glass and a Cryo-Pump.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* NEXT 1.58 - Icon and value changed, previously it was worth 4,800,000.0",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Crafted Product",
+    "value": 3800000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.CRYOCHAMBER.png",
+      "category": "Tradeable",
+      "color": "yellow",
+      "type": "Advanced Crafted Product",
+      "value": "3,800,000.0",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod5",
+    "title": "Crystallised Heart",
+    "summary": "Crystallised Heart is a component that is used for crafting.",
+    "game_description": "The functional core of a Sentinel quadruped unit, but warped beyond all recognition. The entire machine is infested with a crystalline material that pulses wildy upon inspection.\n\nA close analysis reveals the machinery itself appears to have been reconfigured, stretching and warping into a whole new form, writhing in the presence of these radiant shards of glass.",
+    "source_info": "Loot from a Corrupted Sentinel Quadruped",
+    "use_info": "Crystallised Heart is used in the repair of Sentinel multi-tools.",
+    "release_history": "* Interceptor - Added as a product.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Corrupted Aeronic Core",
+    "value": 37000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.SPIDERCRYSTAL.PNG",
+      "color": "purple",
+      "type": "Corrupted Aeronic Core",
+      "category": "Component",
+      "used": "Crafting, Upgrading",
+      "value": "37,000.0",
+      "release": "Singularity"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod3",
+    "title": "Di-hydrogen Jelly",
+    "summary": "Di-hydrogen Jelly is a component that is used for crafting.",
+    "game_description": "A faintly-glowing jelly. Its gentle light and soft wobble belie the fact that this sticky gel is both highly toxic and highly flammable. Skin contact is to be avoided at all costs.\n\nSynthesised from Di-hydrogen.",
+    "source_info": "Available from some",
+    "use_info": null,
+    "release_history": "* NEXT - Added as a product.\n* Fractal - Exploit nerfed.",
+    "additional_info": "* It is required to repair the starship's Launch Thruster.\n* Exploit - If you have a refiner, you can exploit di-hydrogen by refining Di-hydrogen Jelly from 30 di-hydrogen and then refining it back into 40 di-hydrogen.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Portable Life Support Power",
+    "value": 200.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.JELLY.png",
+      "category": "Component",
+      "color": "red",
+      "type": "Portable Life Support Power",
+      "value": "200.0",
+      "release": "Fractal"
+    },
+    "categories": [
+      "Portable Life Support Power"
+    ]
+  },
+  {
+    "id": "prod36",
+    "title": "Emergency Signal Scanner",
+    "summary": "Emergency Signal Scanner is a derelict freighters.\n\nThey are considered an expensive item and prices may escalate in accordance with demand. Prices start from 5M",
+    "game_description": "A single-use receiver that scans for distress signals on freighter frequencies. Derelict or abandoned freighters often contain high-value salvage.\n\nSelect the Receiver and use Tune Signal (X/Xbox; 'E'/PC or File:PSBUTTON.SQUARE.png/PS4) to begin the location process.",
+    "source_info": "*Can be purchased from the Scrap Dealer aboard the Space Station.\n*Can be received as a reward from Nexus missions.\n*Iteration: Helios aboard the Space Anomaly offers a free Emergency Signal Scanner each week",
+    "use_info": null,
+    "release_history": "* Desolation - This item was added to the game as technology.\n* Waypoint - Renamed, formerly \"Emergency Broadcast Receiver\".\n* Waypoint - Iteration: Helios no longer offers a free Emergency Signal Scanner each week.\n* Update 4.25 - Iteration: Helios offers a free Emergency Signal Scanner each week again.",
+    "additional_info": "* After activation, you need to travel via pulse drive in any direction to detect a derelict freighter.\n* If standard exosuit inventory is full and more than one scanner is owned, activation will fail as \"Receiver Temporarily Jammed\"; one slot must be clear for a scanner to convert to the \"active\" form.\n* If the scanner is placed in the Personal Refiner, it will not be consumed upon opening the airlock and will become inactive upon completion of the derelict.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Coordinate Data",
+    "value": 3280.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "color": "blue",
+      "image": "PRODUCT.LOCATOR.ABAND.png",
+      "category": "Consumable",
+      "type": "Coordinate Data",
+      "value": "3,280.0",
+      "used": "",
+      "release": "Interceptor"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod6",
+    "title": "Explosive Drones",
+    "summary": "Explosive Drones is a consumable product and one of the upgrades available for frigates. It is a temporary upgrade which boosts the Combat capabilities of a frigate fleet for a single expedition by 10 points.",
+    "game_description": "A temporary frigate upgrade that lasts for one expedition.\n\nThis pack of autonomous explosives have been programmed to launch from the fleet and pilot themselves directly towards hostile vessels. Extremely dangerous.",
+    "source_info": "* The product's blueprint is a possible reward from a Manufacturing Facility or Operations Centre.\n* The blueprint can be researched at the Upgrade Control terminal for one Salvaged Frigate Module.\n* A possible drop from Sentinel starships.",
+    "use_info": null,
+    "release_history": "* NEXT - Added as a product, with frigate-related function. It has the same icon as Comet Droplets and Solenoid.\n* Beyond - Added an ability to research a blueprint at the Freighter Research Terminal.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Consumable Frigate Upgrade",
+    "value": 75000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "color": "blue",
+      "image": "PRODUCT.FRIGBOOST.COMBAT.png",
+      "category": "Consumable",
+      "type": "Consumable Frigate Upgrade",
+      "value": "75,000.0",
+      "release": "Origins"
+    },
+    "categories": [
+      "Consumable Frigate Upgrade",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod47",
+    "title": "Fuel Oxidiser",
+    "summary": "Fuel Oxidiser is a consumable product and one of the upgrades available for frigates. It is a temporary upgrade which reduces the expedition's duration of a frigate fleet for a single expedition by 10 points.\n\nThe British spelling of this phrase is used in the wiki.",
+    "game_description": "A temporary frigate upgrade that lasts for one expedition.\n\nThis powerful fuel upgrade overloads frigate engines, allowing for faster-than-usual travel.",
+    "source_info": "* The product's blueprint is a possible reward from a Manufacturing Facility or Operations Centre.\n* The blueprint can be researched at the Upgrade Control terminal for one Salvaged Frigate Module.",
+    "use_info": null,
+    "release_history": "* NEXT - Added as a product, with frigate-related function. It has the same icon as Fusion Core and Load Balancer.\n* Beyond - Added an ability to research a blueprint at the Freighter Research Terminal.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Consumable Frigate Upgrade",
+    "value": 75000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "color": "blue",
+      "image": "PRODUCT.FRIGBOOST.SPEED.png",
+      "category": "Consumable",
+      "type": "Consumable Frigate Upgrade",
+      "value": "75,000.0",
+      "release": "Origins"
+    },
+    "categories": [
+      "Consumable Frigate Upgrade",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod8",
+    "title": "Glass",
+    "summary": "Glass is a tradeable item that can be used in construction and base building. It can also be used for decoration and room parts other than windows.",
+    "game_description": "Shatter-proof, scratch-resistant glass with a self-cleaning, UV-cured coating, for general construction use.\n\nRefined from Silicate powder. Extract silicate from the earth with a Terrain Manipulator.\n\nCan be crafted from Frost Crystals extracted from plants on frozen worlds.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* NEXT 1.64 - Fixed an issue where players could fail to learn the Glass blueprint at the correct time.\n* Beyond - Players can now refine 40 Silicate Powder into 1 Glass.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Agricultural Product",
+    "value": 200.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "FARMPROD.3.png",
+      "category": "Tradeable",
+      "color": "grey",
+      "type": "Advanced Agricultural Product",
+      "value": "200.0",
+      "release": "Endurance"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod58",
+    "title": "Hardframe Engine",
+    "summary": "Hardframe Engine is a component that is used for upgrading.",
+    "game_description": "This complex mechanical unit was once the central combustion chamber at the heart of a Sentinel Hardframe unit.\n\nThough now cool to the touch, it still glows with a sinister red heat...",
+    "source_info": "* Loot from a Sentinel hardframe\n* Interact with barrel to obtain. Destroying it will cause loss of loot.",
+    "use_info": null,
+    "release_history": "* SentinelUp - Added as a component.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Anomalous Material",
+    "value": 28000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.MECHCORE.png",
+      "category": "Component",
+      "color": "purple",
+      "type": "Anomalous Material",
+      "used": "Upgrading",
+      "value": "28,000.0",
+      "release": "SentinelUp"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod53",
+    "title": "Harmonic Brain",
+    "summary": "Harmonic Brain is a component that is used for upgrading.",
+    "game_description": "The central processing unit of a Sentinel interceptor ship. The circuitry appears stable, pulsing with a regular electrical heartbeat. It no longer reacts angrily to my presence.\n\nStatus: DOCILE\n\nInstall this unit in a disabled Sentinel ship to unlock its vestigial cockpit and enable manual piloting.",
+    "source_info": "* Received by presenting a Hyaline Brain to a Monolith",
+    "use_info": "Harmonic Brain is used in the repair of Sentinel Interceptors.",
+    "release_history": "* Interceptor - Added as a component.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Harnessed Sentience",
+    "value": 480016.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.SENTINELSHIPBRAIN.CLEANED.png",
+      "color": "purple",
+      "type": "Harnessed Sentience",
+      "category": "Component",
+      "value": "480,016.0",
+      "used": "",
+      "release": "Singularity"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod52",
     "title": "Heat Capacitor",
     "summary": "Heat Capacitor is a component used in crafting.",
     "game_description": "A thermal regulator produced from refined organic material. It is unique in its ability to produce, dissipate and distribute heat as required.\n\nCrafted from Frost Crystals.",
@@ -11,6 +441,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Advanced Agricultural Product",
+    "value": 180000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "nmsTech Heat Capacitor Icon 13.png",
@@ -26,32 +457,167 @@
     ]
   },
   {
-    "id": "prod5",
-    "title": "Juicy Grub",
-    "summary": "Juicy Grub is a consumable that can be harvested from Juicy Grubs.",
-    "game_description": "This pupa, pulsating and warm, has begun its transformation from throbbing sac of mucus into an unspeakably vile insectoid.\n\nTheoretically processable in a Nutrient Processor to generate edible products.\n\nWARNING: grub-sac will release powerful pheromones if violated.",
-    "source_info": "Can be harvested from Juicy Grubs.",
+    "id": "prod21",
+    "title": "Hermetic Seal",
+    "summary": "Hermetic Seal is a component that is used for crafting.",
+    "game_description": "A high-performance carbon seal, able to withstand both the harsh interstellar environment and the rigours of intensive, high-energy industrial use.\n\nUser is advised to regularly check seal integrity after installation.",
+    "source_info": "Available from some",
     "use_info": null,
-    "release_history": "*Worlds Part I - Added as a consumable.\n*Aquarius - Added fishing bait bonuses.",
-    "additional_info": null,
-    "fishing_info": "rarity = 6|size = 2|condition =",
+    "release_history": "* NEXT - Added as product. It has the same icon as Teleport Coordinators.\n* ExoMech - Added as an ingredient for Exocraft Hazard Protection upgrades such as Thermal Buffer",
+    "additional_info": "* It is required to repair the starship's Pulse Engine\n*It is a bad idea to help a new player out while they are doing the first mission Awakenings, as it can cause a variety of problems. For example, giving them a Hermetic Seal will cause them to never get the blueprint for it; as the game expects them to get it from a nearby building near the start of the game.",
+    "fishing_info": null,
     "progression_info": null,
-    "type": "Vile Larva",
+    "type": "Crafted Technology Component",
+    "value": 800.0,
     "infobox": {
       "_infobox_type": "product",
-      "image": "PRODUCT.BUGGRUB.png",
-      "color": "Green",
-      "category": "Consumable",
-      "type": "Vile Larva",
-      "value": "11,000",
-      "release": "WorldsTwo"
+      "image": "Tradeprod.commodity5.png",
+      "category": "Component",
+      "color": "yellow",
+      "type": "Crafted Technology Component",
+      "value": "800.0",
+      "release": "Origins"
     },
     "categories": [
-      "Consumable"
+      "Crafted Technology Component"
     ]
   },
   {
-    "id": "prod2",
+    "id": "prod48",
+    "title": "Holographic Analyser",
+    "summary": "Holographic Analyser is a consumable product and one of the upgrades available for frigates. It is a temporary upgrade which boosts the Exploration capabilities of a frigate fleet for a single expedition by 10 points.",
+    "game_description": "A temporary frigate upgrade that lasts for one expedition.\n\nThis powerful analytic computer overclocks the existing fleet systems, allowing for faster-than-light calculations. Heat is a problem, and the chips do not last long.",
+    "source_info": "* The product's blueprint is a possible reward from a Manufacturing Facility or Operations Centre.\n* The blueprint can be researched at the Upgrade Control terminal]] for one Salvaged Frigate Module.",
+    "use_info": null,
+    "release_history": "* NEXT - Added as a product, with frigate-related function. It has the same icon as:",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Consumable Frigate Upgrade",
+    "value": 75000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "color": "blue",
+      "image": "TRADEPROD.COMPONENT4.png",
+      "category": "Consumable",
+      "type": "Consumable Frigate Upgrade",
+      "value": "75,000.0",
+      "release": "Origins"
+    },
+    "categories": [
+      "Consumable Frigate Upgrade",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod14",
+    "title": "Hyaline Brain",
+    "summary": "Hyaline Brain is a component which, when purified into a Harmonic Brain at a Monolith, is used to make a crashed Sentinel Interceptor claimable.\nWhen the player has 3 Radiant Shard and 1 Inverted Mirror (collected from a Dissonance Resonator) in their inventory the Hyaline Brain can be probed in the inventory (by pressing E on PC) revealing the location of the closest Monolith.",
+    "game_description": "The central processing unit of a Sentinel interceptor ship. The circuitry writhes microscopically, constantly rearranging itself as it scans for anomalies.\n\nA vital component for any entity wishing to construct their own Pilot Interface for a Sentinel Interceptor.\n\nStatus: VOLATILE",
+    "source_info": "* Loot from crashed Sentinel Interceptors (100%).\n* Loot from destroying enemy sentinel interceptors in space (15%)",
+    "use_info": "Hyaline Brain is used in the repair of Sentinel Interceptors.",
+    "release_history": "* Interceptor - Added as a component.",
+    "additional_info": "Hyaline Brain can be transformed into a Harmonic Brain at a Monolith.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Sentience Vessel",
+    "value": 35000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.SENTINELSHIPBRAIN.png",
+      "color": "purple",
+      "type": "Sentience Vessel",
+      "category": "Component",
+      "value": "35,000.0",
+      "used": "",
+      "release": "Orbital"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod23",
+    "title": "Hydraulic Wiring",
+    "summary": "Hydraulic Wiring is a component that is used for crafting.",
+    "game_description": "Specialist wiring and control threads, this flexible material allows the transmission of power and signals, as well as offering direct manipulation of remote components.\n\nUsed in the creation of a wide range of advanced technologies.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "*Origins - Added as a product.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Crafted Technology Component",
+    "value": 3600.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.HYDRALIC.png",
+      "category": "Component",
+      "color": "yellow",
+      "type": "Crafted Technology Component",
+      "value": "3,600.0",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Crafted Technology Component",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod32",
+    "title": "Inverted Mirror",
+    "summary": "Inverted Mirror is a component that is used for crafting.",
+    "game_description": "A pane of watchful g l a s s, retrieved from the smoking remains of the corrupted swarm's Dissonance Resonators. It emits more light than it reflects, casting a faint purple hue on its surroundings.\n\nHighly sought after for salvage operations, as it can be used to bypass the security systems of key Sentinel ship technologies.",
+    "source_info": "* Loot from a Dissonance Resonator with the Inverted Mirror tag.\n* May also be found on Harmonic Scrap.",
+    "use_info": "Inverted Mirror is used in the repair of Sentinel multi-tools and crashed Interceptors.",
+    "release_history": "* Interceptor - Added as a component.",
+    "additional_info": "When a Dissonance Resonator is destroyed, it will drop either an Inverted Mirror or an Echo Locator. Which it will drop is indicated by a tag below its name on the HUD when you are close to it.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Burning Glassy Remnant",
+    "value": 17000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.DRONESALVAGE.png",
+      "color": "purple",
+      "type": "Burning Glassy Remnant",
+      "category": "Component",
+      "value": "17,000.0",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod30",
+    "title": "Ion Battery",
+    "summary": "Ion Battery is a consumable product.",
+    "game_description": "Convenient and optimised power storage unit. Used in a wide variety of defensive and hazard protection systems.\n\nConstructed by fusing Ferrite Dust with underground Cobalt. Frequently found ready-made in cylindrical metal containers.",
+    "source_info": null,
+    "use_info": "Ion Batteries can be used to recharge the following items:\n* Hazard Protection\n* Thermal Protection Upgrade (Heat)\n* Thermal Protection Upgrade (Cold)\n* Radiation Protection Upgrade\n* Toxic Protection Upgrade\n\nIon Batteries can be used to tame any mechanical fauna from the genus Mechanoceris or Structurae.",
+    "release_history": "* Prisms - Now need 5 Ferrite Dust for craft instead 20.\n* Waypoint - Only available for purchase on \"Goods Availability->Abundant\" setting.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Portable Energy Storage",
+    "value": 200.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.POWERCELL.png",
+      "category": "Consumable",
+      "color": "Yellow",
+      "type": "Portable Energy Storage",
+      "value": "200.0",
+      "used": "Building, Charging, Upgrading",
+      "release": "Endurance"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod29",
     "title": "Life Support Gel",
     "summary": null,
     "game_description": "Emergency life support fuel.\n\nSynthesised from rocket fuel crystals and carbon, this gel offers a temporary boost to life support systems. Long-term impact on user's lungs is currently unknown.",
@@ -62,6 +628,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Portable Life Support Power",
+    "value": 200.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "Product.gel2.png",
@@ -76,7 +643,7 @@
     ]
   },
   {
-    "id": "prod3",
+    "id": "prod28",
     "title": "Liquid Explosive",
     "summary": "Liquid Explosive is an advanced agricultural product.",
     "game_description": "A general purpose high explosive, offered in liquid form for convenience of transport and deployment. Do not drink.\n\nCrafted from Acid and Unstable Gel.",
@@ -87,6 +654,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Advanced Agricultural Product",
+    "value": 800500.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "FARMPROD.7.png",
@@ -101,7 +669,34 @@
     ]
   },
   {
-    "id": "prod6",
+    "id": "prod12",
+    "title": "Living Glass",
+    "summary": "Living Glass is a tradeable item.",
+    "game_description": "An advanced building material, this glass has been imbued with organic compounds that allow it to react to the environment. Microbes within the glass filter harmful light of all wavelengths and balance the atmosphere as required.\n\nCrafted from Lubricant and Glass.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a component.\n* NEXT - Blueprint changed, the required amount of Glass is increased from 1 to 5.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": "The blueprint is rewarded when you construct the Science Terminal and complete the Scientist quest line.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Agricultural Product",
+    "value": 566000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "nmsTech Living Glass Icon 13.png",
+      "category": "Tradeable",
+      "color": "grey",
+      "type": "Advanced Agricultural Product",
+      "value": "566,000.0",
+      "desc": "",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod22",
     "title": "Lost Bathysphere",
     "summary": "Lost Bathysphere is a consumable that is immediately consumed when received. It is an unlockable helmet for the Anomaly race at the Appearance Modifier.",
     "game_description": "A haunted Exosuit Appearance Override. Even once removed, the wearer will forever hear the whispering call of the deep ocean...\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -112,6 +707,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unlockable Helmet",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "Nms-diving-helmet-1.jpg",
@@ -126,7 +722,488 @@
     ]
   },
   {
+    "id": "prod50",
+    "title": "Lubricant",
+    "summary": "Lubricant is a advanced agricultural products.",
+    "game_description": "A synthetic lubricant that reduces wear and prolongs the lifespan of technologies with moving parts.\n\nCrafted from Faecium and Gamma Root.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Foundation - Added as a component.\n* Atlas Rises - Blueprint changed, formerly used Mordite.\n* Beyond - Blueprint changed, formerly used Coprite and Gamma Root.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": "* The blueprint is rewarded when you construct the Science Terminal and begin the Scientist quest line. \n* This is the only agricultural crafted product that allows you to store up to twenty (20) units in a single regular slot rather than the usual five (5) units.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Agricultural Product",
+    "value": 110000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "FARMPROD.2.png",
+      "color": "",
+      "category": "Tradeable",
+      "type": "Advanced Agricultural Product",
+      "value": "110,000.0",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod35",
+    "title": "Magnetic Resonator",
+    "summary": "Magnetic Resonator is a component that is used for crafting.",
+    "game_description": "An electromagnetic frequency oscillator, able to function in a wide-range of conditions thanks to both ferrous and non-ferrous magnetic properties.\n\nUsed in the creation of a wide range of advanced technologies.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Origins - Added as a product.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Crafted Technology Component",
+    "value": 6150.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.MAGNET.png",
+      "category": "Component",
+      "color": "yellow",
+      "type": "Crafted Technology Component",
+      "value": "6,150.0",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Crafted Technology Component",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod56",
+    "title": "Metal Plating",
+    "summary": "Metal Plating is a component that is used for crafting and repairing.",
+    "game_description": "A lightweight metal product, heavily used in the manufacture of starship parts and deployable technology. A mainstay of the construction industries of all known primary species.\n\nCrafted from Ferrite Dust.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* NEXT - This product replaced Carite Sheet. It has the same icon as Shattered Bulwark.",
+    "additional_info": "thumb|Damaged ship components\nWhile used for general construction, these platings can also be used to repair certain ship equipment.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Crafted Technology Component",
+    "value": 800.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.metallic.sheet1.png",
+      "category": "Component",
+      "color": "yellow",
+      "type": "Crafted Technology Component",
+      "value": "800.0",
+      "release": "Companions"
+    },
+    "categories": [
+      "Crafted Technology Component",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod26",
+    "title": "Microprocessor",
+    "summary": "Microprocessor is a component that is used for crafting.",
+    "game_description": "A compact, low-heat microchip. Assembled from processed Chromatic Metal, created from one of several specialised terrain metals.\n\nUsed in the creation of a wide range of advanced technologies.",
+    "source_info": "*Blueprint can be awarded in the Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* NEXT - Added as a product.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Crafted Technology Component",
+    "value": 2000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.microchip.png",
+      "category": "Component",
+      "color": "yellow",
+      "type": "Crafted Technology Component",
+      "value": "2,000.0",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Crafted Technology Component"
+    ]
+  },
+  {
+    "id": "prod19",
+    "title": "Mind Ark",
+    "summary": "Mind Ark is a curiosity that is used in the Artemis quest line.",
+    "game_description": "A strange piece of technology, a gift from beyond the stars. It shimmers in a way that suggests it is not fully in this world.",
+    "source_info": "*",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a product.\n* NEXT - Blueprint changed, formerly used Platinum, Living Glass and Circuit Board.\n* Beyond - Blueprint changed, formerly used Chromatic Metal, Living Glass and Microprocessor.\n* Update 4.25 - Name changed, was \"Mind Arc\"",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Crafted Product",
+    "value": 1000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "MINDARC.png",
+      "category": "Curiosity",
+      "color": "blue",
+      "type": "Advanced Crafted Product",
+      "value": "1,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Advanced Crafted Product",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod24",
+    "title": "Mind Control Device",
+    "summary": "Mind Control Device is a consumable product and one of the upgrades available for frigates. It is a temporary upgrade which boosts the Trade capabilities of a frigate fleet for a single expedition by 10 points.\n\nIt is also used as an upgrade material for some Planetary Settlement buildings.",
+    "game_description": "A temporary frigate upgrade that lasts for one expedition.\n\nThe mind control device plugs into the ship's trading and communications systems, allowing the Fleet Commander to gain the upper hand in any negotiation.",
+    "source_info": "* The product's blueprint is a possible reward from a Manufacturing Facility or Operations Centre.\n* The blueprint can be researched at the Upgrade Control terminal for one Salvaged Frigate Module.\n* Possible drop from Sentinel starships.",
+    "use_info": null,
+    "release_history": "* NEXT - Added as a product, with frigate-related function. It has the same icon as High Capacity Vector Compressor.\n* Beyond - Added an ability to research a blueprint at the Freighter Research Terminal.\n* Origins - Blueprint changed, previously used Sodium Diode.\n* Beacon - Used as upgrade material for new settlement building upgrade process.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Consumable Frigate Upgrade",
+    "value": 75000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "color": "blue",
+      "image": "PRODUCT.FRIGBOOST.TRADE.png",
+      "category": "Consumable",
+      "type": "Consumable Frigate Upgrade",
+      "value": "75,000.0",
+      "release": "Beacon"
+    },
+    "categories": [
+      "Consumable Frigate Upgrade",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod16",
+    "title": "Mineral Compressor",
+    "summary": "Mineral Compressor is a consumable product and one of the upgrades available for frigates. It is a temporary upgrade which boosts the Industrial capabilities of a frigate fleet for a single expedition by 10 points.",
+    "game_description": "A temporary frigate upgrade that lasts for one expedition.\n\nThe mineral compressor allows fleet mining crews to liquidise the substances they extract, for both faster processing and easier transportation.",
+    "source_info": "* The product's blueprint is a possible reward from a Manufacturing Facility or Operations Centre.\n* The blueprint can be researched at the Upgrade Control terminal for one Salvaged Frigate Module.",
+    "use_info": null,
+    "release_history": "* NEXT - Added as a product, with frigate-related function. It has the same icon as Boiler Unit and Organic Piping, while Oxygen Filter has a different colored icon.\n* Beyond - Added an ability to research a blueprint at the Freighter Research Terminal.\n* Origins - Blueprint changed, previously used Cobalt Mirror.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Consumable Frigate Upgrade",
+    "value": 75000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "color": "blue",
+      "image": "PRODUCT.FRIGBOOST.MINING.png",
+      "category": "Consumable",
+      "type": "Consumable Frigate Upgrade",
+      "value": "75,000.0",
+      "release": "Origins"
+    },
+    "categories": [
+      "Consumable Frigate Upgrade",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod33",
+    "title": "Night Crystals",
+    "summary": "Naturally glowing crystalline clusters.\n\nUsed in the creation of technological devices and starship manufacture.",
+    "game_description": null,
+    "source_info": "Purchasable on the galactic trade network for roughly 35,000 units.\n\nIt is possible to obtain these from Damaged Containers (Very rare!)",
+    "use_info": null,
+    "release_history": null,
+    "additional_info": "* At this point, the only game usage for Night Crystals is trading",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Technology component",
+    "value": 35000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.ELEMENT.CRYSTAL1.png",
+      "category": "Component",
+      "type": "Technology component",
+      "value": "35,000",
+      "desc": "Naturally glowing crystalline clusters",
+      "release": "Atlas Rises"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod39",
+    "title": "Pirate Transponder",
+    "summary": "Pirate Transponder is a component.",
+    "game_description": "A unique ID transponder, ripped from the internal signal array of an outlaw starship.\n\nPossesion",
+    "source_info": "*Occasionally received on destroying pirate Starships.",
+    "use_info": null,
+    "release_history": "* Orbital - Added to the game.",
+    "additional_info": "It can be given to Mercenaries Guild Envoys to earn standing.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Salvaged Identification Device",
+    "value": 85000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Pirate Transponder",
+      "image": "PRODUCT.PIRATELOOT.png",
+      "category": "Component",
+      "color": "darkblue",
+      "type": "Salvaged Identification Device",
+      "value": "85,000",
+      "used": "",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod45",
+    "title": "Poly Fibre",
+    "summary": "Poly Fibre is a tradeable that can be crafted or purchased.",
+    "game_description": "A connective fibre for electronics, made from an advanced synthetic polymer and capable of serving as a conduit for power and data.\n\nCrafted from Cactus Flesh and Star Bulbs.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Value changed, previously it was worth 200,000.0",
+    "additional_info": "The blueprint is rewarded when you construct the Science Terminal and continue the Scientific Research quest line.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Agricultural Product",
+    "value": 130000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "FARMPROD.5.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Advanced Agricultural Product",
+      "value": "130,000.0",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
     "id": "prod4",
+    "title": "Portable Reactor",
+    "summary": "Portable Reactor is a tradeable that can be crafted or purchased.",
+    "game_description": "A miniature self-controlled nuclear reactor. Generates sub-stellar levels of energy in a hassle-free, widely compatible fuel module.\n\nCrafted from Liquid Explosives and Fusion Accelerant.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* NEXT 1.58 - Value changed, previously it was worth 5,000,000.0",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Crafted Product",
+    "value": 4200000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "MEGAPROD.1.png",
+      "category": "Tradeable",
+      "color": "yellow",
+      "type": "Advanced Crafted Product",
+      "value": "4,200,000.0",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod57",
+    "title": "Projectile Ammunition",
+    "summary": "Projectile Ammunition is a Universal Ammo Modules.\n\nIt can be inserted in Multi-tool clip reloading system and used with Boltcaster, Pulse Spitter, Scatter Blaster and Incinerator. Crafting this item produces 1250 units of Projectile Ammunition, and each stack can hold up to 9,999 units.",
+    "game_description": "Advanced munition fragments, constructed to fit Universal Multi-Tool Standard 07/FF1.\n\nEasily inserted into the Boltcaster, Pulse Spitter and Scatter Blaster via the Multi-Tool clip reloading system.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* NEXT - This item was introduced as a product.\n* Beyond - Crafting recipe modified, reducing number of required input",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Universal Ammo Module",
+    "value": 1.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Projectile Ammunition",
+      "color": "grey",
+      "image": "PRODUCT.AMMO.png",
+      "category": "Consumable",
+      "type": "Universal Ammo Module",
+      "value": "1.0",
+      "desc": "",
+      "release": "Aquarius"
+    },
+    "categories": [
+      "Consumable"
+    ]
+  },
+  {
+    "id": "prod37",
+    "title": "Quad Servo",
+    "summary": "Quad Servo is a component that is used for crafting.",
+    "game_description": "A highly sprung motor arm salvaged from inside of a Sentinel patrol unit. It occasionally twitches, as if experiencing the echo of combat.",
+    "source_info": "It can be obtained by the following methods:\n* destroying the Combat Supplies containers dropped by Sentinel Quads\n* Suspicious Packet (Goods) from the Scrap Dealer\n* a gift from Guild Envoys of the Mercenaries Guild",
+    "use_info": null,
+    "release_history": "* NEXT - Added as a product. It has the same icon as Non-Stick Piston.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Anomalous Material",
+    "value": 20000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.QUADSERVO.png",
+      "category": "Component",
+      "color": "purple",
+      "type": "Anomalous Material",
+      "value": "20,000.0",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod18",
+    "title": "Quantum Computer",
+    "summary": "Quantum Computer is a component that is used for crafting.",
+    "game_description": "An extremely fast advanced processing unit. Allows real-time solving of otherwise impossible calculations. However, protection against decoherence is not guaranteed.\n\nUsed in the creation of a wide range of advanced technologies.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Origins - Added as a product.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": "This component is used for Planetary Settlements.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Crafted Technology Component",
+    "value": 4200.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.COMPUTER.png",
+      "category": "Component",
+      "color": "yellow",
+      "type": "Crafted Technology Component",
+      "value": "4,200.0",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Crafted Technology Component",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod42",
+    "title": "Quantum Processor",
+    "summary": "Quantum Processor is a tradeable that can be crafted or purchased.",
+    "game_description": "A highly advanced computational device, essential for the complex calculations involved in warp travel.\n\nCrafted from Circuit Boards and Superconductors.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a trade item.\n* NEXT - It has the same icon as Master Circuit, Navigation Data and certain Upgrade Module types.\n* Visions - Value reduced from 5,200,000 to 4,400,000\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": "If a player is attempting to farm the highest-level Tradeable items, they should account for the fact that one quantum processor is required for both recipes when designing their farm.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Crafted Product",
+    "value": 4400000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "MEGAPROD.2.png",
+      "color": "yellow",
+      "category": "Tradeable",
+      "type": "Advanced Crafted Product",
+      "value": "4,400,000.0",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod7",
+    "title": "Radiant Brain",
+    "summary": "Radiant Brain is a component that is used for upgrading.",
+    "game_description": "Shifting nanite clusters sewn together with a Messenger of the Atlas.",
+    "source_info": "* Loot a Walker Brain from a Sentinel Walker and take it to Tethys near the Portal on the Space Anomaly.",
+    "use_info": null,
+    "release_history": "* SentinelUp - Added as a product.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Anomalous Material",
+    "value": null,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.WALKERBRAIN4.png",
+      "category": "Component",
+      "color": "purple",
+      "type": "Anomalous Material",
+      "used": "Upgrading",
+      "value": "",
+      "release": "SentinelUp"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod38",
+    "title": "Radiant Shard",
+    "summary": "Radiant Shard is a component that is used for crafting.",
+    "game_description": "A fragment of glassy lifeforce, chipped from a larger formation. Dynamic intermolecular binding gives the shard a strangely flexible, sinewy quality. It writhes gently, almost as if it were seeking something...\n\nHighly sought after for salvage operations, as it can be used to bypass the security systems of key Sentinel ship technologies.",
+    "source_info": "* Mining large purple crystals on Dissonant Planets.",
+    "use_info": null,
+    "release_history": "* Interceptor - Added as a product.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Glassy Reality Intrusion",
+    "value": 1900.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.DRONESHARD.png",
+      "color": "purple",
+      "type": "Glassy Reality Intrusion",
+      "category": "Component",
+      "used": "Crafting, Charging, Upgrading, Refining",
+      "value": "1,900.0",
+      "release": "Echoes"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod9",
+    "title": "Rebuilt Exosuit Module",
+    "summary": "Rebuilt Exosuit Module is a consumable product that yields Salvaged Upgrade Components when used.",
+    "game_description": "A salvaged upgrade for the Exosuit. Use (",
+    "source_info": "Purchased with Void Motes from Autophage Synthesis Terminals and Harmonic Interfaces.",
+    "use_info": null,
+    "release_history": "* Echoes - Added as a consumable.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Salvaged Upgrade Components",
+    "value": null,
+    "infobox": {
+      "_infobox_type": "technology",
+      "image": "PROCTECH.ROBOT.SUIT.png",
+      "color": "darkblue",
+      "category": "Consumable",
+      "subcategory": "Salvaged Upgrade Components",
+      "type": "Salvaged Upgrade Components",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Exosuit",
+      "Upgrade Modules"
+    ]
+  },
+  {
+    "id": "prod2",
     "title": "Repair Kit",
     "summary": "thumb|Finding repair kits\nRepair Kit is a consumable product. It can be used to repair broken equipment components without having to use standard materials. This is especially useful if the repair materials are expensive or difficult to find. \n\nIt can be used to repair actual systems in a starship (Pulse Drive, Launch Thrusters, etc.). Can be used to repair slots. However, each repair kit will only repair one subcomponent of a broken module or inventory slot. Technology requiring three different materials will require three repair kits.\n\nThis product can be harvested from a Derelict Freighter. Soon after entering, a room is reached with a large computer screen on the left and a crate on the right. If the supplies from this box are claimed, repair kit(s) will be part of the resulting collection.",
     "game_description": "A highly useful piece of survival technology, the Repair Kit allows damaged equipment to be quickly and efficiently restored to working order.\n\nWhile repairing a piece of techology",
@@ -137,6 +1214,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Automatic Patching Unit",
+    "value": 450.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "PRODUCT.REPAIRKIT.png",
@@ -151,7 +1229,7 @@
     ]
   },
   {
-    "id": "prod1",
+    "id": "prod27",
     "title": "Salvaged Fleet Unit",
     "summary": "Salvaged Fleet Unit is a consumable that can be installed in the tech slots of a freighter to boost the stats of your freighter or frigates.\n\nCan be deployed to improve...\n\n* its Hyper-drive\n* the speed of your fleet\n* the fuel efficiency of your fleet\n* combat performance of your fleet\n* exploration abilities of your fleet\n* mining capabilities of your fleet\n* trading abilities of your fleet",
     "game_description": "A deployable freighter upgrade, salvaged from %NAME%.\n\nCan be re-deployed into your own capital ship to improve the speed of your fleet.\n\nA options:\n* the hyperdrive unit\n* fleet coordination hardware\n\nB options:\n* primary drive\n* long-range outfitting systems\n* long-range communication systems\n* long-range communication array\n* long-range defensive systems\n* long-range scanning systems\n\nC options:\n* hyperdrive range and efficiency\n* expedition fuel efficiency\n* expedition speed\n* combat and defense abilities of all expeditions\n* the exploration and scientific abilities of all expeditions\n* the trade abilities of all expeditions\n* the industrial abilities of all expeditions",
@@ -162,6 +1240,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Deployable Salvage",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "PROCTECH.S.HYPERDRIVE.png",
@@ -177,7 +1256,87 @@
     ]
   },
   {
-    "id": "prod7",
+    "id": "prod25",
+    "title": "Salvaged Glass",
+    "summary": "Salvaged Glass is a component, specifically Recovered Sentinel Components. It can be shattered to yield various components or Sentinel Upgrade Modules.",
+    "game_description": "A sinister shard of purple glass, salvaged from the destroyed remains of Sentinel machinery. Its walls are thin, and it may be broken down to access valuable Sentinel components.\n\nSelect in the Inventory (",
+    "source_info": "* May be recovered from crashed Sentinel Interceptors on dissonant planets.",
+    "use_info": "Shattering Salvaged Glass will yield one of the following:\n* Nanites",
+    "release_history": "* SentinelUp - Added as a component.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Recovered Sentinel Components",
+    "value": 3000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.SENTINELLOOT.png",
+      "color": "Purple",
+      "category": "Component",
+      "type": "Recovered Sentinel Components",
+      "used": "",
+      "value": "3,000",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod15",
+    "title": "Solar Mirror",
+    "summary": "Solar Mirror is a component that is used for crafting.",
+    "game_description": "A specialist optical component. Employing an impossibly polished surface, this mirror is able to selectively filter different wavelengths of light, changing its reflective pattern based on nearby magnetic fields.\n\nUsed in the creation of a wide range of advanced technologies.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Origins - Added as a product.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Crafted Technology Component",
+    "value": 6150.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.MIRROR.png",
+      "category": "Component",
+      "color": "yellow",
+      "type": "Crafted Technology Component",
+      "value": "6,150.0",
+      "release": "Expeditions"
+    },
+    "categories": [
+      "Crafted Technology Component"
+    ]
+  },
+  {
+    "id": "prod55",
+    "title": "Soul Engine",
+    "summary": "Soul Engine is a curiosity and used in crafting the Mind Arc during The First Traveller mission.",
+    "game_description": "A powerful organic computing unit.\n\nA glitching beat drives this miracle circuit, performing cycle after cycle in an endless, furious loop of calculation.",
+    "source_info": "The blueprint is acquired from -null- during The First Traveller mission.",
+    "use_info": null,
+    "release_history": "* Beyond - Added as a product. It has the same, but a different colored icon as State Phasure.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Crafted Product",
+    "value": 1000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "SOULENGINE.png",
+      "category": "Curiosity",
+      "color": "",
+      "type": "Advanced Crafted Product",
+      "value": "1,000.0",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Advanced Crafted Product",
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod13",
     "title": "Starshield Battery",
     "summary": "Starshield Battery is a consumable and one of the portable energy storages.",
     "game_description": "A power storage unit optimised for use in starship defensive systems.\n\nTritium-fuelled capacitors provide quick-release charge for the Deflector Shield, but would overload smaller-scale equipment.",
@@ -188,6 +1347,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Portable Energy Storage",
+    "value": 500.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "Product.powercell2.png",
@@ -203,7 +1363,139 @@
     ]
   },
   {
-    "id": "prod8",
+    "id": "prod20",
+    "title": "Suspicious Module",
+    "summary": "Suspicious Modules appear as an Extremely Powerful (purple) icon with an X-like banner. They are black-market modifications of regular technologies in your exosuit, multi-tool, or starship.\n\nFound in Buried Caches, bought using Tainted Metal from Scrap Dealers, or from random starships encountered on planets. \n\n* The stats for these types of modules are typically of a regular C-A class module. \n* Some upgrades may exceed the stats of an S-class module.\n* Some upgrades may have no stats at all. If so, it displays the following text: \"UPGRADE_0_STAT_ILLEGAL_DESC\"",
+    "game_description": null,
+    "source_info": null,
+    "use_info": "When applied, all Suspicious Modules share almost the same description.\n\n:\"A suspicious black-market modification for the %SYSTEM%.\n\n:Bypassing nearly every galactic standard for workmanship and safety, this upgrade module affects %STATS%.\"",
+    "release_history": null,
+    "additional_info": "Suspicious Modules were initially priced at the Scrap Dealer for around 200-400 Tainted Metal. They can be sold to Technology Merchants for more than 500",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Unknown Upgrade",
+    "value": null,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PROCTECH.X.BINOCS.png",
+      "category": "Consumable",
+      "color": "Darkblue",
+      "type": "Unknown Upgrade",
+      "release": "Outlaws"
+    },
+    "categories": [
+      "Consumable"
+    ]
+  },
+  {
+    "id": "prod34",
+    "title": "Unstable Gel",
+    "summary": "Unstable Gel is a tradeable that is used in crafting.",
+    "game_description": "A highly reactive gel, this substance is both energy-rich and dangerous to touch.\n\nCrafted from Cactus Flesh.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a component.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": "The Unstable Gel blueprint is awarded when you construct the Science Terminal and continue the Scientist quest line.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Advanced Agricultural Product",
+    "value": 50000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "NmsTech Unstable Gel Icon 13.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Advanced Agricultural Product",
+      "value": "50,000.0",
+      "release": "Prisms"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod41",
+    "title": "Unstable Plasma",
+    "summary": "Unstable Plasma is a consumable product.",
+    "game_description": "Densely-packed fuel capsule for use in the land disruption grenade technology.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Release - Added as a product.\n* NEXT - Blueprint changed, formerly used Thamium9 and Plutonium. Now it can be refined.\n* Visions - Hidden changes: The information panel has an additional icon indicating its purpose.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Plasma Launcher Recharge",
+    "value": 5750.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.plasma1.png",
+      "category": "Consumable",
+      "color": "",
+      "type": "Plasma Launcher Recharge",
+      "value": "5,750.0",
+      "used": "Charging, Upgrading",
+      "release": "Endurance"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "prod40",
+    "title": "Walker Brain",
+    "summary": "Walker Brain is a component that is used for crafting.",
+    "game_description": "Shifting nanite clusters sewn together with a pugneum filament, this circuit is painfully hot to the touch.\n\nA sinister purple light leaks from deep within its wiring, changing in intensity as it watches its holder.",
+    "source_info": "* Loot from a Envoy\n* Suspicious Packet (Goods)\n* Mission Board missions\n* Nexus missions\n* Can be found on a robot at the Harmonic Scrap point of interest",
+    "use_info": null,
+    "release_history": "* NEXT 1.58 - Icon changed.\n* Origins - Can now be found in Scrap Dealer crates.\n* Origins 3.05 - Tainted Metal is now used for purchasing instead of pugneum.",
+    "additional_info": "* Sources extraced from the 3.75 version of the REWARDTABLE.MBIN game file.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Anomalous Material",
+    "value": 35000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.WALKERBRAIN.png",
+      "category": "Component",
+      "color": "purple",
+      "type": "Anomalous Material",
+      "used": "Crafting, Upgrading",
+      "value": "35,000.0",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Component"
+    ]
+  },
+  {
+    "id": "prod17",
+    "title": "Warp Cell",
+    "summary": "Warp Cell is a consumable product used to fuel the starship's hyperdrive.\n\nIt charges the hyperdrive for one jump, but 4 cells will charge the hyperdrive for 5 jumps.",
+    "game_description": "This antimatter-based fuel is one of the few power sources capable of meeting the incredible energy requirements of a starship hyperdrive.\n\nSecured within a robust housing, the cell is guaranteed paradox-free during FTL travel.",
+    "source_info": null,
+    "use_info": null,
+    "release_history": "* Release - Original game component.\n* NEXT - Formula changed, formerly used Thamium9 and Antimatter. Icon changed.\n* Waypoint - Charging changed, now only 4 Warp Cells required to fully charge the hyperdrive, previously was 5.",
+    "additional_info": "* You cannot sell Warp Cells.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Hyperdrive Charging Unit",
+    "value": 46750.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.WARPCELL.png",
+      "category": "Consumable",
+      "color": "",
+      "type": "Hyperdrive Charging Unit",
+      "used": "Building, Charging, Upgrading",
+      "value": "46,750.0",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Consumable"
+    ]
+  },
+  {
+    "id": "prod31",
     "title": "Warp Hypercore",
     "summary": "Warp Hypercore is a consumable used to fuel the starship's hyperdrive. It offers a higher fuel capacity compared to a standard Warp Cell.",
     "game_description": "A high-capacity antimatter-based fuel, this cell harnesses an internal black hole generator to power starship hyperdrives across multiple warp jumps.\n\nCell walls are specially designed to reflect any reality paradoxes back towards the heart of the unit, where they generate additional power.",
@@ -214,6 +1506,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Hyperdrive Charging Unit",
+    "value": 46.75,
     "infobox": {
       "_infobox_type": "product",
       "image": "PRODUCT.WARPCELL2.png",
@@ -222,6 +1515,33 @@
       "value": "46.750",
       "used": "",
       "release": "Endurance"
+    },
+    "categories": [
+      "Consumable"
+    ]
+  },
+  {
+    "id": "prod54",
+    "title": "Wiring Loom",
+    "summary": "Wiring Loom is a consumable product and used in crafting and repairing various technology components.",
+    "game_description": "A prefabricated circuit board, designed for flexible use in a large range of technology components.\n\nThe module features an integrated nanite processor, allowing it to be quickly configured for a wide variety of uses.",
+    "source_info": "* Can be purchased at a",
+    "use_info": null,
+    "release_history": "* Hazard Protection upgrades such as Neutron Shielding",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Universal Technology Platform",
+    "value": 25000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.TECHMODULE.png",
+      "category": "Consumable",
+      "color": "Blue",
+      "type": "Universal Technology Platform",
+      "value": "25,000.0",
+      "used": "Crafting, Upgrading",
+      "release": "Outlaws"
     },
     "categories": [
       "Consumable"

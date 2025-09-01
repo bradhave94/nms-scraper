@@ -17,19 +17,56 @@ nms-scraper/
 ├── extractors/             # Recipe extractors
 │   ├── nutrient_processor_extractor.py
 │   └── refinery_extractor.py
-└── categories/             # Category generation tools
-    ├── generate_categories.py
-    └── generated_categories.py
+├── categories/             # Category generation tools
+│   ├── generate_categories.py
+│   └── generated_categories.py
+└── sql/                    # SQL query tools
+    ├── recipe_table.sql
+    ├── cooking_recipe_table.sql
+    ├── find_recipes_by_ingredient.sql
+    ├── item_values.sql
+    └── README.md
 ```
 
 ## Core Architecture
 
 - **Main Scraper**: [nms_scraper.py](mdc:nms_scraper.py) - Content-based classification with sequential IDs
-- **Database**: `nms.db` - SQLite database storing all scraped items
-- **Recipe Extractors**: Located in `extractors/` folder
-  - [extractors/refinery_extractor.py](mdc:extractors/refinery_extractor.py) - Extracts refinery recipes
-  - [extractors/nutrient_processor_extractor.py](mdc:extractors/nutrient_processor_extractor.py) - Extracts cooking recipes
+- **Database**: `nms.db` - SQLite database storing all scraped items with normalized recipe tables
+- **Recipe Extractors**: Located in `extractors/` folder (legacy, replaced by integrated parsing)
+- **SQL Tools**: Located in `sql/` folder - Parameterized queries for recipe analysis
 - **Category Discovery**: Located in `categories/` folder
+
+## Command Line Usage
+
+```bash
+# Scrape all categories
+python nms_scraper.py --limit 100
+
+# Scrape only raw materials
+python nms_scraper.py --categories raw --limit 50
+
+# Scrape only cooking items
+python nms_scraper.py --categories cooking --limit 50
+
+# Hard reset and scrape
+python nms_scraper.py --hard-reset --categories raw --limit 0
+
+# Auto-run recipe extractors after scraping
+python nms_scraper.py --extract-recipes
+```
+
+## Category Sets
+
+### ALL_CATEGORIES (default)
+All wiki categories including Products, Technology, Raw Materials, etc.
+
+### RAW_MATERIALS
+- "Raw Materials", "Resources", "Special elements", "Earth elements", "Fuel elements"
+- Individual pages: "https://nomanssky.fandom.com/wiki/Warp_Cell"
+
+### NUTRIENT_PROCESSORS
+- "Products - Consumable", "Products - Fish"
+- Focus on cooking/food items
 
 ## Target Output Files
 
@@ -46,51 +83,56 @@ The scraper generates these JSON files in the `data/` directory:
 - `Technology.json` - All technology items
 - `Trade.json` - Trade commodities
 
+## SQL Query Tools
+
+### Recipe Analysis
+```bash
+# Show refinery recipes for any item
+sqlite3 nms.db ".param set @item_name 'Warp Cell'" ".read sql/recipe_table.sql"
+
+# Show cooking recipes for any item
+sqlite3 nms.db ".param set @item_name 'Cake of Burning Dread'" ".read sql/cooking_recipe_table.sql"
+
+# Show most valuable items
+sqlite3 nms.db ".read sql/item_values.sql"
+
+# Find recipes using specific ingredient
+sqlite3 nms.db ".read sql/find_recipes_by_ingredient.sql"
+```
+
 ## Key Design Principles
 
 1. **Sequential IDs**: Items use sequential IDs (cook1, cook2, prod1, tech1, etc.) instead of name-based IDs
 2. **Content-based Classification**: Items are classified by analyzing their infobox, description, and usage patterns
-3. **Recipe Structure**: Refinery and NutrientProcessor use structured recipe format with lowercase fields:
-   ```json
-   {
-     "id": "nut1",
-     "inputs": [{"id": "cook1", "name": "Item Name", "quantity": 1}],
-     "output": {"id": "cook2", "name": "Output Name", "quantity": 1},
-     "time": "2.5",
-     "operation": "Processor Setting: Combining"
-   }
-   ```
-4. **Missing Ingredient Handling**: Uses placeholder IDs (missing_item_name) for ingredients not in database
-5. **SQLite Integration**: All data stored in database with JSON export capability
-6. **Rate Limiting**: Configurable delays between API requests
-7. **Pagination Support**: Handles categories with >500 items via API continuation
-8. **Hard Reset**: `--hard-reset` flag to delete database and data folder for clean runs
-9. **Auto Recipe Extraction**: `--extract-recipes` flag to automatically run recipe extractors after scraping
-10. **Comprehensive Recipe Coverage**: Extracts 350+ refinery recipes from all items in database
+3. **Normalized Database**: Recipes stored in separate tables with proper foreign key relationships
+4. **No Redundant Fields**: Removed source_item_id - all inputs stored in ingredients tables
+5. **Clean Operations**: Recipe operations extracted without percentage prefixes
+6. **Value Extraction**: Numeric values extracted from infobox and stored as REAL
+7. **Individual Page Support**: Can add specific wiki pages to category lists via URLs or titles
+8. **Parameterized SQL**: Pre-built queries with parameter support for analysis
 
-## Critical Categories
+## Recipe Data Structure
 
-The scraper must include these important categories to ensure complete recipe coverage:
-- **Harvested Agricultural Substance**: Contains Faecium, Frost Crystal, etc. with many refinery recipes
-- **Flora elements**: Plant-based resources used in refining
-- **Minerals**: Various mineral resources used in refining
-- **Earth elements**: Basic elements used in many recipes
+Both `NutrientProcessor.json` and `Refinery.json` use structured recipe format:
 
-## Recipe Template Formats
+```json
+{
+  "id": "ref_tech1_1",
+  "inputs": [
+    {"id": "raw1", "name": "Carbon", "quantity": 50},
+    {"id": "raw2", "name": "Sodium Nitrate", "quantity": 5},
+    {"id": "raw3", "name": "Chromatic Metal", "quantity": 250}
+  ],
+  "output": {"id": "tech1", "name": "Warp Cell", "quantity": 1},
+  "time": "300",
+  "operation": "Antimatter Bypass"
+}
+```
 
-1. **Refinery Recipes**: Uses `{{PoC-Refine}}` template
-   ```
-   {{PoC-Refine
-   | Mordite,3;1;0.24%Assisted Decomposition
-   | Di-hydrogen,1;Carbon,1;1;0.08%Assisted Decomposition
-   | Faecium,1;Oxygen,1;3;0.36%Oxygenate Microbes
-   }}
-   ```
+## Database Improvements
 
-2. **Nutrient Processor Recipes**: Uses `{{Cook}}` template
-   ```
-   {{Cook
-   | Wailing Batter,1 + Grahj'am,1 + Cream,1 → Appalling Jam Sponge,1 ("Assemble Baked Product", 2.5)
-   | Wailing Batter,1 + Furball Jelly,1 + Cream,1 → Appalling Jam Sponge,1 ("Assemble Baked Product", 2.5)
-   }}
-   ```
+- **Value field**: Extracted from infobox as REAL for numeric analysis
+- **JSON columns**: infobox and categories stored as TEXT containing JSON
+- **Clean operations**: "Antimatter Bypass" instead of "300%Antimatter Bypass"
+- **Proper ingredient parsing**: All 3 ingredients captured correctly
+- **Missing ingredient support**: Placeholder IDs for cross-references

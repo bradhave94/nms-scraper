@@ -1,6 +1,33 @@
 [
   {
-    "id": "trade52",
+    "id": "trade5",
+    "title": "5D Torus",
+    "summary": "5D Torus is a 4th tier tradeable.",
+    "game_description": "A specially manufactured container of five-dimensional tori.\n\nHighly specific materials are required to construct shapes in extra dimensions. These tori are used to contain the strong fields generated in the manufacture of scientific components.",
+    "source_info": "*It can be purchased from Galactic Trade Terminals in all high-wealth Advanced Materials Economy star systems.\n*It is also obtainable in some, but not all, medium-wealth systems with this Economy.\n*Can be gifted from Iteration: Hesperus in the Space Anomaly.",
+    "use_info": "*Five Dimensional Torus can be sold for a profit in any Scientific Economy star system.\n*It is not usable by the player in Crafting or Base building.\n*It can be use as a replacement in delivery missions.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5. It has the same icon as Containment Failure and Shattered Power Core.\n* Waypoint - Renamed, formerly \"Five Dimensional Torus\"; type changed, formerly \"Advanced Construction Materials\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Construction)",
+    "value": 30000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "5D Torus",
+      "image": "TRADEPROD.ALLOY4.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Construction)",
+      "value": "30,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade72",
     "title": "Albumen Pearl",
     "summary": "|thumb|Albumen Pearls are found in Humming Sacs\nAlbumen Pearl is a trade commodities.\n\nIt is a valuable gemstone most frequently found enclosed inside of Humming Sacs, which are shells that resemble plants. It currently has no use other than trading.",
     "game_description": "Gemstone formed over the course of centuries within the egg of a super-incubatory species. Highly ornamental, these gems are themselves living seeds, lucent grains of potential life.\n\nCan be sold at a Galactic Trade Terminal.",
@@ -11,6 +38,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade commodity",
+    "value": 10640.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "Product.abumenpearl.png",
@@ -26,7 +54,33 @@
     ]
   },
   {
-    "id": "trade37",
+    "id": "trade15",
+    "title": "Aronium",
+    "summary": "Aronium is a tradeable.",
+    "game_description": "A lightweight and highly malleable alloy. Crafted from Paraffinium and Ionised Cobalt.\n\nIn high demand on the Galactic Trade Network due to its utility in the construction of planetside outposts and facilities.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Interceptor - Corrected description to list the correct crafting ingredients.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Alloy Metal",
+    "value": 25000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.metallic.1.png",
+      "color": "Yellow",
+      "category": "Tradeable",
+      "type": "Alloy Metal",
+      "value": "25,000.0",
+      "release": "Interceptor"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "trade22",
     "title": "Atlas Seed",
     "summary": "There are different seeds, and each seed requires the previous one as a crafting component. After visiting the 11th Atlas Interface and activating it, it will ask for the last seed, Heart of the Sun, in order to complete the Atlas Path. Once you give it the Heart of the Sun, you get the choice to give birth to a new star.\n\nThis game path can only be done once.",
     "game_description": null,
@@ -37,6 +91,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unique valuable curiosity",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "Atlas_Seed.png",
@@ -51,7 +106,34 @@
     ]
   },
   {
-    "id": "trade19",
+    "id": "trade82",
+    "title": "Autonomous Positioning Unit",
+    "summary": "Autonomous Positioning Unit is a 4th tier tradeable.",
+    "game_description": "A container of positioning units and associated wiring.\n\nThese APS units can be used to turn virtually any technology into a self-navigating system. Highly valuable in power generation economies, where they're used to remove conductive organic hands from the manufacturing process.",
+    "source_info": "Autonomous Positioning Unit can be purchased from Galactic Trade Terminals in all high-wealth Technology Economy star systems. It is also obtainable in some, but not all, medium-wealth systems with this Economy.",
+    "use_info": "Autonomous Positioning Unit can be sold for a profit in any Power Generation Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Technology Parts\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Technology)",
+    "value": 30000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Autonomous Positioning Unit",
+      "image": "TRADEPROD.TECH4.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Technology)",
+      "value": "30,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade56",
     "title": "Banned Weapons",
     "summary": "Banned Weapons is a tradeable item.",
     "game_description": "Hacked together from the salvaged remains of Sentinel forces, these potent weapons are a favourite of outlaws across the galaxy.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
@@ -62,6 +144,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Smuggled Goods",
+    "value": 83000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Banned Weapons",
@@ -77,7 +160,7 @@
     ]
   },
   {
-    "id": "trade4",
+    "id": "trade1",
     "title": "Blood Salt",
     "summary": "Blood Salt is a tradeable item.",
     "game_description": "Jars of murky, foul-smelling crystals. Produced in viscous evaporation traps, these organic salts are used in the manufacture of illegal pheromones.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
@@ -88,6 +171,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Smuggled Goods",
+    "value": 2000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Blood Salt",
@@ -103,7 +187,7 @@
     ]
   },
   {
-    "id": "trade39",
+    "id": "trade62",
     "title": "Captured Nanode",
     "summary": "Captured Nanode is a curiosity, also known as the 1st of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
     "game_description": "Atlas Seed containing zonally-shifted quasi-stellar substrate. Warning: do not allow matrix to commune with this dimensional space.",
@@ -114,6 +198,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unique valuable curiosity",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "ATLASSEED.1.png",
@@ -128,33 +213,7 @@
     ]
   },
   {
-    "id": "trade38",
-    "title": "Circuit Board",
-    "summary": "Circuit Board is a tradeable and it is worth 916,250.0",
-    "game_description": "Stackable, semi-flexible circuit board made from a highly durable synthetic polymer.\n\nCrafted from Heat Capacitors and Poly Fibre.",
-    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
-    "use_info": null,
-    "release_history": "* Foundation - Added as a product.\n* NEXT 1.64 - Fixed an issue where players could fail to learn the Circuit Board blueprint at the correct time.\n* NEXT 1.58 - Value changed, previously it was worth 1,196,250.0",
-    "additional_info": "* The blueprint is rewarded when you construct the Overseer\n* Since you only need to grow four different plants (Frost Crystal, Solanium, Cactus Flesh, and Star Bulb), these can be an effective way of making money.",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Advanced Agricultural Product",
-    "infobox": {
-      "_infobox_type": "product",
-      "image": "FARMPROD.9.png",
-      "category": "Tradeable",
-      "color": "Grey",
-      "type": "Advanced Agricultural Product",
-      "value": "916,250.0",
-      "used": "Crafting, Trading",
-      "release": "Prisms"
-    },
-    "categories": [
-      "Tradeable"
-    ]
-  },
-  {
-    "id": "trade49",
+    "id": "trade70",
     "title": "Comet Droplets",
     "summary": "Comet Droplets are a 3rd tier tradeable.",
     "game_description": "Several canisters of comet droplets.\n\nAn elaborate trading name for chunks of meteorite, these rocks are nonetheless extremely valuable to the advanced material economies that can process them.",
@@ -165,6 +224,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods",
+    "value": 15000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Comet Droplets",
@@ -180,7 +240,7 @@
     ]
   },
   {
-    "id": "trade21",
+    "id": "trade68",
     "title": "Convergence Cube",
     "summary": "Convergence Cube is a trade commodities.",
     "game_description": "Device used by the Korvax for the storage of historical and cultural information.",
@@ -191,6 +251,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade commodity",
+    "value": 13063.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "PRODUCT.KORVAXCUBE.png",
@@ -205,7 +266,7 @@
     ]
   },
   {
-    "id": "trade17",
+    "id": "trade51",
     "title": "Counterfeit Circuits",
     "summary": "Counterfeit Circuits is a tradeable item.",
     "game_description": "Reversed-engineered from a captured space station core, these unlicensed circuits are used in a wide range of black- and grey-market technologies.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
@@ -216,6 +277,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Smuggled Goods",
+    "value": 68000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Counterfeit Circuits",
@@ -231,7 +293,7 @@
     ]
   },
   {
-    "id": "trade50",
+    "id": "trade59",
     "title": "Dark Matter",
     "summary": "Dark Matter is a curiosity, also known as the 4th of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
     "game_description": "An Atlas Seed shell encompassing a void element harvested from the collapse state of the last universe. Toxic if ingested.",
@@ -242,6 +304,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unique valuable curiosity",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "ATLASSEED.4.png",
@@ -256,7 +319,7 @@
     ]
   },
   {
-    "id": "trade55",
+    "id": "trade7",
     "title": "Dawn's End",
     "summary": "'''Dawn's End''' is a curiosity, also known as the 5th of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
     "game_description": "Sculpted tau neutrino-boson matrix fixed within an irreplaceable Atlas Seed shell. May be semi-sentient.",
@@ -267,6 +330,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unique valuable curiosity",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "ATLASSEED.5.png",
@@ -281,7 +345,7 @@
     ]
   },
   {
-    "id": "trade43",
+    "id": "trade29",
     "title": "De-Scented Bottles",
     "summary": "De-Scented Bottles is a 1st tier tradeable.",
     "game_description": "A loose collection of recycled pheromone bottles.\n\nVast quantities of pheromones are produced and distributed every day. This has spawned a lucrative trading opportunity for those willing to deal with the waste products. These glass jars have been thoroughly scrubbed and should pose no threat to the carrier.",
@@ -292,6 +356,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Scientific)",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "TRADEPROD.EXOTICS1.png",
@@ -306,7 +371,34 @@
     ]
   },
   {
-    "id": "trade10",
+    "id": "trade78",
+    "title": "Decommissioned Circuits",
+    "summary": "Decommissioned Circuits is a 1st tier tradeable.",
+    "game_description": "A collection of salvaged circuitry.\n\nPower generation economies go through vast numbers of high-tech components. As such, the demand is present even for highly damaged circuits, to be scavenged for parts or just plugged wholesale into low-quality power cores.",
+    "source_info": "Decommissioned Circuits can be purchased from Galactic Trade Terminals in all Technology Economy star systems.",
+    "use_info": "Decommissioned Circuits can be sold for a profit in any Power Generation Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5. It has the same icon as Damaged Wiring and Power Distributor.\n* Waypoint - Renamed, formerly \"Decommissioned Circuit Board\". Type changed, formerly \"Technology Parts\".",
+    "additional_info": "* Same icon is used by Once-Useful Springs",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Technology)",
+    "value": 1000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Decommissioned Circuits",
+      "image": "TRADEPROD.TECH1.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Technology)",
+      "value": "1,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade3",
     "title": "Decrypted User Data",
     "summary": "Decrypted User Data is a 1st tier tradeable.",
     "game_description": "A crate packed with hard drives, each of which contain vast amounts of decrypted user data.\n\nIndividually of low value, taken together these repositories can be processed and scanned for valuable data. This processing occurs in systems with advanced material economies.",
@@ -317,6 +409,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Decrypted User Data",
@@ -332,7 +425,7 @@
     ]
   },
   {
-    "id": "trade56",
+    "id": "trade73",
     "title": "Dirty Bronze",
     "summary": "Dirty Bronze is a tradeable that can be crafted or purchased.",
     "game_description": "A popular metal alloy with a wide variety of uses. 'Dirty Bronze' has shed its scientific name in favor of the popular term for its colour.\n\nCrafted from Pure Ferrite and Pyrite.",
@@ -343,6 +436,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Alloy Metal",
+    "value": 25000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "Product.metallic.2.png",
@@ -357,7 +451,7 @@
     ]
   },
   {
-    "id": "trade28",
+    "id": "trade43",
     "title": "Englobed Shade",
     "summary": "Englobed Shade is a curiosity, also known as the 2nd of 10 unique Atlas Seeds.\n\nIt has an important part in The Atlas Path mission and it is worth 1,000",
     "game_description": "This Atlas Shell holds the remains of a parasitic space-borne lifeform, most likely of extra-dimensional origins.",
@@ -368,6 +462,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unique valuable curiosity",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "ATLASSEED.2.png",
@@ -383,7 +478,7 @@
     ]
   },
   {
-    "id": "trade9",
+    "id": "trade21",
     "title": "Enormous Metal Cog",
     "summary": "Enormous Metal Cog is a 1st tier tradeable.",
     "game_description": "Several huge cogs.\n\nSturdy, well-made metal gears. While not advanced technology themselves, they're a vital component in countless pieces of high-tech machinery all over the galaxy.",
@@ -394,6 +489,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Industrial)",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Enormous Metal Cog",
@@ -410,7 +506,7 @@
     ]
   },
   {
-    "id": "trade40",
+    "id": "trade28",
     "title": "Experimental Power Fluid",
     "summary": "Experimental Power Fluid is a 4th tier tradeable.",
     "game_description": "Corrosion-resistant barrels of an experimental power fluid.\n\nOne barrel of this highly volatile concoction is enough to power a space station for weeks on end. Particularly valued by mining economies.",
@@ -421,6 +517,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Energy Source)",
+    "value": 30000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Experimental Power Fluid",
@@ -436,7 +533,7 @@
     ]
   },
   {
-    "id": "trade51",
+    "id": "trade45",
     "title": "First Spawn Relics",
     "summary": "First Spawn Relics is a tradeable item.",
     "game_description": "Relics of the fallen Gek empire, condemned and banned by all the galaxy's major civilisations.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
@@ -447,6 +544,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Smuggled Goods",
+    "value": 98000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "First Spawn Relics",
@@ -462,7 +560,7 @@
     ]
   },
   {
-    "id": "trade41",
+    "id": "trade16",
     "title": "Fusion Core",
     "summary": "Fusion Core is a 5th tier tradeable.",
     "game_description": "A slightly glowing bundle of fusion cores.\n\nPower source, engine, high-capacity heater. A fusion core is the ultimate in deep-space power generation. Highly valued by mining economies looking to make their asteroid colonies more self-sufficient.",
@@ -473,6 +571,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Energy Source)",
+    "value": 50000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "TRADEPROD.ENERGY5.png",
@@ -487,7 +586,34 @@
     ]
   },
   {
-    "id": "trade5",
+    "id": "trade64",
+    "title": "Fusion Ignitor",
+    "summary": "thumb|Crafting Tree\nFusion Ignitor is a tradeable that can be crafted.",
+    "game_description": "A highly advanced piece of technology for use in the next generation of power plants. Producing a fusion core requires both intricate scientific skills and complex industrial processes.\n\nCrafted from Portable Reactor, Quantum Processors and Geodesite.",
+    "source_info": "The blueprint can be acquired from Manufacturing Facilites or purchased from the Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a product.\n* Visions - Value changed, previously it was worth 18,000,000.0",
+    "additional_info": "It is tied with the Stasis Device for most valuable singular item in the game.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Highly Refined Technology",
+    "value": 15600000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ULTRAPROD.1.png",
+      "category": "Tradeable",
+      "color": "yellow",
+      "type": "Highly Refined Technology",
+      "value": "15,600,000.0",
+      "used": "Trading",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade17",
     "title": "GekNip",
     "summary": "GekNip is a trade commodities.",
     "game_description": "Edible product much beloved by the Gek.\n\nAllows beaked traders to release delightfully scented packets of gas for a prolonged period of time.\n\nGekNip gas packets are considered an art form, and the truest representation of the Gek soul.",
@@ -498,6 +624,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade commodity",
+    "value": 20625.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "Product.geknip.png",
@@ -512,7 +639,33 @@
     ]
   },
   {
-    "id": "trade31",
+    "id": "trade77",
+    "title": "Geodesite",
+    "summary": null,
+    "game_description": "Geodesite is a tradeable that is used for crafting.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a component.\n* NEXT - Now it can also be refined.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Enriched Alloy Metal",
+    "value": 150000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "PRODUCT.METALLIC.7.png",
+      "color": "yellow",
+      "category": "Tradeable",
+      "type": "Enriched Alloy Metal",
+      "value": "150,000.0",
+      "release": "Frontiers"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "trade23",
     "title": "Gold Nugget",
     "summary": "Gold Nugget is a curiosity and a Valuable Ore.\n\n{| class=\"wikitable\"\n|+Yield Analysis (n=100)\n!Material\n!Prob\n!Avg\n!Range\n|-\n|Gold\n|100%\n|61.5\n|31-122\n|}",
     "game_description": "A highly valuable ore chunk, ready to be processed into Gold.\n\nSelect in the inventory (",
@@ -523,6 +676,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Valuable Ore",
+    "value": 3280.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "PRODUCT.GEODE.ASTEROID.png",
@@ -538,7 +692,7 @@
     ]
   },
   {
-    "id": "trade18",
+    "id": "trade58",
     "title": "GrahGrah",
     "summary": "GrahGrah is a tradeable item.",
     "game_description": "A canister of the now-banned Vy'keen battle gas, traditionally inhaled on the eve of battle.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
@@ -549,6 +703,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Smuggled Goods",
+    "value": 58000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "GrahGrah",
@@ -564,7 +719,33 @@
     ]
   },
   {
-    "id": "trade44",
+    "id": "trade2",
+    "title": "Grantine",
+    "summary": "Grantine is a tradeable.",
+    "game_description": "Soft workable alloy favored by artisans throughout the known galaxy. Crafted from Ionised Cobalt and Dioxite.\n\nA popular trading good, with many galactic shipping paths devoted to its sale and transport.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Release - Added as a component.\n* Atlas Rises - Blueprint changed, formerly used Iridium, Copper, and Aronium.\n* NEXT - Blueprint changed, formerly used Emeril and Heridium. Now it can also be refined.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": "It is probably named after Grant Duncan, a co-founder of Hello Games.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Alloy Metal",
+    "value": 25000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.metallic.6.png",
+      "color": "brown",
+      "category": "Tradeable",
+      "type": "Alloy Metal",
+      "value": "25,000.0",
+      "release": "Endurance"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "trade42",
     "title": "Gravitino Ball",
     "summary": "Gravitino Ball is a trade commodities\n\nAs the player walks closer to one, it will shine brighter. It can be found in small, medium, and large varieties. \n\nIt can be revealed with 35px icon.\n\nWhen a Gravitino Ball is picked up in the wild, the player receives a three-star wanted level. There is no risk gathering them from your base or freighter hydroponics, and are a great cash crop when grown en masse.",
     "game_description": "A supersymmetric particle cluster created by divergent super-gravitational forces. A micro-rift is created as they form, and extraction of the orb prompts a localised reality weakening. Sentinel forces will respond to stablise any such anomaly.\n\nCan be sold at a Galactic Trade Terminal.",
@@ -575,6 +756,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade commodity",
+    "value": 40023.5,
     "infobox": {
       "_infobox_type": "product",
       "image": "Product.gravball.png",
@@ -590,7 +772,7 @@
     ]
   },
   {
-    "id": "trade42",
+    "id": "trade75",
     "title": "Hadal Core",
     "summary": "Hadal Core is a tradeable.",
     "game_description": "A highly-pressurised fleshy orb.\n\nOne can feel it push back when touched, a flash of bioluminescence stirring in the inky black core of this mysterious object.",
@@ -601,6 +783,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Horrific Sample",
+    "value": 92625.0,
     "infobox": {
       "_infobox_type": "product",
       "color": "green",
@@ -616,7 +799,33 @@
     ]
   },
   {
-    "id": "trade32",
+    "id": "trade52",
+    "title": "Handful of Cogs",
+    "summary": "Handful of Cogs is a tradeable item useful only for scrap.",
+    "game_description": "A valuable piece of broken down Trade Terminal.",
+    "source_info": "Created by a Starship Outfitting Terminal at a Space Station when the player chooses \"Claim Scrap\" menu option to salvage their starship into Units.",
+    "use_info": "Component is useful only as scrap to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": null,
+    "additional_info": "* 1-19 pieces are awarded when salvaging a starship.\n* Maximum stack size is 25.\n* The same icon is used by:\n**Subatomic Regulators\n**Tank of Coolant\n**Welding Soap",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Starship Subcomponent",
+    "value": 10000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.TECH2.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "10,000.0",
+      "type": "Starship Subcomponent",
+      "release": "Desolation"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade19",
     "title": "Heart of the Sun",
     "summary": "Heart of the Sun is a curiosity, also known as the last of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission.",
     "game_description": "An Atlas Seed containing a time-locked quantum cilia suspended in a photonic shell. No others are known to exist.",
@@ -627,6 +836,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unique valuable curiosity",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "ATLASSEED.10.png",
@@ -641,7 +851,34 @@
     ]
   },
   {
-    "id": "trade47",
+    "id": "trade30",
+    "title": "Herox",
+    "summary": "Herox is a crafted, found in containers or purchased.",
+    "game_description": "Combined neutral alloy with uses that range from pharmacology all the way to heavy industry. Crafted from Ionised Cobalt and Ammonia.\n\nForms the backbone of galactic alloy trading.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Interceptor - Corrected description to list the correct crafting ingredients.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Alloy Metal",
+    "value": 25000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "color": "yellow",
+      "image": "Product.metallic.3.png",
+      "category": "Tradeable",
+      "type": "Alloy Metal",
+      "value": "25,000.0",
+      "used": "Crafting, Upgrading, Trading",
+      "release": "Interceptor"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "trade25",
     "title": "Holographic Crankshaft",
     "summary": "Holographic Crankshaft is a 4th tier tradeable.",
     "game_description": "Packed and separated data containers for holographic crankshafts.\n\nReal crankshafts are frequently too large, noisy or hard-to-maintain for use in delicate machines. When faced with such a situation, high-tech manufacturers turn to these holographic substitutes.",
@@ -652,6 +889,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Industrial)",
+    "value": 30000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "TRADEPROD.COMPONENT4.png",
@@ -667,7 +905,7 @@
     ]
   },
   {
-    "id": "trade24",
+    "id": "trade49",
     "title": "Hypnotic Eye",
     "summary": "Hypnotic Eye is a tradeable.",
     "game_description": "The eye is cold, almost frozen, to the touch. Nonetheless, it is impossible to escape the feeling it is somehow still alive.\n\nExtended exposure is not recommended. Do not stare back into the eye. Do not stare back. Do not stare back.",
@@ -678,6 +916,7 @@
     "fishing_info": "rarity = 6|size = 2|condition =",
     "progression_info": null,
     "type": "Horrific Sample",
+    "value": 57000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "PRODUCT.EYEBALL.png",
@@ -692,7 +931,7 @@
     ]
   },
   {
-    "id": "trade30",
+    "id": "trade24",
     "title": "Industrial-Grade Battery",
     "summary": "Industrial-Grade Battery is a 2nd tier tradeable.",
     "game_description": "A packet of well-isolated industrial batteries.\n\nHeavy-duty batteries are required to power deep level miningoperations",
@@ -703,6 +942,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Energy Source)",
+    "value": 6000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Industrial-Grade Battery",
@@ -719,7 +959,7 @@
     ]
   },
   {
-    "id": "trade3",
+    "id": "trade39",
     "title": "Instability Injector",
     "summary": "Instability Injector is a 3rd tier tradeable.",
     "game_description": "A jumbled box of instability injectors.\n\nGrand experiments often require a large number of variables to be changed in a very short period of time. An instability injector provides such a service. They can also be used to create chaos in market systems; such unethical behaviour represents an excellent trading opportunity.",
@@ -730,6 +970,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Scientific)",
+    "value": 15000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "TRADEPROD.EXOTICS3.png",
@@ -745,7 +986,34 @@
     ]
   },
   {
-    "id": "trade15",
+    "id": "trade44",
+    "title": "Ion Capacitor",
+    "summary": "Ion Capacitor is a 3rd tier tradeable.",
+    "game_description": "A reinforced crate of ion capacitors.\n\nThese supercapacitors have an incredibly high energy density. In great demand in power generation economies.",
+    "source_info": "Ion Capacitor can be purchased from Galactic Trade Terminals in all medium-wealth and high-wealth Technology Economy star systems.",
+    "use_info": "Ion Capacitor can be sold for a profit in any Power Generation Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Technology Parts\".",
+    "additional_info": "*Icon is also used by:\n** Reinforced Piping\n** Suspicious Packet (Tech)",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Technology)",
+    "value": 15000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Ion Capacitor",
+      "image": "TRADEPROD.TECH3.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "value": "15,000.0",
+      "type": "Trade Goods (Technology)",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade80",
     "title": "Ion Sphere",
     "summary": "Ion Sphere is a 4th tier tradeable.",
     "game_description": "A packed crate of ion spheres.\n\nThese delicate glass spheres house a small-scale replica of the upper atmosphere. Sparkly and hypnotic to look at, these baubles are also of importance in the manufacture of advanced material alloys.",
@@ -756,6 +1024,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods",
+    "value": 30000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Ion Sphere",
@@ -771,7 +1040,7 @@
     ]
   },
   {
-    "id": "trade26",
+    "id": "trade41",
     "title": "Iridesite",
     "summary": "Iridesite is a tradeable that is used for crafting.",
     "game_description": "Advanced light metal alloy traded throughout the galactic Outer Edge. Often used in the interiors of trading shuttles to reduce weight as they ascend from planets with high gravitational fields.\n\nCrafted from Aronium, Magno-Gold and Grantine.",
@@ -782,6 +1051,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Enriched Alloy Metal",
+    "value": 150000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "PRODUCT.IRIDISITE.png",
@@ -796,7 +1066,33 @@
     ]
   },
   {
-    "id": "trade11",
+    "id": "trade74",
+    "title": "Lemmium",
+    "summary": "Lemmium is a tradeable that can be crafted, found or purchased.",
+    "game_description": "Pure Ferrite alloy. Crafted from Pure Ferrite and Uranium. \n\nUsed extensively in starship freighter construction due to its sheer strength. A hardcore material popular on the Galactic Trade Network.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "*Release - Added as a component.\n*Atlas Rises - Blueprint changed, formerly used Titanium and Plutonium. Icon changed, formerly used the same as Herox.\n*NEXT - Blueprint changed, formerly used Aluminium and Carbon. Now it can also be refined.\n*Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": "*Lemmium is named after Lemmy Kilmister, the founder, lead singer and bassist of the English heavy metal band Motörhead. Note additional reference to \"hardcore\" in the game description.<ref>Will Porter (19 Aug 2016 [https://www.loudersound.com/features/how-i-got-lemmy-into-no-man-s-sky 'How I got Lemmy into No Man's Sky'].</ref>\n*The inventory appearance for Lemmium was previously used by Crolium.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Alloy Metal",
+    "value": 25000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.metallic.4.png",
+      "category": "Tradeable",
+      "color": "yellow",
+      "type": "Alloy Metal",
+      "value": "25,000",
+      "release": "WorldsTwo"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "trade26",
     "title": "Living Pearl",
     "summary": "Living Pearl is a tradeable that is used for crafting.",
     "game_description": "Born in the hearts of enormous glowing molluscs found deep underwater.\n\nUnlike most pearls, this sample is no unliving calcite. Some trace of the mother-clam's consciousness remains within the gem, giving it a lingering, haunting beauty.",
@@ -807,6 +1103,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Semi-Conscious Gemstone",
+    "value": 4797.5,
     "infobox": {
       "_infobox_type": "product",
       "image": "PRODUCT.CLAMPEARL.png",
@@ -821,7 +1118,34 @@
     ]
   },
   {
-    "id": "trade12",
+    "id": "trade67",
+    "title": "Magno-Gold",
+    "summary": "Magno-Gold is a tradeable.",
+    "game_description": "Highly prized and lustrous alloy. Popular with traders of all known primary galactic races. Crafted from Ionised Cobalt and Phosphorus.\n\nEasily recognisable by its bright red glow and strong magnetic field.",
+    "source_info": "*Blueprint can be found in Manufacturing Facilities and Operations Centres, or purchased from Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Pathfinder - Added as a component, renamed from Magmox to Magno-Gold. \n* NEXT - Blueprint changed, formerly used Gold and Iron.\n* Prisms - Added Synthesis Laboratory as a blueprint source.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Alloy Metal",
+    "value": 25000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "Product.metallic.5.png",
+      "color": "Yellow",
+      "category": "Tradeable",
+      "type": "Alloy Metal",
+      "value": "25,000.0",
+      "desc": "Highly prized and lustrous alloy.",
+      "release": "Endurance"
+    },
+    "categories": [
+      "Blueprints"
+    ]
+  },
+  {
+    "id": "trade69",
     "title": "Mesh Decouplers",
     "summary": "Mesh Decouplers is a 3rd tier tradeable.",
     "game_description": "A crate of mesh decouplers.\n\nThe creation of high-tech components often involves accidental mesh-coupling. These decouplers are particularly powerful, being able to deploy six prongs simultaneously.",
@@ -832,6 +1156,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Industrial)",
+    "value": 15000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Mesh Decouplers",
@@ -848,7 +1173,7 @@
     ]
   },
   {
-    "id": "trade20",
+    "id": "trade14",
     "title": "Modified Quanta",
     "summary": "Modified Quanta is a curiosity, also known as the 9th of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
     "game_description": "This one-of-a-kind Atlas Seed holds an aesthetically pleasing mathematical construct salvaged from the simulation of an alternate reality.",
@@ -859,6 +1184,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unique valuable curiosity",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "ATLASSEED.9.png",
@@ -873,7 +1199,7 @@
     ]
   },
   {
-    "id": "trade14",
+    "id": "trade34",
     "title": "Moon Ether",
     "summary": "Moon Ether is a tradeable item.",
     "game_description": "A vat of highly volatile liquid. Its fumes are extremely flammable and a function",
@@ -884,6 +1210,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Smuggled Goods",
+    "value": 18000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Moon Ether",
@@ -899,7 +1226,34 @@
     ]
   },
   {
-    "id": "trade8",
+    "id": "trade35",
+    "title": "Nanotube Crate",
+    "summary": "Nanotube Crate is a 1st tier tradeable.",
+    "game_description": "A packed crate of carbon nanotubes.\n\nThese tiny but incredibly strong tubes are required in the construction of tiny but incredibly strong scientific components.",
+    "source_info": "Nanotube Crate can be purchased from Galactic Trade Terminals in all Advanced Materials Economy star systems.",
+    "use_info": "Nanotube Crate can be sold for a profit in any Scientific Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* NEXT 1.60 - Renamed from Carbon Nanotubes to Nanotube Crate.\n* Waypoint - Type changed, formerly \"Advanced Construction Materials\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Construction)",
+    "value": 1000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Nanotube Crate",
+      "image": "TRADEPROD.ALLOY1.png",
+      "color": "grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Construction)",
+      "value": "1,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade20",
     "title": "Neural Duct",
     "summary": "Neural Duct is a 5th tier tradeable.",
     "game_description": "A box of fresh neural ducts.\n\nNeural ducts are temporary inserts designed for a brief boost of concentration and productivity. Useful everywhere, these are highly valued in trading economies where competition between workers is fierce.",
@@ -910,6 +1264,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Scientific)",
+    "value": 50000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "TRADEPROD.EXOTICS5.png",
@@ -924,7 +1279,7 @@
     ]
   },
   {
-    "id": "trade35",
+    "id": "trade36",
     "title": "Neutron Microscope",
     "summary": "Neutron Microscope is a 2nd tier tradeable.",
     "game_description": "A parcel of neutron microscopes.\n\nScientific economies produce and consume large numbers of microscopes. However, some have slight defects that render them unsuitable for precision work. These are still a trading opportunity, in that they can be sold to those unable to tell the difference.",
@@ -935,6 +1290,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Scientific)",
+    "value": 6000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "TRADEPROD.EXOTICS2.png",
@@ -949,7 +1305,7 @@
     ]
   },
   {
-    "id": "trade7",
+    "id": "trade54",
     "title": "Non-Stick Piston",
     "summary": "Non-Stick Piston is a 2nd tier tradeable.",
     "game_description": "Wrapped and greased pistons, ready for shipping.\n\nHigh-tech components frequently require rapidly moving parts, or high-endurance motors. Without specially coated pistons, the failure rate of such parts would be significantly higher.",
@@ -960,6 +1316,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Industrial)",
+    "value": 6000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Non-Stick Piston",
@@ -976,7 +1333,7 @@
     ]
   },
   {
-    "id": "trade34",
+    "id": "trade4",
     "title": "Noospheric Orb",
     "summary": "Noospheric Orb is a curiosity, also known as the 3rd of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
     "game_description": "An Atlas Seed capable of resonating on humanoid telepathic frequencies; may attempt to subsume any subordinate intellect in close proximity.",
@@ -987,6 +1344,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unique valuable curiosity",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "ATLASSEED.3.png",
@@ -1001,7 +1359,7 @@
     ]
   },
   {
-    "id": "trade45",
+    "id": "trade10",
     "title": "Novae Reclaiment",
     "summary": "Novae Reclaiment is a curiosity, also known as the 8th of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
     "game_description": "Atlas Seed contains neutronium elements from a catastrophic supernova event that obliterated a sentient civilization in an earlier era.",
@@ -1012,6 +1370,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unique valuable curiosity",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "ATLASSEED.8.png",
@@ -1026,7 +1385,7 @@
     ]
   },
   {
-    "id": "trade53",
+    "id": "trade13",
     "title": "Ohmic Gel",
     "summary": "Ohmic Gel is a 3rd tier tradeable.",
     "game_description": "Several packets of ohmic gel.\n\nPower-hungry mining operations are fraught with danger. Ohmic gel helps keep rapidly moving parts both insulated and lubricated.",
@@ -1037,6 +1396,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Energy Source)",
+    "value": 15000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Ohmic Gel",
@@ -1052,7 +1412,61 @@
     ]
   },
   {
-    "id": "trade36",
+    "id": "trade37",
+    "title": "Once-Useful Springs",
+    "summary": "Once-Useful Springs is a tradeable.",
+    "game_description": "A valuable piece of broken down Trade Terminal.",
+    "source_info": "Sometimes created by a Starship Outfitting Terminal at a Space Station when the player chooses \"Claim Scrap\" menu option to salvage their starship into Units.",
+    "use_info": "Component is useful only as scrap to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": null,
+    "additional_info": "* 0-10 pieces are awarded when salvaging a starship.\n* Maximum stack size is 25.\n* Same icon is used by:\n** Decommissioned Circuit Board\n** Recycled Circuitry",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Starship Subcomponent",
+    "value": 1000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.TECH1.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "1,000.0",
+      "type": "Starship Subcomponent",
+      "release": "Desolation"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade32",
+    "title": "Optical Solvent",
+    "summary": "Optical Solvent is a 3rd tier tradeable.",
+    "game_description": "Several bottles of optical solvent.\n\nThe liquid in these bottles is used to wash away surplus light that may otherwise cause decay in scientific components.",
+    "source_info": "Optical Solvent can be purchased from Galactic Trade Terminals in all medium-wealth and high-wealth Advanced Materials Economy star systems.",
+    "use_info": "Optical Solvent can be sold for a profit in any Scientific Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Introduced as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Advanced Construction Materials\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Construction)",
+    "value": 15000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Optical Solvent",
+      "image": "TRADEPROD.ALLOY3.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Construction)",
+      "value": "15,000.0",
+      "desc": "Several bottles of optical solvent",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade12",
     "title": "Organic Piping",
     "summary": "Organic Piping is a 4th tier tradeable.",
     "game_description": "A vat of preserved organic piping. Still warm.\n\nTo avoid difficult ethical problems, many labs grow their test subjects on a component level. The leftovers can be profitable in trading economies with relaxed medical regulations.",
@@ -1063,6 +1477,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Scientific)",
+    "value": 30000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "TRADEPROD.EXOTICS4.png",
@@ -1077,7 +1492,7 @@
     ]
   },
   {
-    "id": "trade46",
+    "id": "trade55",
     "title": "Photic Jade",
     "summary": "Photic Jade is a curiosity, also known as the 6th of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
     "game_description": "This irreplaceable Atlas Seed is a form of matter-adapted photons coalesced into physical solidity by unknown means.",
@@ -1088,6 +1503,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unique valuable curiosity",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "ATLASSEED.6.png",
@@ -1102,7 +1518,7 @@
     ]
   },
   {
-    "id": "trade6",
+    "id": "trade40",
     "title": "Prismatic Feathers",
     "summary": "Prismatic Feathers is a tradeable item.",
     "game_description": "A vacuum-sealed bundle of dazzlingly beautiful feathers. The animal that gave its life for this impossible, kaleidoscopic charm is long since extinct.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
@@ -1113,6 +1529,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Smuggled Goods",
+    "value": 32000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Prismatic Feathers",
@@ -1128,7 +1545,88 @@
     ]
   },
   {
-    "id": "trade1",
+    "id": "trade6",
+    "title": "Quantum Accelerator",
+    "summary": "Quantum Accelerator is a 5th tier tradeable that is produced by a Technology Economy, and particularly sought after in a Power Generation Economy.",
+    "game_description": "Several large quantum accelerator units.\n\nCapable of propelling matter at unmeasurable speeds, these units are particularly important in power generation economies, where they're used to compress the energy stored in high-grade batteries.",
+    "source_info": "Quantum Accelerator can be purchased from Galactic Trade Terminals in all high-wealth Technology Economy star systems.",
+    "use_info": "Quantum Accelerator can be sold for a profit in any Power Generation Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5. It has the same icon as Cooling System and certain Upgrade Module types.\n* Waypoint - Type changed, formerly \"Technology Parts\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Technology)",
+    "value": 50000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Quantum Accelerator",
+      "image": "TRADEPROD.TECH5.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Technology)",
+      "value": "50,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade65",
+    "title": "Recycled Circuitry",
+    "summary": "Recycled Circuitry is a tradeable useful only for scrap.",
+    "game_description": "A valuable piece of broken down Trade Terminal.",
+    "source_info": "Sometimes created by a Starship Outfitting Terminal at a Space Station when the player chooses \"Claim Scrap\" menu option to salvage their starship into Units.",
+    "use_info": "Component is useful only as scrap to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Synthesis - Introduced as a tradeable.\n* Waypoint - Icon changed, previously shared icon with Decommissioned Circuits; value changed, was 600,000.0",
+    "additional_info": "* 0-13 pieces are awarded when salvaging a starship.\n* Maximum stack size is 25.\n* Same icon is used by Superconducting Fibre",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Starship Subcomponent",
+    "value": 520000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Recycled Circuitry",
+      "image": "TRADEPROD.ALLOY5.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "520,000.0",
+      "type": "Starship Subcomponent",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade57",
+    "title": "Reinforced Piping",
+    "summary": "Reinforced Piping is a tradeable item useful only for scrap.",
+    "game_description": "A valuable piece of broken down Trade Terminal.",
+    "source_info": "Sometimes created by a Starship Outfitting Terminal at a Space Station when the player chooses \"Claim Scrap\" menu option to salvage their starship into Units.",
+    "use_info": "Component is useful only as scrap to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": null,
+    "additional_info": "* 0-26 pieces are awarded when salvaging a starship.\n* Maximum stack size is 25.\n* The icon is also used by:\n** Ion Capacitor\n** Suspicious Packet (Tech)",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Starship Subcomponent",
+    "value": 50000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Reinforced Piping",
+      "image": "TRADEPROD.TECH3.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "50,000.0",
+      "type": "Starship Subcomponent",
+      "release": "Desolation"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade33",
     "title": "Sac Venom",
     "summary": "Sac Venom is a trade commodities.\n\nIt can be revealed with 35px icon.",
     "game_description": "Stabilized poison sample initially produced by aquatic urchin creatures. A rare and expensive item on the Galactic Trade Network.",
@@ -1139,6 +1637,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade commodity",
+    "value": 60800.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "Product.sacvenom.png",
@@ -1153,7 +1652,35 @@
     ]
   },
   {
-    "id": "trade16",
+    "id": "trade11",
+    "title": "Self-Repairing Heridium",
+    "summary": "Self-Repairing Heridium is a 2nd tier tradeable.",
+    "game_description": "A hopper of self-repairing Heridium. It looks fresh.\n\nUsed in the creation of scientific components. Self-repairing heridium is particularly useful for deployment in remote facilities, where maintenance opportunities may be limited or deadly.",
+    "source_info": "Self-Repairing Heridium can be purchased from Galactic Trade Terminals in all medium-wealth and high-wealth Advanced Materials Economy star systems. It is also obtainable in some, but not all, low-wealth systems with this Economy.",
+    "use_info": "Self-Repairing Heridium can be sold for a profit in any Scientific Economy star system.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Atlas Rises - Introduced as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Advanced Construction Materials\".",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Construction)",
+    "value": 6000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Self-Repairing Heridium",
+      "image": "TRADEPROD.ALLOY2.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Construction)",
+      "value": "6,000.0",
+      "desc": "",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade63",
     "title": "Spark Canister",
     "summary": "Spark Canister is a 1st tier tradeable.",
     "game_description": "A crate packed with spark canisters.\n\nMany industrial and mining processes have considerable power demands. A counterpart to the slow release of a battery, spark canisters are able to meet these demands instantaneously.",
@@ -1164,6 +1691,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Energy Source)",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Spark Canister",
@@ -1180,7 +1708,34 @@
     ]
   },
   {
-    "id": "trade22",
+    "id": "trade79",
+    "title": "Spool of Nano-Cables",
+    "summary": "Spool of Nano-Cables is a tradeable item.",
+    "game_description": "A valuable piece of broken down Trade Terminal.",
+    "source_info": "Sometimes created by a Starship Outfitting Terminal at a Space Station when the player chooses \"Claim Scrap\" menu option to salvage their starship into Units.",
+    "use_info": "thumb|Speaking to an Autophage.\nComponent can be sold at a Trade Terminal. When speaking with an Autophage, the choice to \"Present a gift\" sometimes suggests \"1 Spool of Nano-Cables\" which will increase standing.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Synthesis - Added as a tradeable.\n* Waypoint - Icon changed, used same icon as Ion Capacitor and Reinforced Piping before.",
+    "additional_info": "* 0-15 piece is awarded when salvaging a starship.\n* Maximum stack size is 25.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Starship Subcomponent",
+    "value": 400000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Spool of Nano-Cables",
+      "image": "TRADEPROD.COMMIDITY2.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "400,000.0",
+      "type": "Starship Subcomponent",
+      "release": "Relics"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade8",
     "title": "Star Silk",
     "summary": "Star Silk is a 2nd tier tradeable.",
     "game_description": "Several spools of star silk.\n\nStar silk is woven on enormous solar looms in orbit around trading planets. Cosmic ray impact triggers the pattern of the weave, which can then be used in advanced material processing.",
@@ -1191,6 +1746,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods",
+    "value": 6000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Star Silk",
@@ -1206,7 +1762,61 @@
     ]
   },
   {
-    "id": "trade29",
+    "id": "trade31",
+    "title": "Starship AI Valves",
+    "summary": "Starship AI Valves are a tradeable item useful only for selling.",
+    "game_description": "A valuable piece of broken down Trade Terminal.",
+    "source_info": "Most often created by a Starship Outfitting Terminal at a Space Station when the player chooses the \"Claim Scrap\" menu option to salvage an expensive starship and receive Units in the form of scrap. The starship in question must have a reclaim value that is a bit higher than 50,000,000 units. If the sole condition is met on scrapping, the player receives, in total, a full stack of either Geodesite or Iridesite, a full stack of a random activated stellar metal, and one unit of Starship AI Valves along with the regular scrap component yield.\nIt can also be gifted from Planetary Settlement visitors.\n\nIt is extremely valuable.",
+    "use_info": "Component is useful only as scrap to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.\n\nIt is commonly used as a way to transfer money, or store it due to it having a high value in the game.",
+    "release_history": "* Synthesis - Added as a tradeable.\n* Waypoint - Value changed to 12,000,000, was 50,000,000",
+    "additional_info": "* Maximum stack size is 50, or 15 on \"Harsh\" stack size setting.\n\n* This was previously the most valuable item, but that title has now been taken by Stasis Device and Fusion Ignitor.\n\n* A stack of Starship AI Valves is the most valuable stack in the game due to the high stack size (compared to similar value items like Stasis Device and Fusion Ignitor).",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Starship Subcomponent",
+    "value": 12000000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Starship AI Valves",
+      "image": "TRADEPROD.EXOTICS5.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "value": "12,000,000.0",
+      "type": "Starship Subcomponent",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade47",
+    "title": "Stasis Device",
+    "summary": "Stasis Device is a tradeable that can be crafted.",
+    "game_description": "A device specifically crafted to keep lifeforms alive for thousands of years longer than their natural lifespan. Such a device requires great skill to manufacture, as not only is it technically complex, but the consequences for a user in the event of malfunction would be disastrous.\n\nCrafted from Quantum Processors, Cryogenic Chambers, and Iridesite.",
+    "source_info": "The blueprint can be acquired from Manufacturing Facilites or purchased from the Synthesis Laboratory for 250",
+    "use_info": null,
+    "release_history": "* Atlas Rises - Added as a product.\n* Visions - Value changed, previously it was worth 18,000,000.0",
+    "additional_info": "It is tied with the Fusion Ignitor for most valuable singular item in the game.",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Highly Refined Technology",
+    "value": 15600000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "ULTRAPROD.2.png",
+      "category": "Tradeable",
+      "color": "Grey",
+      "type": "Highly Refined Technology",
+      "value": "15,600,000.0",
+      "used": "Trading",
+      "release": "WorldsOne"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade48",
     "title": "State Phasure",
     "summary": "State Phasure is a curiosity, also known as the 7th of 10 unique Atlas Seeds.\nIt has an important part in The Atlas Path mission and it is worth 1,000",
     "game_description": "For unknown reasons, this unique Atlas Seed has been phased out of alignment with this quantum reality. Contents cannot be determined.",
@@ -1217,6 +1827,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unique valuable curiosity",
+    "value": 1000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "ATLASSEED.7.png",
@@ -1231,7 +1842,7 @@
     ]
   },
   {
-    "id": "trade23",
+    "id": "trade60",
     "title": "Stolen DNA Samples",
     "summary": "Stolen DNA Samples is a tradeable item.",
     "game_description": "Sealed vials of unregistered DNA samples, free of the standard biosecurity mechanisms that prevent unlawful genetic tampering.\n\nPurchase is illegal at nearly all galactic trade terminals. Regular supply is only available within outlaw systems.\n\nSelling banned goods into commercially-regulated space may be highly profitable.",
@@ -1242,6 +1853,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Smuggled Goods",
+    "value": 9000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Stolen DNA Samples",
@@ -1257,7 +1869,7 @@
     ]
   },
   {
-    "id": "trade27",
+    "id": "trade81",
     "title": "Storm Crystal",
     "summary": "Storm Crystal is a extreme weather planets.\n\nDuring Extreme storms it can be located with the 35px|link= icon. It can also easily be found visually due to its bright glow.",
     "game_description": "A rare and highly valuable cluster of storm crystals. These crystalline structures thrive in stormy conditions, and naturally attract lighting strikes, becoming spectacularly luminescent when ionised. Exclusively found on  extreme weather planets.",
@@ -1268,6 +1880,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unique valuable curiosity",
+    "value": 211150.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "PRODUCT.STORMCRYSTAL.png",
@@ -1282,7 +1895,86 @@
     ]
   },
   {
-    "id": "trade2",
+    "id": "trade46",
+    "title": "Subatomic Regulators",
+    "summary": "Subatomic Regulators is a tradeable item of scrap.",
+    "game_description": "A valuable piece of broken down Trade Terminal.",
+    "source_info": "Sometimes created by a Starship Outfitting Terminal at a Space Station when the player chooses \"Claim Scrap\" menu option to salvage their starship into Units.",
+    "use_info": "Component is useful only as scrap to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": "* Synthesis - Added as a tradeable.\n* Waypoint - Icon changed, was previously identical to Handful of Cogs; value changed, was previously 800,000.0",
+    "additional_info": "* 0-1 piece is awarded when salvaging a starship.\n* Maximum stack size is 10.\n* The same icon is used by Decrypted User Data",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Starship Subcomponent",
+    "value": 940000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.COMMODITY1.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "940,000.0",
+      "type": "Starship Subcomponent",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade27",
+    "title": "Superconducting Fibre",
+    "summary": "Superconducting Fibre is a 1st tier tradeable.",
+    "game_description": "A densely layered package of superconducting fibres.\n\nPowerful, flexible, and water-resistant; the controlled magnetic weave of these fibres is vital in the creation of many scientific components.",
+    "source_info": "Superconducting Fibre can be purchased from Galactic Trade Terminals in all high-wealth Advanced Materials Economy star systems.",
+    "use_info": "Superconducting Fibre can be sold for a profit in any Scientific Economy star system.\n\nIt is not usable by the player in Crafting or Base building.\n\nIt is used as an upgrade material for some Planetary Settlement buildings.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Advanced Construction Materials\".\n* Beacon - Used as upgrade material for new settlement building upgrade process.",
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Construction)",
+    "value": 50000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Superconducting Fiber",
+      "image": "TRADEPROD.ALLOY5.png",
+      "color": "White",
+      "category": "Tradeable",
+      "type": "Trade Goods (Construction)",
+      "value": "50,000",
+      "release": "Beacon"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade76",
+    "title": "Tank of Coolant",
+    "summary": "Tank of Coolant is a tradeable item of scrap.",
+    "game_description": "A valuable piece of broken down Trade Terminal.",
+    "source_info": "Sometimes created by a Starship Outfitting Terminal at a Space Station when the player chooses \"Claim Scrap\" menu option to salvage their starship into Units.",
+    "use_info": "Component is useful only as scrap to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": null,
+    "additional_info": "* 0-10 pieces are awarded when salvaging a starship.\n* Maximum stack size is 25.\n* The same icon is used by:\n**Handful of Cogs\n**Subatomic Regulators\n**Welding Soap",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Starship Subcomponent",
+    "value": 200000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.TECH2.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "200,000.0",
+      "type": "Starship Subcomponent",
+      "release": "Desolation"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade61",
     "title": "Teleport Coordinators",
     "summary": "Teleport Coordinators are a 5th tier tradeable.",
     "game_description": "A bundle of precisely calibrated teleport coordinators.\n\nThese pin-prick sized circuits are vital to the delicate process of inserting reinforcing material into advanced alloys. They can also aid long-distance sales efforts.",
@@ -1293,6 +1985,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods",
+    "value": 50000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Teleport Coordinators",
@@ -1308,7 +2001,33 @@
     ]
   },
   {
-    "id": "trade54",
+    "id": "trade53",
+    "title": "Thermal Panels",
+    "summary": "Thermal Panels is a tradeable useful only for scrap.",
+    "game_description": "A valuable piece of broken down Trade Terminal.",
+    "source_info": "Sometimes created by a Starship Outfitting Terminal at a Space Station when the player chooses \"Claim Scrap\" menu option to salvage their starship into Units.",
+    "use_info": "Component is useful only as scrap to be sold at a Trade Terminal.\n\nIt is not usable by the player in Crafting or Base building.",
+    "release_history": null,
+    "additional_info": "* 0-9 pieces are awarded when salvaging a starship.\n* Maximum stack size is 25.\n* Same icon is used by:\n** Decommissioned Circuit Board\n** Once-Useful Springs",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Starship Subcomponent",
+    "value": 100000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "image": "TRADEPROD.TECH1.png",
+      "color": "",
+      "category": "Tradeable",
+      "value": "100,000.0",
+      "type": "Starship Subcomponent",
+      "release": "Crossplay"
+    },
+    "categories": [
+      "Tradeable"
+    ]
+  },
+  {
+    "id": "trade66",
     "title": "Vector Compressors",
     "summary": null,
     "game_description": "Vector Compressors is a 5th tier tradeable.",
@@ -1319,6 +2038,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade Goods (Industrial)",
+    "value": 50000.0,
     "infobox": {
       "_infobox_type": "product",
       "name": "Vector Compressors",
@@ -1334,7 +2054,7 @@
     ]
   },
   {
-    "id": "trade48",
+    "id": "trade71",
     "title": "Vigilant Stone",
     "summary": "Vigilant Stone is a tradeable.",
     "game_description": "An eye of living stone: waiting, watching. A relic left by a slumbering guardian, keeping sentry over ancient creature burial grounds.\n\nWarning: Disturbing the eye may disturb the slumber of living stone guardians. Ensure re-animated guardians are defeated before storing this relic in the home.\n\nwhen you find a vigilant stone, be prepared to fight, run, or have your ship near you. Stone guardians are a serious jump scare. They are only to be messed with by the most insanely brave individual. Shooting them with your ship’s weapons also works.",
@@ -1345,6 +2065,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Unblinking Eye",
+    "value": 102000.0,
     "infobox": {
       "_infobox_type": "product",
       "color": "Grey",
@@ -1358,7 +2079,7 @@
     ]
   },
   {
-    "id": "trade13",
+    "id": "trade50",
     "title": "Vile cortex",
     "summary": "Vile Cortex is a Trophy.",
     "game_description": "The brain stem of a Brood Mother, pulled from its malignant corpse.\n\nThis is a valuable trophy, signifying victory in the quest to purge the infestations of the vile brood. Turn it over to an envoy of the Mercenaries Guild to mark your triumph.",
@@ -1369,6 +2090,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Glorious Trophy",
+    "value": 122000.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "Vile_cortex.png",
@@ -1383,7 +2105,7 @@
     ]
   },
   {
-    "id": "trade25",
+    "id": "trade9",
     "title": "Vortex Cube",
     "summary": "Vortex Cube is a trade commodities (small \"c\"). \n\nIt can be found in and around caves on certain planets.",
     "game_description": "An ancient object, unearthed from the depths of a planetary cave system. Its surface is cold to the touch, and is curiously polished despite its age.\n\nA fusion of metal and rock, these cubes have proved resistant to industrial processing. As such, they are of value only to collectors.\n\nCan be sold at a Galactic Trade Terminal.",
@@ -1394,6 +2116,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade commodity",
+    "value": 5800.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "Product.vortexcube.png",
@@ -1408,7 +2131,7 @@
     ]
   },
   {
-    "id": "trade33",
+    "id": "trade38",
     "title": "Vy'keen Dagger",
     "summary": "'''Vy'keen Dagger''' is a trade commodities.",
     "game_description": "Largely ceremonial weapon. A vital part of Vy'keen tradition and culture.",
@@ -1419,6 +2142,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Trade commodity",
+    "value": 11688.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "Product.vykeendagger.png",
@@ -1430,6 +2154,33 @@
     },
     "categories": [
       "Trade commodity"
+    ]
+  },
+  {
+    "id": "trade18",
+    "title": "Welding Soap",
+    "summary": "Welding Soap is a 2nd tier tradeable.",
+    "game_description": "Several large bars of welding soap.\n\nUsed in power generation systems to heat-clean metal diodes before they're fused into batteries.",
+    "source_info": "Welding Soap can be purchased from Galactic Trade Terminals in all medium-wealth and high-wealth Technology Economy star systems. It is also obtainable in some, but not all, low-wealth systems with this Economy.",
+    "use_info": "Welding Soap can be sold for a profit in any Power Generation Economy star system.\n\nIt is not usable by the player in Crafting or Base building.\n\nWelding Soap can be used as certain (Synthesis Plant C->B) Settlement buildings upgrades.",
+    "release_history": "* Atlas Rises - Added as a trade commodity.\n* NEXT - Stack size in Exosuit general inventory raised from 1 to 5.\n* Waypoint - Type changed, formerly \"Technology Parts\".",
+    "additional_info": "The same icon is used by:\n*Handful of Cogs\n*Subatomic Regulators\n*Tank of Coolant",
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "Trade Goods (Technology)",
+    "value": 6000.0,
+    "infobox": {
+      "_infobox_type": "product",
+      "name": "Welding Soap",
+      "image": "TRADEPROD.TECH2.png",
+      "color": "Grey",
+      "category": "Tradeable",
+      "type": "Trade Goods (Technology)",
+      "value": "6,000.0",
+      "release": "Adrift"
+    },
+    "categories": [
+      "Tradeable"
     ]
   }
 ]

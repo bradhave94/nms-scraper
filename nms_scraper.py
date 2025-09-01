@@ -102,14 +102,17 @@ class NMSScraper:
             'fish' in title):
             return 'fish'
 
-        # 3. COOKING - Food items and cooking ingredients
+        # 3. COOKING - Food items and cooking ingredients (check early for consumables)
         if (any(keyword in item_type for keyword in [
-            'edible', 'food', 'ingredient', 'nutrient', 'meal', 'drink', 'bait'
+            'edible', 'food', 'ingredient', 'nutrient', 'meal', 'drink', 'bait', 'larva', 'grub'
         ]) or 'cooking' in used_for or 'edible' in category or
+            (category == 'consumable' and any(keyword in description for keyword in [
+                'nutrient processor', 'processable', 'edible', 'food', 'cooking'
+            ])) or
             any(keyword in description for keyword in [
-                'edible', 'food', 'meal', 'cooking', 'nutrient processor', 'eat', 'consume'
+                'edible', 'food', 'meal', 'cooking', 'nutrient processor', 'eat', 'consume', 'processable'
             ]) and not any(keyword in item_type for keyword in [
-                'technology', 'platform', 'component', 'module'
+                'technology', 'platform', 'upgrade', 'module'
             ])):
             return 'cooking'
 
@@ -119,45 +122,51 @@ class NMSScraper:
         ]) or 'nutrient processor' in title):
             return 'nutrientProcessor'
 
-        # 5. TECHNOLOGY - Tech items, modules, upgrades, blueprints
+        # 5. PRODUCTS - Manufactured items (check before trade and technology)
+        if (any(keyword in category for keyword in [
+            'product', 'consumable', 'container', 'component'
+        ]) or any(keyword in item_type for keyword in [
+            'product', 'manufactured', 'crafted', 'agricultural product'
+        ]) or ('crafting' in used_for and 'upgrading' not in used_for)):
+            return 'products'
+
+        # 6. TRADE - Pure trade commodities (only items that are purely for trading)
         if (any(keyword in item_type for keyword in [
-            'technology', 'platform', 'component', 'module', 'upgrade', 'blueprint'
+            'trade commodity', 'valuable'
+        ]) or (category == 'tradeable' and 'product' not in item_type) or
+            'trade' in description and 'crafted' not in description):
+            return 'trade'
+
+        # 7. BUILDINGS - Construction and base building items (check before technology)
+        if (any(keyword in item_type for keyword in [
+            'construction', 'building', 'base', 'structure', 'decoration', 'interior', 'freighter construction'
+        ]) or any(keyword in category for keyword in [
+            'base building', 'construction', 'building'
+        ]) or any(keyword in used_for for keyword in [
+            'building', 'construction'
+        ]) or any(keyword in description for keyword in [
+            'base building', 'construction', 'structure', 'build', 'fabricated', 'habitable', 'freighter equipment'
+        ]) or any(keyword in title for keyword in [
+            'corridor', 'room', 'door', 'wall', 'floor', 'roof', 'window'
+        ])):
+            return 'buildings'
+
+        # 8. TECHNOLOGY - Tech items, modules, upgrades, blueprints (after buildings)
+        if (any(keyword in item_type for keyword in [
+            'technology', 'platform', 'upgrade', 'blueprint'
         ]) or any(keyword in category for keyword in [
             'technology', 'blueprint'
         ]) or any(keyword in used_for for keyword in [
             'upgrading', 'technology'
         ]) or any(keyword in categories for keyword in [
             'technology', 'blueprints', 'constructed technology'
-        ]) or any(keyword in title for keyword in [
-            'module', 'upgrade', 'blueprint', 'scanner', 'drive', 'engine'
-        ])):
+        ]) or (any(keyword in title for keyword in [
+            'scanner', 'drive', 'engine', 'upgrade', 'blueprint'
+        ]) and 'room' not in title) or
+        ('module' in item_type and 'construction' not in item_type and 'building' not in category)):
             return 'technology'
 
-        # 6. BUILDINGS - Construction and base building items
-        if (any(keyword in item_type for keyword in [
-            'construction', 'building', 'base', 'structure', 'decoration', 'module', 'interior'
-        ]) or any(keyword in category for keyword in [
-            'base building', 'construction', 'building'
-        ]) or any(keyword in used_for for keyword in [
-            'building', 'construction'
-        ]) or any(keyword in description for keyword in [
-            'base building', 'construction', 'structure', 'build', 'fabricated', 'habitable'
-        ]) or any(keyword in title for keyword in [
-            'corridor', 'room', 'door', 'wall', 'floor', 'roof', 'window'
-        ])):
-            return 'buildings'
-
-        # 7. TRADE - Trade commodities and valuable items
-        if (any(keyword in item_type for keyword in [
-            'trade', 'commodity', 'valuable', 'tradeable'
-        ]) or any(keyword in category for keyword in [
-            'trade', 'tradeable', 'commodity'
-        ]) or any(keyword in categories for keyword in [
-            'trade commodity', 'tradeable'
-        ]) or 'trade' in description):
-            return 'trade'
-
-        # 8. CURIOSITIES - Artifacts, collectibles, rare items
+        # 9. CURIOSITIES - Artifacts, collectibles, rare items
         if (any(keyword in item_type for keyword in [
             'artifact', 'curiosity', 'relic', 'treasure', 'sample'
         ]) or any(keyword in category for keyword in [
@@ -169,26 +178,33 @@ class NMSScraper:
         ])):
             return 'curiosities'
 
-        # 9. REFINERY - Skip this classification, recipes will be handled separately
-        # Items that mention refining will be classified by their primary purpose instead
-
-        # 10. PRODUCTS - Manufactured items that don't fit other categories
-        # This includes items like Wiring Loom that are products but not pure technology
-        if (any(keyword in category for keyword in [
-            'product', 'consumable', 'container'
-        ]) or any(keyword in item_type for keyword in [
-            'product', 'manufactured', 'crafted'
-        ]) or 'crafting' in used_for):
-            return 'products'
-
         # 11. OTHERS - Everything else
         return 'others'
 
     def get_all_pages_from_categories(self, categories: List[str]) -> Set[str]:
-        """Get all unique page titles from multiple categories"""
+        """Get all unique page titles from multiple categories and individual pages"""
         all_pages = set()
 
-        for category in categories:
+        for item in categories:
+            # Check if it's a URL or individual page
+            if item.startswith('http') or '/wiki/' in item:
+                # Extract page title from URL or path
+                page_title = self._extract_page_title_from_url(item)
+                if page_title:
+                    all_pages.add(page_title)
+                    logger.info(f"Added individual page: {page_title}")
+                continue
+
+            # Check if it looks like a direct page title (contains spaces or special chars that categories don't have)
+            if (' ' in item and not item.startswith('Products -') and
+                not any(item.startswith(prefix) for prefix in ['Harvested ', 'Flora ', 'Earth ', 'Special ', 'Fuel ', 'Raw '])):
+                # Treat as individual page title
+                all_pages.add(item)
+                logger.info(f"Added individual page: {item}")
+                continue
+
+            # Otherwise treat as category
+            category = item
             logger.info(f"Getting pages from category: {category}")
 
             # Handle pagination for categories with more than 500 items
@@ -247,6 +263,29 @@ class NMSScraper:
 
         logger.info(f"Total unique pages collected: {len(all_pages)}")
         return all_pages
+
+    def _extract_page_title_from_url(self, url_or_path: str) -> Optional[str]:
+        """Extract page title from URL or wiki path"""
+        try:
+            # Handle full URLs like https://nomanssky.fandom.com/wiki/Warp_Cell
+            if url_or_path.startswith('http'):
+                if '/wiki/' in url_or_path:
+                    title = url_or_path.split('/wiki/')[-1]
+                    # URL decode and replace underscores with spaces
+                    from urllib.parse import unquote
+                    title = unquote(title).replace('_', ' ')
+                    return title
+            # Handle wiki paths like wiki/Warp_Cell or /wiki/Warp_Cell
+            elif '/wiki/' in url_or_path:
+                title = url_or_path.split('/wiki/')[-1]
+                from urllib.parse import unquote
+                title = unquote(title).replace('_', ' ')
+                return title
+
+            return None
+        except Exception as e:
+            logger.warning(f"Could not extract page title from {url_or_path}: {e}")
+            return None
 
     def get_page_raw_content(self, page_title: str) -> Optional[str]:
         """Get raw wiki markup content of a page"""
@@ -515,6 +554,7 @@ class NMSScraper:
                 progression_info TEXT,
                 type TEXT,
                 group_name TEXT,
+                value REAL,
                 infobox TEXT,
                 categories TEXT,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -527,12 +567,10 @@ class NMSScraper:
             CREATE TABLE IF NOT EXISTS refinery_recipes (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 recipe_id TEXT UNIQUE,
-                source_item_id TEXT,
                 output_item_id TEXT,
                 time_seconds REAL,
                 operation TEXT,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                FOREIGN KEY (source_item_id) REFERENCES items (id),
                 FOREIGN KEY (output_item_id) REFERENCES items (id)
             )
         ''')
@@ -554,12 +592,10 @@ class NMSScraper:
             CREATE TABLE IF NOT EXISTS cooking_recipes (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 recipe_id TEXT UNIQUE,
-                source_item_id TEXT,
                 output_item_id TEXT,
                 time_seconds REAL,
                 operation TEXT,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                FOREIGN KEY (source_item_id) REFERENCES items (id),
                 FOREIGN KEY (output_item_id) REFERENCES items (id)
             )
         ''')
@@ -591,23 +627,43 @@ class NMSScraper:
         conn.close()
         logger.info(f"Database initialized: {self.db_path}")
 
+    def extract_value_from_infobox(self, infobox: Dict[str, Any]) -> Optional[float]:
+        """Extract and convert value from infobox to float"""
+        value_str = infobox.get('value', '')
+        if not value_str:
+            return None
+
+        try:
+            # Clean the value string - remove commas and units text
+            cleaned_value = str(value_str).replace(',', '').strip()
+
+            # Handle cases like "15,600,000.0" or "12" or "5,400"
+            # Remove any non-numeric characters except decimal points
+            numeric_match = re.search(r'[\d,]+\.?\d*', cleaned_value)
+            if numeric_match:
+                numeric_str = numeric_match.group().replace(',', '')
+                return float(numeric_str)
+        except (ValueError, AttributeError):
+            pass
+
+        return None
+
     def save_item_to_db(self, item_data: Dict[str, Any], group: str) -> bool:
         """Save an item to the SQLite database"""
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
 
         try:
-            # Serialize complex fields
-            infobox_json = json.dumps(item_data.get('infobox', {}))
-            categories_json = json.dumps(item_data.get('categories', []))
+            # Extract and convert value from infobox
+            value = self.extract_value_from_infobox(item_data.get('infobox', {}))
 
             # Use REPLACE to handle duplicates
             cursor.execute('''
             REPLACE INTO items (
                 id, title, summary, game_description, source_info, use_info,
                 release_history, additional_info, fishing_info, progression_info,
-                type, group_name, infobox, categories, updated_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+                type, group_name, value, infobox, categories, updated_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
         ''', (
             item_data['id'],
             item_data['title'],
@@ -621,8 +677,9 @@ class NMSScraper:
             item_data.get('progression_info'),
             item_data.get('infobox', {}).get('type', ''),
             group,
-            infobox_json,
-            categories_json
+            value,
+            json.dumps(item_data.get('infobox', {})),
+            json.dumps(item_data.get('categories', []))
         ))
 
             conn.commit()
@@ -646,32 +703,44 @@ class NMSScraper:
             for i, recipe_line in enumerate(recipe_lines):
                 recipe_id = f"ref_{item_id}_{i+1}"
 
-                # Parse recipe line format: "Input1,qty;Input2,qty;Output,qty;Time;Operation%Description"
+                # Parse PoC-Refine template format: "Input1,qty;Input2,qty;Input3,qty;OutputQty;Time%Operation"
+                # Example: "Carbon,50;Sodium Nitrate,5;Chromatic Metal,250;1;300%Antimatter Bypass"
+                # The OUTPUT is always the current page (item_id), inputs are all the ingredient parts
                 parts = recipe_line.split(';')
-                if len(parts) < 4:
+                if len(parts) < 3:  # Need at least one input, output qty, and time/operation
                     continue
 
-                # Parse ingredients (all parts except last 3)
-                ingredient_parts = parts[:-3]
-                output_part = parts[-3]
-                time_part = parts[-2] if len(parts) > 4 else "1.0"
-                operation_part = parts[-1] if len(parts) > 3 else "Refining"
+                # Parse ingredients (all parts except last 2: output_qty and time%operation)
+                ingredient_parts = parts[:-2]
+                output_qty_part = parts[-2] if len(parts) > 2 else "1"
+                time_operation_part = parts[-1] if len(parts) > 1 else "1.0%Refining"
 
-                # Parse output
-                if ',' in output_part:
-                    output_name, output_qty = output_part.split(',', 1)
-                    output_name = output_name.strip()
+                # Parse time and operation from the last part
+                if '%' in time_operation_part:
+                    time_part, operation = time_operation_part.split('%', 1)
+                    operation = operation.strip()
                 else:
-                    output_name = output_part.strip()
-                    output_qty = "1"
+                    time_part = time_operation_part
+                    operation = "Refining"
 
-                # Save recipe
+                # Convert time to float
+                try:
+                    time_seconds = float(time_part) if time_part.replace('.', '').isdigit() else 1.0
+                except ValueError:
+                    time_seconds = 1.0
+
+                # Convert output quantity
+                try:
+                    output_qty = int(output_qty_part) if output_qty_part.isdigit() else 1
+                except ValueError:
+                    output_qty = 1
+
+                # Save recipe - the current item (item_id) is the OUTPUT
                 cursor.execute('''
                     INSERT OR REPLACE INTO refinery_recipes
-                    (recipe_id, source_item_id, output_item_id, time_seconds, operation)
-                    VALUES (?, ?, ?, ?, ?)
-                ''', (recipe_id, item_id, self._resolve_item_name_to_id(output_name),
-                      float(time_part) if time_part.replace('.', '').isdigit() else 1.0, operation_part))
+                    (recipe_id, output_item_id, time_seconds, operation)
+                    VALUES (?, ?, ?, ?)
+                ''', (recipe_id, item_id, time_seconds, operation))
 
                 # Save ingredients
                 for ingredient_part in ingredient_parts:
@@ -704,54 +773,57 @@ class NMSScraper:
             for i, recipe_line in enumerate(recipe_lines):
                 recipe_id = f"cook_{item_id}_{i+1}"
 
-                # Parse recipe line format: "Output,qty;Time;Operation%Description"
-                # Example: "Chewy Wires,1;1;2.5%NOT RECOMMENDED"
+                # Parse Cook template format: "Input1,qty;Input2,qty;Input3,qty;OutputQty;Time%Operation"
+                # Example: "Wailing Batter,1;Ever-burning Jam,1;Cream,1;1;2.5%Assemble Baked Product"
+                # The OUTPUT is always the current page (item_id), inputs are all ingredient parts
                 parts = recipe_line.split(';')
-                if len(parts) < 2:
+                if len(parts) < 3:  # Need at least one input, output qty, and time%operation
                     continue
 
-                # Parse output (first part)
-                output_part = parts[0].strip()
-                if ',' in output_part:
-                    output_name, output_qty = output_part.split(',', 1)
-                    output_name = output_name.strip()
-                    output_qty = int(output_qty) if output_qty.isdigit() else 1
+                # Parse ingredients (all parts except last 2: output_qty and time%operation)
+                ingredient_parts = parts[:-2]
+
+                # Parse output quantity (second to last part)
+                output_qty_part = parts[-2] if len(parts) > 1 else "1"
+                output_qty = int(output_qty_part) if output_qty_part.isdigit() else 1
+
+                # Parse time and operation (last part)
+                time_operation_part = parts[-1] if len(parts) > 0 else "2.5%Cooking"
+
+                if '%' in time_operation_part:
+                    time_part, operation = time_operation_part.split('%', 1)
+                    operation = operation.strip()
                 else:
-                    output_name = output_part
-                    output_qty = 1
+                    time_part = time_operation_part
+                    operation = "Cooking"
 
-                # Parse time (second part, if exists)
-                time_seconds = 2.5
-                if len(parts) > 1:
-                    time_part = parts[1].strip()
-                    if time_part.replace('.', '').isdigit():
-                        time_seconds = float(time_part)
+                # Convert time to float
+                try:
+                    time_seconds = float(time_part) if time_part.replace('.', '').isdigit() else 2.5
+                except ValueError:
+                    time_seconds = 2.5
 
-                # Parse operation (third part, if exists)
-                operation = "Cooking"
-                if len(parts) > 2:
-                    operation_part = parts[2].strip()
-                    # Remove percentage and description
-                    if '%' in operation_part:
-                        operation = operation_part.split('%')[1].strip()
-                    else:
-                        operation = operation_part
-
-                # Save recipe (source is the current item, output is what we parsed)
+                # Save recipe - the current item (item_id) is the OUTPUT
                 cursor.execute('''
                     INSERT OR REPLACE INTO cooking_recipes
-                    (recipe_id, source_item_id, output_item_id, time_seconds, operation)
-                    VALUES (?, ?, ?, ?, ?)
-                ''', (recipe_id, item_id, self._resolve_item_name_to_id(output_name),
-                      time_seconds, operation))
+                    (recipe_id, output_item_id, time_seconds, operation)
+                    VALUES (?, ?, ?, ?)
+                ''', (recipe_id, item_id, time_seconds, operation))
 
-                # For cooking recipes, the source item is the ingredient
-                # This is a "reverse" recipe where the current item produces the output
-                cursor.execute('''
-                    INSERT INTO cooking_ingredients
-                    (recipe_id, ingredient_item_id, quantity)
-                    VALUES (?, ?, ?)
-                ''', (recipe_id, item_id, 1))
+                # Save ingredients - these are the INPUTS needed to make the current item
+                for ingredient_part in ingredient_parts:
+                    if ',' in ingredient_part:
+                        ing_name, ing_qty = ingredient_part.split(',', 1)
+                        ing_name = ing_name.strip()
+                        ing_qty = int(ing_qty.strip()) if ing_qty.strip().isdigit() else 1
+
+                        ing_id = self._resolve_item_name_to_id(ing_name)
+                        if ing_id:
+                            cursor.execute('''
+                                INSERT INTO cooking_ingredients
+                                (recipe_id, ingredient_item_id, quantity)
+                                VALUES (?, ?, ?)
+                            ''', (recipe_id, ing_id, ing_qty))
 
             conn.commit()
         except sqlite3.Error as e:
@@ -813,7 +885,7 @@ class NMSScraper:
         cursor.execute('''
             SELECT id, title, summary, game_description, source_info, use_info,
                    release_history, additional_info, fishing_info, progression_info,
-                   type, infobox, categories
+                   type, value, infobox, categories
             FROM items WHERE group_name = ?
             ORDER BY title
         ''', (group,))
@@ -832,8 +904,9 @@ class NMSScraper:
                 'fishing_info': row[8],
                 'progression_info': row[9],
                 'type': row[10],
-                'infobox': json.loads(row[11]) if row[11] else {},
-                'categories': json.loads(row[12]) if row[12] else []
+                'value': row[11],
+                'infobox': json.loads(row[12]) if row[12] else {},
+                'categories': json.loads(row[13]) if row[13] else []
             }
             items.append(item)
 
@@ -850,11 +923,9 @@ class NMSScraper:
         cursor = conn.cursor()
 
         cursor.execute('''
-            SELECT r.recipe_id, r.source_item_id, si.title as source_title,
-                   r.output_item_id, oi.title as output_title,
+            SELECT r.recipe_id, r.output_item_id, oi.title as output_title,
                    r.time_seconds, r.operation
             FROM refinery_recipes r
-            LEFT JOIN items si ON r.source_item_id = si.id
             LEFT JOIN items oi ON r.output_item_id = oi.id
             ORDER BY r.recipe_id
         ''')
@@ -883,12 +954,12 @@ class NMSScraper:
                 'id': recipe_id,
                 'inputs': ingredients,
                 'output': {
-                    'id': row[3],
-                    'name': row[4] or row[3],  # Use ID as fallback name
+                    'id': row[1],
+                    'name': row[2] or row[1],  # Use ID as fallback name
                     'quantity': 1
                 },
-                'time': str(row[5]),
-                'operation': row[6]
+                'time': str(row[3]),
+                'operation': row[4]
             }
             recipes.append(recipe)
 
@@ -905,11 +976,9 @@ class NMSScraper:
         cursor = conn.cursor()
 
         cursor.execute('''
-            SELECT r.recipe_id, r.source_item_id, si.title as source_title,
-                   r.output_item_id, oi.title as output_title,
+            SELECT r.recipe_id, r.output_item_id, oi.title as output_title,
                    r.time_seconds, r.operation
             FROM cooking_recipes r
-            LEFT JOIN items si ON r.source_item_id = si.id
             LEFT JOIN items oi ON r.output_item_id = oi.id
             ORDER BY r.recipe_id
         ''')
@@ -938,12 +1007,12 @@ class NMSScraper:
                 'id': recipe_id,
                 'inputs': ingredients,
                 'output': {
-                    'id': row[3],
-                    'name': row[4] or row[3],  # Use ID as fallback name
+                    'id': row[1],
+                    'name': row[2] or row[1],  # Use ID as fallback name
                     'quantity': 1
                 },
-                'time': str(row[5]),
-                'operation': row[6]
+                'time': str(row[3]),
+                'operation': row[4]
             }
             recipes.append(recipe)
 
@@ -967,6 +1036,8 @@ def main():
                        help='Delete database and data folder before starting (clean slate)')
     parser.add_argument('--extract-recipes', action='store_true',
                        help='Automatically run recipe extractors after scraping')
+    parser.add_argument('--categories', type=str, default='all',
+                       help='Category set to scrape: all, raw, cooking (default: all)')
 
     args = parser.parse_args()
 
@@ -994,13 +1065,20 @@ def main():
 
     # Define all categories to scrape from
     ALL_CATEGORIES = [
-        "Artifact", "Blueprints", "Fuel elements", "Products", "Raw Materials", "Resources", "Special elements", "Technology",
-        # Agricultural and Flora categories (MISSING - contains Faecium, etc.)
-        "Harvested Agricultural Substance",
+        "Artifact",
+        "Blueprints",
+        "Fuel elements",
         "Flora elements",
         "Flora",
-        "Gases",
         "Minerals",
+        "Earth elements",
+        "Products",
+        "Raw Materials",
+        "Resources",
+        "Special elements",
+        "Technology",
+        "Harvested Agricultural Substance",
+        "Gases",
         "Earth elements",
         # Products subcategories
         "Products - Artifact",
@@ -1017,7 +1095,9 @@ def main():
         "Products - Technology",
         "Products - Trade Commodity",
         "Products - Tradeable",
+        "Products - Starship Interior Adornment",
         # Technology and other subcategories
+        "Exotic Collectibles",
         "Exosuit",
         "Grenade technology",
         "Health technology",
@@ -1030,20 +1110,54 @@ def main():
         "Protection technology",
         "Scan technology",
         "Stamina technology",
-        "Utilities technology",
         "Weapons technology",
         "Upgrade Modules"
     ]
 
+    RAW_MATERIALS = [
+        "Raw Materials",
+        "Resources",
+        "Special elements",
+        "Earth elements",
+        "Fuel elements",
+        # Individual pages can be added as URLs or titles:
+        "https://nomanssky.fandom.com/wiki/Warp_Cell",
+    ]
+
+    NUTRIENT_PROCESSORS = [
+        "Products - Consumable",
+    ]
+
+    TEST_ITEMS = [
+        "https://nomanssky.fandom.com/wiki/Juicy_Grub",
+        "https://nomanssky.fandom.com/wiki/Acid",
+        "https://nomanssky.fandom.com/wiki/Heat_Capacitor",
+        "Appearance Modifier Room",
+    ]
+
+    # Select category set based on parameter
+    if args.categories.lower() == 'raw':
+        selected_categories = RAW_MATERIALS
+        category_name = "Raw Materials"
+    elif args.categories.lower() == 'cooking':
+        selected_categories = NUTRIENT_PROCESSORS
+        category_name = "Nutrient Processors"
+    elif args.categories.lower() == 'test':
+        selected_categories = TEST_ITEMS
+        category_name = "Test Items"
+    else:
+        selected_categories = ALL_CATEGORIES
+        category_name = "All Categories"
+
     print(f"🚀 Starting NMS scraping")
-    print(f"⚙️  Settings: delay={args.delay}s, limit={args.limit}")
+    print(f"⚙️  Settings: delay={args.delay}s, limit={args.limit}, categories={category_name}")
     print("="*60)
 
     # Initialize database
     scraper.init_database()
 
     # Get all unique pages
-    all_pages = scraper.get_all_pages_from_categories(ALL_CATEGORIES)
+    all_pages = scraper.get_all_pages_from_categories(selected_categories)
 
     if args.limit > 0:
         all_pages = list(all_pages)[:args.limit]
@@ -1075,17 +1189,17 @@ def main():
         # Skip specific pages by title
         skip_titles = [
             'Travel',
+            "Constructable Relic",
             'Artifact',
             'Multi-Tool',
-            "Stamina technology",
-            "Protection technology",
-            "Scan technology",
-            "Stamina technology",
-            "Projectile technology",
-            "Laser technology",
-            "Artifact Research",
-            "Artifact Database",
-            "Ferrite"
+            'Stamina technology',
+            'Protection technology',
+            'Scan technology',
+            'Projectile technology',
+            'Laser technology',
+            'Artifact Research',
+            'Artifact Database',
+            'Ferrite'
         ]
 
         if page_title in skip_titles:
@@ -1102,7 +1216,6 @@ def main():
             'Category:Mechanics',
             'Category:Multi-Tool',
             'Category:Cuboid Room',
-            'Category:Container',
             'Category:Artifact' if ('==List of' in raw_content or '{{disambig}}' in raw_content) else None,  # Skip artifact listing/disambiguation pages
         ]
 

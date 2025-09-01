@@ -21,10 +21,57 @@ CREATE TABLE IF NOT EXISTS items (
     progression_info TEXT,
     type TEXT,
     group_name TEXT,
-    infobox TEXT,
-    categories TEXT,
+    value REAL,                    -- Extracted from infobox.value, converted to float
+    infobox TEXT,                  -- JSON stored as TEXT
+    categories TEXT,               -- JSON stored as TEXT
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+```
+
+### Recipe Tables Schema (Normalized Design)
+
+#### Refinery Recipes
+```sql
+CREATE TABLE IF NOT EXISTS refinery_recipes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    recipe_id TEXT UNIQUE,         -- Format: ref_{item_id}_{sequence}
+    output_item_id TEXT,           -- Always references items(id)
+    time_seconds REAL,
+    operation TEXT,                -- Clean operation name (e.g., "Antimatter Bypass")
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (output_item_id) REFERENCES items (id)
+)
+
+CREATE TABLE IF NOT EXISTS refinery_ingredients (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    recipe_id TEXT,
+    ingredient_item_id TEXT,       -- References items(id) or missing_{name}
+    quantity INTEGER,
+    FOREIGN KEY (recipe_id) REFERENCES refinery_recipes (recipe_id),
+    FOREIGN KEY (ingredient_item_id) REFERENCES items (id)
+)
+```
+
+#### Cooking Recipes
+```sql
+CREATE TABLE IF NOT EXISTS cooking_recipes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    recipe_id TEXT UNIQUE,         -- Format: cook_{item_id}_{sequence}
+    output_item_id TEXT,           -- Always references items(id)
+    time_seconds REAL,
+    operation TEXT,                -- Clean operation name (e.g., "Assemble Baked Product")
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (output_item_id) REFERENCES items (id)
+)
+
+CREATE TABLE IF NOT EXISTS cooking_ingredients (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    recipe_id TEXT,
+    ingredient_item_id TEXT,       -- References items(id) or missing_{name}
+    quantity INTEGER,
+    FOREIGN KEY (recipe_id) REFERENCES cooking_recipes (recipe_id),
+    FOREIGN KEY (ingredient_item_id) REFERENCES items (id)
 )
 ```
 
@@ -41,10 +88,41 @@ CREATE TABLE IF NOT EXISTS items (
 - **progression_info**: Resource upgrade paths (Resource progression section)
 
 ### Structured Data Fields
-- **infobox**: JSON object with all infobox data (value, rarity, stats, symbol, etc.)
-- **categories**: JSON array of wiki categories (cleaned, no version suffixes)
+- **value**: Numeric value extracted from infobox and converted to REAL/float
+- **infobox**: JSON object with all infobox data (value, rarity, stats, symbol, etc.) stored as TEXT
+- **categories**: JSON array of wiki categories (cleaned, no version suffixes) stored as TEXT
 - **type**: Item type from infobox
 - **group_name**: Classification group (rawMaterials, products, technology, etc.)
+
+## Recipe Parsing Logic
+
+### PoC-Refine Template Format
+```
+{{PoC-Refine
+|Input1,qty;Input2,qty;Input3,qty;OutputQty;Time%Operation
+|Input1,qty;Input2,qty;OutputQty;Time%Operation
+}}
+```
+
+**Example**: `Carbon,50;Sodium Nitrate,5;Chromatic Metal,250;1;300%Antimatter Bypass`
+- **Inputs**: Carbon (50), Sodium Nitrate (5), Chromatic Metal (250)
+- **Output**: Current page item (1)
+- **Time**: 300 seconds
+- **Operation**: "Antimatter Bypass" (extracted after %)
+
+### Cook Template Format
+```
+{{Cook
+|Input1,qty;Input2,qty;Input3,qty;OutputQty;Time%Operation
+|Input1,qty;Input2,qty;OutputQty;Time%Operation
+}}
+```
+
+**Example**: `Wailing Batter,1;Ever-burning Jam,1;Cream,1;1;2.5%Assemble Baked Product`
+- **Inputs**: Wailing Batter (1), Ever-burning Jam (1), Cream (1)
+- **Output**: Current page item (1)
+- **Time**: 2.5 seconds
+- **Operation**: "Assemble Baked Product" (extracted after %)
 
 ## Advanced Filtering System
 
@@ -61,32 +139,20 @@ Pages are automatically filtered out based on categories:
 - `Category:Container` - Container items
 - `Category:Artifact` (conditional) - Listing/disambiguation pages only
 
-### Title-Based Filtering
-Specific pages filtered by exact title match:
-- "Travel" - Travel guide page
-- "Artifact" - Artifact listing page
-- "Multi-Tool" - Multi-tool overview page
+### Individual Page Support
+Category lists can now include individual wiki pages:
+- **URLs**: `"https://nomanssky.fandom.com/wiki/Warp_Cell"`
+- **Page titles**: `"Warp Cell"`
+- **Wiki paths**: `"/wiki/Warp_Cell"`
 
-### Pattern-Based Filtering
-Content patterns that indicate non-item pages:
-- Obsolete/pre-release items (`{{Version|Obsolete}}`)
-- Location-specific minerals (`{{Mineral infobox`)
-- Visual catalogs/guides ("is a visual catalogue")
-- Disambiguation pages (`{{disambig}}`)
-- Resource division pages ("are one of the divisions")
+### Category Sets
+```python
+ALL_CATEGORIES = [...]           # All categories
+RAW_MATERIALS = [...]           # Raw materials only
+NUTRIENT_PROCESSORS = [...]     # Cooking items only
+```
 
-## Category Processing
-
-### Category Extraction
-1. **Primary**: Extract from explicit `[[Category:Name]]` tags
-2. **Fallback**: Use infobox `category` field if no explicit categories
-3. **Cleaning**: Remove version suffixes like `(Abyss)`, `(NEXT)`
-4. **Deduplication**: Prevent duplicate categories
-
-### Examples
-- `[[Category:Historical Document (Abyss)|]]` → `"Historical Document"`
-- `[[Category:Technology (NEXT)|]]` → `"Technology"`
-- Infobox `category = Tradeable` → `"Tradeable"`
+**Usage**: `--categories raw`, `--categories cooking`, `--categories all`
 
 ## Item ID Generation
 
@@ -95,7 +161,6 @@ Items use sequential IDs based on their classification groups:
 - Prefixes: cook, prod, tech, raw, build, cur, fish, trade, other, nut, ref
 - Examples: `cook1`, `cook2`, `prod1`, `tech1`, `raw1`, `build1`
 - Counters increment per group independently
-- Generated by `NMSScraper.generate_item_id()` method
 
 ### Group Prefixes
 - `raw` - Raw Materials
@@ -109,28 +174,45 @@ Items use sequential IDs based on their classification groups:
 - `ref` - Refinery recipes
 - `nut` - Nutrient Processor recipes
 
-## Recipe Data Structure
+## Recipe ID Format
 
 ### Refinery Recipes
-```json
-{
-    "Id": "ref1",
-    "Inputs": [{"Id": "raw1", "Quantity": 2}],
-    "Output": {"Id": "prod5", "Quantity": 1},
-    "Time": "1.5",
-    "Operation": "Requested Operation: Metal Refining"
-}
+- Format: `ref_{item_id}_{sequence}`
+- Example: `ref_tech1_1`, `ref_tech1_2`, `ref_tech1_3`
+- Each recipe for the same output item gets sequential numbering
+
+### Cooking Recipes
+- Format: `cook_{item_id}_{sequence}`
+- Example: `cook_cook1_1`, `cook_cook1_2`
+- Each recipe for the same output item gets sequential numbering
+
+## Missing Ingredient Handling
+
+When ingredients are not found in the main database:
+- Use placeholder IDs: `missing_{ingredient_name_lowercase_with_underscores}`
+- Examples: `missing_wailing_batter`, `missing_ever_burning_jam`, `missing_bone_cream`
+- SQL queries handle these with `COALESCE()` to display readable names
+
+## SQL Query Tools
+
+Located in `sql/` folder with parameterized queries:
+
+### Recipe Table Queries
+```bash
+# Refinery recipes
+sqlite3 nms.db ".param set @item_name 'Warp Cell'" ".read sql/recipe_table.sql"
+
+# Cooking recipes
+sqlite3 nms.db ".param set @item_name 'Cake of Burning Dread'" ".read sql/cooking_recipe_table.sql"
 ```
 
-### Nutrient Processor Recipes
-```json
-{
-    "Id": "nut1",
-    "Inputs": [{"Id": "cook2", "Quantity": 1}],
-    "Output": {"Id": "cook3", "Quantity": 1},
-    "Time": "2.5",
-    "Operation": "Processor Setting: Fermentation"
-}
+### Analysis Queries
+```bash
+# Most valuable items
+sqlite3 nms.db ".read sql/item_values.sql"
+
+# Recipes using specific ingredient
+sqlite3 nms.db ".read sql/find_recipes_by_ingredient.sql"
 ```
 
 ## Data Export Process
@@ -138,53 +220,41 @@ Items use sequential IDs based on their classification groups:
 1. Scrape items into SQLite database with comprehensive field extraction
 2. Generate unique IDs for cross-referencing
 3. Export groups to individual JSON files with all fields
-4. Extract recipes with proper ID references
+4. Extract recipes with proper ID references and normalized structure
 
-## Example Item Data Structure
+## Example Data
 
+### Item with Value
 ```json
 {
-  "id": "raw1",
-  "title": "Carbon",
-  "summary": "Carbon (C) is a resource used in recharging and one of the fuel elements for refining.",
-  "game_description": "The building block of all organic life. Of critical importance to space travellers...",
-  "source_info": "Can be mined from flora. It can be found as a secondary element in some minerals...",
-  "use_info": "Used for recharging mining equipment and crafting...",
-  "release_history": "Release - Added as a resource. Pathfinder - It can no longer be used to recharge exosuit life support...",
-  "additional_info": "Real-world context and additional notes...",
-  "fishing_info": "rarity = 6|size = 2|condition =",
-  "progression_info": null,
-  "type": "Unrefined Organic Element",
+  "id": "tech1",
+  "title": "Warp Cell",
+  "value": 46750.0,
+  "type": "Hyperdrive Charging Unit",
   "infobox": {
-    "symbol": "C",
-    "value": "12",
-    "rarity": "Common",
-    "used": "Building, Crafting, Charging, Upgrading"
-  },
-  "categories": ["Fuel elements"]
+    "value": "46,750.0",
+    "category": "Consumable",
+    "type": "Hyperdrive Charging Unit"
+  }
 }
 ```
 
-### Stasis Device Example (Tradeable with Infobox Category)
+### Recipe Example
+**Database**:
+- `refinery_recipes`: `ref_tech1_1` → `tech1` (300s, "Antimatter Bypass")
+- `refinery_ingredients`: Carbon (50), Sodium Nitrate (5), Chromatic Metal (250)
+
+**JSON Export**:
 ```json
 {
-  "id": "prod15",
-  "title": "Stasis Device",
-  "summary": "Stasis Device is a tradeable that can be crafted.",
-  "game_description": "A device specifically crafted to keep lifeforms alive for thousands of years...",
-  "source_info": "The blueprint can be acquired from Manufacturing Facilities...",
-  "use_info": null,
-  "release_history": "Atlas Rises - Added as a product. Visions - Value changed...",
-  "additional_info": "It is tied with the Fusion Ignitor for most valuable singular item in the game.",
-  "fishing_info": null,
-  "progression_info": null,
-  "type": "Highly Refined Technology",
-  "infobox": {
-    "value": "15,600,000.0",
-    "category": "Tradeable",
-    "color": "Grey",
-    "used": "Trading"
-  },
-  "categories": ["Tradeable"]
+  "id": "ref_tech1_1",
+  "inputs": [
+    {"id": "raw1", "name": "Carbon", "quantity": 50},
+    {"id": "raw2", "name": "Sodium Nitrate", "quantity": 5},
+    {"id": "raw3", "name": "Chromatic Metal", "quantity": 250}
+  ],
+  "output": {"id": "tech1", "name": "Warp Cell", "quantity": 1},
+  "time": "300",
+  "operation": "Antimatter Bypass"
 }
 ```

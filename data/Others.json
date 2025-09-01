@@ -1,6 +1,6 @@
 [
   {
-    "id": "other48",
+    "id": "other13",
     "title": "Alliance of Galactic Travellers Banner",
     "summary": "Alliance of Galactic Travellers Banner is a customisation part available from the Quicksilver Synthesis Companion.",
     "game_description": "Equip this exclusive Personal Flair in support of nomadic and exploratory space travel.\n\nApply this banner to your profile at an Appearance Modifier.",
@@ -11,6 +11,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Bespoke Personal Identification",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "NmsIcon_AGTbanner.jpg",
@@ -25,7 +26,7 @@
     ]
   },
   {
-    "id": "other41",
+    "id": "other24",
     "title": "Amino Hub Banner",
     "summary": "Amino Hub Banner is a customisation part available from the Quicksilver Synthesis Companion.",
     "game_description": "Equip this exclusive Personal Flair in support of community, adventure and discovery.\n\nApply this banner to your profile at an Appearance Modifier.",
@@ -36,6 +37,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Bespoke Personal Identification",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "NmsIcon_AminoHubbanner.jpg",
@@ -50,7 +52,7 @@
     ]
   },
   {
-    "id": "other33",
+    "id": "other17",
     "title": "Ancient Data Structure",
     "summary": "Ancient Data Structure is a type of 35px icon. It contains one of the following:\n* Navigation Data\n* Drop Pod Coordinate Data",
     "game_description": null,
@@ -61,13 +63,14 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "",
+    "value": null,
     "infobox": {},
     "categories": [
       "Resources"
     ]
   },
   {
-    "id": "other10",
+    "id": "other20",
     "title": "Appalling Banner",
     "summary": "Appalling Banner is a customisation part available from the Scrap Dealer.",
     "game_description": "Demonstrate your interest in the macabre and the horrific with this exclusive Personal Flair.\n\nApply this banner to your profile at an Appearance Modifier.",
@@ -78,6 +81,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Bespoke Personal Identification",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "NmsIcon_WarningDecal.jpg",
@@ -92,7 +96,7 @@
     ]
   },
   {
-    "id": "other15",
+    "id": "other29",
     "title": "Armoured Suit",
     "summary": "Armoured Suit is a collection of armoured pieces that when combined will create a complete armoured suit. It has been described as the \"practical fashion choice favoured by the Vy'keen\".",
     "game_description": "{| class=\"wikitable\"\n!Image || Cost || Description\n|-\n|200px || 1000",
@@ -103,6 +107,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Armoured suits",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "NmsArmour chestpiece.png",
@@ -117,7 +122,7 @@
     ]
   },
   {
-    "id": "other11",
+    "id": "other34",
     "title": "Café 42 Banner",
     "summary": "Café 42 Banner is a customisation part available from the Quicksilver Synthesis Companion.",
     "game_description": "Equip this exclusive Personal Flair in the spirit of friends, fun and good vibes.\n\nApply this banner to your profile at an Appearance Modifier.",
@@ -128,6 +133,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Bespoke Personal Identification",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "NmsIcon_Cafe42banner.jpg",
@@ -142,78 +148,7 @@
     ]
   },
   {
-    "id": "other20",
-    "title": "Carrier AI Fragment",
-    "summary": "Carrier AI Fragment is a component. It is specifically used to detect crashed Sentinel Interceptors. It is very useful if you want to gain a Sentinel Interceptor.",
-    "game_description": "A single splinter of the colossal mainframe at the heart of a Sentinel capital ship. It blinks, its solitary living eye trained upon the one piece of data it retains - the last known location of one of its fleet of Interceptors.\n\nSelect the AI Fragment and use Search Archive (E) to translate information about Interceptor's crash site to your starship's navigation systems.",
-    "source_info": "*Dropped from Nexus missions (1-2%)\n*Gained occasionally from successful combat frigate expeditions (2.7%)",
-    "use_info": null,
-    "release_history": "* Interceptor - Added as a component\n* Echoes - Renamed, was \"Dreadnought AI Fragment\"",
-    "additional_info": null,
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Battleship Core Remnant",
-    "infobox": {
-      "_infobox_type": "product",
-      "name": "Carrier AI Fragment",
-      "image": "PRODUCT.FREIGHTERCORE.png",
-      "color": "purple",
-      "category": "Component",
-      "type": "Battleship Core Remnant",
-      "value": "35,000.0",
-      "used": "",
-      "release": "WorldsOne"
-    },
-    "categories": [
-      "Component"
-    ]
-  },
-  {
-    "id": "other35",
-    "title": "Core to Core Jump",
-    "summary": "The Core to Core Jump technique consists in transitioning to the next galaxy via its centre and landing directly in the next galaxy core area. This is achieved by passing through a Black Hole in the core area of the starting galaxy, immediately reaching a Gateway system and then warping to the Galaxy Centre as usual. The spawning point coordinates in the next galaxy will be exactly the same as the black hole exit coordinates.",
-    "game_description": null,
-    "source_info": null,
-    "use_info": null,
-    "release_history": null,
-    "additional_info": null,
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "",
-    "infobox": {},
-    "categories": [
-      "Hyperdrive technology",
-      "Propulsion technology"
-    ]
-  },
-  {
-    "id": "other28",
-    "title": "Deflector Shield (Atlas)",
-    "summary": "Deflector shields are the standard means of protecting a quick menu, but at this time, only raw materials appear - no shielding shards, etc.",
-    "game_description": "Energy shield that protects spacecraft from laser fire, in-flight projectiles and accidental space debris interaction.\nUser is advised that Oxide elements are required to recharge device.\nOperates automatically once constructed within user's starship inventory.",
-    "source_info": null,
-    "use_info": null,
-    "release_history": null,
-    "additional_info": null,
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Spacecraft Hull Protection",
-    "infobox": {
-      "_infobox_type": "technology",
-      "image": "RENDER.SHIELD.png",
-      "category": "Starship",
-      "subcategory": "Health",
-      "type": "Spacecraft Hull Protection",
-      "desc": "Energy shield that protects spacecraft from laser fire, in-flight projectiles and accidental space debris interaction.",
-      "recharge": "Oxide elements, any Shielding object",
-      "release": "Atlas Rises"
-    },
-    "categories": [
-      "Health technology"
-    ]
-  },
-  {
-    "id": "other17",
+    "id": "other2",
     "title": "Detoxified Slime",
     "summary": "Detoxified Slime is a customisation part available from the Scrap Dealer.",
     "game_description": "Gelatinous and slowly pulsing, this puddle of living slime smells sweeter than would be imagined.\n\nThough there is no evidence to suggest it would be unsafe to do so, avoid treading on the slime where possible.",
@@ -224,6 +159,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Placeable Sludge",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "name": "Detoxified Slime",
@@ -239,84 +175,7 @@
     ]
   },
   {
-    "id": "other46",
-    "title": "Di-hydrogen Jelly",
-    "summary": "Di-hydrogen Jelly is a component that is used for crafting.",
-    "game_description": "A faintly-glowing jelly. Its gentle light and soft wobble belie the fact that this sticky gel is both highly toxic and highly flammable. Skin contact is to be avoided at all costs.\n\nSynthesised from Di-hydrogen.",
-    "source_info": "Available from some",
-    "use_info": null,
-    "release_history": "* NEXT - Added as a product.\n* Fractal - Exploit nerfed.",
-    "additional_info": "* It is required to repair the starship's Launch Thruster.\n* Exploit - If you have a refiner, you can exploit di-hydrogen by refining Di-hydrogen Jelly from 30 di-hydrogen and then refining it back into 40 di-hydrogen.",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Portable Life Support Power",
-    "infobox": {
-      "_infobox_type": "product",
-      "image": "PRODUCT.JELLY.png",
-      "category": "Component",
-      "color": "red",
-      "type": "Portable Life Support Power",
-      "value": "200.0",
-      "release": "Fractal"
-    },
-    "categories": [
-      "Portable Life Support Power"
-    ]
-  },
-  {
-    "id": "other32",
-    "title": "Frameshift Catapult",
-    "summary": "The Frameshift Catapult is an alternative hyperdrive technology first introduced in Expedition 3: Cartographers.\n\nIt is a special alternative Hyperdrive on the player's starting starship. During the Expedition, it needs to be repaired shortly after the player leaves the starting planet.\n\nOnce repaired, it can be recharged with Warp Cells or a Warp Hypercore.",
-    "game_description": "This experimental drive augments conventional hyperdrive technology by distorting local geometry at the point of warp initialisation, boosting range and efficiency far beyond standard drives.\n\nUser is advised to access Hyperdrive systems through the Galactic Map.",
-    "source_info": null,
-    "use_info": null,
-    "release_history": "*Expeditions - Expedition 3: Cartographers: Added as a special technology.",
-    "additional_info": "As stated in the game description, this hyperdrive is superior to the more conventional hyperdrive. If one would use a save editing tool to replace the standard hyperdrive module on a starship with a Frameshift outside of Expedition 3, the hyperdrive capabilities would be considerabily improved over the original drive. Experiments have shown that the author's Fighter-Class ship was able to reach Hyperdrive ranges of well over 2,000 lightyears using the Frameshift and six X-class hyperdrive upgrades at 300 ly each, surpassing many other fighters ly ranges in the process.",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Lightspeed Warp Drive",
-    "infobox": {
-      "_infobox_type": "technology",
-      "image": "SPECIAL.MYSTERYTRACKER.png",
-      "category": "Starship",
-      "subcategory": "",
-      "type": "Lightspeed Warp Drive",
-      "desc": "FTL propulsion drive for warp speed",
-      "recharge": "Warp Cell, Warp Hypercore",
-      "release": "Expeditions"
-    },
-    "categories": [
-      "Starships",
-      "Hyperdrive technology"
-    ]
-  },
-  {
-    "id": "other12",
-    "title": "Grafted Eyes",
-    "summary": "Grafted Eyes is one of the primary Living starship weapons, and is an alternative to the more common Spewing Vents. Both can be used to mine asteroids in space, which hold valuable resources.",
-    "game_description": "A complex array of membranes and lens, fused atop a high-energy laser array. Incineration awaits those that meet their stare.",
-    "source_info": null,
-    "use_info": null,
-    "release_history": "* Living Ship - Added as a weapon.\n* Update 2.32 - Added an ability to evolve for",
-    "additional_info": "*Upgrade Nodes can be obtained by shooting Void Eggs in uncharted and abandoned systems.",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Spacecraft Laser Device",
-    "infobox": {
-      "_infobox_type": "technology",
-      "image": "BIOTECH.EYE.png",
-      "category": "Starship",
-      "color": "",
-      "subcategory": "Weapons",
-      "type": "Spacecraft Laser Device",
-      "release": "NextGen"
-    },
-    "categories": [
-      "Weapons technology"
-    ]
-  },
-  {
-    "id": "other37",
+    "id": "other16",
     "title": "Grenade technology",
     "summary": "Grenade technology is technology that upgrades a player's Plasma Launcher.",
     "game_description": null,
@@ -327,39 +186,14 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "",
+    "value": null,
     "infobox": {},
     "categories": [
       "Grenade technology"
     ]
   },
   {
-    "id": "other36",
-    "title": "Harmonic Brain",
-    "summary": "Harmonic Brain is a component that is used for upgrading.",
-    "game_description": "The central processing unit of a Sentinel interceptor ship. The circuitry appears stable, pulsing with a regular electrical heartbeat. It no longer reacts angrily to my presence.\n\nStatus: DOCILE\n\nInstall this unit in a disabled Sentinel ship to unlock its vestigial cockpit and enable manual piloting.",
-    "source_info": "* Received by presenting a Hyaline Brain to a Monolith",
-    "use_info": "Harmonic Brain is used in the repair of Sentinel Interceptors.",
-    "release_history": "* Interceptor - Added as a component.",
-    "additional_info": null,
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Harnessed Sentience",
-    "infobox": {
-      "_infobox_type": "product",
-      "image": "PRODUCT.SENTINELSHIPBRAIN.CLEANED.png",
-      "color": "purple",
-      "type": "Harnessed Sentience",
-      "category": "Component",
-      "value": "480,016.0",
-      "used": "",
-      "release": "Singularity"
-    },
-    "categories": [
-      "Component"
-    ]
-  },
-  {
-    "id": "other51",
+    "id": "other6",
     "title": "Harvested Agricultural Substance",
     "summary": "Harvested Agricultural Substance is a type of resource, grouped under the flora division.",
     "game_description": null,
@@ -370,13 +204,14 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "",
+    "value": null,
     "infobox": {},
     "categories": [
       "Harvested Agricultural Substance"
     ]
   },
   {
-    "id": "other8",
+    "id": "other12",
     "title": "Hazard Protection Unit",
     "summary": "Hazard Protection Units are extensions for the players' Oxide or with Shielding Products such as Shielding Shard, Shielding Sheet and Shielding Plate.",
     "game_description": null,
@@ -387,6 +222,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "",
+    "value": null,
     "infobox": {},
     "categories": [
       "Exosuit",
@@ -394,7 +230,7 @@
     ]
   },
   {
-    "id": "other23",
+    "id": "other26",
     "title": "Horrific Flesh-Helmet",
     "summary": "Horrific Flesh-Helmet is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "Naturally transform your appearance via the application of a flesh-hungry parasite. This living being partially fuses with the brainstem of its host, sealing their symbiosis.\n\nCautiously transform the appearance of your Exosuit at an Appearance Modifier.",
@@ -405,6 +241,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.SPOOKYHEAD.png",
@@ -419,58 +256,7 @@
     ]
   },
   {
-    "id": "other34",
-    "title": "Hyaline Brain",
-    "summary": "Hyaline Brain is a component which, when purified into a Harmonic Brain at a Monolith, is used to make a crashed Sentinel Interceptor claimable.\nWhen the player has 3 Radiant Shard and 1 Inverted Mirror (collected from a Dissonance Resonator) in their inventory the Hyaline Brain can be probed in the inventory (by pressing E on PC) revealing the location of the closest Monolith.",
-    "game_description": "The central processing unit of a Sentinel interceptor ship. The circuitry writhes microscopically, constantly rearranging itself as it scans for anomalies.\n\nA vital component for any entity wishing to construct their own Pilot Interface for a Sentinel Interceptor.\n\nStatus: VOLATILE",
-    "source_info": "* Loot from crashed Sentinel Interceptors (100%).\n* Loot from destroying enemy sentinel interceptors in space (15%)",
-    "use_info": "Hyaline Brain is used in the repair of Sentinel Interceptors.",
-    "release_history": "* Interceptor - Added as a component.",
-    "additional_info": "Hyaline Brain can be transformed into a Harmonic Brain at a Monolith.",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Sentience Vessel",
-    "infobox": {
-      "_infobox_type": "product",
-      "image": "PRODUCT.SENTINELSHIPBRAIN.png",
-      "color": "purple",
-      "type": "Sentience Vessel",
-      "category": "Component",
-      "value": "35,000.0",
-      "used": "",
-      "release": "Orbital"
-    },
-    "categories": [
-      "Component"
-    ]
-  },
-  {
-    "id": "other13",
-    "title": "Inverted Mirror",
-    "summary": "Inverted Mirror is a component that is used for crafting.",
-    "game_description": "A pane of watchful g l a s s, retrieved from the smoking remains of the corrupted swarm's Dissonance Resonators. It emits more light than it reflects, casting a faint purple hue on its surroundings.\n\nHighly sought after for salvage operations, as it can be used to bypass the security systems of key Sentinel ship technologies.",
-    "source_info": "* Loot from a Dissonance Resonator with the Inverted Mirror tag.\n* May also be found on Harmonic Scrap.",
-    "use_info": "Inverted Mirror is used in the repair of Sentinel multi-tools and crashed Interceptors.",
-    "release_history": "* Interceptor - Added as a component.",
-    "additional_info": "When a Dissonance Resonator is destroyed, it will drop either an Inverted Mirror or an Echo Locator. Which it will drop is indicated by a tag below its name on the HUD when you are close to it.",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Burning Glassy Remnant",
-    "infobox": {
-      "_infobox_type": "product",
-      "image": "PRODUCT.DRONESALVAGE.png",
-      "color": "purple",
-      "type": "Burning Glassy Remnant",
-      "category": "Component",
-      "value": "17,000.0",
-      "release": "WorldsOne"
-    },
-    "categories": [
-      "Component"
-    ]
-  },
-  {
-    "id": "other42",
+    "id": "other31",
     "title": "Iteration: Ares Visage",
     "summary": "Iteration: Ares Visage is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "An exclusive Exosuit Appearance Override.\n\nThis part silicone, part biological helmet can detect and replicate the facial muscle movements of the wearer, creating the appearance of a natural head. It is fully compatible with exosuit technology and provides all protection of a traditional helmet.\n\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -481,6 +267,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.EXOTICHEAD10.png",
@@ -495,7 +282,7 @@
     ]
   },
   {
-    "id": "other45",
+    "id": "other19",
     "title": "Iteration: Ariadne Visage",
     "summary": "Iteration: Ariadne Visage is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "An exclusive Exosuit Appearance Override.\n\nThis part silicone, part biological helmet can detect and replicate the facial muscle movements of the wearer, creating the appearance of a natural head. It is fully compatible with exosuit technology and provides all protection of a traditional helmet.\n\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -506,6 +293,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.EXOTICHEAD1.png",
@@ -520,7 +308,7 @@
     ]
   },
   {
-    "id": "other49",
+    "id": "other11",
     "title": "Iteration: Cronus Visage",
     "summary": "Iteration: Cronus Visage is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "An exclusive Exosuit Appearance Override.\n\nThis part silicone, part biological helmet can detect and replicate the facial muscle movements of the wearer, creating the appearance of a natural head. It is fully compatible with exosuit technology and provides all protection of a traditional helmet.\n\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -531,6 +319,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.EXOTICHEAD4.png",
@@ -545,7 +334,7 @@
     ]
   },
   {
-    "id": "other2",
+    "id": "other33",
     "title": "Iteration: Eos Visage",
     "summary": "Iteration: Eos Visage is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "An exclusive Exosuit Appearance Override.\n\nThis part silicone, part biological helmet can detect and replicate the facial muscle movements of the wearer, creating the appearance of a natural head. It is fully compatible with exosuit technology and provides all protection of a traditional helmet.\n\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -556,6 +345,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.EXOTICHEAD12.png",
@@ -570,7 +360,7 @@
     ]
   },
   {
-    "id": "other39",
+    "id": "other28",
     "title": "Iteration: Gemini Visage",
     "summary": "Iteration: Gemini Visage is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "An exclusive Exosuit Appearance Override.\n\nThis part silicone, part biological helmet can detect and replicate the facial muscle movements of the wearer, creating the appearance of a natural head. It is fully compatible with exosuit technology and provides all protection of a traditional helmet.\n\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -581,6 +371,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.EXOTICHEAD2.png",
@@ -595,7 +386,7 @@
     ]
   },
   {
-    "id": "other14",
+    "id": "other3",
     "title": "Iteration: Helios Visage",
     "summary": "Iteration: Helios Visage is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "An exclusive Exosuit Appearance Override.\n\nThis part silicone, part biological helmet can detect and replicate the facial muscle movements of the wearer, creating the appearance of a natural head. It is fully compatible with exosuit technology and provides all protection of a traditional helmet.\n\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -606,6 +397,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.EXOTICHEAD6.png",
@@ -620,7 +412,7 @@
     ]
   },
   {
-    "id": "other22",
+    "id": "other37",
     "title": "Iteration: Hesperus Visage",
     "summary": "Iteration: Hesperus Visage is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "An exclusive Exosuit Appearance Override.\n\nThis part silicone, part biological helmet can detect and replicate the facial muscle movements of the wearer, creating the appearance of a natural head. It is fully compatible with exosuit technology and provides all protection of a traditional helmet.\n\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -631,6 +423,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.EXOTICHEAD11.png",
@@ -645,7 +438,7 @@
     ]
   },
   {
-    "id": "other50",
+    "id": "other9",
     "title": "Iteration: Hyperion Visage",
     "summary": "Iteration: Hyperion Visage is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "An exclusive Exosuit Appearance Override.\n\nThis part silicone, part biological helmet can detect and replicate the facial muscle movements of the wearer, creating the appearance of a natural head. It is fully compatible with exosuit technology and provides all protection of a traditional helmet.\n\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -656,6 +449,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.EXOTICHEAD7.png",
@@ -670,7 +464,7 @@
     ]
   },
   {
-    "id": "other44",
+    "id": "other30",
     "title": "Iteration: Mercury Visage",
     "summary": "Iteration: Mercury Visage is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "An exclusive Exosuit Appearance Override.\n\nThis part silicone, part biological helmet can detect and replicate the facial muscle movements of the wearer, creating the appearance of a natural head. It is fully compatible with exosuit technology and provides all protection of a traditional helmet.\n\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -681,6 +475,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.EXOTICHEAD3.png",
@@ -695,7 +490,7 @@
     ]
   },
   {
-    "id": "other7",
+    "id": "other35",
     "title": "Iteration: Perses Visage",
     "summary": "Iteration: Perses Visage is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "An exclusive Exosuit Appearance Override.\n\nThis part silicone, part biological helmet can detect and replicate the facial muscle movements of the wearer, creating the appearance of a natural head. It is fully compatible with exosuit technology and provides all protection of a traditional helmet.\n\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -706,6 +501,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.EXOTICHEAD9.png",
@@ -720,7 +516,7 @@
     ]
   },
   {
-    "id": "other38",
+    "id": "other36",
     "title": "Iteration: Selene Visage",
     "summary": "Iteration: Selene Visage is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "An exclusive Exosuit Appearance Override.\n\nThis part silicone, part biological helmet can detect and replicate the facial muscle movements of the wearer, creating the appearance of a natural head. It is fully compatible with exosuit technology and provides all protection of a traditional helmet.\n\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -731,6 +527,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.EXOTICHEAD5.png",
@@ -745,7 +542,7 @@
     ]
   },
   {
-    "id": "other5",
+    "id": "other32",
     "title": "Iteration: Tethys Visage",
     "summary": "Iteration: Tethys Visage is an unlockable helmet available via the Appearance Modifier.",
     "game_description": "An exclusive Exosuit Appearance Override.\n\nThis part silicone, part biological helmet can detect and replicate the facial muscle movements of the wearer, creating the appearance of a natural head. It is fully compatible with exosuit technology and provides all protection of a traditional helmet.\n\nTransform the appearance of your Exosuit at an Appearance Modifier.",
@@ -756,6 +553,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Anomalous Face Transformation",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "SPECIAL.EXOTICHEAD8.png",
@@ -770,35 +568,7 @@
     ]
   },
   {
-    "id": "other3",
-    "title": "Launch Thruster",
-    "summary": "Launch Thruster is a  class=\"article-table\" style=\"text-align: center\"\n|-\n! rowspan=\"2\" | [[Starship#Starship Archetypes|Starship<br>archetypes !! colspan=\"4\" | -\n! Creative !! Normal !! Survival !! Permadeath\n|-\n|[[Starship#Exotic - High .26 Balanced Stats|Exotic|| 0 % || 25 % || 50 % || 50 %\n|-\n|Explorer|| 0 % || 12.5 % || 25 % || 25 %\n|-\n|Fighter|| 0 % || 25 % || 50 % || 50 %\n|-\n|Hauler|| 0 % || 25 % || 50 % || 50 %\n|-\n|Shuttle|| 0 % || 16.6 % || 33.3 % || 33.3 %\n|}\n\nIf Launch Thrusters is damaged by rough handling or enemy fire, the starship will be unable to lift-off until it is repaired.",
-    "game_description": "Vital launch and landing gear system.\n\nUser is advised that specialised, Deuterium-derived fuel is required to recharge thruster. Launch procedures require sufficient fuel levels before activation.\n\nHold [W] to take off from planet.\n\nHold [Circle/Shift/B] to initiate in-flight speed boost.",
-    "source_info": null,
-    "use_info": null,
-    "release_history": null,
-    "additional_info": "*Summoning a starship via the Quick Menu deducts one launch's worth of fuel regardless of its previous location. If there is less than one launch's worth of thruster fuel in that starship, the player will not be able to summon it in this manner until it is refueled.\n*Launch Thruster can be refueled remotely if the starship's inventory contains the required fuel items.\n\n**If Efficient Thrusters is installed adjacent to Launch Thrusters, an Upgrade bonus triggers which indirectly affects Launch Thrusters. However Efficient Thrusters doesn't get a bonus in this circumstance as the -20% boost fuel cost is a flat rate reduction. This is the case for survival and perma death modes at least and is unknown if this is intended or error.\n*If Launch Thrusters are installed in a supercharged slot, the fuel cost to lift-off is increased.",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Vertical Take-off System",
-    "infobox": {
-      "_infobox_type": "technology",
-      "image": "Render.landinggear.png",
-      "color": "blue",
-      "category": "Propulsion",
-      "subcategory": "Enhancement",
-      "type": "Vertical Take-off System",
-      "desc": "Used during initial takeoff and landings",
-      "recharge": "Uranium or Starship Launch Fuel",
-      "release": "Echoes"
-    },
-    "categories": [
-      "Starships",
-      "Propulsion technology"
-    ]
-  },
-  {
-    "id": "other43",
+    "id": "other5",
     "title": "Life Support",
     "summary": "Provides general life support as part of the general exosuit functionality. The level of current support is displayed on one of the various HUD bars, marked with the same \"heartbeat\" symbol as is displayed on the suit icon.\n\nUnlike movement outside of an Dead planet.",
     "game_description": "The core of the Exosuit, the Life Support System continually filters and pumps breathable Oxygen.\n\nIn addition to its role in the continued existence of the Exosuit user, the Life Support Unit uses surplus oxygen to generate power for secondary systems, such as the Jetpack, Speed Augmentation and Torch.\n\nCharge equipment with Oxygen, Life Support Gel or Dioxite.",
@@ -809,6 +579,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Suit Survival Power Pack",
+    "value": null,
     "infobox": {
       "_infobox_type": "technology",
       "image": "Render.cell.png",
@@ -825,114 +596,7 @@
     ]
   },
   {
-    "id": "other31",
-    "title": "Neural Assembly",
-    "summary": "Neural Assembly is a Living starship technology that is required for the starship's landing and lift-off.\n\nNeural Assembly consumes fuel each time the starship launched from the surface of a planet or moon, which must eventually be recharged using Oxygen (1%/unit) or Mordite (0.5%/unit).\n\nThere will be no fuel cost when Landing Pads or designated landing spots (indicated in flight by concentric blue rings which turn green when the starship gets close enough to land on the spot) are used.\n\nThe base launch cost is 25% in Normal mode.\n\nIf Neural Assembly is damaged by rough handling or enemy fire, the starship will be unable to lift-off until it is repaired.",
-    "game_description": "An array of distributed neurons, fused to a board of metallic strands. Complex patterns of electrical impulses weave their way across the surface, knotting each ship system together.",
-    "source_info": null,
-    "use_info": null,
-    "release_history": null,
-    "additional_info": "*Summoning a starship via the Void Eggs in uncharted and abandoned systems.",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Vertical Take-off System",
-    "infobox": {
-      "_infobox_type": "technology",
-      "image": "BIOTECH.BRAIN.png",
-      "category": "Propulsion",
-      "subcategory": "Enhancement",
-      "type": "Vertical Take-off System",
-      "desc": "Used during initial takeoff and landings",
-      "recharge": "Oxygen, Mordite or Condensed Carbon",
-      "release": "Endurance"
-    },
-    "categories": [
-      "Propulsion technology"
-    ]
-  },
-  {
-    "id": "other27",
-    "title": "Phase Beam (Atlas)",
-    "summary": "The Phase Beam is one of the primary starship weapons, and is an alternative to the more common Photon Cannon. Both can be used to mine asteroids in space, which hold valuable resources.",
-    "game_description": "Spacefaring beam weapon and asteroid mining tool.\n\nUser is advised that Isotope elements are required to recharge device.\n\nPress ... to activate.",
-    "source_info": null,
-    "use_info": null,
-    "release_history": null,
-    "additional_info": "The Phase Beam was featured in various pre-release trailers for ''No Man's Sky'', including the PS4 Explore trailer (see below).",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Spacecraft Laser Device",
-    "infobox": {
-      "_infobox_type": "technology",
-      "image": "phase_beam.png",
-      "category": "Weapon",
-      "subcategory": "Laser",
-      "type": "Spacecraft Laser Device",
-      "desc": "One of the two primary ship weapons",
-      "stats": "Damage = 200.0",
-      "recharge": "Isotope",
-      "release": "Atlas Rises"
-    },
-    "categories": [
-      "Starships",
-      "Weapons technology"
-    ]
-  },
-  {
-    "id": "other1",
-    "title": "Photon Cannon",
-    "summary": "Photon Cannon is the default weapon installed on all starships, and is more commonly used than the alternative Phase Beam. This weapon may occasionally be referred to as a Starship Cannon, although Photon Cannon is the preferred usage.",
-    "game_description": "A destructive starship projectile launcher, the weapons system for choice for the interstellar trader and pirate alike.\n\nUse () to change weapon mode. Press () to fire.",
-    "source_info": null,
-    "use_info": "The cannon can be used both in direct combat and in clearing asteroids for traversal.",
-    "release_history": "* Release - Added as a weapon.\n* Pathfinder - Ion Blast, Photon Accelerator and Photon Blast independent upgrades were replaced by Cyclotron Ballista, Infra-Knife Accelerator and Positron Ejector, respectively.\n* NEXT - Nonlinear Optics and procedurally generated Photon Cannon Upgrades added, while Sigma/Tau/Theta upgrades removed. Formerly Heridium and Iron needed for repair.",
-    "additional_info": "* The Photon Cannon was frequently shown in the pre-release trailers, including the reveal and PS4 Explore trailers (see below).\n* Photon Cannon is one of two starships weapons used by NPC starships (the other one being Phase Beam).",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Starship Projectile Weapon",
-    "infobox": {
-      "_infobox_type": "technology",
-      "image": "RENDER.SHIPPROJECTILE1.png",
-      "color": "blue",
-      "category": "Starship",
-      "subcategory": "Weapons",
-      "type": "Starship Projectile Weapon",
-      "desc": "",
-      "release": "Outlaws"
-    },
-    "categories": [
-      "Weapons technology"
-    ]
-  },
-  {
-    "id": "other4",
-    "title": "Pirate Transponder",
-    "summary": "Pirate Transponder is a component.",
-    "game_description": "A unique ID transponder, ripped from the internal signal array of an outlaw starship.\n\nPossesion",
-    "source_info": "*Occasionally received on destroying pirate Starships.",
-    "use_info": null,
-    "release_history": "* Orbital - Added to the game.",
-    "additional_info": "It can be given to Mercenaries Guild Envoys to earn standing.",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Salvaged Identification Device",
-    "infobox": {
-      "_infobox_type": "product",
-      "name": "Pirate Transponder",
-      "image": "PRODUCT.PIRATELOOT.png",
-      "category": "Component",
-      "color": "darkblue",
-      "type": "Salvaged Identification Device",
-      "value": "85,000",
-      "used": "",
-      "release": "WorldsOne"
-    },
-    "categories": [
-      "Component"
-    ]
-  },
-  {
-    "id": "other26",
+    "id": "other23",
     "title": "Product",
     "summary": "Products are useful or valuable materials. Some of the products can be crafted in the player's inventory using blueprints and the proper ingredients. Most of the blueprints can be found in Operations Centres or Manufacturing Facilities unless noted otherwise.\n\nSee tradeable for products that cannot be crafted.",
     "game_description": null,
@@ -943,13 +607,14 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "",
+    "value": null,
     "infobox": {},
     "categories": [
       "Products"
     ]
   },
   {
-    "id": "other52",
+    "id": "other15",
     "title": "Product (Atlas)",
     "summary": "A product is a useful or valuable material. Products can be crafted in a player's inventory using blueprints and the proper resources. Most of the recipes can be found in Operations Centres or Manufacturing Facilities unless noted otherwise.\n\nSee trade commodity for items that cannot be crafted.",
     "game_description": null,
@@ -960,6 +625,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "",
+    "value": null,
     "infobox": {},
     "categories": [
       "Products",
@@ -967,32 +633,7 @@
     ]
   },
   {
-    "id": "other30",
-    "title": "Quad Servo",
-    "summary": "Quad Servo is a component that is used for crafting.",
-    "game_description": "A highly sprung motor arm salvaged from inside of a Sentinel patrol unit. It occasionally twitches, as if experiencing the echo of combat.",
-    "source_info": "It can be obtained by the following methods:\n* destroying the Combat Supplies containers dropped by Sentinel Quads\n* Suspicious Packet (Goods) from the Scrap Dealer\n* a gift from Guild Envoys of the Mercenaries Guild",
-    "use_info": null,
-    "release_history": "* NEXT - Added as a product. It has the same icon as Non-Stick Piston.",
-    "additional_info": null,
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Anomalous Material",
-    "infobox": {
-      "_infobox_type": "product",
-      "image": "PRODUCT.QUADSERVO.png",
-      "category": "Component",
-      "color": "purple",
-      "type": "Anomalous Material",
-      "value": "20,000.0",
-      "release": "Frontiers"
-    },
-    "categories": [
-      "Component"
-    ]
-  },
-  {
-    "id": "other47",
+    "id": "other7",
     "title": "Raletum Judirica",
     "summary": "Raletum Judirica is a flora found on the planet Sagayamatsuy-5 in the Tumise-Rekv system.",
     "game_description": null,
@@ -1003,13 +644,14 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "",
+    "value": null,
     "infobox": {},
     "categories": [
       "Sagayamatsuy-5"
     ]
   },
   {
-    "id": "other21",
+    "id": "other14",
     "title": "Recovered Item (COG)",
     "summary": "Recovered Item (COG) is a procedural item, specifically a Recovered Item.",
     "game_description": "A damaged technology component, ejected from its machine and discarded by its owner.\n\nWorthless, except as scrap. Select in the Inventory (",
@@ -1020,6 +662,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Recovered Item",
+    "value": 50.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "TREASURE.COG.png",
@@ -1035,7 +678,7 @@
     ]
   },
   {
-    "id": "other53",
+    "id": "other10",
     "title": "Recovered Item (DATA)",
     "summary": "Recovered Item (DATA) is a procedural item, specifically a Recovered Item.",
     "game_description": null,
@@ -1046,6 +689,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Recovered Item",
+    "value": 700.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "TREASURE.DATAPACK.png",
@@ -1061,7 +705,7 @@
     ]
   },
   {
-    "id": "other18",
+    "id": "other4",
     "title": "Recovered Item (LUMP)",
     "summary": "Recovered Item (LUMP) is a procedural item, specifically a Recovered Item.",
     "game_description": "A scrap of organic matter. It is not clear if this is a lifeform in its own right, or some ejected/severed part of a larger being.\n\nUnlikely to be desirable at a galactic exchange. Select in the Inventory (",
@@ -1072,6 +716,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Recovered Item",
+    "value": 250.0,
     "infobox": {
       "_infobox_type": "product",
       "image": "TREASURE.LUMP.png",
@@ -1087,7 +732,7 @@
     ]
   },
   {
-    "id": "other16",
+    "id": "other1",
     "title": "Refining Multiplication of Resources",
     "summary": "This guide will provide instructions and steps for maximum production of resources without having to collect or farm them (where possible).\n\nThe objective is to obtain the maximum types and amounts of resources using only a Portable Refiner, Medium Refiner, Large Refiner.\n\nSome of these recipes use two or three ingredients, so a large refiner is required in most cases, but having another one- and two-input refiner nearby will help speed up some of the simpler processes. The more refiners that are available, the better, as that allows for multiple processes to be run in parallell.",
     "game_description": null,
@@ -1098,66 +743,14 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "",
+    "value": null,
     "infobox": {},
     "categories": [
       "Resources"
     ]
   },
   {
-    "id": "other40",
-    "title": "Singularity Cortex",
-    "summary": "The Singularity Cortex is the Living starship's faster-than-light propulsion drive to aid players travel across galaxies. By default, each warp between star systems consumes 20% of the Singularity Cortex's fuel supply. It requires 60 Chromatic Metal or 96 Living Slime to fully charge.\n\nThe base range of a Singularity Cortex is 101 light-years (ly) and the player can warp to any systems.",
-    "game_description": "A complex bio-metallic stem plugged directly into an antimatter heart. Registers high activity during interstellar jumps. It appears to delight in the complex calculations required for FTL travel.\n\nAccess long-distance navigation systems through Galactic Map. Keep the ship happy by regularly jumping between systems.",
-    "source_info": null,
-    "use_info": null,
-    "release_history": "* Living Ship - Introduced to the game.\n* Update 2.32 - Added an ability to evolve for",
-    "additional_info": "*Upgrade Nodes can be obtained by shooting Void Eggs in uncharted and abandoned systems.",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Lightspeed Warp Drive",
-    "infobox": {
-      "_infobox_type": "technology",
-      "image": "BIOTECH.EYECLUSTER.png",
-      "color": "",
-      "category": "Starship",
-      "subcategory": "",
-      "type": "Lightspeed Warp Drive",
-      "desc": "FTL propulsion drive for warp speed",
-      "recharge": "Chromatic Metal",
-      "release": "Echoes"
-    },
-    "categories": [
-      "Starships",
-      "Hyperdrive technology"
-    ]
-  },
-  {
-    "id": "other6",
-    "title": "Spewing Vents",
-    "summary": "Spewing Vents are the default weapon installed on all living starships.\n\n{| class=\"wikitable\"\n|-\n! colspan=\"2\" | Base Specifications\n|-\n|Rate of Fire\n|~7 shots/sec\n|-\n|Time to Overheat\n|~8 seconds\n|-\n|Overheat Cooldown Time\n|4 seconds\n|}",
-    "game_description": "A mess of sacs and sphincters, these vents generate and expel globules of plasma. When fused to the weapon systems of the ship, these are super-heated and then expelled at high-pressure.",
-    "source_info": null,
-    "use_info": "The Spewing Vents can be used both in direct combat and in clearing asteroids for traversal.",
-    "release_history": "* Living Ship - Added as a weapon.\n* Update 2.32 - Added an ability to evolve for",
-    "additional_info": "*Upgrade Nodes can be obtained by shooting Void Eggs in Space Encounters. They are more common in uncharted and abandoned systems.\n*In previous versions of the game, the installation location of the weapon would affect its projectile color. If the weapon was installed in the Storage Sacs, the plasma fire was green. If it were installed in the Organ Chamber, the weapon fire was blue.",
-    "fishing_info": null,
-    "progression_info": null,
-    "type": "Spacecraft Projectile Weapon",
-    "infobox": {
-      "_infobox_type": "technology",
-      "image": "BIOTECH.LUMPS.png",
-      "category": "Starship",
-      "subcategory": "Weapons",
-      "type": "Spacecraft Projectile Weapon",
-      "desc": "",
-      "release": "Frontiers"
-    },
-    "categories": [
-      "Weapons technology"
-    ]
-  },
-  {
-    "id": "other24",
+    "id": "other8",
     "title": "Tentacled Banner",
     "summary": "Tentacled Banner is a customisation part available from the Scrap Dealer.",
     "game_description": "Express your curiosity about abyssal alien lifeforms with this exclusive Personal Flair.\n\nApply this banner to your profile at an Appearance Modifier.",
@@ -1168,6 +761,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Bespoke Personal Identification",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "NmsIcon_TentacledDecal.jpg",
@@ -1182,7 +776,7 @@
     ]
   },
   {
-    "id": "other29",
+    "id": "other22",
     "title": "Thermic Layer (NEXT)",
     "summary": "Thermic Layer protection is a series of Exosuit upgrades that protects the user from cold temperatures on a planet's surface.\n\nHeat capillaries containing liquid calidium are threaded through a user's suit, allowing a comfortable body temperature to be maintained.\n\nAt the highest level of protection, an internal central temperature governance chip controls the system, allowing for targeted relief and more efficient usage.",
     "game_description": null,
@@ -1193,6 +787,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Companion Unit",
+    "value": null,
     "infobox": {
       "_infobox_type": "technology",
       "image": "Render.protectcold.png",
@@ -1210,7 +805,7 @@
     ]
   },
   {
-    "id": "other25",
+    "id": "other21",
     "title": "Toxin Suppressor (NEXT)",
     "summary": "'Toxin Suppressor protection is a series of Exosuit upgrades that protects the user from from toxic liquids on a planet's surface.\n\nReactive compounds within the Suppressor unit remove toxic liquids that fall on the user, thereby reducing peril and choking hazards. Each upgrade increases the effectiveness of the protection.",
     "game_description": null,
@@ -1221,6 +816,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Companion Unit",
+    "value": null,
     "infobox": {
       "_infobox_type": "technology",
       "image": "Render.protecttoxic.png",
@@ -1238,7 +834,7 @@
     ]
   },
   {
-    "id": "other9",
+    "id": "other25",
     "title": "United Federation of Travelers Banner",
     "summary": "United Federation of Travelers Banner is a customisation part available from the Quicksilver Synthesis Companion.",
     "game_description": "Equip this exclusive Personal Flair in support of a united universe.  Document, aid, create, communicate.\n\nApply this banner to your profile at an Appearance Modifier.",
@@ -1249,6 +845,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Bespoke Personal Identification",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "NmsIcon_UFTbanner.jpg",
@@ -1263,7 +860,23 @@
     ]
   },
   {
-    "id": "other19",
+    "id": "other18",
+    "title": "Weapons technology",
+    "summary": null,
+    "game_description": null,
+    "source_info": null,
+    "use_info": null,
+    "release_history": null,
+    "additional_info": null,
+    "fishing_info": null,
+    "progression_info": null,
+    "type": "",
+    "value": null,
+    "infobox": {},
+    "categories": []
+  },
+  {
+    "id": "other27",
     "title": "Wriggling Companion",
     "summary": "Wriggling Companion is a customisation part available from the Scrap Dealer.",
     "game_description": "The captured essence of an abyssal horror, contained for scientific and decorative use.\n\nThe bounding forcefield is of the very highest quality. The companion cannot escape. The companion will not escape. Escape.",
@@ -1274,6 +887,7 @@
     "fishing_info": null,
     "progression_info": null,
     "type": "Betentacled Steward",
+    "value": null,
     "infobox": {
       "_infobox_type": "product",
       "image": "NmsIcon_WrigglingCompanion.jpg",
